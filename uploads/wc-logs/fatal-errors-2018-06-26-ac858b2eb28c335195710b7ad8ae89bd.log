@@ -1,0 +1,12 @@
+2018-06-26T16:54:11+00:00 CRITICAL Uncaught Error: Call to undefined function siteurl() in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\header.php:87
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(688): require_once()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(647): load_template('C:\\Users\\Tony\\D...', true)
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\index.php(1): get_header()
+#4 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include('C:\\Users\\Tony\\D...')
+#5 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#6 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#7 {main}
+  thrown
+

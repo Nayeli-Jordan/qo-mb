@@ -1,0 +1,170 @@
+//colors
+.color-primary { color: $primary-color; }
+
+//image
+.bg-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &.bg-contain { background-size: contain; }
+  &.bg-icon {
+    height: 20px;
+    width: 20px;
+    display: inline-block
+  }
+}
+
+.bg-absolute {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+}
+
+//box
+
+.margin-auto          { margin: auto; }
+
+.margin-top-small         { margin-top: 10px; }
+.margin-top           { margin-top: 15px; }
+.margin-top-large         { margin-top: 20px; }
+.margin-top-xlarge        { margin-top: 25px; }
+
+.margin-bottom-xsmall       { margin-bottom: 5px; }
+.margin-bottom-small      { margin-bottom: 10px; }
+.margin-bottom          { margin-bottom: 15px; }
+.margin-bottom-large      { margin-bottom: 20px; }
+.margin-bottom-xlarge       { margin-bottom: 25px; }
+.no-margin-bottom       { margin-bottom: 0px; }
+
+.margin-top-bottom-small    { margin-top: 10px; margin-bottom: 10px; }
+.margin-top-bottom        { margin-top: 15px; margin-bottom: 15px; }
+
+.margin-right-xsmall       { margin-right: 5px; }
+.margin-right-small       { margin-right: 10px; }
+.margin-right           { margin-right: 15px; }
+.margin-right-large       { margin-right: 20px; }
+.margin-right-xlarge      { margin-right: 25px; }
+
+.margin-left-xsmall        { margin-left: 5px; }
+.margin-left-small        { margin-left: 10px; }
+.margin-left          { margin-left: 15px; }
+.margin-left-large        { margin-left: 20px; }
+.margin-left-xlarge       { margin-left: 25px; }
+.margin-left--15p         { margin-left: -15%; }
+
+.no-padding           { padding: 0px; }
+
+.padding-top-small        { padding-top: 10px; }
+.padding-top              { padding-top: 15px; }
+.padding-top-large        { padding-top: 20px; }
+.padding-top-xlarge       { padding-top: 25px; }
+
+.padding-bottom-small       { padding-bottom: 10px; }
+.padding-bottom         { padding-bottom: 15px; }
+.padding-bottom-large       { padding-bottom: 20px; }
+.padding-bottom-xlarge      { padding-bottom: 25px; }
+
+.padding-right-small      { padding-right: 10px; }
+.padding-right          { padding-right: 15px; }
+.padding-right-large      { padding-right: 20px; }
+.padding-right-xlarge       { padding-right: 25px; }
+
+.padding-left-small       { padding-left: 10px; }
+.padding-left           { padding-left: 15px; }
+.padding-left-large       { padding-left: 20px; }
+.padding-left-xlarge      { padding-left: 25px; }
+
+.padding-top-bottom-xsmall    { padding-top: 5px!important; padding-bottom: 5px!important; }
+.padding-top-bottom-small     { padding-top: 10px!important; padding-bottom: 10px!important; }
+.padding-top-bottom       { padding-top: 15px!important; padding-bottom: 15px!important; }
+.padding-top-bottom-large     { padding-top: 20px!important; padding-bottom: 20px!important; }
+.padding-top-bottom-xlarge    { padding-top: 25px!important; padding-bottom: 25px!important; }
+
+//size
+.width-100p     { width: 100%; }
+.width-60p      { width: 60%; }
+.width-30p      { width: 30%; }
+.width-25p      { width: 25%; }
+.width-20p      { width: 20%; }
+
+.max-width-100p { max-width: 100%; }
+
+//Position
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+.right-0          { right: 0; }
+.right-20         { right: 20px; }
+.right-60         { right: 60px; }
+.right-10p        { right: 10%; }
+.right--10p       { right: -10%; }
+.right--20        { right: -20px; }
+
+.left-0           { left: 0; }
+.left-20          { left: 20px; }
+.left-5p          { left: 5%; }
+.left-15p         { left: 15%; }
+.left-35p         { left: 35%; }
+
+.top-0            { top: 0; }
+.top-100          { top: 100px; }
+.top--60          { top: -60px; }
+.top--15p         { top: -15%; }
+.top--20p         { top: -20%; }
+
+.bottom-0         { bottom: 0; }
+.bottom-30        { bottom: 30px; }
+.bottom--50       { bottom: -50px; }
+.bottom--10p      { bottom: -10%; }
+.bottom--15p      { bottom: -15%; }
+.bottom-15p       { bottom: 15%; }
+.bottom-20p       { bottom: 20%; }
+.bottom-30p       { bottom: 30%; }
+
+.rotate--180 { transform: rotate(-180deg); }
+
+//display
+.block { display: block; }
+.inline-block { display: inline-block; }
+
+.overflow-hide { overflow: hidden;}
+
+.z-index--1 { z-index: -1; }
+
+//align
+.text-center { text-align: center; } 
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.alight-middle { vertical-align: middle; }
+
+//border
+
+
+
+.img-caracteristicas {
+    margin: auto;
+    width: 60%;
+    padding-bottom: calc(35%);
+}
+
+.indicaciones-producto {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  .img-indicaciones {
+    width: 80px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+    &.img-large {
+      width: 90px;
+    }
+  }
+}
+
+.content-map {
+  position: absolute;
+  top: 30px;
+}
