@@ -1,5 +1,6 @@
 //colors
 .color-primary { color: $primary-color; }
+.color-light { color: $light-color; }
 
 //image
 .bg-image {
@@ -7,12 +8,36 @@
   background-position: center;
   background-repeat: no-repeat;
   &.bg-contain { background-size: contain; }
+  &.bg-repeat { background-repeat: repeat; }
   &.bg-icon {
     height: 20px;
     width: 20px;
     display: inline-block
   }
+  &.bg-icon-buscador {
+    width: 15px;
+    height: 15px;
+    margin-top: 2px;
+    margin-left: 15px;
+  }
+  &.bg-product {
+    width: 100%;
+    padding-bottom:calc(140%);
+  }
+  &.bg-shadow {
+    width: 100%;
+    height: 50px;
+  }
+  &.bg-new {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -10px;
+    margin: 0px;
+  }
 }
+
+
 
 .bg-absolute {
   position: absolute;
@@ -35,10 +60,12 @@
 .margin-bottom          { margin-bottom: 15px; }
 .margin-bottom-large      { margin-bottom: 20px; }
 .margin-bottom-xlarge       { margin-bottom: 25px; }
+.margin-bottom--15p       { margin-bottom: -15%; }
 .no-margin-bottom       { margin-bottom: 0px; }
 
 .margin-top-bottom-small    { margin-top: 10px; margin-bottom: 10px; }
 .margin-top-bottom        { margin-top: 15px; margin-bottom: 15px; }
+.no-margin-top-bottom        { margin-top: 0px; margin-bottom: 0px; }
 
 .margin-right-xsmall       { margin-right: 5px; }
 .margin-right-small       { margin-right: 10px; }
@@ -51,7 +78,12 @@
 .margin-left          { margin-left: 15px; }
 .margin-left-large        { margin-left: 20px; }
 .margin-left-xlarge       { margin-left: 25px; }
+.margin-left-15p         { margin-left: 15%; }
 .margin-left--15p         { margin-left: -15%; }
+
+@media #{$small-and-down} {
+  .margin-bottom-25p-s { margin-bottom: 25%;}
+}
 
 .no-padding           { padding: 0px; }
 
@@ -110,6 +142,7 @@
 .top-0            { top: 0; }
 .top-100          { top: 100px; }
 .top--60          { top: -60px; }
+.top-20p          { top: 20%; }
 .top--15p         { top: -15%; }
 .top--20p         { top: -20%; }
 
@@ -139,7 +172,18 @@
 
 .alight-middle { vertical-align: middle; }
 
-//border
+//border 
+
+// Shadow
+
+.shadow-products {
+  width: 90%;
+  margin: 20px auto;
+  box-shadow: -2px 8px 6px 3px rgba(0, 0, 0, 0.1);
+  &.shadow-menu {
+    width: 70%;
+  }
+}
 
 
 
@@ -158,13 +202,33 @@
     height: 70px;
     display: inline-block;
     vertical-align: middle;
+    @media #{$small-and-down} {
+      width: 40px;
+      height: 50px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
     &.img-large {
       width: 90px;
+      @media #{$small-and-down} {
+        width: 60px;
+      }
     }
   }
 }
 
+.img-map {
+    max-width: 140%;
+    margin-left: -20%;
+    margin-top: -30%;
+}
 .content-map {
+  border: 15px solid $primary-color;
   position: absolute;
-  top: 30px;
+  top: 0px;
+  width: calc(100% - 21px); 
+  iframe {
+    height: 300px;
+    width: 100%;
+  }
 }

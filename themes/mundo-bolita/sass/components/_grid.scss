@@ -154,3 +154,48 @@
     }
   }
 }
+
+
+.col-product {
+  float: left;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  min-height: 1px;
+  width: 25%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  position: relative;
+  div.bg-ligh-opacity {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 100%;
+    padding-bottom: calc(140% - 30px);
+    position: absolute;
+    top: 15px;
+    z-index: -1;
+  }
+  &:first-child .bg-ligh-opacity,
+  &:nth-child(4n+1) .bg-ligh-opacity,
+  &:nth-child(8n+1) .bg-ligh-opacity,
+  &:nth-child(12n+1) .bg-ligh-opacity,
+  &:nth-child(16n+1) .bg-ligh-opacity,
+  &:nth-child(20n+1) .bg-ligh-opacity,
+  &:nth-child(24n+1) .bg-ligh-opacity,
+  &:nth-child(28n+1) .bg-ligh-opacity,
+  &:nth-child(32n+1) .bg-ligh-opacity{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }  
+  &:nth-child(3n+1) .bg-ligh-opacity,
+  &:nth-child(7n+1) .bg-ligh-opacity,
+  &:nth-child(11n+1) .bg-ligh-opacity,
+  &:nth-child(15n+1) .bg-ligh-opacity,
+  &:nth-child(19n+1) .bg-ligh-opacity,
+  &:nth-child(23n+1) .bg-ligh-opacity,
+  &:nth-child(27n+1) .bg-ligh-opacity,
+  &:nth-child(31n+1) .bg-ligh-opacity {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }  
+}
+

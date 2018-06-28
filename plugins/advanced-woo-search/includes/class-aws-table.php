@@ -712,8 +712,26 @@ if ( ! class_exists( 'AWS_Table' ) ) :
 
             $str = trim( preg_replace( '/\s+/', ' ', $str ) );
 
+            /**
+             * Filters extracted string
+             *
+             * @since 1.44
+             *
+             * @param string $str String of product content
+             */
+            $str = apply_filters( 'aws_extracted_string', $str );
+
             $str_array = array_count_values( explode( ' ', $str ) );
             $str_array = AWS_Helpers::filter_stopwords( $str_array );
+
+            /**
+             * Filters extracted terms before adding to index table
+             *
+             * @since 1.44
+             *
+             * @param string $str_array Array of terms
+             */
+            $str_array = apply_filters( 'aws_extracted_terms', $str_array );
 
             return $str_array;
 

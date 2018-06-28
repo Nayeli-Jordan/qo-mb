@@ -45,6 +45,8 @@
 
 		<!--Import Google Icon Font-->
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:700i" rel="stylesheet">
+
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.css">
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection" />
@@ -64,32 +66,35 @@
 	<body class="bg-image" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 		<header class="js-header relative">		
 			<h1 class="hide"><?php bloginfo('name'); ?></h1>	
-			<img class="responsive-img absolute left-15p bottom-30 width-20p" src="<?php echo THEMEPATH; ?>images/boli-superior-izq.png" alt="Imagen luna">
-			<img class="responsive-img absolute right-10p bottom--50 width-20p" src="<?php echo THEMEPATH; ?>images/boli-superior-der.png" alt="Imagen luna">	
+			<img class="responsive-img absolute left-15p bottom-30 width-20p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+			<img class="responsive-img absolute right-10p bottom--50 width-20p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">	
 			<img class="responsive-img absolute top-0" src="<?php echo THEMEPATH; ?>images/nubes-azules.png" alt="Imagen de nube">
 			<img class="responsive-img relative top-0" src="<?php echo THEMEPATH; ?>images/nube-blanca-large.png" alt="Imagen de nube">
 			<img class="responsive-img absolute bottom-0 right--20 width-30p" src="<?php echo THEMEPATH; ?>images/nube-blanca-small.png" alt="Imagen de nube">
-			<div class="absolute width-100p top-100">
+			<div class="absolute width-100p top-20p">
 				<div class="container">
 					<div class="row">
 						<div class="col s4 m3">
-							<a href="">
+							<a href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
 								<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/facebook.png);"></div>								
 							</a>
-							<a href="tel:">
+							<a href="https://www.instagram.com/mundobolitaizcalli/">
+								<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/instagram.png);"></div>								
+							</a>
+							<a href="tel:+5558689360">
 								<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/telefono.png);"></div>								
 							</a>
-							<a href="mailto:">
+							<a href="mailto:mundo.bolita@altoempleo.com.mx">
 								<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/correo.png);"></div>								
 							</a>
 						</div>
 						<div class="col s4 m6 text-center">
-							<a href="">
+							<a href="<?php echo SITEURL ?>">
 								<img class="responsive-img logo" src="<?php echo THEMEPATH; ?>images/identidad/logo.png" alt="logo mundo bolita">	
 							</a>											
 						</div>
 						<div class="col s4 m3 text-right">
-							<a href="">
+							<a href="<?php echo SITEURL ?>">
 								<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home.png);"></div>
 							</a>
 							<a href="">
@@ -104,12 +109,20 @@
 			</div>	
 		</header>
 		<div class="[ main-body ]">
-			<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
-				<div class="bg-image bg-absolute z-index--1 top--15p left-5p" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
+			<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
+				<div class="bg-image bg-contain bg-repeat bg-absolute z-index--1 top--15p left-5p" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
 				<section class="container text-center relative">
 					<img class="responsive-img absolute width-30p margin-left--15p z-index--1 top--60" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
 					<h2 class="uppercase color-primary">Catálogo</h2>
-					<?php echo do_shortcode( '[aws_search_form]' ); ?>
+					<div class="row">
+						<div class="col s12 m8 offset-m2 relative">
+							<?php echo do_shortcode( '[aws_search_form]' ); ?>
+							<div class="shadow-buscador"></div>
+							<div class="content-icon-buscador">
+								<div class="bg-image bg-contain bg-icon-buscador" style="background-image: url(<?php echo THEMEPATH; ?>images/lupa.png);"></div>
+							</div>							
+						</div>
+					</div>					
 					<ul class="mb-nav">
 						<?php
 							$menu_name = 'top_menu';
@@ -128,4 +141,8 @@
 							echo $menu_list;
 						?>						
 					</ul>
+
+					<div class="clearfix"></div>
+	   				<div class="shadow-products shadow-menu"></div>
+
 				</section>

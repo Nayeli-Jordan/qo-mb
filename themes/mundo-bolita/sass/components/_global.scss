@@ -2,6 +2,7 @@
 
 html {
  box-sizing: border-box;
+ //overflow-y: hidden;
 }
 *, *:before, *:after {
  box-sizing: inherit;
@@ -11,6 +12,7 @@ body {
   // display: flex;
   // min-height: 100vh;
   // flex-direction: column;
+  //overflow-y: hidden;
 }
 
 main {
@@ -37,7 +39,7 @@ ul {
 }
 
 a {
-	color: $link-color;
+	color: $primary-color;
 	text-decoration: none;
 
   // Gets rid of tap active state

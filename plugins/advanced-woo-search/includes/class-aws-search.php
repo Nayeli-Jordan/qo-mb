@@ -429,7 +429,12 @@ if ( ! class_exists( 'AWS_Search' ) ) :
                         $marked_content = $this->mark_search_words( $title, $excerpt );
 
                         $title   = $marked_content['title'];
-                        $excerpt = $marked_content['content'];
+
+                        if ( $marked_content['content'] ) {
+                            $excerpt = $marked_content['content'];
+                        } else {
+                            $excerpt = wp_trim_words( $excerpt, $excerpt_length, '...' );
+                        }
 
                     } else {
                         $excerpt = wp_trim_words( $excerpt, $excerpt_length, '...' );

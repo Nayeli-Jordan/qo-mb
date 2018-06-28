@@ -20,3 +20,58 @@ label {
 @import 'select';
 @import 'file-input';
 @import 'range';
+
+.aws-search-form {
+	input.aws-search-field {
+	    background-color: #fff!important;
+	    border-radius: 20px!important;
+	    text-align: center!important;
+	    border: 0px!important;
+	    height: 30px!important;
+	    line-height: 30px!important;		
+	    padding-right: 0px!important;	
+	}
+
+}
+.shadow-buscador {
+	&:before, &:after {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		bottom: 18px;
+		width: 50%;
+		height: 20%;
+		max-width: 300px;
+		max-height: 100px;
+		-webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+		-moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+		box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    }
+    &:before {
+		left: 20px;
+		-webkit-transform: rotate(-3deg);
+		-moz-transform: rotate(-3deg);
+		-ms-transform: rotate(-3deg);
+		-o-transform: rotate(-3deg);
+		transform: rotate(-3deg);
+    }
+    &:after {
+		right: 20px;
+		-webkit-transform: rotate(3deg);
+		-moz-transform: rotate(3deg);
+		-ms-transform: rotate(3deg);
+		-o-transform: rotate(3deg);
+		transform: rotate(3deg);
+    }
+}
+
+.content-icon-buscador {
+	position: absolute;
+	top: 5px;
+    right: 10px;
+    width: 55px;
+    height: 22px;
+    z-index: 2;
+    text-align: center;
+    border-left: 1px solid #000;
+}

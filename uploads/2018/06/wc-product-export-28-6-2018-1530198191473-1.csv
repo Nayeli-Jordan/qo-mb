@@ -1,0 +1,152 @@
+ID	Tipo	SKU	Nombre	Publicado	¿Es destacado?	Visibilidad en catálogo	Descripción corta	Descripción	Fecha de inicio de oferta	Fecha de fin de oferta	Status de Impuesto	Clase de impuesto	¿En existencia?	Disponibilidad	¿Permitir sobre pedidos?	¿Vender individualmente?	Peso (kg)	Largo (cm)	Ancho (cm)	Alto (cm)	¿Permitir opiniones de los clientes?	Nota de compra	Precio de oferta:	Precio regular:	Categorías	Etiquetas	Clase de Envío	Imágenes	Límite de descarga	Caducidad en días de descarga	Padre	Productos agrupados.	Productos-complementarios (Up-Sells)	Ventas Cruzadas	URL externa	Texto del botón	Posición
+1	simple		Boliana	1	1	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+2	simple		Boliariel	1	1	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+3	simple		Boliariel Sirena	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+4	simple		Boliaurora	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+5	simple		Bolibellita	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+6	simple		Bolibeast	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+7	simple		Boliblanca Nieves	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+8	simple		Bolicienta	1	1	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+9	simple		Bolielena	1	1	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+10	simple		Bolielsa	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+11	simple		Bolirapunsel	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+12	simple		Bolitinker Bell	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+13	simple		Bolivaliente	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+14	simple		Boliprincesa Sofia	1	0	visible					taxable		1		0	0					1				PRINCESAS			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+15	simple		Bolipool	1	0	visible					taxable		1		0	0					1				Héroes			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+16	simple		Bolijoker	1	1	visible					taxable		1		0	0					1				Héroes			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+17	simple		Boliharley Queen	1	1	visible					taxable		1		0	0					1				Héroes			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+18	simple		Bolibatichica	1	0	visible					taxable		1		0	0					1				Héroes			http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png									0
+19	simple		Bolibatman	1	0	visible					taxable		1		0	0					1				Héroes												
+20	simple		Boliflash	1	0	visible					taxable		1		0	0					1				Héroes												
+21	simple		Boliwonder Woman	1	0	visible					taxable		1		0	0					1				Héroes												
+22	simple		Bolisuperchica	1	0	visible					taxable		1		0	0					1				Héroes												
+23	simple		Bolisuperman	1	0	visible					taxable		1		0	0					1				Héroes												
+24	simple		Boliblck Spiderman	1	0	visible					taxable		1		0	0					1				Héroes												
+25	simple		Bolispiderman	1	0	visible					taxable		1		0	0					1				Héroes												
+26	simple		Bolithor	1	0	visible					taxable		1		0	0					1				Héroes												
+27	simple		Bolicapitán América	1	0	visible					taxable		1		0	0					1				Héroes												
+28	simple		Bolironman	1	0	visible					taxable		1		0	0					1				Héroes												
+29	simple		Bolimiguel	1	0	visible					taxable		1		0	0					1				Películas y TV												
+30	simple		Bolieverest	1	0	visible					taxable		1		0	0					1				Películas y TV												
+31	simple		Bolikitty	1	0	visible					taxable		1		0	0					1				Películas y TV												
+32	simple		Boliunicornio pastel	1	0	visible					taxable		1		0	0					1				Películas y TV												
+33	simple		Boliunicornio arcoíris	1	0	visible					taxable		1		0	0					1				Películas y TV												
+34	simple		Bolimasha	1	0	visible					taxable		1		0	0					1				Películas y TV												
+35	simple		Bolioso	1	0	visible					taxable		1		0	0					1				Películas y TV												
+36	simple		Bolimasha lentes	1	1	visible					taxable		1		0	0					1				Películas y TV												
+37	simple		Bolitigger	1	0	visible					taxable		1		0	0					1				Películas y TV												
+38	simple		Bolipooh	1	0	visible					taxable		1		0	0					1				Películas y TV												
+39	simple		Bolipocoyo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+40	simple		Bolielly	1	0	visible					taxable		1		0	0					1				Películas y TV												
+41	simple		Bolicookie Monster	1	0	visible					taxable		1		0	0					1				Películas y TV												
+42	simple		Bolielmo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+43	simple		Bolimichey Bebé	1	0	visible					taxable		1		0	0					1				Películas y TV												
+44	simple		Boliminnie Bebé	1	0	visible					taxable		1		0	0					1				Películas y TV												
+45	simple		Boliminnie Rosa	1	0	visible					taxable		1		0	0					1				Películas y TV												
+46	simple		Boliminnie Roja	1	0	visible					taxable		1		0	0					1				Películas y TV												
+47	simple		Bolimickey Mouse	1	0	visible					taxable		1		0	0					1				Películas y TV												
+48	simple		Bolijorge	1	0	visible					taxable		1		0	0					1				Películas y TV												
+49	simple		Bolidoki	1	0	visible					taxable		1		0	0					1				Películas y TV												
+50	simple		Bolijake	1	0	visible					taxable		1		0	0					1				Películas y TV												
+51	simple		Boligallina Pintadita	1	0	visible					taxable		1		0	0					1				Películas y TV												
+52	simple		Bolishopkins verde	1	0	visible					taxable		1		0	0					1				Películas y TV												
+53	simple		Bolishopkins rosa	1	0	visible					taxable		1		0	0					1				Películas y TV												
+54	simple		Bolichilindrina	1	0	visible					taxable		1		0	0					1				Películas y TV												
+55	simple		Bolicleo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+56	simple		Bolichavo del ocho	1	0	visible					taxable		1		0	0					1				Películas y TV												
+57	simple		Bolibailarina	1	0	visible					taxable		1		0	0					1				Películas y TV												
+58	simple		Bolidra Juguetes	1	0	visible					taxable		1		0	0					1				Películas y TV												
+59	simple		Bolilambie	1	1	visible					taxable		1		0	0					1				Películas y TV												
+60	simple		Bolilady Bug	1	0	visible					taxable		1		0	0					1				Películas y TV												
+61	simple		Bolishine	1	0	visible					taxable		1		0	0					1				Películas y TV												
+62	simple		Bolishimmer	1	0	visible					taxable		1		0	0					1				Películas y TV												
+63	simple		Bolipeppa Hada	1	0	visible					taxable		1		0	0					1				Películas y TV												
+64	simple		Boligeorge Pig	1	0	visible					taxable		1		0	0					1				Películas y TV												
+65	simple		Bolipeppa Pig	1	0	visible					taxable		1		0	0					1				Películas y TV												
+66	simple		Bolisparkle	1	0	visible					taxable		1		0	0					1				Películas y TV												
+67	simple		Bolirainbow Dash	1	0	visible					taxable		1		0	0					1				Películas y TV												
+68	simple		Bolichamoy	1	0	visible					taxable		1		0	0					1				Películas y TV												
+69	simple		Bolimerito morado	1	0	visible					taxable		1		0	0					1				Películas y TV												
+70	simple		Bolimerito rosa	1	0	visible					taxable		1		0	0					1				Películas y TV												
+71	simple		Boliazul	1	0	visible					taxable		1		0	0					1				Películas y TV												
+72	simple		Bolichimuelo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+73	simple		Bolichase	1	0	visible					taxable		1		0	0					1				Películas y TV												
+74	simple		Bolisky	1	0	visible					taxable		1		0	0					1				Películas y TV												
+75	simple		Boliryder	1	0	visible					taxable		1		0	0					1				Películas y TV												
+76	simple		Bolimarshall	1	0	visible					taxable		1		0	0					1				Películas y TV												
+77	simple		Bolicat Boy	1	0	visible					taxable		1		0	0					1				Películas y TV												
+78	simple		Boliuluette	1	0	visible					taxable		1		0	0					1				Películas y TV												
+79	simple		Boligeko	1	0	visible					taxable		1		0	0					1				Películas y TV												
+80	simple		Boliprincipito	1	0	visible					taxable		1		0	0					1				Películas y TV												
+81	simple		Boligoku	1	0	visible					taxable		1		0	0					1				Películas y TV												
+82	simple		Bolipokebola	1	0	visible					taxable		1		0	0					1				Películas y TV												
+83	simple		Bolicharizard	1	0	visible					taxable		1		0	0					1				Películas y TV												
+84	simple		Bolicharmander	1	0	visible					taxable		1		0	0					1				Películas y TV												
+85	simple		Bolipikachu	1	0	visible					taxable		1		0	0					1				Películas y TV												
+86	simple		Bolimoana	1	0	visible					taxable		1		0	0					1				Películas y TV												
+87	simple		Bolicoco	1	0	visible					taxable		1		0	0					1				Películas y TV												
+88	simple		Bolirafael	1	0	visible					taxable		1		0	0					1				Películas y TV												
+89	simple		Bolionardo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+90	simple		Bolimiguel Ángel	1	0	visible					taxable		1		0	0					1				Películas y TV												
+91	simple		Bolidonatello	1	0	visible					taxable		1		0	0					1				Películas y TV												
+92	simple		Boliharry Potter	1	0	visible					taxable		1		0	0					1				Películas y TV												
+93	simple		Boliminion	1	0	visible					taxable		1		0	0					1				Películas y TV												
+94	simple		Boliagnes	1	0	visible					taxable		1		0	0					1				Películas y TV												
+95	simple		Boliramón Feliz	1	0	visible					taxable		1		0	0					1				Películas y TV												
+96	simple		Bolipoppy	1	0	visible					taxable		1		0	0					1				Películas y TV												
+97	simple		Boliramón Gruñón	1	0	visible					taxable		1		0	0					1				Películas y TV												
+98	simple		Bolisullivan	1	0	visible					taxable		1		0	0					1				Películas y TV												
+99	simple		Boliboo	1	0	visible					taxable		1		0	0					1				Películas y TV												
+100	simple		Bolimike 	1	0	visible					taxable		1		0	0					1				Películas y TV												
+101	simple		Bolimia	1	0	visible					taxable		1		0	0					1				Películas y TV												
+102	simple		Bolimabel	1	0	visible					taxable		1		0	0					1				Películas y TV												
+103	simple		Bolistitch	1	0	visible					taxable		1		0	0					1				Películas y TV												
+104	simple		Boli Mr Increíble	1	0	visible					taxable		1		0	0					1				Películas y TV												
+105	simple		Boliclone	1	0	visible					taxable		1		0	0					1				Películas y TV												
+106	simple		Bolidarth Vader	1	0	visible					taxable		1		0	0					1				Películas y TV												
+107	simple		Boligatitosaurio	1	0	visible					taxable		1		0	0					1				Películas y TV												
+108	simple		Bolimarciano	1	0	visible					taxable		1		0	0					1				Películas y TV												
+109	simple		Bolilotso	1	0	visible					taxable		1		0	0					1				Películas y TV												
+110	simple		Boliwoody	1	0	visible					taxable		1		0	0					1				Películas y TV												
+111	simple		Bolijessy	1	0	visible					taxable		1		0	0					1				Películas y TV												
+112	simple		Bolibuzz	1	0	visible					taxable		1		0	0					1				Películas y TV												
+113	simple		Bolileón	1	0	visible					taxable		1		0	0					1				Animales												
+114	simple		Bolipanda	1	0	visible					taxable		1		0	0					1				Animales												
+115	simple		Bolipollo	1	0	visible					taxable		1		0	0					1				Animales												
+116	simple		Boliconejo	1	0	visible					taxable		1		0	0					1				Animales												
+117	simple		Bolielefante	1	0	visible					taxable		1		0	0					1				Animales												
+118	simple		Boligolden Freddy	1	0	visible					taxable		1		0	0					1				Video Juegos												
+119	simple		Bolizombie	1	0	visible					taxable		1		0	0					1				Video Juegos												
+120	simple		Bolifreddy	1	0	visible					taxable		1		0	0					1				Video Juegos												
+121	simple		Bolioso Maloso	1	0	visible					taxable		1		0	0					1				Video Juegos												
+122	simple		Bolisonic Boom	1	0	visible					taxable		1		0	0					1				Video Juegos												
+123	simple		Bolimario Bros	1	0	visible					taxable		1		0	0					1				Video Juegos												
+124	simple		Boliluigi Bros	1	0	visible					taxable		1		0	0					1				Video Juegos												
+125	simple		Bolimexicana	1	0	visible					taxable		1		0	0					1				Mexicanas												
+126	simple		Bolimariachi guitarra	1	0	visible					taxable		1		0	0					1				Mexicanas												
+127	simple		Bolimariachi	1	0	visible					taxable		1		0	0					1				Mexicanas												
+128	simple		Bolifrida	1	0	visible					taxable		1		0	0					1				Mexicanas												
+129	simple		Bolimaría	1	0	visible					taxable		1		0	0					1				Mexicanas												
+130	simple		Bolidiablo	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+131	simple		Bolibrujita	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+132	simple		Bolijack Skeleton	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+133	simple		Bolijack Skeleton sonrisa	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+134	simple		Bolicalavera bigote	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+135	simple		Bolicalavera 	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+136	simple		Bolivampiro	1	0	visible					taxable		1		0	0					1				Día de Muertos												
+137	simple		Bolijengibre	1	0	visible					taxable		1		0	0					1				Navidad												
+138	simple		Bolijengibre gorro	1	0	visible					taxable		1		0	0					1				Navidad												
+139	simple		Bolisanta Claus	1	0	visible					taxable		1		0	0					1				Navidad												
+140	simple		Bolipingüino	1	0	visible					taxable		1		0	0					1				Navidad												
+141	simple		Bolireno	1	0	visible					taxable		1		0	0					1				Navidad												
+142	simple		Bolioso Polar	1	0	visible					taxable		1		0	0					1				Navidad												
+143	simple		Bolimickey Navidad	1	0	visible					taxable		1		0	0					1				Navidad												
+144	simple		Boliangelita	1	0	visible					taxable		1		0	0					1				Bautizo/Primera Comunión												
+145	simple		Boliangelito	1	0	visible					taxable		1		0	0					1				Bautizo/Primera Comunión												
+146	simple		Boliangelito azul	1	0	visible					taxable		1		0	0					1				Bautizo/Primera Comunión												
+147	simple		Bolidino	1	0	visible					taxable		1		0	0					1				Otros												
+148	simple		Boliplayer América	1	0	visible					taxable		1		0	0					1				Otros												
+149	simple		Boliplayer Chivas	1	0	visible					taxable		1		0	0					1				Otros												
+150	simple		Bolipayaso	1	0	visible					taxable		1		0	0					1				Otros												
+151	simple		Bolipirata	1	0	visible					taxable		1		0	0					1				Otros												

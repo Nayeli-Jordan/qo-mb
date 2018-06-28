@@ -140,6 +140,9 @@ if ( ! class_exists( 'AWS_Helpers' ) ) :
                 "/",
                 "[",
                 "]",
+                "’",
+                "“",
+                "”"
             );
             
             return apply_filters( 'aws_special_chars', $chars );

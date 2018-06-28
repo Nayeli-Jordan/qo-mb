@@ -6,6 +6,7 @@
     var pluginPfx = 'aws_opts';
     var translate = {
         sale      : aws_vars.sale,
+        sku       : aws_vars.sku,
         showmore  : aws_vars.showmore,
         noresults : aws_vars.noresults
     };
@@ -161,7 +162,7 @@
                         }
 
                         if ( result.sku ) {
-                            html += '<span class="aws_result_sku">SKU: ' + result.sku + '</span>';
+                            html += '<span class="aws_result_sku">' + translate.sku + ': ' + result.sku + '</span>';
                         }
 
                         if ( result.excerpt ) {
