@@ -210,6 +210,10 @@ nav {
 .logo {
   width: 250px;
   margin-top: -20px;
+  @media #{$small-and-down} {
+    max-width: 150px!important;
+    margin-top: 0px;
+  }
 }
 
 .mb-nav {
@@ -217,5 +221,29 @@ nav {
     display: inline-block;
     padding: 0 10px;
     text-transform: uppercase;
+    @media #{$small-and-down} {
+      width: 50%;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+  }
+}
+
+
+@media #{$small-and-down} {
+  header {
+    margin-top:80px;
+    .menu-content {
+      top: -50px;
+    }
+    .nav-left, .nav-left {
+      display: inline-block;
+    }
+    .nav-left {
+      float:left;
+    }
+    .nav-right {
+      float: right;
+    }
   }
 }

@@ -5240,14 +5240,51 @@ nav .input-field label.active i {
   width: 250px;
   margin-top: -20px;
 }
+@media only screen and (max-width: 600px) {
+  /* line 210, ../sass/components/_navbar.scss */
+  .logo {
+    max-width: 150px !important;
+    margin-top: 0px;
+  }
+}
 
-/* line 216, ../sass/components/_navbar.scss */
+/* line 220, ../sass/components/_navbar.scss */
 .mb-nav li {
   display: inline-block;
   padding: 0 10px;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 600px) {
+  /* line 220, ../sass/components/_navbar.scss */
+  .mb-nav li {
+    width: 50%;
+    vertical-align: middle;
+    font-size: 14px;
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  /* line 234, ../sass/components/_navbar.scss */
+  header {
+    margin-top: 80px;
+  }
+  /* line 236, ../sass/components/_navbar.scss */
+  header .menu-content {
+    top: -50px;
+  }
+  /* line 239, ../sass/components/_navbar.scss */
+  header .nav-left, header .nav-left {
+    display: inline-block;
+  }
+  /* line 242, ../sass/components/_navbar.scss */
+  header .nav-left {
+    float: left;
+  }
+  /* line 245, ../sass/components/_navbar.scss */
+  header .nav-right {
+    float: right;
+  }
+}
 /* line 2, ../sass/components/_typography.scss */
 a {
   text-decoration: none;
@@ -5292,44 +5329,44 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 
 /* line 32, ../sass/components/_typography.scss */
 h1 {
-  font-size: 4.2rem;
+  font-size: 42px;
   line-height: 110%;
-  margin: 2.8rem 0 1.68rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 33, ../sass/components/_typography.scss */
 h2 {
-  font-size: 3.56rem;
+  font-size: 40px;
   line-height: 110%;
-  margin: 2.3733333333rem 0 1.424rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 34, ../sass/components/_typography.scss */
 h3 {
-  font-size: 2.92rem;
+  font-size: 36px;
   line-height: 110%;
-  margin: 1.9466666667rem 0 1.168rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 35, ../sass/components/_typography.scss */
 h4 {
-  font-size: 2.28rem;
+  font-size: 32px;
   line-height: 110%;
-  margin: 1.52rem 0 0.912rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 36, ../sass/components/_typography.scss */
 h5 {
-  font-size: 1.64rem;
+  font-size: 28px;
   line-height: 110%;
-  margin: 1.0933333333rem 0 0.656rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 37, ../sass/components/_typography.scss */
 h6 {
-  font-size: 1.15rem;
+  font-size: 22px;
   line-height: 110%;
-  margin: 0.7666666667rem 0 0.46rem 0;
+  margin: 0 0 20px;
 }
 
 /* line 40, ../sass/components/_typography.scss */
@@ -10173,116 +10210,128 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   top: -20%;
 }
 
-/* line 149, ../sass/components/_utilities.scss */
+@media only screen and (max-width: 600px) {
+  /* line 150, ../sass/components/_utilities.scss */
+  .top-20-s {
+    top: 20px;
+  }
+}
+/* line 153, ../sass/components/_utilities.scss */
 .bottom-0 {
   bottom: 0;
 }
 
-/* line 150, ../sass/components/_utilities.scss */
+/* line 154, ../sass/components/_utilities.scss */
 .bottom-30 {
   bottom: 30px;
 }
 
-/* line 151, ../sass/components/_utilities.scss */
+/* line 155, ../sass/components/_utilities.scss */
 .bottom--50 {
   bottom: -50px;
 }
 
-/* line 152, ../sass/components/_utilities.scss */
+/* line 156, ../sass/components/_utilities.scss */
 .bottom--10p {
   bottom: -10%;
 }
 
-/* line 153, ../sass/components/_utilities.scss */
+/* line 157, ../sass/components/_utilities.scss */
 .bottom--15p {
   bottom: -15%;
 }
 
-/* line 154, ../sass/components/_utilities.scss */
+/* line 158, ../sass/components/_utilities.scss */
 .bottom-15p {
   bottom: 15%;
 }
 
-/* line 155, ../sass/components/_utilities.scss */
+/* line 159, ../sass/components/_utilities.scss */
 .bottom-20p {
   bottom: 20%;
 }
 
-/* line 156, ../sass/components/_utilities.scss */
+/* line 160, ../sass/components/_utilities.scss */
 .bottom-30p {
   bottom: 30%;
 }
 
-/* line 158, ../sass/components/_utilities.scss */
+/* line 162, ../sass/components/_utilities.scss */
 .rotate--180 {
   transform: rotate(-180deg);
 }
 
-/* line 161, ../sass/components/_utilities.scss */
+/* line 165, ../sass/components/_utilities.scss */
 .block {
   display: block;
 }
 
-/* line 162, ../sass/components/_utilities.scss */
+/* line 166, ../sass/components/_utilities.scss */
 .inline-block {
   display: inline-block;
 }
 
-/* line 164, ../sass/components/_utilities.scss */
+/* line 168, ../sass/components/_utilities.scss */
 .overflow-hide {
   overflow: hidden;
 }
 
-/* line 166, ../sass/components/_utilities.scss */
+/* line 170, ../sass/components/_utilities.scss */
 .z-index--1 {
   z-index: -1;
 }
 
-/* line 169, ../sass/components/_utilities.scss */
+/* line 173, ../sass/components/_utilities.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 170, ../sass/components/_utilities.scss */
+/* line 174, ../sass/components/_utilities.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 171, ../sass/components/_utilities.scss */
+/* line 175, ../sass/components/_utilities.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 173, ../sass/components/_utilities.scss */
+/* line 177, ../sass/components/_utilities.scss */
 .alight-middle {
   vertical-align: middle;
 }
 
-/* line 179, ../sass/components/_utilities.scss */
+@media only screen and (max-width: 600px) {
+  /* line 180, ../sass/components/_utilities.scss */
+  .text-center-s {
+    text-align: center;
+  }
+}
+/* line 187, ../sass/components/_utilities.scss */
 .shadow-products {
   width: 90%;
   margin: 20px auto;
   box-shadow: -2px 8px 6px 3px rgba(0, 0, 0, 0.1);
 }
-/* line 183, ../sass/components/_utilities.scss */
+/* line 191, ../sass/components/_utilities.scss */
 .shadow-products.shadow-menu {
   width: 70%;
 }
 
-/* line 190, ../sass/components/_utilities.scss */
+/* line 198, ../sass/components/_utilities.scss */
 .img-caracteristicas {
   margin: auto;
   width: 60%;
   padding-bottom: calc(35%);
 }
 
-/* line 196, ../sass/components/_utilities.scss */
+/* line 204, ../sass/components/_utilities.scss */
 .indicaciones-producto {
   position: absolute;
   width: 100%;
   bottom: 30px;
 }
-/* line 200, ../sass/components/_utilities.scss */
+/* line 208, ../sass/components/_utilities.scss */
 .indicaciones-producto .img-indicaciones {
   width: 80px;
   height: 70px;
@@ -10290,7 +10339,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   vertical-align: middle;
 }
 @media only screen and (max-width: 600px) {
-  /* line 200, ../sass/components/_utilities.scss */
+  /* line 208, ../sass/components/_utilities.scss */
   .indicaciones-producto .img-indicaciones {
     width: 40px;
     height: 50px;
@@ -10298,32 +10347,32 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
     margin-right: 5px;
   }
 }
-/* line 211, ../sass/components/_utilities.scss */
+/* line 219, ../sass/components/_utilities.scss */
 .indicaciones-producto .img-indicaciones.img-large {
   width: 90px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 211, ../sass/components/_utilities.scss */
+  /* line 219, ../sass/components/_utilities.scss */
   .indicaciones-producto .img-indicaciones.img-large {
     width: 60px;
   }
 }
 
-/* line 220, ../sass/components/_utilities.scss */
+/* line 228, ../sass/components/_utilities.scss */
 .img-map {
   max-width: 140%;
   margin-left: -20%;
   margin-top: -30%;
 }
 
-/* line 225, ../sass/components/_utilities.scss */
+/* line 233, ../sass/components/_utilities.scss */
 .content-map {
   border: 15px solid #bc1582;
   position: absolute;
   top: 0px;
   width: calc(100% - 21px);
 }
-/* line 230, ../sass/components/_utilities.scss */
+/* line 238, ../sass/components/_utilities.scss */
 .content-map iframe {
   height: 300px;
   width: 100%;
