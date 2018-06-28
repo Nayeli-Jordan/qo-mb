@@ -77,10 +77,10 @@
 						<div class="row">
 							<div class="col s12 m3">
 								<div class="nav-left">
-									<a href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
+									<a target="_blank" href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/facebook.png);"></div>								
 									</a>
-									<a href="https://www.instagram.com/mundobolitaizcalli/">
+									<a target="_blank" href="https://www.instagram.com/mundobolitaizcalli/">
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/instagram.png);"></div>								
 									</a>
 									<a href="tel:+5558689360">
@@ -155,8 +155,5 @@
 								echo $menu_list;
 							?>						
 						</ul>
-
 						<div class="clearfix"></div>
-		   				<div class="shadow-products shadow-menu"></div>
-
 					</section>

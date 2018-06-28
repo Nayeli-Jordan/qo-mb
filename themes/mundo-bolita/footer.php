@@ -1,4 +1,4 @@
-					<section class="container relative">
+					<section class="container relative margin-top-50">
 						<h2 class="color-primary text-center uppercase">Ubicación</h2>
 						<div class="row">
 							<div class="col s12 m5 margin-bottom-25p-s">
@@ -22,7 +22,10 @@
 					<img class="responsive-img relative z-index-1" src="<?php echo THEMEPATH; ?>images/fondo-pasto.png" alt="Imagen de pasto">
 					<div class="indicaciones-producto text-center">
 						<div class="container">
-							<div class="bg-image bg-contain img-caracteristicas" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);"></div>
+							<div class="bg-image bg-contain img-caracteristicas" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);">
+								<!-- <div class="shadow-buscador"></div><div class="shadow-buscador"></div>-->
+							</div>
+							
 							<br>
 							<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/fuego.png)"></div>
 							<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/agua.png)"></div>

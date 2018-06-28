@@ -1,0 +1,1070 @@
+2018-06-28T15:21:58+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:21:58+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:21:58+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:21:58+00:00 DEBUG ---
+2018-06-28T15:21:58+00:00 DEBUG Processing products.
+2018-06-28T15:21:58+00:00 DEBUG > Row 1 - preparing for merge.
+2018-06-28T15:21:58+00:00 DEBUG > &#8220;1&#8221; is not a product.
+2018-06-28T15:21:58+00:00 DEBUG > Row 2 - preparing for merge.
+2018-06-28T15:21:58+00:00 DEBUG > &#8220;2&#8221; is not a product.
+2018-06-28T15:21:58+00:00 DEBUG > Row 3 - preparing for merge.
+2018-06-28T15:21:58+00:00 DEBUG > &#8220;3&#8221; is not a product.
+2018-06-28T15:21:58+00:00 DEBUG > Row 4 - preparing for merge.
+2018-06-28T15:21:58+00:00 DEBUG > &#8220;4&#8221; is not a product.
+2018-06-28T15:21:58+00:00 DEBUG > Row 5 - preparing for merge.
+2018-06-28T15:21:58+00:00 DEBUG > Inserting Bolibellita
+2018-06-28T15:21:59+00:00 DEBUG > Inserted - post ID is 5.
+2018-06-28T15:22:00+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Bolibellita.png"
+2018-06-28T15:22:01+00:00 DEBUG > > Error importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Bolibellita.png"
+2018-06-28T15:22:01+00:00 DEBUG > > Error getting remote image
+2018-06-28T15:22:01+00:00 DEBUG > > Images set
+2018-06-28T15:22:02+00:00 DEBUG > Finished importing post ID 5.
+2018-06-28T15:22:02+00:00 DEBUG > Row 6 - preparing for merge.
+2018-06-28T15:22:02+00:00 DEBUG > Inserting Bolibeast
+2018-06-28T15:22:03+00:00 DEBUG > Inserted - post ID is 6.
+2018-06-28T15:22:04+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Bolibeast.png"
+2018-06-28T15:22:05+00:00 DEBUG > > Error importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Bolibeast.png"
+2018-06-28T15:22:05+00:00 DEBUG > > Error getting remote image
+2018-06-28T15:22:05+00:00 DEBUG > > Images set
+2018-06-28T15:22:05+00:00 DEBUG > Finished importing post ID 6.
+2018-06-28T15:22:05+00:00 DEBUG > Row 7 - preparing for merge.
+2018-06-28T15:22:05+00:00 DEBUG > Inserting Boliblanca Nieves
+2018-06-28T15:22:06+00:00 DEBUG > Inserted - post ID is 7.
+2018-06-28T15:22:07+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:07+00:00 DEBUG > > Inserted image attachment "Boliaurora-1.png"
+2018-06-28T15:22:07+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:07+00:00 DEBUG > > Images set
+2018-06-28T15:22:07+00:00 DEBUG > Finished importing post ID 7.
+2018-06-28T15:22:07+00:00 DEBUG > Row 8 - preparing for merge.
+2018-06-28T15:22:07+00:00 DEBUG > Inserting Bolicienta
+2018-06-28T15:22:08+00:00 DEBUG > Inserted - post ID is 8.
+2018-06-28T15:22:08+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:09+00:00 DEBUG > > Inserted image attachment "Boliaurora-2.png"
+2018-06-28T15:22:09+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:09+00:00 DEBUG > > Images set
+2018-06-28T15:22:09+00:00 DEBUG > Finished importing post ID 8.
+2018-06-28T15:22:09+00:00 DEBUG > Row 9 - preparing for merge.
+2018-06-28T15:22:09+00:00 DEBUG > Inserting Bolielena
+2018-06-28T15:22:10+00:00 DEBUG > Inserted - post ID is 9.
+2018-06-28T15:22:10+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:10+00:00 DEBUG > > Inserted image attachment "Boliaurora-3.png"
+2018-06-28T15:22:10+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:10+00:00 DEBUG > > Images set
+2018-06-28T15:22:11+00:00 DEBUG > Finished importing post ID 9.
+2018-06-28T15:22:11+00:00 DEBUG Finished processing products.
+2018-06-28T15:22:12+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:22:12+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:22:12+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:22:12+00:00 DEBUG ---
+2018-06-28T15:22:12+00:00 DEBUG Processing products.
+2018-06-28T15:22:12+00:00 DEBUG > Row 1 - preparing for merge.
+2018-06-28T15:22:12+00:00 DEBUG > Inserting Bolielsa
+2018-06-28T15:22:13+00:00 DEBUG > Inserted - post ID is 10.
+2018-06-28T15:22:15+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:15+00:00 DEBUG > > Inserted image attachment "Boliaurora-4.png"
+2018-06-28T15:22:15+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:15+00:00 DEBUG > > Images set
+2018-06-28T15:22:15+00:00 DEBUG > Finished importing post ID 10.
+2018-06-28T15:22:15+00:00 DEBUG > Row 2 - preparing for merge.
+2018-06-28T15:22:15+00:00 DEBUG > Inserting Bolirapunsel
+2018-06-28T15:22:16+00:00 DEBUG > Inserted - post ID is 11.
+2018-06-28T15:22:17+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:17+00:00 DEBUG > > Inserted image attachment "Boliaurora-5.png"
+2018-06-28T15:22:17+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:17+00:00 DEBUG > > Images set
+2018-06-28T15:22:17+00:00 DEBUG > Finished importing post ID 11.
+2018-06-28T15:22:17+00:00 DEBUG > Row 3 - preparing for merge.
+2018-06-28T15:22:17+00:00 DEBUG > Inserting Bolitinker Bell
+2018-06-28T15:22:18+00:00 DEBUG > Inserted - post ID is 12.
+2018-06-28T15:22:18+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:19+00:00 DEBUG > > Inserted image attachment "Boliaurora-6.png"
+2018-06-28T15:22:19+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:19+00:00 DEBUG > > Images set
+2018-06-28T15:22:19+00:00 DEBUG > Finished importing post ID 12.
+2018-06-28T15:22:19+00:00 DEBUG > Row 4 - preparing for merge.
+2018-06-28T15:22:19+00:00 DEBUG > Inserting Bolivaliente
+2018-06-28T15:22:19+00:00 DEBUG > Inserted - post ID is 13.
+2018-06-28T15:22:20+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:20+00:00 DEBUG > > Inserted image attachment "Boliaurora-7.png"
+2018-06-28T15:22:20+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:20+00:00 DEBUG > > Images set
+2018-06-28T15:22:20+00:00 DEBUG > Finished importing post ID 13.
+2018-06-28T15:22:20+00:00 DEBUG > Row 5 - preparing for merge.
+2018-06-28T15:22:20+00:00 DEBUG > Inserting Boliprincesa Sofia
+2018-06-28T15:22:21+00:00 DEBUG > Inserted - post ID is 14.
+2018-06-28T15:22:22+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:22+00:00 DEBUG > > Inserted image attachment "Boliaurora-8.png"
+2018-06-28T15:22:22+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-06-28T15:22:22+00:00 DEBUG > > Images set
+2018-06-28T15:22:22+00:00 DEBUG > Finished importing post ID 14.
+2018-06-28T15:22:22+00:00 DEBUG Finished processing products.
+2018-06-28T15:31:04+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:31:04+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:31:04+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:31:04+00:00 DEBUG ---
+2018-06-28T15:31:04+00:00 DEBUG Processing products.
+2018-06-28T15:31:04+00:00 DEBUG > Row 1 - preparing for merge.
+2018-06-28T15:31:04+00:00 DEBUG > &#8220;1&#8221; is not a product.
+2018-06-28T15:31:04+00:00 DEBUG > Row 2 - preparing for merge.
+2018-06-28T15:31:04+00:00 DEBUG > &#8220;2&#8221; is not a product.
+2018-06-28T15:31:04+00:00 DEBUG > Row 3 - preparing for merge.
+2018-06-28T15:31:04+00:00 DEBUG > &#8220;3&#8221; is not a product.
+2018-06-28T15:31:04+00:00 DEBUG > Row 4 - preparing for merge.
+2018-06-28T15:31:04+00:00 DEBUG > &#8220;4&#8221; is not a product.
+2018-06-28T15:31:04+00:00 DEBUG > Row 5 - preparing for merge.
+2018-06-28T15:31:04+00:00 DEBUG > Inserting Bolibellita
+2018-06-28T15:31:04+00:00 DEBUG > Inserted - post ID is 5.
+2018-06-28T15:31:05+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:05+00:00 DEBUG > > Inserted image attachment "bolipayaso-1.png"
+2018-06-28T15:31:05+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:06+00:00 DEBUG > > Images set
+2018-06-28T15:31:06+00:00 DEBUG > Finished importing post ID 5.
+2018-06-28T15:31:06+00:00 DEBUG > Row 6 - preparing for merge.
+2018-06-28T15:31:06+00:00 DEBUG > Inserting Bolibeast
+2018-06-28T15:31:06+00:00 DEBUG > Inserted - post ID is 6.
+2018-06-28T15:31:09+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:09+00:00 DEBUG > > Inserted image attachment "bolipayaso-2.png"
+2018-06-28T15:31:09+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:10+00:00 DEBUG > > Images set
+2018-06-28T15:31:10+00:00 DEBUG > Finished importing post ID 6.
+2018-06-28T15:31:10+00:00 DEBUG > Row 7 - preparing for merge.
+2018-06-28T15:31:10+00:00 DEBUG > Inserting Boliblanca Nieves
+2018-06-28T15:31:11+00:00 DEBUG > Inserted - post ID is 7.
+2018-06-28T15:31:13+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:13+00:00 DEBUG > > Inserted image attachment "bolipayaso-3.png"
+2018-06-28T15:31:13+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:13+00:00 DEBUG > > Images set
+2018-06-28T15:31:13+00:00 DEBUG > Finished importing post ID 7.
+2018-06-28T15:31:13+00:00 DEBUG > Row 8 - preparing for merge.
+2018-06-28T15:31:13+00:00 DEBUG > Inserting Bolicienta
+2018-06-28T15:31:14+00:00 DEBUG > Inserted - post ID is 8.
+2018-06-28T15:31:15+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:15+00:00 DEBUG > > Inserted image attachment "bolipayaso-4.png"
+2018-06-28T15:31:15+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:16+00:00 DEBUG > > Images set
+2018-06-28T15:31:16+00:00 DEBUG > Finished importing post ID 8.
+2018-06-28T15:31:16+00:00 DEBUG > Row 9 - preparing for merge.
+2018-06-28T15:31:16+00:00 DEBUG > Inserting Bolielena
+2018-06-28T15:31:18+00:00 DEBUG > Inserted - post ID is 9.
+2018-06-28T15:31:21+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:21+00:00 DEBUG > > Inserted image attachment "bolipayaso-5.png"
+2018-06-28T15:31:21+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:22+00:00 DEBUG > > Images set
+2018-06-28T15:31:22+00:00 DEBUG > Finished importing post ID 9.
+2018-06-28T15:31:22+00:00 DEBUG Finished processing products.
+2018-06-28T15:31:26+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:31:26+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:31:26+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:31:26+00:00 DEBUG ---
+2018-06-28T15:31:26+00:00 DEBUG Processing products.
+2018-06-28T15:31:26+00:00 DEBUG > Row 1 - preparing for merge.
+2018-06-28T15:31:26+00:00 DEBUG > Inserting Bolielsa
+2018-06-28T15:31:27+00:00 DEBUG > Inserted - post ID is 10.
+2018-06-28T15:31:28+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:29+00:00 DEBUG > > Inserted image attachment "bolipayaso-6.png"
+2018-06-28T15:31:29+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:29+00:00 DEBUG > > Images set
+2018-06-28T15:31:29+00:00 DEBUG > Finished importing post ID 10.
+2018-06-28T15:31:29+00:00 DEBUG > Row 2 - preparing for merge.
+2018-06-28T15:31:29+00:00 DEBUG > Inserting Bolirapunsel
+2018-06-28T15:31:30+00:00 DEBUG > Inserted - post ID is 11.
+2018-06-28T15:31:32+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:32+00:00 DEBUG > > Inserted image attachment "bolipayaso-7.png"
+2018-06-28T15:31:32+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:32+00:00 DEBUG > > Images set
+2018-06-28T15:31:32+00:00 DEBUG > Finished importing post ID 11.
+2018-06-28T15:31:32+00:00 DEBUG > Row 3 - preparing for merge.
+2018-06-28T15:31:32+00:00 DEBUG > Inserting Bolitinker Bell
+2018-06-28T15:31:35+00:00 DEBUG > Inserted - post ID is 12.
+2018-06-28T15:31:41+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:42+00:00 DEBUG > > Inserted image attachment "bolipayaso-8.png"
+2018-06-28T15:31:42+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:43+00:00 DEBUG > > Images set
+2018-06-28T15:31:44+00:00 DEBUG > Finished importing post ID 12.
+2018-06-28T15:31:44+00:00 DEBUG > Row 4 - preparing for merge.
+2018-06-28T15:31:44+00:00 DEBUG > Inserting Bolivaliente
+2018-06-28T15:31:47+00:00 DEBUG > Inserted - post ID is 13.
+2018-06-28T15:31:54+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:55+00:00 DEBUG > > Inserted image attachment "bolipayaso-9.png"
+2018-06-28T15:31:55+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:31:56+00:00 DEBUG > > Images set
+2018-06-28T15:31:56+00:00 DEBUG > Finished importing post ID 13.
+2018-06-28T15:31:56+00:00 DEBUG > Row 5 - preparing for merge.
+2018-06-28T15:31:56+00:00 DEBUG > Inserting Boliprincesa Sofia
+2018-06-28T15:32:01+00:00 DEBUG > Inserted - post ID is 14.
+2018-06-28T15:32:07+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:07+00:00 DEBUG > > Inserted image attachment "bolipayaso-10.png"
+2018-06-28T15:32:07+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:08+00:00 DEBUG > > Images set
+2018-06-28T15:32:08+00:00 DEBUG > Finished importing post ID 14.
+2018-06-28T15:32:08+00:00 DEBUG > Row 6 - preparing for merge.
+2018-06-28T15:32:08+00:00 DEBUG > Inserting Bolipool
+2018-06-28T15:32:13+00:00 DEBUG > Inserted - post ID is 15.
+2018-06-28T15:32:24+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:25+00:00 DEBUG > > Inserted image attachment "bolipayaso-11.png"
+2018-06-28T15:32:25+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:26+00:00 DEBUG > > Images set
+2018-06-28T15:32:27+00:00 DEBUG > Finished importing post ID 15.
+2018-06-28T15:32:27+00:00 DEBUG > Row 7 - preparing for merge.
+2018-06-28T15:32:27+00:00 DEBUG > Inserting Bolijoker
+2018-06-28T15:32:34+00:00 DEBUG > Inserted - post ID is 16.
+2018-06-28T15:32:38+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:38+00:00 DEBUG > > Inserted image attachment "bolipayaso-12.png"
+2018-06-28T15:32:38+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:39+00:00 DEBUG > > Images set
+2018-06-28T15:32:40+00:00 DEBUG > Finished importing post ID 16.
+2018-06-28T15:32:40+00:00 DEBUG > Row 8 - preparing for merge.
+2018-06-28T15:32:40+00:00 DEBUG > Inserting Boliharley Queen
+2018-06-28T15:32:45+00:00 DEBUG > Inserted - post ID is 17.
+2018-06-28T15:32:48+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:49+00:00 DEBUG > > Inserted image attachment "bolipayaso-13.png"
+2018-06-28T15:32:49+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:49+00:00 DEBUG > > Images set
+2018-06-28T15:32:49+00:00 DEBUG > Finished importing post ID 17.
+2018-06-28T15:32:49+00:00 DEBUG > Row 9 - preparing for merge.
+2018-06-28T15:32:49+00:00 DEBUG > Inserting Bolibatichica
+2018-06-28T15:32:54+00:00 DEBUG > Inserted - post ID is 18.
+2018-06-28T15:32:59+00:00 DEBUG > > Importing image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:32:59+00:00 DEBUG > > Inserted image attachment "bolipayaso-14.png"
+2018-06-28T15:32:59+00:00 DEBUG > > Imported image "http://localhost:8888/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-06-28T15:33:00+00:00 DEBUG > > Images set
+2018-06-28T15:33:00+00:00 DEBUG > Finished importing post ID 18.
+2018-06-28T15:33:00+00:00 DEBUG > Row 10 - preparing for merge.
+2018-06-28T15:33:00+00:00 DEBUG > &#8220;19&#8221; is not a product.
+2018-06-28T15:33:00+00:00 DEBUG Finished processing products.
+2018-06-28T15:58:57+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:58:57+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:58:57+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:58:57+00:00 DEBUG ---
+2018-06-28T15:58:57+00:00 DEBUG Processing products.
+2018-06-28T15:58:57+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T15:58:57+00:00 DEBUG > &#8220;1&#8221; ID already exists.
+2018-06-28T15:58:57+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T15:58:57+00:00 DEBUG > &#8220;2&#8221; ID already exists.
+2018-06-28T15:58:57+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T15:58:57+00:00 DEBUG > &#8220;3&#8221; ID already exists.
+2018-06-28T15:58:57+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T15:58:57+00:00 DEBUG > &#8220;4&#8221; ID already exists.
+2018-06-28T15:58:57+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T15:58:57+00:00 DEBUG > Inserting Bolibellita
+2018-06-28T15:58:57+00:00 DEBUG > Inserted - post ID is 5.
+2018-06-28T15:58:59+00:00 DEBUG > Finished importing post ID 5.
+2018-06-28T15:58:59+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T15:58:59+00:00 DEBUG > Inserting Bolibeast
+2018-06-28T15:59:00+00:00 DEBUG > Inserted - post ID is 6.
+2018-06-28T15:59:01+00:00 DEBUG > Finished importing post ID 6.
+2018-06-28T15:59:01+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T15:59:01+00:00 DEBUG > Inserting Boliblanca Nieves
+2018-06-28T15:59:02+00:00 DEBUG > Inserted - post ID is 7.
+2018-06-28T15:59:05+00:00 DEBUG > Finished importing post ID 7.
+2018-06-28T15:59:05+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T15:59:05+00:00 DEBUG > Inserting Bolicienta
+2018-06-28T15:59:05+00:00 DEBUG > Inserted - post ID is 8.
+2018-06-28T15:59:07+00:00 DEBUG > Finished importing post ID 8.
+2018-06-28T15:59:07+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T15:59:07+00:00 DEBUG > Inserting Bolielena
+2018-06-28T15:59:08+00:00 DEBUG > Inserted - post ID is 9.
+2018-06-28T15:59:11+00:00 DEBUG > Finished importing post ID 9.
+2018-06-28T15:59:11+00:00 DEBUG Finished processing products.
+2018-06-28T15:59:13+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:59:13+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:59:13+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:59:13+00:00 DEBUG ---
+2018-06-28T15:59:13+00:00 DEBUG Processing products.
+2018-06-28T15:59:13+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T15:59:13+00:00 DEBUG > Inserting Bolielsa
+2018-06-28T15:59:15+00:00 DEBUG > Inserted - post ID is 10.
+2018-06-28T15:59:19+00:00 DEBUG > Finished importing post ID 10.
+2018-06-28T15:59:19+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T15:59:19+00:00 DEBUG > Inserting Bolirapunsel
+2018-06-28T15:59:20+00:00 DEBUG > Inserted - post ID is 11.
+2018-06-28T15:59:23+00:00 DEBUG > Finished importing post ID 11.
+2018-06-28T15:59:23+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T15:59:23+00:00 DEBUG > Inserting Bolitinker Bell
+2018-06-28T15:59:24+00:00 DEBUG > Inserted - post ID is 12.
+2018-06-28T15:59:27+00:00 DEBUG > Finished importing post ID 12.
+2018-06-28T15:59:27+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T15:59:27+00:00 DEBUG > Inserting Bolivaliente
+2018-06-28T15:59:28+00:00 DEBUG > Inserted - post ID is 13.
+2018-06-28T15:59:31+00:00 DEBUG > Finished importing post ID 13.
+2018-06-28T15:59:31+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T15:59:31+00:00 DEBUG > Inserting Boliprincesa Sofia
+2018-06-28T15:59:32+00:00 DEBUG > Inserted - post ID is 14.
+2018-06-28T15:59:35+00:00 DEBUG > Finished importing post ID 14.
+2018-06-28T15:59:35+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T15:59:35+00:00 DEBUG > Inserting Bolipool
+2018-06-28T15:59:36+00:00 DEBUG > Inserted - post ID is 15.
+2018-06-28T15:59:39+00:00 DEBUG > Finished importing post ID 15.
+2018-06-28T15:59:39+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T15:59:39+00:00 DEBUG > Inserting Bolijoker
+2018-06-28T15:59:40+00:00 DEBUG > Inserted - post ID is 16.
+2018-06-28T15:59:43+00:00 DEBUG > Finished importing post ID 16.
+2018-06-28T15:59:43+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T15:59:43+00:00 DEBUG > Inserting Boliharley Queen
+2018-06-28T15:59:44+00:00 DEBUG > Inserted - post ID is 17.
+2018-06-28T15:59:49+00:00 DEBUG > Finished importing post ID 17.
+2018-06-28T15:59:49+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T15:59:49+00:00 DEBUG > Inserting Bolibatichica
+2018-06-28T15:59:50+00:00 DEBUG > Inserted - post ID is 18.
+2018-06-28T15:59:53+00:00 DEBUG > Finished importing post ID 18.
+2018-06-28T15:59:53+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T15:59:53+00:00 DEBUG > &#8220;19&#8221; ID already exists.
+2018-06-28T15:59:53+00:00 DEBUG Finished processing products.
+2018-06-28T15:59:56+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T15:59:56+00:00 DEBUG Parsing products CSV.
+2018-06-28T15:59:56+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T15:59:56+00:00 DEBUG ---
+2018-06-28T15:59:56+00:00 DEBUG Processing products.
+2018-06-28T15:59:56+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T15:59:56+00:00 DEBUG > &#8220;20&#8221; ID already exists.
+2018-06-28T15:59:56+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T15:59:56+00:00 DEBUG > &#8220;21&#8221; ID already exists.
+2018-06-28T15:59:56+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T15:59:56+00:00 DEBUG > &#8220;22&#8221; ID already exists.
+2018-06-28T15:59:56+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T15:59:56+00:00 DEBUG > Inserting Bolisuperman
+2018-06-28T15:59:57+00:00 DEBUG > Inserted - post ID is 23.
+2018-06-28T16:00:00+00:00 DEBUG > Finished importing post ID 23.
+2018-06-28T16:00:00+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:00:00+00:00 DEBUG > Inserting Boliblack Spiderman
+2018-06-28T16:00:01+00:00 DEBUG > Inserted - post ID is 24.
+2018-06-28T16:00:03+00:00 DEBUG > Finished importing post ID 24.
+2018-06-28T16:00:03+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:00:03+00:00 DEBUG > Inserting Bolispiderman
+2018-06-28T16:00:04+00:00 DEBUG > Inserted - post ID is 25.
+2018-06-28T16:00:06+00:00 DEBUG > Finished importing post ID 25.
+2018-06-28T16:00:06+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:00:06+00:00 DEBUG > Inserting Bolithor
+2018-06-28T16:00:07+00:00 DEBUG > Inserted - post ID is 26.
+2018-06-28T16:00:10+00:00 DEBUG > Finished importing post ID 26.
+2018-06-28T16:00:10+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:00:10+00:00 DEBUG > Inserting Bolicapitán América
+2018-06-28T16:00:11+00:00 DEBUG > Inserted - post ID is 27.
+2018-06-28T16:00:14+00:00 DEBUG > Finished importing post ID 27.
+2018-06-28T16:00:14+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:00:14+00:00 DEBUG > Inserting Bolironman
+2018-06-28T16:00:16+00:00 DEBUG > Inserted - post ID is 28.
+2018-06-28T16:00:22+00:00 DEBUG > Finished importing post ID 28.
+2018-06-28T16:00:22+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:00:22+00:00 DEBUG > Inserting Bolimiguel
+2018-06-28T16:00:24+00:00 DEBUG > Inserted - post ID is 29.
+2018-06-28T16:00:26+00:00 DEBUG > Finished importing post ID 29.
+2018-06-28T16:00:26+00:00 DEBUG Finished processing products.
+2018-06-28T16:00:31+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:00:31+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:00:31+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:00:31+00:00 DEBUG ---
+2018-06-28T16:00:31+00:00 DEBUG Processing products.
+2018-06-28T16:00:31+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:00:31+00:00 DEBUG > &#8220;30&#8221; ID already exists.
+2018-06-28T16:00:31+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:00:31+00:00 DEBUG > &#8220;31&#8221; ID already exists.
+2018-06-28T16:00:31+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:00:31+00:00 DEBUG > Inserting Boliunicornio pastel
+2018-06-28T16:00:34+00:00 DEBUG > Inserted - post ID is 32.
+2018-06-28T16:00:37+00:00 DEBUG > Finished importing post ID 32.
+2018-06-28T16:00:37+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:00:37+00:00 DEBUG > Inserting Boliunicornio arcoíris
+2018-06-28T16:00:38+00:00 DEBUG > Inserted - post ID is 33.
+2018-06-28T16:00:43+00:00 DEBUG > Finished importing post ID 33.
+2018-06-28T16:00:43+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:00:43+00:00 DEBUG > Inserting Bolimasha
+2018-06-28T16:00:46+00:00 DEBUG > Inserted - post ID is 34.
+2018-06-28T16:00:51+00:00 DEBUG > Finished importing post ID 34.
+2018-06-28T16:00:51+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:00:51+00:00 DEBUG > Inserting Bolioso
+2018-06-28T16:00:52+00:00 DEBUG > Inserted - post ID is 35.
+2018-06-28T16:00:55+00:00 DEBUG > Finished importing post ID 35.
+2018-06-28T16:00:55+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:00:55+00:00 DEBUG > Inserting Bolimasha lentes
+2018-06-28T16:01:00+00:00 DEBUG > Inserted - post ID is 36.
+2018-06-28T16:01:07+00:00 DEBUG > Finished importing post ID 36.
+2018-06-28T16:01:07+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:01:07+00:00 DEBUG > Inserting Bolitigger
+2018-06-28T16:01:08+00:00 DEBUG > Inserted - post ID is 37.
+2018-06-28T16:01:14+00:00 DEBUG > Finished importing post ID 37.
+2018-06-28T16:01:14+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:01:14+00:00 DEBUG > &#8220;38&#8221; ID already exists.
+2018-06-28T16:01:14+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:01:14+00:00 DEBUG > Inserting Bolipocoyo
+2018-06-28T16:01:16+00:00 DEBUG > Inserted - post ID is 39.
+2018-06-28T16:01:19+00:00 DEBUG > Finished importing post ID 39.
+2018-06-28T16:01:19+00:00 DEBUG Finished processing products.
+2018-06-28T16:01:22+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:01:22+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:01:22+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:01:22+00:00 DEBUG ---
+2018-06-28T16:01:22+00:00 DEBUG Processing products.
+2018-06-28T16:01:22+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:01:22+00:00 DEBUG > Inserting Bolielly
+2018-06-28T16:01:23+00:00 DEBUG > Inserted - post ID is 40.
+2018-06-28T16:01:28+00:00 DEBUG > Finished importing post ID 40.
+2018-06-28T16:01:28+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:01:28+00:00 DEBUG > Inserting Bolicookie Monster
+2018-06-28T16:01:37+00:00 DEBUG > Inserted - post ID is 41.
+2018-06-28T16:01:42+00:00 DEBUG > Finished importing post ID 41.
+2018-06-28T16:01:42+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:01:42+00:00 DEBUG > Inserting Bolielmo
+2018-06-28T16:01:44+00:00 DEBUG > Inserted - post ID is 42.
+2018-06-28T16:01:47+00:00 DEBUG > Finished importing post ID 42.
+2018-06-28T16:01:47+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:01:47+00:00 DEBUG > Inserting Bolimichey Bebé
+2018-06-28T16:01:49+00:00 DEBUG > Inserted - post ID is 43.
+2018-06-28T16:01:54+00:00 DEBUG > Finished importing post ID 43.
+2018-06-28T16:01:54+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:01:54+00:00 DEBUG > Inserting Boliminnie Bebé
+2018-06-28T16:01:56+00:00 DEBUG > Inserted - post ID is 44.
+2018-06-28T16:01:58+00:00 DEBUG > Finished importing post ID 44.
+2018-06-28T16:01:58+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:01:58+00:00 DEBUG > Inserting Boliminnie Rosa
+2018-06-28T16:02:00+00:00 DEBUG > Inserted - post ID is 45.
+2018-06-28T16:02:08+00:00 DEBUG > Finished importing post ID 45.
+2018-06-28T16:02:08+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:02:08+00:00 DEBUG > Inserting Boliminnie Roja
+2018-06-28T16:02:11+00:00 DEBUG > Inserted - post ID is 46.
+2018-06-28T16:02:19+00:00 DEBUG > Finished importing post ID 46.
+2018-06-28T16:02:19+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:02:19+00:00 DEBUG > &#8220;47&#8221; ID already exists.
+2018-06-28T16:02:19+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:02:19+00:00 DEBUG > Inserting Bolijorge
+2018-06-28T16:02:21+00:00 DEBUG > Inserted - post ID is 48.
+2018-06-28T16:02:25+00:00 DEBUG > Finished importing post ID 48.
+2018-06-28T16:02:25+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:02:25+00:00 DEBUG > Inserting Bolidoki
+2018-06-28T16:02:26+00:00 DEBUG > Inserted - post ID is 49.
+2018-06-28T16:02:30+00:00 DEBUG > Finished importing post ID 49.
+2018-06-28T16:02:30+00:00 DEBUG Finished processing products.
+2018-06-28T16:02:34+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:02:34+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:02:34+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:02:34+00:00 DEBUG ---
+2018-06-28T16:02:34+00:00 DEBUG Processing products.
+2018-06-28T16:02:34+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:02:34+00:00 DEBUG > Inserting Bolijake
+2018-06-28T16:02:36+00:00 DEBUG > Inserted - post ID is 50.
+2018-06-28T16:02:44+00:00 DEBUG > Finished importing post ID 50.
+2018-06-28T16:02:44+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:02:44+00:00 DEBUG > Inserting Boligallina Pintadita
+2018-06-28T16:02:47+00:00 DEBUG > Inserted - post ID is 51.
+2018-06-28T16:02:54+00:00 DEBUG > Finished importing post ID 51.
+2018-06-28T16:02:54+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:02:54+00:00 DEBUG > Inserting Bolishopkins verde
+2018-06-28T16:02:57+00:00 DEBUG > Inserted - post ID is 52.
+2018-06-28T16:03:05+00:00 DEBUG > Finished importing post ID 52.
+2018-06-28T16:03:05+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:03:05+00:00 DEBUG > Inserting Bolishopkins rosa
+2018-06-28T16:03:07+00:00 DEBUG > Inserted - post ID is 53.
+2018-06-28T16:03:10+00:00 DEBUG > Finished importing post ID 53.
+2018-06-28T16:03:10+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:03:10+00:00 DEBUG > Inserting Bolichilindrina
+2018-06-28T16:03:11+00:00 DEBUG > Inserted - post ID is 54.
+2018-06-28T16:03:14+00:00 DEBUG > Finished importing post ID 54.
+2018-06-28T16:03:14+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:03:14+00:00 DEBUG > Inserting Bolicleo
+2018-06-28T16:03:15+00:00 DEBUG > Inserted - post ID is 55.
+2018-06-28T16:03:17+00:00 DEBUG > Finished importing post ID 55.
+2018-06-28T16:03:17+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:03:17+00:00 DEBUG > Inserting Bolichavo del ocho
+2018-06-28T16:03:18+00:00 DEBUG > Inserted - post ID is 56.
+2018-06-28T16:03:20+00:00 DEBUG > Finished importing post ID 56.
+2018-06-28T16:03:20+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:03:20+00:00 DEBUG > Inserting Bolibailarina
+2018-06-28T16:03:21+00:00 DEBUG > Inserted - post ID is 57.
+2018-06-28T16:03:23+00:00 DEBUG > Finished importing post ID 57.
+2018-06-28T16:03:23+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:03:23+00:00 DEBUG > Inserting Bolidra Juguetes
+2018-06-28T16:03:26+00:00 DEBUG > Inserted - post ID is 58.
+2018-06-28T16:03:32+00:00 DEBUG > Finished importing post ID 58.
+2018-06-28T16:03:32+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:03:32+00:00 DEBUG > Inserting Bolilambie
+2018-06-28T16:03:33+00:00 DEBUG > Inserted - post ID is 59.
+2018-06-28T16:03:34+00:00 DEBUG > Finished importing post ID 59.
+2018-06-28T16:03:34+00:00 DEBUG Finished processing products.
+2018-06-28T16:03:37+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:03:37+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:03:37+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:03:37+00:00 DEBUG ---
+2018-06-28T16:03:37+00:00 DEBUG Processing products.
+2018-06-28T16:03:37+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:03:37+00:00 DEBUG > Inserting Bolilady Bug
+2018-06-28T16:03:40+00:00 DEBUG > Inserted - post ID is 60.
+2018-06-28T16:03:47+00:00 DEBUG > Finished importing post ID 60.
+2018-06-28T16:03:47+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:03:47+00:00 DEBUG > Inserting Bolishine
+2018-06-28T16:03:48+00:00 DEBUG > Inserted - post ID is 61.
+2018-06-28T16:03:52+00:00 DEBUG > Finished importing post ID 61.
+2018-06-28T16:03:52+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:03:52+00:00 DEBUG > Inserting Bolishimmer
+2018-06-28T16:03:53+00:00 DEBUG > Inserted - post ID is 62.
+2018-06-28T16:03:56+00:00 DEBUG > Finished importing post ID 62.
+2018-06-28T16:03:56+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:03:56+00:00 DEBUG > Inserting Bolipeppa Hada
+2018-06-28T16:03:56+00:00 DEBUG > Inserted - post ID is 63.
+2018-06-28T16:04:01+00:00 DEBUG > Finished importing post ID 63.
+2018-06-28T16:04:01+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:04:01+00:00 DEBUG > Inserting Boligeorge Pig
+2018-06-28T16:04:02+00:00 DEBUG > Inserted - post ID is 64.
+2018-06-28T16:04:07+00:00 DEBUG > Finished importing post ID 64.
+2018-06-28T16:04:07+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:04:07+00:00 DEBUG > Inserting Bolipeppa Pig
+2018-06-28T16:04:10+00:00 DEBUG > Inserted - post ID is 65.
+2018-06-28T16:04:20+00:00 DEBUG > Finished importing post ID 65.
+2018-06-28T16:04:20+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:04:20+00:00 DEBUG > &#8220;66&#8221; ID already exists.
+2018-06-28T16:04:20+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:04:20+00:00 DEBUG > Inserting Bolirainbow Dash
+2018-06-28T16:04:24+00:00 DEBUG > Inserted - post ID is 67.
+2018-06-28T16:04:36+00:00 DEBUG > Finished importing post ID 67.
+2018-06-28T16:04:36+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:04:36+00:00 DEBUG > Inserting Bolichamoy
+2018-06-28T16:04:39+00:00 DEBUG > Inserted - post ID is 68.
+2018-06-28T16:04:47+00:00 DEBUG > Finished importing post ID 68.
+2018-06-28T16:04:47+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:04:47+00:00 DEBUG > Inserting Bolimerito morado
+2018-06-28T16:04:57+00:00 DEBUG > Inserted - post ID is 69.
+2018-06-28T16:05:10+00:00 DEBUG > Finished importing post ID 69.
+2018-06-28T16:05:10+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:09+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:09+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:10+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:10+00:00 DEBUG ---
+2018-06-28T16:07:10+00:00 DEBUG Processing products.
+2018-06-28T16:07:10+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;1&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;2&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;3&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;4&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;5&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;6&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;7&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;8&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:10+00:00 DEBUG > &#8220;9&#8221; ID already exists.
+2018-06-28T16:07:10+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:11+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:11+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:11+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:11+00:00 DEBUG ---
+2018-06-28T16:07:11+00:00 DEBUG Processing products.
+2018-06-28T16:07:11+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;10&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;11&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;12&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;13&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;14&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;15&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;16&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;17&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;18&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:11+00:00 DEBUG > &#8220;19&#8221; ID already exists.
+2018-06-28T16:07:11+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:13+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:13+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:13+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:13+00:00 DEBUG ---
+2018-06-28T16:07:13+00:00 DEBUG Processing products.
+2018-06-28T16:07:13+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;20&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;21&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;22&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;23&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;24&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;25&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;26&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;27&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;28&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:13+00:00 DEBUG > &#8220;29&#8221; ID already exists.
+2018-06-28T16:07:13+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:14+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:14+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:14+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:14+00:00 DEBUG ---
+2018-06-28T16:07:14+00:00 DEBUG Processing products.
+2018-06-28T16:07:14+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;30&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;31&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;32&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;33&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;34&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;35&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;36&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;37&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;38&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:14+00:00 DEBUG > &#8220;39&#8221; ID already exists.
+2018-06-28T16:07:14+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:16+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:16+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:16+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:16+00:00 DEBUG ---
+2018-06-28T16:07:16+00:00 DEBUG Processing products.
+2018-06-28T16:07:16+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;40&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;41&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;42&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;43&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;44&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;45&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;46&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;47&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;48&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:16+00:00 DEBUG > &#8220;49&#8221; ID already exists.
+2018-06-28T16:07:16+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:18+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:18+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:18+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:18+00:00 DEBUG ---
+2018-06-28T16:07:18+00:00 DEBUG Processing products.
+2018-06-28T16:07:18+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;50&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;51&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;52&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;53&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;54&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;55&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;56&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;57&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;58&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:18+00:00 DEBUG > &#8220;59&#8221; ID already exists.
+2018-06-28T16:07:18+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:19+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:19+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:19+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:19+00:00 DEBUG ---
+2018-06-28T16:07:19+00:00 DEBUG Processing products.
+2018-06-28T16:07:19+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;60&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;61&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;62&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;63&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;64&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;65&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;66&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;67&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;68&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:07:19+00:00 DEBUG > &#8220;69&#8221; ID already exists.
+2018-06-28T16:07:19+00:00 DEBUG Finished processing products.
+2018-06-28T16:07:21+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:07:21+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:07:21+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:07:21+00:00 DEBUG ---
+2018-06-28T16:07:21+00:00 DEBUG Processing products.
+2018-06-28T16:07:21+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:07:21+00:00 DEBUG > Inserting Bolimerito rosa
+2018-06-28T16:07:23+00:00 DEBUG > Inserted - post ID is 70.
+2018-06-28T16:07:28+00:00 DEBUG > Finished importing post ID 70.
+2018-06-28T16:07:28+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:07:28+00:00 DEBUG > Inserting Boliazul
+2018-06-28T16:07:29+00:00 DEBUG > Inserted - post ID is 71.
+2018-06-28T16:07:33+00:00 DEBUG > Finished importing post ID 71.
+2018-06-28T16:07:33+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:07:33+00:00 DEBUG > Inserting Bolichimuelo
+2018-06-28T16:07:34+00:00 DEBUG > Inserted - post ID is 72.
+2018-06-28T16:07:37+00:00 DEBUG > Finished importing post ID 72.
+2018-06-28T16:07:37+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:07:37+00:00 DEBUG > Inserting Bolichase
+2018-06-28T16:07:38+00:00 DEBUG > Inserted - post ID is 73.
+2018-06-28T16:07:43+00:00 DEBUG > Finished importing post ID 73.
+2018-06-28T16:07:43+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:07:43+00:00 DEBUG > Inserting Bolisky
+2018-06-28T16:07:44+00:00 DEBUG > Inserted - post ID is 74.
+2018-06-28T16:07:49+00:00 DEBUG > Finished importing post ID 74.
+2018-06-28T16:07:49+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:07:49+00:00 DEBUG > Inserting Boliryder
+2018-06-28T16:07:52+00:00 DEBUG > Inserted - post ID is 75.
+2018-06-28T16:07:59+00:00 DEBUG > Finished importing post ID 75.
+2018-06-28T16:07:59+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:07:59+00:00 DEBUG > Inserting Bolimarshall
+2018-06-28T16:08:03+00:00 DEBUG > Inserted - post ID is 76.
+2018-06-28T16:08:09+00:00 DEBUG > Finished importing post ID 76.
+2018-06-28T16:08:09+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:08:09+00:00 DEBUG > Inserting Bolicat Boy
+2018-06-28T16:08:10+00:00 DEBUG > Inserted - post ID is 77.
+2018-06-28T16:08:16+00:00 DEBUG > Finished importing post ID 77.
+2018-06-28T16:08:16+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:08:16+00:00 DEBUG > Inserting Boliuluette
+2018-06-28T16:08:17+00:00 DEBUG > Inserted - post ID is 78.
+2018-06-28T16:08:20+00:00 DEBUG > Finished importing post ID 78.
+2018-06-28T16:08:20+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:08:20+00:00 DEBUG > Inserting Boligeko
+2018-06-28T16:08:21+00:00 DEBUG > Inserted - post ID is 79.
+2018-06-28T16:08:26+00:00 DEBUG > Finished importing post ID 79.
+2018-06-28T16:08:26+00:00 DEBUG Finished processing products.
+2018-06-28T16:08:30+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:08:30+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:08:30+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:08:30+00:00 DEBUG ---
+2018-06-28T16:08:30+00:00 DEBUG Processing products.
+2018-06-28T16:08:30+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:08:30+00:00 DEBUG > Inserting Boliprincipito
+2018-06-28T16:08:32+00:00 DEBUG > Inserted - post ID is 80.
+2018-06-28T16:08:39+00:00 DEBUG > Finished importing post ID 80.
+2018-06-28T16:08:39+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:08:39+00:00 DEBUG > Inserting Boligoku
+2018-06-28T16:08:41+00:00 DEBUG > Inserted - post ID is 81.
+2018-06-28T16:08:43+00:00 DEBUG > Finished importing post ID 81.
+2018-06-28T16:08:43+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:08:43+00:00 DEBUG > Inserting Bolipokebola
+2018-06-28T16:08:44+00:00 DEBUG > Inserted - post ID is 82.
+2018-06-28T16:08:49+00:00 DEBUG > Finished importing post ID 82.
+2018-06-28T16:08:49+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:08:49+00:00 DEBUG > Inserting Bolicharizard
+2018-06-28T16:08:52+00:00 DEBUG > Inserted - post ID is 83.
+2018-06-28T16:08:57+00:00 DEBUG > Finished importing post ID 83.
+2018-06-28T16:08:57+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:08:57+00:00 DEBUG > Inserting Bolicharmander
+2018-06-28T16:09:00+00:00 DEBUG > Inserted - post ID is 84.
+2018-06-28T16:09:08+00:00 DEBUG > Finished importing post ID 84.
+2018-06-28T16:09:08+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:09:08+00:00 DEBUG > Inserting Bolipikachu
+2018-06-28T16:09:09+00:00 DEBUG > Inserted - post ID is 85.
+2018-06-28T16:09:13+00:00 DEBUG > Finished importing post ID 85.
+2018-06-28T16:09:13+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:09:13+00:00 DEBUG > Inserting Bolimoana
+2018-06-28T16:09:14+00:00 DEBUG > Inserted - post ID is 86.
+2018-06-28T16:09:18+00:00 DEBUG > Finished importing post ID 86.
+2018-06-28T16:09:18+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:09:18+00:00 DEBUG > Inserting Bolicoco
+2018-06-28T16:09:19+00:00 DEBUG > Inserted - post ID is 87.
+2018-06-28T16:09:22+00:00 DEBUG > Finished importing post ID 87.
+2018-06-28T16:09:22+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:09:23+00:00 DEBUG > Inserting Bolirafael
+2018-06-28T16:09:23+00:00 DEBUG > Inserted - post ID is 88.
+2018-06-28T16:09:27+00:00 DEBUG > Finished importing post ID 88.
+2018-06-28T16:09:27+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:09:27+00:00 DEBUG > Inserting Bolionardo
+2018-06-28T16:09:29+00:00 DEBUG > Inserted - post ID is 89.
+2018-06-28T16:09:33+00:00 DEBUG > Finished importing post ID 89.
+2018-06-28T16:09:33+00:00 DEBUG Finished processing products.
+2018-06-28T16:09:37+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:09:37+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:09:37+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:09:37+00:00 DEBUG ---
+2018-06-28T16:09:37+00:00 DEBUG Processing products.
+2018-06-28T16:09:37+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:09:37+00:00 DEBUG > Inserting Bolimiguel Ángel
+2018-06-28T16:09:40+00:00 DEBUG > Inserted - post ID is 90.
+2018-06-28T16:09:44+00:00 DEBUG > Finished importing post ID 90.
+2018-06-28T16:09:44+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:09:44+00:00 DEBUG > Inserting Bolidonatello
+2018-06-28T16:09:45+00:00 DEBUG > Inserted - post ID is 91.
+2018-06-28T16:09:49+00:00 DEBUG > Finished importing post ID 91.
+2018-06-28T16:09:49+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:09:49+00:00 DEBUG > Inserting Boliharry Potter
+2018-06-28T16:09:53+00:00 DEBUG > Inserted - post ID is 92.
+2018-06-28T16:09:57+00:00 DEBUG > Finished importing post ID 92.
+2018-06-28T16:09:57+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:09:57+00:00 DEBUG > Inserting Boliminion
+2018-06-28T16:09:59+00:00 DEBUG > Inserted - post ID is 93.
+2018-06-28T16:10:05+00:00 DEBUG > Finished importing post ID 93.
+2018-06-28T16:10:05+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:10:05+00:00 DEBUG > Inserting Boliagnes
+2018-06-28T16:10:07+00:00 DEBUG > Inserted - post ID is 94.
+2018-06-28T16:10:14+00:00 DEBUG > Finished importing post ID 94.
+2018-06-28T16:10:14+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:10:14+00:00 DEBUG > Inserting Boliramón Feliz
+2018-06-28T16:10:18+00:00 DEBUG > Inserted - post ID is 95.
+2018-06-28T16:10:25+00:00 DEBUG > Finished importing post ID 95.
+2018-06-28T16:10:25+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:10:25+00:00 DEBUG > Inserting Bolipoppy
+2018-06-28T16:10:26+00:00 DEBUG > Inserted - post ID is 96.
+2018-06-28T16:10:31+00:00 DEBUG > Finished importing post ID 96.
+2018-06-28T16:10:31+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:10:31+00:00 DEBUG > Inserting Boliramón Gruñón
+2018-06-28T16:10:32+00:00 DEBUG > Inserted - post ID is 97.
+2018-06-28T16:10:37+00:00 DEBUG > Finished importing post ID 97.
+2018-06-28T16:10:37+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:10:37+00:00 DEBUG > Inserting Bolisullivan
+2018-06-28T16:10:39+00:00 DEBUG > Inserted - post ID is 98.
+2018-06-28T16:10:43+00:00 DEBUG > Finished importing post ID 98.
+2018-06-28T16:10:43+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:10:43+00:00 DEBUG > Inserting Boliboo
+2018-06-28T16:10:45+00:00 DEBUG > Inserted - post ID is 99.
+2018-06-28T16:10:50+00:00 DEBUG > Finished importing post ID 99.
+2018-06-28T16:10:50+00:00 DEBUG Finished processing products.
+2018-06-28T16:10:53+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:10:53+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:10:53+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:10:53+00:00 DEBUG ---
+2018-06-28T16:10:53+00:00 DEBUG Processing products.
+2018-06-28T16:10:53+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:10:53+00:00 DEBUG > Inserting Bolimike 
+2018-06-28T16:10:57+00:00 DEBUG > Inserted - post ID is 100.
+2018-06-28T16:11:06+00:00 DEBUG > Finished importing post ID 100.
+2018-06-28T16:11:06+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:11:06+00:00 DEBUG > Inserting Bolimia
+2018-06-28T16:11:07+00:00 DEBUG > Inserted - post ID is 101.
+2018-06-28T16:11:10+00:00 DEBUG > Finished importing post ID 101.
+2018-06-28T16:11:10+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:11:10+00:00 DEBUG > Inserting Bolimabel
+2018-06-28T16:11:11+00:00 DEBUG > Inserted - post ID is 102.
+2018-06-28T16:11:14+00:00 DEBUG > Finished importing post ID 102.
+2018-06-28T16:11:14+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:11:14+00:00 DEBUG > Inserting Bolistitch
+2018-06-28T16:11:15+00:00 DEBUG > Inserted - post ID is 103.
+2018-06-28T16:11:18+00:00 DEBUG > Finished importing post ID 103.
+2018-06-28T16:11:18+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:11:18+00:00 DEBUG > Inserting Boli Mr Increíble
+2018-06-28T16:11:24+00:00 DEBUG > Inserted - post ID is 104.
+2018-06-28T16:11:33+00:00 DEBUG > Finished importing post ID 104.
+2018-06-28T16:11:33+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:11:33+00:00 DEBUG > Inserting Boliclone
+2018-06-28T16:11:34+00:00 DEBUG > Inserted - post ID is 105.
+2018-06-28T16:11:37+00:00 DEBUG > Finished importing post ID 105.
+2018-06-28T16:11:37+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:11:37+00:00 DEBUG > Inserting Bolidarth Vader
+2018-06-28T16:11:38+00:00 DEBUG > Inserted - post ID is 106.
+2018-06-28T16:11:43+00:00 DEBUG > Finished importing post ID 106.
+2018-06-28T16:11:43+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:11:43+00:00 DEBUG > Inserting Boligatitosaurio
+2018-06-28T16:11:45+00:00 DEBUG > Inserted - post ID is 107.
+2018-06-28T16:11:53+00:00 DEBUG > Finished importing post ID 107.
+2018-06-28T16:11:53+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:11:53+00:00 DEBUG > Inserting Bolimarciano
+2018-06-28T16:11:58+00:00 DEBUG > Inserted - post ID is 108.
+2018-06-28T16:12:04+00:00 DEBUG > Finished importing post ID 108.
+2018-06-28T16:12:04+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:12:04+00:00 DEBUG > Inserting Bolilotso
+2018-06-28T16:12:05+00:00 DEBUG > Inserted - post ID is 109.
+2018-06-28T16:12:08+00:00 DEBUG > Finished importing post ID 109.
+2018-06-28T16:12:08+00:00 DEBUG Finished processing products.
+2018-06-28T16:12:10+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:12:10+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:12:11+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:12:11+00:00 DEBUG ---
+2018-06-28T16:12:11+00:00 DEBUG Processing products.
+2018-06-28T16:12:11+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:12:11+00:00 DEBUG > Inserting Boliwoody
+2018-06-28T16:12:15+00:00 DEBUG > Inserted - post ID is 110.
+2018-06-28T16:12:25+00:00 DEBUG > Finished importing post ID 110.
+2018-06-28T16:12:25+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:12:25+00:00 DEBUG > Inserting Bolijessy
+2018-06-28T16:12:30+00:00 DEBUG > Inserted - post ID is 111.
+2018-06-28T16:12:35+00:00 DEBUG > Finished importing post ID 111.
+2018-06-28T16:12:35+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:12:35+00:00 DEBUG > Inserting Bolibuzz
+2018-06-28T16:12:38+00:00 DEBUG > Inserted - post ID is 112.
+2018-06-28T16:12:41+00:00 DEBUG > Finished importing post ID 112.
+2018-06-28T16:12:41+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:12:41+00:00 DEBUG > Inserting Bolileón
+2018-06-28T16:12:44+00:00 DEBUG > Inserted - post ID is 113.
+2018-06-28T16:12:48+00:00 DEBUG > Finished importing post ID 113.
+2018-06-28T16:12:48+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:12:48+00:00 DEBUG > Inserting Bolipanda
+2018-06-28T16:12:49+00:00 DEBUG > Inserted - post ID is 114.
+2018-06-28T16:12:53+00:00 DEBUG > Finished importing post ID 114.
+2018-06-28T16:12:53+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:12:53+00:00 DEBUG > Inserting Bolipollo
+2018-06-28T16:12:54+00:00 DEBUG > Inserted - post ID is 115.
+2018-06-28T16:12:57+00:00 DEBUG > Finished importing post ID 115.
+2018-06-28T16:12:57+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:12:57+00:00 DEBUG > Inserting Boliconejo
+2018-06-28T16:12:59+00:00 DEBUG > Inserted - post ID is 116.
+2018-06-28T16:13:04+00:00 DEBUG > Finished importing post ID 116.
+2018-06-28T16:13:04+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:13:04+00:00 DEBUG > Inserting Bolielefante
+2018-06-28T16:13:08+00:00 DEBUG > Inserted - post ID is 117.
+2018-06-28T16:13:12+00:00 DEBUG > Finished importing post ID 117.
+2018-06-28T16:13:12+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:13:12+00:00 DEBUG > Inserting Boligolden Freddy
+2018-06-28T16:13:15+00:00 DEBUG > Inserted - post ID is 118.
+2018-06-28T16:13:21+00:00 DEBUG > Finished importing post ID 118.
+2018-06-28T16:13:21+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:13:21+00:00 DEBUG > Inserting Bolizombie
+2018-06-28T16:13:22+00:00 DEBUG > Inserted - post ID is 119.
+2018-06-28T16:13:26+00:00 DEBUG > Finished importing post ID 119.
+2018-06-28T16:13:26+00:00 DEBUG Finished processing products.
+2018-06-28T16:13:29+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:13:29+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:13:29+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:13:29+00:00 DEBUG ---
+2018-06-28T16:13:29+00:00 DEBUG Processing products.
+2018-06-28T16:13:29+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:13:29+00:00 DEBUG > Inserting Bolifreddy
+2018-06-28T16:13:31+00:00 DEBUG > Inserted - post ID is 120.
+2018-06-28T16:13:36+00:00 DEBUG > Finished importing post ID 120.
+2018-06-28T16:13:36+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:13:36+00:00 DEBUG > Inserting Bolioso Maloso
+2018-06-28T16:13:39+00:00 DEBUG > Inserted - post ID is 121.
+2018-06-28T16:13:53+00:00 DEBUG > Finished importing post ID 121.
+2018-06-28T16:13:53+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:13:53+00:00 DEBUG > Inserting Bolisonic Boom
+2018-06-28T16:13:54+00:00 DEBUG > Inserted - post ID is 122.
+2018-06-28T16:13:58+00:00 DEBUG > Finished importing post ID 122.
+2018-06-28T16:13:58+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:13:58+00:00 DEBUG > Inserting Bolimario Bros
+2018-06-28T16:13:59+00:00 DEBUG > Inserted - post ID is 123.
+2018-06-28T16:14:02+00:00 DEBUG > Finished importing post ID 123.
+2018-06-28T16:14:02+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:14:02+00:00 DEBUG > Inserting Boliluigi Bros
+2018-06-28T16:14:03+00:00 DEBUG > Inserted - post ID is 124.
+2018-06-28T16:14:07+00:00 DEBUG > Finished importing post ID 124.
+2018-06-28T16:14:07+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:14:07+00:00 DEBUG > Inserting Bolimexicana
+2018-06-28T16:14:08+00:00 DEBUG > Inserted - post ID is 125.
+2018-06-28T16:14:12+00:00 DEBUG > Finished importing post ID 125.
+2018-06-28T16:14:12+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:14:12+00:00 DEBUG > Inserting Bolimariachi guitarra
+2018-06-28T16:14:13+00:00 DEBUG > Inserted - post ID is 126.
+2018-06-28T16:14:19+00:00 DEBUG > Finished importing post ID 126.
+2018-06-28T16:14:19+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:14:19+00:00 DEBUG > Inserting Bolimariachi
+2018-06-28T16:14:20+00:00 DEBUG > Inserted - post ID is 127.
+2018-06-28T16:14:23+00:00 DEBUG > Finished importing post ID 127.
+2018-06-28T16:14:23+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:14:23+00:00 DEBUG > Inserting Bolifrida
+2018-06-28T16:14:24+00:00 DEBUG > Inserted - post ID is 128.
+2018-06-28T16:14:27+00:00 DEBUG > Finished importing post ID 128.
+2018-06-28T16:14:27+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:14:27+00:00 DEBUG > Inserting Bolimaría
+2018-06-28T16:14:28+00:00 DEBUG > Inserted - post ID is 129.
+2018-06-28T16:14:31+00:00 DEBUG > Finished importing post ID 129.
+2018-06-28T16:14:31+00:00 DEBUG Finished processing products.
+2018-06-28T16:14:34+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:14:34+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:14:34+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:14:34+00:00 DEBUG ---
+2018-06-28T16:14:34+00:00 DEBUG Processing products.
+2018-06-28T16:14:34+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:14:34+00:00 DEBUG > Inserting Bolidiablo
+2018-06-28T16:14:38+00:00 DEBUG > Inserted - post ID is 130.
+2018-06-28T16:14:46+00:00 DEBUG > Finished importing post ID 130.
+2018-06-28T16:14:46+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:14:46+00:00 DEBUG > Inserting Bolibrujita
+2018-06-28T16:14:51+00:00 DEBUG > Inserted - post ID is 131.
+2018-06-28T16:15:04+00:00 DEBUG > Finished importing post ID 131.
+2018-06-28T16:15:04+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:15:04+00:00 DEBUG > Inserting Bolijack Skeleton
+2018-06-28T16:15:07+00:00 DEBUG > Inserted - post ID is 132.
+2018-06-28T16:15:17+00:00 DEBUG > Finished importing post ID 132.
+2018-06-28T16:15:17+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:15:17+00:00 DEBUG > Inserting Bolijack Skeleton sonrisa
+2018-06-28T16:15:20+00:00 DEBUG > Inserted - post ID is 133.
+2018-06-28T16:15:30+00:00 DEBUG > Finished importing post ID 133.
+2018-06-28T16:15:30+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:15:30+00:00 DEBUG > Inserting Bolicalavera bigote
+2018-06-28T16:15:31+00:00 DEBUG > Inserted - post ID is 134.
+2018-06-28T16:15:36+00:00 DEBUG > Finished importing post ID 134.
+2018-06-28T16:15:36+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:15:36+00:00 DEBUG > Inserting Bolicalavera 
+2018-06-28T16:15:39+00:00 DEBUG > Inserted - post ID is 135.
+2018-06-28T16:15:45+00:00 DEBUG > Finished importing post ID 135.
+2018-06-28T16:15:45+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:15:45+00:00 DEBUG > Inserting Bolivampiro
+2018-06-28T16:15:47+00:00 DEBUG > Inserted - post ID is 136.
+2018-06-28T16:15:54+00:00 DEBUG > Finished importing post ID 136.
+2018-06-28T16:15:54+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:15:54+00:00 DEBUG > &#8220;137&#8221; ID already exists.
+2018-06-28T16:15:54+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:15:54+00:00 DEBUG > &#8220;138&#8221; ID already exists.
+2018-06-28T16:15:54+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:15:54+00:00 DEBUG > &#8220;139&#8221; ID already exists.
+2018-06-28T16:15:54+00:00 DEBUG Finished processing products.
+2018-06-28T16:15:58+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:15:58+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:15:58+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:15:58+00:00 DEBUG ---
+2018-06-28T16:15:58+00:00 DEBUG Processing products.
+2018-06-28T16:15:58+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;140&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;141&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;142&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;143&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 5 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;144&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 6 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;145&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 7 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;146&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 8 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;147&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 9 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > &#8220;148&#8221; ID already exists.
+2018-06-28T16:15:58+00:00 DEBUG > Row 10 - preparing for import.
+2018-06-28T16:15:58+00:00 DEBUG > Inserting Boliplayer Chivas
+2018-06-28T16:15:59+00:00 DEBUG > Inserted - post ID is 149.
+2018-06-28T16:16:04+00:00 DEBUG > Finished importing post ID 149.
+2018-06-28T16:16:04+00:00 DEBUG Finished processing products.
+2018-06-28T16:16:07+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-06-28T16:16:07+00:00 DEBUG Parsing products CSV.
+2018-06-28T16:16:07+00:00 DEBUG Finished parsing products CSV.
+2018-06-28T16:16:07+00:00 DEBUG ---
+2018-06-28T16:16:07+00:00 DEBUG Processing products.
+2018-06-28T16:16:07+00:00 DEBUG > Row 1 - preparing for import.
+2018-06-28T16:16:07+00:00 DEBUG > Inserting Bolipayaso
+2018-06-28T16:16:10+00:00 DEBUG > Inserted - post ID is 150.
+2018-06-28T16:16:17+00:00 DEBUG > Finished importing post ID 150.
+2018-06-28T16:16:17+00:00 DEBUG > Row 2 - preparing for import.
+2018-06-28T16:16:17+00:00 DEBUG > Inserting Bolipirata
+2018-06-28T16:16:20+00:00 DEBUG > Inserted - post ID is 151.
+2018-06-28T16:16:26+00:00 DEBUG > Finished importing post ID 151.
+2018-06-28T16:16:26+00:00 DEBUG > Row 3 - preparing for import.
+2018-06-28T16:16:26+00:00 DEBUG > Inserting 
+2018-06-28T16:16:26+00:00 DEBUG Failed to import product &#8220;&#8221;
+2018-06-28T16:16:26+00:00 DEBUG > Row 4 - preparing for import.
+2018-06-28T16:16:26+00:00 DEBUG > Inserting 
+2018-06-28T16:16:26+00:00 DEBUG Failed to import product &#8220;&#8221;
+2018-06-28T16:16:26+00:00 DEBUG Finished processing products.

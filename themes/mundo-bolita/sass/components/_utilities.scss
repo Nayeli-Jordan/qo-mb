@@ -23,6 +23,8 @@
   &.bg-product {
     width: 100%;
     padding-bottom:calc(140%);
+    position: relative;
+    z-index: 1;
   }
   &.bg-shadow {
     width: 100%;
@@ -54,6 +56,7 @@
 .margin-top           { margin-top: 15px; }
 .margin-top-large         { margin-top: 20px; }
 .margin-top-xlarge        { margin-top: 25px; }
+.margin-top-50        { margin-top: 50px; }
 
 .margin-bottom-xsmall       { margin-bottom: 5px; }
 .margin-bottom-small      { margin-bottom: 10px; }
@@ -199,6 +202,9 @@
     margin: auto;
     width: 60%;
     padding-bottom: calc(35%);
+    .shadow-products {
+      border-top: 3px solid rgba(0,0,0,0.1);
+    }
 }
 
 .indicaciones-producto {
@@ -238,5 +244,6 @@
   iframe {
     height: 300px;
     width: 100%;
+    margin-bottom: -3px;
   }
 }
