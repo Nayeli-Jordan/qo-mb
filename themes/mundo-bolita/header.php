@@ -64,7 +64,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<div class="bg-image" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
+		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		
 				<h1 class="hide"><?php bloginfo('name'); ?></h1>	
 				<img class="responsive-img absolute left-15p bottom-30 width-20p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
@@ -124,11 +124,11 @@
 			</header>
 			<div class="[ main-body ]">
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
-					<div class="bg-image bg-contain bg-repeat bg-absolute z-index--1 top--15p left-5p" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
+					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
 					<section class="container text-center relative">
-						<img class="responsive-img absolute width-30p margin-left--15p z-index--1 top--60" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+						<img class="responsive-img absolute width-30p margin-left--15p top--60" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
 						<h2 class="uppercase color-primary">Catálogo</h2>
-						<div class="row">
+						<div class="row relative">
 							<div class="col s12 m8 offset-m2 relative">
 								<?php echo do_shortcode( '[aws_search_form]' ); ?>
 								<div class="shadow-buscador"></div>
