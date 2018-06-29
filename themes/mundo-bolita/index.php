@@ -11,7 +11,7 @@
 	                        'taxonomy' => 'product_visibility',
 	                        'field'    => 'name',
 	                        'terms'    => 'featured',
-	                    ),
+	                    ),	                    
 	                ),
 	            );
 	        $loop = new WP_Query( $args );
@@ -38,7 +38,7 @@
 						<!-- <a href="<?php the_permalink(); ?>"> -->
             				<h4 class="title-product"><?php the_title(); ?></h4>
             			<!-- </a> -->
-            		</div>	
+            		</div>
 					
 
 	            <?php $i ++; endwhile;

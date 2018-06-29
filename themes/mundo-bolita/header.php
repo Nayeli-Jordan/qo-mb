@@ -67,8 +67,8 @@
 		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		
 				<h1 class="hide"><?php bloginfo('name'); ?></h1>	
-				<img class="responsive-img absolute left-15p bottom-30 width-20p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
-				<img class="responsive-img absolute right-10p bottom--50 width-20p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">	
+				<img class="responsive-img absolute left-15p bottom-30 width-20p rotate-90" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+				<img class="responsive-img absolute right-10p bottom--50 width-20p rotate-180" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">	
 				<img class="responsive-img absolute top-0" src="<?php echo THEMEPATH; ?>images/nubes-azules.png" alt="Imagen de nube">
 				<img class="responsive-img relative top-0" src="<?php echo THEMEPATH; ?>images/nube-blanca-large.png" alt="Imagen de nube">
 				<img class="responsive-img absolute bottom-0 right--20 width-30p" src="<?php echo THEMEPATH; ?>images/nube-blanca-small.png" alt="Imagen de nube">
@@ -125,8 +125,9 @@
 			<div class="[ main-body ]">
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
 					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
-					<section class="container text-center relative">
-						<img class="responsive-img absolute width-30p margin-left--15p top--60" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+					<img class="responsive-img absolute width-30p margin-left--15p top--60 left-50p rotate-180" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+					<section class="container text-center relative margin-bottom-50">
+						
 						<h2 class="uppercase color-primary">Catálogo</h2>
 						<div class="row relative">
 							<div class="col s12 m8 offset-m2 relative">
@@ -154,6 +155,6 @@
 								}
 								echo $menu_list;
 							?>						
-						</ul>
-						<div class="clearfix"></div>
+						</ul>						
 					</section>
+					<div class="clearfix"></div>

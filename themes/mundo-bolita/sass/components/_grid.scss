@@ -166,14 +166,6 @@
   left: auto;
   right: auto;
   position: relative;
-  div.bg-ligh-opacity {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 100%;
-    padding-bottom: calc(140% - 30px);
-    position: absolute;    
-    left: 0px;
-    //z-index: -1;
-  }
   p { margin: 0px; }
   @media (min-width: 851px) {
     &:nth-child(4n+1){
@@ -218,3 +210,29 @@
   }
 }
 
+.col-product-single .bg-ligh-opacity,
+.col-product div.bg-ligh-opacity {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 100%;
+  padding-bottom: calc(140% - 30px);
+  position: absolute;    
+  left: 0px;
+  //z-index: -1;
+}
+
+.limit-block-product {
+    max-width: 250px;
+    margin: auto;
+    position: relative;
+}
+
+.section-products-related {
+  @media (min-width: 601px) and (max-width: 850px) {
+    .col-product:nth-child(4n) {
+      display: none;
+    }
+  }
+  @media #{$small-and-down} {
+
+  }
+}

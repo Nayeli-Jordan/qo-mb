@@ -1,6 +1,6 @@
 					<section class="container relative margin-top-50">
 						<h2 class="color-primary text-center uppercase">Ubicación</h2>
-						<div class="row">
+						<div class="row relative z-index-1">
 							<div class="col s12 m5 margin-bottom-25p-s">
 								<img class="responsive-img" src="<?php echo THEMEPATH; ?>images/textos/direccion.png" alt="Decorado mapa">
 								<p class="color-primary uppercase no-margin-top-bottom margin-left-15p"><span class="color-light">EN: </span>Andador Londres #10 Col. Centro Urbano Cuautitlán Izcalli C.P 54740</p>
@@ -12,8 +12,10 @@
 								</div>
 							</div>
 						</div>
-						<img class="responsive-img absolute bottom-0 width-60p z-index--1" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
-						<img class="responsive-img absolute bottom-15p right--10p width-30p z-index--1" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+						<img class="responsive-img absolute top--40p left-15p width-20p rotate-180" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+						<img class="responsive-img absolute top--60p left-50p width-20p " src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+						<img class="responsive-img absolute bottom-0 width-60p" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
+						<img class="responsive-img absolute bottom-15p right--10p width-30p rotate-180" src="<?php echo THEMEPATH; ?>images/boli-central.png" alt="Imagen luna">
 					</section>	
 				</div> <!-- end bg dulces -->		
 				<footer class="relative">
