@@ -3190,7 +3190,7 @@ ul:not(.browser-default) > li {
 
 /* line 48, ../sass/components/_global.scss */
 a {
-  color: #bc1582;
+  color: #de0d88;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -3266,7 +3266,7 @@ a {
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
-  border-left: 5px solid #bc1582;
+  border-left: 5px solid #de0d88;
 }
 
 /* line 140, ../sass/components/_global.scss */
@@ -3329,7 +3329,7 @@ video.responsive-video {
 }
 /* line 194, ../sass/components/_global.scss */
 .pagination li.active {
-  background-color: #bc1582;
+  background-color: #de0d88;
 }
 /* line 196, ../sass/components/_global.scss */
 .pagination li.disabled a {
@@ -3547,7 +3547,7 @@ ul.staggered-list li {
 .page-footer {
   padding-top: 20px;
   color: #fff;
-  background-color: #bc1582;
+  background-color: #de0d88;
 }
 /* line 391, ../sass/components/_global.scss */
 .page-footer .footer-copyright {
@@ -3946,22 +3946,25 @@ input[type=range] + .thumb {
   padding: 0 !important;
 }
 
-/*
-
+/* Style scroll bar*/
+/* line 784, ../sass/components/_global.scss */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
- 
+
+/* line 788, ../sass/components/_global.scss */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
-    border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
 }
- 
+
+/* line 793, ../sass/components/_global.scss */
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
-    background-color: $primary-color;
-}*/
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  background-color: #de0d88;
+}
+
 /* line 2, ../sass/components/_badges.scss */
 span.badge {
   min-width: 3rem;
@@ -5116,7 +5119,7 @@ table span.badge {
 /* line 1, ../sass/components/_navbar.scss */
 nav {
   color: #fff;
-  background-color: #bc1582;
+  background-color: #de0d88;
   width: 100%;
   height: 56px;
   line-height: 56px;
@@ -5650,7 +5653,7 @@ small {
 /* line 65, ../sass/components/_typography.scss */
 .title-product {
   font-size: 12px;
-  color: #bc1582;
+  color: #de0d88;
   text-transform: uppercase;
   background-color: rgba(255, 255, 255, 0.4);
   line-height: 20px;
@@ -5986,7 +5989,7 @@ small {
 }
 /* line 47, ../sass/components/_tabs.scss */
 .tabs .tab a {
-  color: rgba(188, 21, 130, 0.7);
+  color: rgba(222, 13, 136, 0.7);
   display: block;
   width: 100%;
   height: 100%;
@@ -5998,17 +6001,17 @@ small {
 }
 /* line 48, ../sass/components/_tabs.scss */
 .tabs .tab a:focus, .tabs .tab a:focus.active {
-  background-color: rgba(232, 53, 170, 0.2);
+  background-color: rgba(244, 67, 171, 0.2);
   outline: none;
 }
 /* line 54, ../sass/components/_tabs.scss */
 .tabs .tab a:hover, .tabs .tab a.active {
   background-color: transparent;
-  color: #bc1582;
+  color: #de0d88;
 }
 /* line 71, ../sass/components/_tabs.scss */
 .tabs .tab.disabled a, .tabs .tab.disabled a:hover {
-  color: rgba(188, 21, 130, 0.4);
+  color: rgba(222, 13, 136, 0.4);
   cursor: default;
 }
 /* line 77, ../sass/components/_tabs.scss */
@@ -6016,7 +6019,7 @@ small {
   position: absolute;
   bottom: 0;
   height: 2px;
-  background-color: #e835aa;
+  background-color: #f443ab;
   will-change: left, right;
 }
 
@@ -8418,13 +8421,13 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .table-of-contents a:hover {
   color: #a8a8a8;
   padding-left: 15px;
-  border-left: 1px solid #bc1582;
+  border-left: 1px solid #de0d88;
 }
 /* line 27, ../sass/components/_table_of_contents.scss */
 .table-of-contents a.active {
   font-weight: 500;
   padding-left: 14px;
-  border-left: 2px solid #bc1582;
+  border-left: 2px solid #de0d88;
 }
 
 /* line 1, ../sass/components/_sidenav.scss */
@@ -8479,28 +8482,29 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 /* line 50, ../sass/components/_sidenav.scss */
 .sidenav li > a:hover {
   background-color: rgba(0, 0, 0, 0.05);
+  color: #de0d88;
 }
-/* line 52, ../sass/components/_sidenav.scss */
+/* line 55, ../sass/components/_sidenav.scss */
 .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-flat, .sidenav li > a.btn-floating {
   margin: 10px 15px;
 }
-/* line 56, ../sass/components/_sidenav.scss */
+/* line 59, ../sass/components/_sidenav.scss */
 .sidenav li > a.btn, .sidenav li > a.btn-large, .sidenav li > a.btn-small, .sidenav li > a.btn-large, .sidenav li > a.btn-floating {
   color: #fff;
 }
-/* line 59, ../sass/components/_sidenav.scss */
+/* line 62, ../sass/components/_sidenav.scss */
 .sidenav li > a.btn-flat {
   color: #343434;
 }
-/* line 61, ../sass/components/_sidenav.scss */
+/* line 64, ../sass/components/_sidenav.scss */
 .sidenav li > a.btn:hover, .sidenav li > a.btn-large:hover, .sidenav li > a.btn-small:hover, .sidenav li > a.btn-large:hover {
   background-color: #2bbbad;
 }
-/* line 63, ../sass/components/_sidenav.scss */
+/* line 66, ../sass/components/_sidenav.scss */
 .sidenav li > a.btn-floating:hover {
   background-color: #26a69a;
 }
-/* line 65, ../sass/components/_sidenav.scss */
+/* line 68, ../sass/components/_sidenav.scss */
 .sidenav li > a > i, .sidenav li > a > [class^="mdi-"], .sidenav li > a li > a > [class*="mdi-"], .sidenav li > a > i.material-icons {
   float: left;
   height: 48px;
@@ -8509,11 +8513,16 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   width: 24px;
   color: rgba(0, 0, 0, 0.54);
 }
-/* line 78, ../sass/components/_sidenav.scss */
+/* line 80, ../sass/components/_sidenav.scss */
+.sidenav .sidenav-close {
+  font-size: 25px;
+  color: #de0d88;
+}
+/* line 87, ../sass/components/_sidenav.scss */
 .sidenav .divider {
   margin: 8px 0 0 0;
 }
-/* line 82, ../sass/components/_sidenav.scss */
+/* line 91, ../sass/components/_sidenav.scss */
 .sidenav .subheader {
   cursor: initial;
   pointer-events: none;
@@ -8522,26 +8531,26 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   font-weight: 500;
   line-height: 48px;
 }
-/* line 83, ../sass/components/_sidenav.scss */
+/* line 92, ../sass/components/_sidenav.scss */
 .sidenav .subheader:hover {
   background-color: transparent;
 }
-/* line 95, ../sass/components/_sidenav.scss */
+/* line 104, ../sass/components/_sidenav.scss */
 .sidenav .user-view {
   position: relative;
   padding: 32px 32px 0;
   margin-bottom: 8px;
 }
-/* line 100, ../sass/components/_sidenav.scss */
+/* line 109, ../sass/components/_sidenav.scss */
 .sidenav .user-view > a {
   height: auto;
   padding: 0;
 }
-/* line 101, ../sass/components/_sidenav.scss */
+/* line 110, ../sass/components/_sidenav.scss */
 .sidenav .user-view > a:hover {
   background-color: transparent;
 }
-/* line 106, ../sass/components/_sidenav.scss */
+/* line 115, ../sass/components/_sidenav.scss */
 .sidenav .user-view .background {
   overflow: hidden;
   position: absolute;
@@ -8551,33 +8560,33 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   left: 0;
   z-index: -1;
 }
-/* line 116, ../sass/components/_sidenav.scss */
+/* line 125, ../sass/components/_sidenav.scss */
 .sidenav .user-view .circle, .sidenav .user-view .name, .sidenav .user-view .email {
   display: block;
 }
-/* line 120, ../sass/components/_sidenav.scss */
+/* line 129, ../sass/components/_sidenav.scss */
 .sidenav .user-view .circle {
   height: 64px;
   width: 64px;
 }
-/* line 125, ../sass/components/_sidenav.scss */
+/* line 134, ../sass/components/_sidenav.scss */
 .sidenav .user-view .name,
 .sidenav .user-view .email {
   font-size: 14px;
   line-height: 24px;
 }
-/* line 131, ../sass/components/_sidenav.scss */
+/* line 140, ../sass/components/_sidenav.scss */
 .sidenav .user-view .name {
   margin-top: 16px;
   font-weight: 500;
 }
-/* line 136, ../sass/components/_sidenav.scss */
+/* line 145, ../sass/components/_sidenav.scss */
 .sidenav .user-view .email {
   padding-bottom: 16px;
   font-weight: 400;
 }
 
-/* line 145, ../sass/components/_sidenav.scss */
+/* line 154, ../sass/components/_sidenav.scss */
 .drag-target {
   height: 100%;
   width: 10px;
@@ -8585,58 +8594,58 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   top: 0;
   z-index: 998;
 }
-/* line 147, ../sass/components/_sidenav.scss */
+/* line 156, ../sass/components/_sidenav.scss */
 .drag-target.right-aligned {
   right: 0;
 }
 
-/* line 160, ../sass/components/_sidenav.scss */
+/* line 169, ../sass/components/_sidenav.scss */
 .sidenav.sidenav-fixed {
   left: 0;
   transform: translateX(0);
   position: fixed;
 }
-/* line 162, ../sass/components/_sidenav.scss */
+/* line 171, ../sass/components/_sidenav.scss */
 .sidenav.sidenav-fixed.right-aligned {
   right: 0;
   left: auto;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 175, ../sass/components/_sidenav.scss */
+  /* line 184, ../sass/components/_sidenav.scss */
   .sidenav.sidenav-fixed {
     transform: translateX(-105%);
   }
-  /* line 178, ../sass/components/_sidenav.scss */
+  /* line 187, ../sass/components/_sidenav.scss */
   .sidenav.sidenav-fixed.right-aligned {
     transform: translateX(105%);
   }
-  /* line 183, ../sass/components/_sidenav.scss */
+  /* line 192, ../sass/components/_sidenav.scss */
   .sidenav > a {
     padding: 0 16px;
   }
-  /* line 187, ../sass/components/_sidenav.scss */
+  /* line 196, ../sass/components/_sidenav.scss */
   .sidenav .user-view {
     padding: 16px 16px 0;
   }
 }
-/* line 194, ../sass/components/_sidenav.scss */
+/* line 203, ../sass/components/_sidenav.scss */
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active {
-  background-color: #bc1582;
+  background-color: #de0d88;
 }
-/* line 197, ../sass/components/_sidenav.scss */
+/* line 206, ../sass/components/_sidenav.scss */
 .sidenav .collapsible-body > ul:not(.collapsible) > li.active a,
 .sidenav.sidenav-fixed .collapsible-body > ul:not(.collapsible) > li.active a {
   color: #fff;
 }
 
-/* line 201, ../sass/components/_sidenav.scss */
+/* line 210, ../sass/components/_sidenav.scss */
 .sidenav .collapsible-body {
   padding: 0;
 }
 
-/* line 206, ../sass/components/_sidenav.scss */
+/* line 215, ../sass/components/_sidenav.scss */
 .sidenav-overlay {
   position: fixed;
   top: 0;
@@ -9366,7 +9375,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   position: absolute;
   font-size: 1rem;
   border-radius: 50%;
-  background-color: #bc1582;
+  background-color: #de0d88;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.14), 0 10px 50px 0 rgba(0, 0, 0, 0.12), 0 30px 10px -20px rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
@@ -9878,7 +9887,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 }
 /* line 2, ../sass/components/_utilities.scss */
 .color-primary {
-  color: #bc1582;
+  color: #de0d88;
 }
 
 /* line 3, ../sass/components/_utilities.scss */
@@ -10671,7 +10680,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 
 /* line 318, ../sass/components/_utilities.scss */
 .content-map {
-  border: 15px solid #bc1582;
+  border: 15px solid #de0d88;
   width: calc(100% - 21px);
 }
 /* line 321, ../sass/components/_utilities.scss */
