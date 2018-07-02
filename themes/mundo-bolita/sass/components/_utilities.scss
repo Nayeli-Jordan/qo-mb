@@ -70,6 +70,17 @@
   width: 100%;
 }
 
+
+.bg-footer {
+  width: 100%;
+  padding-bottom: 50%;
+  @media #{$small-and-down}  {
+    display: block!important;
+  }  
+  &.bg-color-foter {
+    background-color: #9eb755;
+  }
+}
 //box
 
 .margin-auto          { margin: auto; }
@@ -177,6 +188,7 @@
 .top-0            { top: 0; }
 .top-100          { top: 100px; }
 .top--60          { top: -60px; }
+.top-4p          { top: 4%; }
 .top-20p          { top: 20%; }
 .top--15p         { top: -15%; }
 .top--20p         { top: -20%; }
@@ -195,6 +207,10 @@
 .bottom-15p       { bottom: 15%; }
 .bottom-20p       { bottom: 20%; }
 .bottom-30p       { bottom: 30%; }
+
+@media #{$small-and-down} {
+  .bottom-40p-s      { bottom: 40%; }
+}
 
 .rotate--180 { transform: rotate(-180deg); }
 
@@ -250,8 +266,27 @@
 .indicaciones-producto {
   position: absolute;
   width: 100%;
-  bottom: 30px;
+  bottom: 0px;
+  transform: translateY(-30%);
   z-index: 1;
+  @media #{$medium-and-down} {
+    transform: translateY(-10%);
+  }
+  @media (min-width: 350px) and (max-width:399px){
+    transform: translateY(-15%);
+  }
+  @media (min-width: 400px) and (max-width:449px){
+    transform: translateY(-20%);
+  }
+  @media (min-width: 450px) and (max-width: 600px){
+    transform: translateY(-30%);
+  }
+  @media (min-width: 601px) and (max-width:849px){
+    transform: translateY(-5%);
+  }
+  @media (min-width: 850px) and (max-width: 992){
+    transform: translateY(-10%);
+  }
   .content-indicaciones {
     .box-indicacion {
       display: inline-block;
@@ -260,6 +295,7 @@
       padding: 0 5px;
       @media #{$small-and-down} {
         width: 30%;
+        font-size: 13px;
       }
       .img-indicaciones {
         margin: auto;

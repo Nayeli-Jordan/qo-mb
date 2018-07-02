@@ -19,9 +19,9 @@
 					</section>	
 				</div> <!-- end bg dulces -->		
 				<footer class="relative">
-					<div class="bg-image absolute width-100p padding-bottom-75p" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
-					<div class="bg-image absolute width-100p padding-bottom-30p" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>
-					<div class="bg-image absolute width-100p padding-bottom-60p margin-top-13p relative z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo-pasto.png);"></div>
+					<div class="bg-image width-100p padding-bottom-75p" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
+					<div class="bg-image absolute top-4p width-100p padding-bottom-30p" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>
+					<div class="bg-image absolute bottom-0 bottom-40p-s width-100p padding-bottom-60p z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo-pasto.png);"></div>
 					<div class="indicaciones-producto text-center">
 						<div class="container">
 							<div class="bg-image bg-contain img-caracteristicas" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);">
@@ -55,6 +55,7 @@
 							
 						</div>					
 					</div>
+					<div class="bg-footer bg-color-foter hide"></div>
 				</footer>
 			</div> <!-- end main-body -->
 		</div> <!-- end content body -->
