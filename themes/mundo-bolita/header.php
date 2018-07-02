@@ -71,7 +71,7 @@
 				<div class="bg-image bg-contain [ absolute right-10p bottom--50 ] width-20p padding-bottom-20p  rotate-180" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain relative top-0 z-index-1 width-100p padding-bottom-49p" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
 				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-54p" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
-				<div class="bg-image bg-contain absolute bottom--10p right--20 width-30p padding-bottom-30p" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
+				<div class="bg-image bg-contain absolute bottom--10p right--20 width-30p padding-bottom-30p z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
 				<div class="absolute width-100p top-20p menu-content z-index-1">
 					<div class="container">
 						<div class="row">
