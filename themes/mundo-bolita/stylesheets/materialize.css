@@ -5395,6 +5395,10 @@ header {
   header .nav-right {
     float: right;
   }
+  /* line 259, ../sass/components/_navbar.scss */
+  header .top-0 {
+    top: -2px;
+  }
 }
 /* line 2, ../sass/components/_typography.scss */
 a {
@@ -10695,4 +10699,21 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   .featured-products .col-product:nth-child(8) {
     display: none;
   }
+}
+
+/* line 343, ../sass/components/_utilities.scss */
+.content-shadow-footer {
+  width: 60%;
+  margin-left: 20%;
+  padding-bottom: 23%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #9eb755;
+  z-index: -1;
+}
+/* line 352, ../sass/components/_utilities.scss */
+.content-shadow-footer:before, .content-shadow-footer:after {
+  width: 45%;
+  height: 5px;
 }

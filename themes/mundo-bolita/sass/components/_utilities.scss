@@ -339,3 +339,18 @@
     }
   }
 }
+
+.content-shadow-footer {
+  width: 60%;
+  margin-left: 20%;
+  padding-bottom: 23%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #9eb755;
+  z-index: -1;
+  &:before, &:after {
+    width: 45%;
+    height: 5px;
+  }
+}

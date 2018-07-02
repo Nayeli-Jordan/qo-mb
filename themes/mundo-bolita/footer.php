@@ -24,10 +24,8 @@
 					<div class="bg-image absolute bottom-0 bottom-40p-s width-100p padding-bottom-60p z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo-pasto.png);"></div>
 					<div class="indicaciones-producto text-center">
 						<div class="container">
-							<div class="bg-image bg-contain img-caracteristicas" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);">
-								<!-- <div class="shadow-buscador"></div><div class="shadow-buscador"></div>-->
-							</div>
-							
+							<div class="bg-image bg-contain img-caracteristicas" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);"></div>
+							<!--<div class="content-shadow-footer shadow-buscador"></div>-->					
 							<br>
 							<div class="content-indicaciones">
 								<div class="box-indicacion">
