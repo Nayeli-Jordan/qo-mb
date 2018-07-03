@@ -15,20 +15,28 @@ var $=jQuery.noConflict();
 		});
  
 		$(window).on('resize', function(){
-			footerBottom();
+			
 		});
  
 		$(document).scroll(function() {
 
 		});
- 
-		// if( parseInt( isHome ) ){
 
-		// } 
+		//Scroll menú
+		$(" a.item-scroll").click(function() {
+			//buttonMenuScroll();
+			var idOption = $(this).attr('id'); //Opción del menú
+			// console.log(idOption);
+			var idSection = "#section-" + idOption; //Sección a la que se dirigirá
+			// console.log(idSection); 
+			$('html, body').animate({		
+				scrollTop: $(idSection).offset().top - 20
+			}, 1500);
+		});
 
-		// if( parseInt( isSingular ) ){
-
-		// } 
+		$('.col-product').hover(function(){
+			$(this + 'bg-product').addClass('animated bounce');
+		});
 
 	});
 })(jQuery);

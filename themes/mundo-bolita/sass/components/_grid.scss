@@ -167,15 +167,26 @@
   right: auto;
   position: relative;
   p { margin: 0px; }
+  &:hover {
+    .bg-light-opacity {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+    .bg-product {
+      transform: scale(0.9);
+    }
+    .title-product{
+      background-color: rgba(255, 255, 255, 0.8);
+    }
+  }
   @media (min-width: 851px) {
     &:nth-child(4n+1){
       clear: both;
     } 
-    &:nth-child(4n+1) .bg-ligh-opacity {
+    &:nth-child(4n+1) .bg-light-opacity {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }   
-    &:nth-child(4n) .bg-ligh-opacity {
+    &:nth-child(4n) .bg-light-opacity {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
     }     
@@ -185,11 +196,11 @@
     &:nth-child(3n+1){
       clear: both;
     }
-    &:nth-child(3n+1) .bg-ligh-opacity {
+    &:nth-child(3n+1) .bg-light-opacity {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }   
-    &:nth-child(3n) .bg-ligh-opacity {
+    &:nth-child(3n) .bg-light-opacity {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
     }      
@@ -199,29 +210,34 @@
     &:nth-child(2n+1){
       clear: both;
     }
-    &:nth-child(2n+1) .bg-ligh-opacity {
+    &:nth-child(2n+1) .bg-light-opacity {
       border-top-left-radius: 20px;
       border-bottom-left-radius: 20px;
     }   
-    &:nth-child(2n) .bg-ligh-opacity {
+    &:nth-child(2n) .bg-light-opacity {
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
     }      
   }
 }
 
-.col-product-single .bg-ligh-opacity,
-.col-product div.bg-ligh-opacity {
+.col-product-single .bg-light-opacity,
+.col-product div.bg-light-opacity {
   background-color: rgba(255, 255, 255, 0.2);
   width: 100%;
   padding-bottom: calc(140% - 30px);
   position: absolute;    
   left: 0px;
+  transition: .3s ease-out;
   //z-index: -1;
+}
+.limit-block-product .bg-light-opacity{
+  padding-bottom: calc(140%);
+  border-radius: 20px;
 }
 
 .limit-block-product {
-    max-width: 250px;
+    max-width: 300px;
     margin: auto;
     position: relative;
 }
