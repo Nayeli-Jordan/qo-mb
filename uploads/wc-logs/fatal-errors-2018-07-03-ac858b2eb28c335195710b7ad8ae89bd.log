@@ -1,0 +1,32 @@
+2018-07-03T12:04:40+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\404.php:21
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+
+2018-07-03T12:04:57+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on string in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\404.php:21
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+
+2018-07-03T12:06:33+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\404.php:21
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+
+2018-07-03T12:07:26+00:00 CRITICAL Uncaught Error: Call to a member function get_id() on null in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\404.php:21
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+

@@ -209,6 +209,11 @@ nav {
 
 header {
   z-index: 5;
+  a {
+    &:hover {
+      opacity: 0.8!important;
+    }
+  }
 }
 
 .logo {
@@ -247,7 +252,7 @@ header {
     .menu-content {
       top: -50px;
     }
-    .nav-left, .nav-left {
+    .nav-left, .nav-right {
       display: inline-block;
     }
     .nav-left {

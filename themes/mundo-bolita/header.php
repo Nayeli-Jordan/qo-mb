@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Importante agregar el prefijo para cuando dice que og no se está usando -->
-<html prefix="og: http://ogp.me/ns#">
+<html lang="es-ES" prefix="og: http://ogp.me/ns#" >
 	<head>
 		<meta charset="utf-8">
 		<title><?php bloginfo('name'); ?></title>
@@ -63,6 +63,7 @@
 		<noscript>Tu navegador no soporta JavaScript!</noscript>
 		<?php wp_head(); ?>
 	</head>
+	<?php flush(); ?>
 	<body>
 		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		
@@ -86,7 +87,7 @@
 									<a href="tel:+5558689360">
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/telefono1.png);"></div>								
 									</a>	
-									<a href="mailto:mundo.bolita@altoempleo.com.mx">
+									<a href="" id="link-mail">
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/correo1.png);"></div>							
 									</a>
 								</div>
@@ -94,10 +95,10 @@
 									<a href="<?php echo SITEURL ?>" class="hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home1.png);"></div>
 									</a>
-									<a href="" class="hide-on-med-and-up">
+									<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/otros1.png);"></div>
 									</a>
-									<a href="" class="hide-on-med-and-up">
+									<a id="caracteristicas" class="item-scroll hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/pinata1.png);"></div>
 									</a>									
 								</div>
@@ -123,12 +124,12 @@
 				</div>	
 			</header>
 			<div class="[ main-body ]">
-				<ul id="slide-out" class="sidenav">
-					<li><a href="#" class="sidenav-close text-right color-primary">x</a></li>
-					<li><a href="">ejemplo</a></li>
-					<li><a href="">ejemplo</a></li>
-					<li><a href="">ejemplo</a></li>
-					<li><a href="">ejemplo</a></li>
+				<ul id="slide-out" class="sidenav" itemscope>
+					<li itemprop="actionOption"><a href="#" class="sidenav-close text-right color-primary">x</a></li>
+					<li itemprop="actionOption"><a href="">ejemplo</a></li>
+					<li itemprop="actionOption"><a href="">ejemplo</a></li>
+					<li itemprop="actionOption"><a href="">ejemplo</a></li>
+					<li itemprop="actionOption"><a href="">ejemplo</a></li>
 				</ul>
 
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
@@ -146,7 +147,7 @@
 								</div>							
 							</div>
 						</div>					
-						<ul class="mb-nav">
+						<ul class="mb-nav" itemscope>
 							<?php
 								$menu_name = 'top_menu';
 
@@ -158,7 +159,7 @@
 										$id 		= $menu_item->attr_title;
 										$title 		= $menu_item->title;
 										$url 		= $menu_item->url;
-										$menu_list .='<li><a id="' . $id . '" href="' . $url . '" class="">' . $title . '</a></li>';
+										$menu_list .='<li itemprop="actionOption"><a id="' . $id . '" href="' . $url . '" class="">' . $title . '</a></li>';
 									}
 								}
 								echo $menu_list;

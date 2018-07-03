@@ -34,6 +34,10 @@ var $=jQuery.noConflict();
 			}, 1500);
 		});
 
+		$("#link-mail").click(function() {
+			$(this).attr('href', 'mailto:mundo.bolita@altoempleo.com.mx');
+		});
+
 		$('.col-product').hover(function(){
 			$(this + 'bg-product').addClass('animated bounce');
 		});

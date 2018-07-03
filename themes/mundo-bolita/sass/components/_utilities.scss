@@ -107,6 +107,7 @@
 
 .margin-top-bottom-small    { margin-top: 10px; margin-bottom: 10px; }
 .margin-top-bottom        { margin-top: 15px; margin-bottom: 15px; }
+.margin-top-xbottom        { margin-top: 50px; margin-bottom: 50px; }
 .no-margin-top-bottom        { margin-top: 0px; margin-bottom: 0px; }
 
 .margin-right-xsmall       { margin-right: 5px; }
@@ -322,6 +323,7 @@
 
 .content-map {
   border: 15px solid $primary-color;
+  background-color: #fff;
   width: calc(100% - 21px); 
   iframe {
     height: 300px;
