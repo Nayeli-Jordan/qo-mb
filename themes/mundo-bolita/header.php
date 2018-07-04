@@ -95,9 +95,9 @@
 									<a href="<?php echo SITEURL ?>" class="hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home1.png);"></div>
 									</a>
-									<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
+									<!--<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/otros1.png);"></div>
-									</a>
+									</a>-->
 									<a id="caracteristicas" class="item-scroll hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/pinata1.png);"></div>
 									</a>									
@@ -112,9 +112,9 @@
 								<a href="<?php echo SITEURL ?>">
 									<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home1.png);"></div>
 								</a>
-								<a href="#" data-target="slide-out" class="sidenav-trigger">
+								<!--<a href="#" data-target="slide-out" class="sidenav-trigger">
 									<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/otros1.png);"></div>
-								</a>
+								</a>-->
 								<a id="caracteristicas" class="item-scroll">
 									<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/pinata1.png);"></div>
 								</a>							
