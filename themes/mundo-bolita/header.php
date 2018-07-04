@@ -135,7 +135,7 @@
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
 					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
 					<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-					<section class="container text-center relative margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
+					<section class="container text-center relative z-index-1 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
 						
 						<h2 class="uppercase color-primary">Catálogo</h2>
 						<div class="row relative">
