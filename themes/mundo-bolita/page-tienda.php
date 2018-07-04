@@ -1,11 +1,8 @@
 <?php get_header(); ?>
 
+	<!-- DEFAULT WC = SHOP -->
 	<!-- En esta página se muestran los productos de todas las categorias =>-->
 	<section class="[ container ] section-products">
-		<?php while ( have_posts() ) : the_post(); ?>
-			<?php include (TEMPLATEPATH . '/template/products.php'); ?>	
-		<?php endwhile; ?>
-		<p>yaaaaa</p>
 		<?php
 	        $args = array(
 	            'post_type' => 'product',
