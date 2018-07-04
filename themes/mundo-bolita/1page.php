@@ -6,6 +6,15 @@ get_header();
 ?>
 
 	<!-- En esta página se muestran los productos de cada categoría -->
+	<h3 class="text-center color-primary uppercase container relative z-index-1 margin-bottom-large"><?php the_title(); ?></h3>
+	<?php 
+$terms = get_the_terms( get_the_ID(), 'product_cat' );
+
+foreach ($terms as $term) {
+
+    echo '<h1 itemprop="name" class="product-title entry-title">'.$term->name.'</h1>';
+}
+	 ?>
 	<section class="[ container ] section-products">
 		<?php
 	        $args = array(
@@ -15,6 +24,7 @@ get_header();
 	                    array(
 	                        'taxonomy' => 'product_cat',
 	                        'field'    => 'slug',
+	                        'terms'    => $post_slug,
 	                    ),
 	                ),
 	            );
