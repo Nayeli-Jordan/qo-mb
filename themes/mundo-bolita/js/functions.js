@@ -11,7 +11,8 @@ var $=jQuery.noConflict();
 		$(document).ready(function() {
 			// Activa button collapse nav mobile
   			new WOW().init(); 
-			$('.sidenav').sidenav();
+			//$('.sidenav').sidenav();
+			$( ".mb-nav .clearfix" ).append( "</br>" );
 		});
  
 		$(window).on('resize', function(){
@@ -38,8 +39,9 @@ var $=jQuery.noConflict();
 			$(this).attr('href', 'mailto:mundo.bolita@altoempleo.com.mx');
 		});
 
-		$('.col-product').hover(function(){
-			$(this + 'bg-product').addClass('animated bounce');
+		$(".bg-icon-buscador").click(function() {
+			$( ".aws-search-field" ).keypress();
+			console.log('enter');
 		});
 
 	});

@@ -124,13 +124,13 @@
 				</div>	
 			</header>
 			<div class="[ main-body ]">
-				<ul id="slide-out" class="sidenav" itemscope>
+				<!--<ul id="slide-out" class="sidenav" itemscope>
 					<li itemprop="actionOption"><a href="#" class="sidenav-close text-right color-primary">x</a></li>
 					<li itemprop="actionOption"><a href="">ejemplo</a></li>
 					<li itemprop="actionOption"><a href="">ejemplo</a></li>
 					<li itemprop="actionOption"><a href="">ejemplo</a></li>
 					<li itemprop="actionOption"><a href="">ejemplo</a></li>
-				</ul>
+				</ul>-->
 
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
 					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
@@ -147,7 +147,7 @@
 								</div>							
 							</div>
 						</div>					
-						<ul class="mb-nav" itemscope>
+						<div class="mb-nav" itemscope>
 							<?php
 								$menu_name = 'top_menu';
 
@@ -156,14 +156,24 @@
 									$menu_items = wp_get_nav_menu_items( $menu->term_id );
 									$menu_list = '';
 									foreach ( (array) $menu_items as $key => $menu_item) {
-										$id 		= $menu_item->attr_title;
-										$title 		= $menu_item->title;
-										$url 		= $menu_item->url;
-										$menu_list .='<li itemprop="actionOption"><a id="' . $id . '" href="' . $url . '" class="">' . $title . '</a></li>';
+
+										$url 				= $menu_item->url;
+										$title 				= $menu_item->title;
+										$class 				= esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $menu_item->classes ), $menu_item) ) );
+
+										//$menu_item_parent	= $menu_item->menu_item_parent;		id del padre
+										//$id 				= $menu_item->ID;
+										//$attr_title 		= $menu_item->attr_title;
+										//$description		= $menu_item->description;
+										//$xfn 				= $menu_item->xfn;
+										//$type 			= $menu_item->type;		taxonomy, page...
+										//$type_label		= $menu_item->type_label;		página, categoría...
+
+										$menu_list .='<a href="' . $url . ' " itemprop="actionOption" class="' . $class .'">' . $title . '</a>';
 									}
 								}
 								echo $menu_list;
 							?>						
-						</ul>						
+						</div>						
 					</section>
 					<div class="clearfix"></div>

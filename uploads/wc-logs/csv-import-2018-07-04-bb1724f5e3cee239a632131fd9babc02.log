@@ -1,0 +1,2692 @@
+2018-07-04T10:55:27+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:55:27+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:55:27+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:55:27+00:00 DEBUG ---
+2018-07-04T10:55:27+00:00 DEBUG Processing products.
+2018-07-04T10:55:27+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:55:27+00:00 DEBUG > Merging post ID 5.
+2018-07-04T10:55:28+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 5
+    [post_title] => Bolibellita
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolibellita
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:28+00:00 DEBUG > > Image exists - skipping Bolibella.png
+2018-07-04T10:55:28+00:00 DEBUG > > Images set
+2018-07-04T10:55:28+00:00 DEBUG > Finished merging post ID 5.
+2018-07-04T10:55:28+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:55:28+00:00 DEBUG > Merging post ID 6.
+2018-07-04T10:55:29+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 6
+    [post_title] => Bolibeast
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolibeast
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:29+00:00 DEBUG > > Image exists - skipping Bolibestia.png
+2018-07-04T10:55:29+00:00 DEBUG > > Images set
+2018-07-04T10:55:29+00:00 DEBUG > Finished merging post ID 6.
+2018-07-04T10:55:29+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:55:29+00:00 DEBUG > Merging post ID 7.
+2018-07-04T10:55:29+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 7
+    [post_title] => Boliblanca Nieves
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliblanca-nieves
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:30+00:00 DEBUG > > Image exists - skipping Bolinieves.png
+2018-07-04T10:55:30+00:00 DEBUG > > Images set
+2018-07-04T10:55:30+00:00 DEBUG > Finished merging post ID 7.
+2018-07-04T10:55:30+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:55:30+00:00 DEBUG > Merging post ID 8.
+2018-07-04T10:55:31+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 8
+    [post_title] => Bolicienta
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicienta
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:31+00:00 DEBUG > > Image exists - skipping Bolicienta.png
+2018-07-04T10:55:31+00:00 DEBUG > > Images set
+2018-07-04T10:55:31+00:00 DEBUG > Finished merging post ID 8.
+2018-07-04T10:55:31+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:55:31+00:00 DEBUG > Merging post ID 9.
+2018-07-04T10:55:32+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 9
+    [post_title] => Bolielena
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolielena
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:32+00:00 DEBUG > > Image exists - skipping Bolielenea.png
+2018-07-04T10:55:32+00:00 DEBUG > > Images set
+2018-07-04T10:55:32+00:00 DEBUG > Finished merging post ID 9.
+2018-07-04T10:55:32+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:55:32+00:00 DEBUG > Merging post ID 10.
+2018-07-04T10:55:33+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 10
+    [post_title] => Bolielsa
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolielsa
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:33+00:00 DEBUG > > Image exists - skipping Bolielsa.png
+2018-07-04T10:55:34+00:00 DEBUG > > Images set
+2018-07-04T10:55:34+00:00 DEBUG > Finished merging post ID 10.
+2018-07-04T10:55:34+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:55:34+00:00 DEBUG > Merging post ID 11.
+2018-07-04T10:55:34+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 11
+    [post_title] => Bolirapunsel
+    [post_author] => 1
+    [post_date] => 2018-01-03 08:15:00
+    [post_name] => bolirapunsel
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:35+00:00 DEBUG > > Image exists - skipping Bolirapuncel.png
+2018-07-04T10:55:35+00:00 DEBUG > > Images set
+2018-07-04T10:55:35+00:00 DEBUG > Finished merging post ID 11.
+2018-07-04T10:55:35+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:55:35+00:00 DEBUG > Merging post ID 12.
+2018-07-04T10:55:36+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 12
+    [post_title] => Bolitinker Bell
+    [post_author] => 1
+    [post_date] => 2018-02-03 08:15:00
+    [post_name] => bolitinker-bell
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:36+00:00 DEBUG > > Image exists - skipping Bolitinkerbell.png
+2018-07-04T10:55:36+00:00 DEBUG > > Images set
+2018-07-04T10:55:36+00:00 DEBUG > Finished merging post ID 12.
+2018-07-04T10:55:36+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:55:36+00:00 DEBUG > Merging post ID 13.
+2018-07-04T10:55:37+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 13
+    [post_title] => Bolivaliente
+    [post_author] => 1
+    [post_date] => 2018-03-03 08:15:00
+    [post_name] => bolivaliente
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:37+00:00 DEBUG > > Image exists - skipping Bolivaliente.png
+2018-07-04T10:55:37+00:00 DEBUG > > Images set
+2018-07-04T10:55:37+00:00 DEBUG > Finished merging post ID 13.
+2018-07-04T10:55:37+00:00 DEBUG Finished processing products.
+2018-07-04T10:55:39+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:55:39+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:55:39+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:55:39+00:00 DEBUG ---
+2018-07-04T10:55:39+00:00 DEBUG Processing products.
+2018-07-04T10:55:39+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:55:39+00:00 DEBUG > Merging post ID 14.
+2018-07-04T10:55:39+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 14
+    [post_title] => Boliprincesa Sofia
+    [post_author] => 1
+    [post_date] => 2018-04-03 08:15:00
+    [post_name] => boliprincesa-sofia
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:40+00:00 DEBUG > > Image exists - skipping Bolisofia.png
+2018-07-04T10:55:40+00:00 DEBUG > > Images set
+2018-07-04T10:55:40+00:00 DEBUG > Finished merging post ID 14.
+2018-07-04T10:55:40+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:55:40+00:00 DEBUG > Merging post ID 15.
+2018-07-04T10:55:40+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 15
+    [post_title] => Bolipool
+    [post_author] => 1
+    [post_date] => 2018-05-03 08:15:00
+    [post_name] => bolipool
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:41+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Dead-Pool.png"
+2018-07-04T10:55:42+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Dead-Pool.png"
+2018-07-04T10:55:42+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Dead-Pool.png"
+2018-07-04T10:55:43+00:00 DEBUG > > Images set
+2018-07-04T10:55:43+00:00 DEBUG > Finished merging post ID 15.
+2018-07-04T10:55:43+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:55:43+00:00 DEBUG > Merging post ID 16.
+2018-07-04T10:55:45+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 16
+    [post_title] => Bolijoker
+    [post_author] => 1
+    [post_date] => 2018-06-03 08:15:00
+    [post_name] => bolijoker
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:45+00:00 DEBUG > > Image exists - skipping Bolijoker.png
+2018-07-04T10:55:45+00:00 DEBUG > > Images set
+2018-07-04T10:55:45+00:00 DEBUG > Finished merging post ID 16.
+2018-07-04T10:55:45+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:55:45+00:00 DEBUG > Merging post ID 17.
+2018-07-04T10:55:46+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 17
+    [post_title] => Boliharley Queen
+    [post_author] => 1
+    [post_date] => 2018-07-03 08:15:00
+    [post_name] => boliharley-queen
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:46+00:00 DEBUG > > Image exists - skipping Boliharleyqueen.png
+2018-07-04T10:55:46+00:00 DEBUG > > Images set
+2018-07-04T10:55:46+00:00 DEBUG > Finished merging post ID 17.
+2018-07-04T10:55:46+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:55:46+00:00 DEBUG > Merging post ID 18.
+2018-07-04T10:55:47+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 18
+    [post_title] => Bolibatichica
+    [post_author] => 1
+    [post_date] => 2018-08-03 08:15:00
+    [post_name] => bolibatichica
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:48+00:00 DEBUG > > Image exists - skipping Bolibati-chica.png
+2018-07-04T10:55:48+00:00 DEBUG > > Images set
+2018-07-04T10:55:48+00:00 DEBUG > Finished merging post ID 18.
+2018-07-04T10:55:48+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:55:48+00:00 DEBUG > Merging post ID 23.
+2018-07-04T10:55:49+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 23
+    [post_title] => Bolisuperman
+    [post_author] => 1
+    [post_date] => 2018-09-03 08:15:00
+    [post_name] => bolisuperman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:49+00:00 DEBUG > > Image exists - skipping Bolisuperman.png
+2018-07-04T10:55:49+00:00 DEBUG > > Images set
+2018-07-04T10:55:49+00:00 DEBUG > Finished merging post ID 23.
+2018-07-04T10:55:49+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:55:49+00:00 DEBUG > Merging post ID 24.
+2018-07-04T10:55:50+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 24
+    [post_title] => Boliblack Spiderman
+    [post_author] => 1
+    [post_date] => 2018-10-03 08:15:00
+    [post_name] => boliblack-spiderman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:50+00:00 DEBUG > > Image exists - skipping Boliblack-spiderman.png
+2018-07-04T10:55:50+00:00 DEBUG > > Images set
+2018-07-04T10:55:50+00:00 DEBUG > Finished merging post ID 24.
+2018-07-04T10:55:50+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:55:50+00:00 DEBUG > Merging post ID 25.
+2018-07-04T10:55:51+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 25
+    [post_title] => Bolispiderman
+    [post_author] => 1
+    [post_date] => 2018-11-03 08:15:00
+    [post_name] => bolispiderman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:51+00:00 DEBUG > > Image exists - skipping Bolispiderman.png
+2018-07-04T10:55:51+00:00 DEBUG > > Images set
+2018-07-04T10:55:52+00:00 DEBUG > Finished merging post ID 25.
+2018-07-04T10:55:52+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:55:52+00:00 DEBUG > Merging post ID 26.
+2018-07-04T10:55:53+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 26
+    [post_title] => Bolithor
+    [post_author] => 1
+    [post_date] => 2018-12-03 08:15:00
+    [post_name] => bolithor
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:53+00:00 DEBUG > > Image exists - skipping Bolithor.png
+2018-07-04T10:55:54+00:00 DEBUG > > Images set
+2018-07-04T10:55:54+00:00 DEBUG > Finished merging post ID 26.
+2018-07-04T10:55:54+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:55:54+00:00 DEBUG > Merging post ID 27.
+2018-07-04T10:55:54+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 27
+    [post_title] => Bolicapitán América
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicapitan-america
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:55:55+00:00 DEBUG > > Image exists - skipping Bolicapamerica.png
+2018-07-04T10:55:55+00:00 DEBUG > > Images set
+2018-07-04T10:55:55+00:00 DEBUG > Finished merging post ID 27.
+2018-07-04T10:55:55+00:00 DEBUG Finished processing products.
+2018-07-04T10:55:59+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:55:59+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:55:59+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:55:59+00:00 DEBUG ---
+2018-07-04T10:55:59+00:00 DEBUG Processing products.
+2018-07-04T10:55:59+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:55:59+00:00 DEBUG > Merging post ID 28.
+2018-07-04T10:55:59+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 28
+    [post_title] => Bolironman
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolironman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:00+00:00 DEBUG > > Image exists - skipping Bolironman.png
+2018-07-04T10:56:00+00:00 DEBUG > > Images set
+2018-07-04T10:56:00+00:00 DEBUG > Finished merging post ID 28.
+2018-07-04T10:56:00+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:56:00+00:00 DEBUG > Merging post ID 29.
+2018-07-04T10:56:00+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 29
+    [post_title] => Bolimiguel
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimiguel
+    [post_status] => pending
+    [comment_status] => open
+)
+
+2018-07-04T10:56:01+00:00 DEBUG > > Image exists - skipping Bolimiguelangel.png
+2018-07-04T10:56:01+00:00 DEBUG > > Images set
+2018-07-04T10:56:01+00:00 DEBUG > Finished merging post ID 29.
+2018-07-04T10:56:01+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:56:01+00:00 DEBUG > Merging post ID 32.
+2018-07-04T10:56:01+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 32
+    [post_title] => Boliunicornio pastel
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliunicornio-pastel
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:01+00:00 DEBUG > > Image exists - skipping Boliunicornio2.png
+2018-07-04T10:56:01+00:00 DEBUG > > Images set
+2018-07-04T10:56:02+00:00 DEBUG > Finished merging post ID 32.
+2018-07-04T10:56:02+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:56:02+00:00 DEBUG > Merging post ID 33.
+2018-07-04T10:56:02+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 33
+    [post_title] => Boliunicornio arcoíris
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliunicornio-arcoiris
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:02+00:00 DEBUG > > Image exists - skipping Boliunicornio.png
+2018-07-04T10:56:02+00:00 DEBUG > > Images set
+2018-07-04T10:56:02+00:00 DEBUG > Finished merging post ID 33.
+2018-07-04T10:56:02+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:56:02+00:00 DEBUG > Merging post ID 34.
+2018-07-04T10:56:03+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 34
+    [post_title] => Bolimasha
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimasha
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:03+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha.png"
+2018-07-04T10:56:08+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha.png"
+2018-07-04T10:56:08+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha.png"
+2018-07-04T10:56:08+00:00 DEBUG > > Images set
+2018-07-04T10:56:08+00:00 DEBUG > Finished merging post ID 34.
+2018-07-04T10:56:08+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:56:08+00:00 DEBUG > Merging post ID 35.
+2018-07-04T10:56:09+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 35
+    [post_title] => Bolioso
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolioso
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:10+00:00 DEBUG > > Image exists - skipping Bolioso.png
+2018-07-04T10:56:10+00:00 DEBUG > > Images set
+2018-07-04T10:56:10+00:00 DEBUG > Finished merging post ID 35.
+2018-07-04T10:56:10+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:56:10+00:00 DEBUG > Merging post ID 36.
+2018-07-04T10:56:11+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 36
+    [post_title] => Bolimasha lentes
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimasha-lentes
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:11+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha-lentes.png"
+2018-07-04T10:56:13+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha-lentes.png"
+2018-07-04T10:56:13+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimasha-lentes.png"
+2018-07-04T10:56:14+00:00 DEBUG > > Images set
+2018-07-04T10:56:14+00:00 DEBUG > Finished merging post ID 36.
+2018-07-04T10:56:14+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:56:14+00:00 DEBUG > Merging post ID 37.
+2018-07-04T10:56:14+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 37
+    [post_title] => Bolitigger
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolitigger
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:15+00:00 DEBUG > > Image exists - skipping Bolitigger.png
+2018-07-04T10:56:15+00:00 DEBUG > > Images set
+2018-07-04T10:56:15+00:00 DEBUG > Finished merging post ID 37.
+2018-07-04T10:56:15+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:56:15+00:00 DEBUG > Merging post ID 39.
+2018-07-04T10:56:15+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 39
+    [post_title] => Bolipocoyo
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipocoyo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:15+00:00 DEBUG > > Image exists - skipping Bolipocoyo.png
+2018-07-04T10:56:15+00:00 DEBUG > > Images set
+2018-07-04T10:56:16+00:00 DEBUG > Finished merging post ID 39.
+2018-07-04T10:56:16+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:56:16+00:00 DEBUG > Merging post ID 40.
+2018-07-04T10:56:16+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 40
+    [post_title] => Bolielly
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolielly
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:16+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliely.png"
+2018-07-04T10:56:19+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliely.png"
+2018-07-04T10:56:19+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliely.png"
+2018-07-04T10:56:19+00:00 DEBUG > > Images set
+2018-07-04T10:56:19+00:00 DEBUG > Finished merging post ID 40.
+2018-07-04T10:56:19+00:00 DEBUG Finished processing products.
+2018-07-04T10:56:22+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:56:22+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:56:23+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:56:23+00:00 DEBUG ---
+2018-07-04T10:56:23+00:00 DEBUG Processing products.
+2018-07-04T10:56:23+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:56:23+00:00 DEBUG > Merging post ID 41.
+2018-07-04T10:56:24+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 41
+    [post_title] => Bolicookie Monster
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicookie-monster
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:26+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicookie-mosnter.png"
+2018-07-04T10:56:27+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicookie-mosnter.png"
+2018-07-04T10:56:27+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicookie-mosnter.png"
+2018-07-04T10:56:27+00:00 DEBUG > > Images set
+2018-07-04T10:56:27+00:00 DEBUG > Finished merging post ID 41.
+2018-07-04T10:56:27+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:56:27+00:00 DEBUG > Merging post ID 42.
+2018-07-04T10:56:28+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 42
+    [post_title] => Bolielmo
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolielmo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:28+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielmo.png"
+2018-07-04T10:56:29+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielmo.png"
+2018-07-04T10:56:29+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielmo.png"
+2018-07-04T10:56:29+00:00 DEBUG > > Images set
+2018-07-04T10:56:29+00:00 DEBUG > Finished merging post ID 42.
+2018-07-04T10:56:29+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:56:29+00:00 DEBUG > Merging post ID 43.
+2018-07-04T10:56:29+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 43
+    [post_title] => Bolimichey Bebé
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimichey-bebe
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:30+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliemickey-bebé.png"
+2018-07-04T10:56:33+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliemickey-bebé.png"
+2018-07-04T10:56:33+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliemickey-bebé.png"
+2018-07-04T10:56:33+00:00 DEBUG > > Images set
+2018-07-04T10:56:33+00:00 DEBUG > Finished merging post ID 43.
+2018-07-04T10:56:33+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:56:33+00:00 DEBUG > Merging post ID 44.
+2018-07-04T10:56:35+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 44
+    [post_title] => Boliminnie Bebé
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliminnie-bebe
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:35+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliminnie-bebé.png"
+2018-07-04T10:56:45+00:00 DEBUG > > Error importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliminnie-bebé.png"
+2018-07-04T10:56:45+00:00 DEBUG > > Error getting remote image
+2018-07-04T10:56:45+00:00 DEBUG > > Images set
+2018-07-04T10:56:45+00:00 DEBUG > Finished merging post ID 44.
+2018-07-04T10:56:45+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:56:45+00:00 DEBUG > Merging post ID 45.
+2018-07-04T10:56:46+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 45
+    [post_title] => Boliminnie Rosa
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliminnie-rosa
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:46+00:00 DEBUG > > Image exists - skipping Boliminnie.png
+2018-07-04T10:56:46+00:00 DEBUG > > Images set
+2018-07-04T10:56:46+00:00 DEBUG > Finished merging post ID 45.
+2018-07-04T10:56:46+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:56:46+00:00 DEBUG > Merging post ID 46.
+2018-07-04T10:56:47+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 46
+    [post_title] => Boliminnie Roja
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliminnie-roja
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:47+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliminnie-mosue.png"
+2018-07-04T10:56:48+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliminnie-mosue.png"
+2018-07-04T10:56:48+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliminnie-mosue.png"
+2018-07-04T10:56:48+00:00 DEBUG > > Images set
+2018-07-04T10:56:48+00:00 DEBUG > Finished merging post ID 46.
+2018-07-04T10:56:48+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:56:48+00:00 DEBUG > Merging post ID 48.
+2018-07-04T10:56:49+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 48
+    [post_title] => Bolijorge
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijorge
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:49+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijorge.png"
+2018-07-04T10:56:50+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijorge.png"
+2018-07-04T10:56:50+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijorge.png"
+2018-07-04T10:56:50+00:00 DEBUG > > Images set
+2018-07-04T10:56:50+00:00 DEBUG > Finished merging post ID 48.
+2018-07-04T10:56:50+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:56:50+00:00 DEBUG > Merging post ID 49.
+2018-07-04T10:56:50+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 49
+    [post_title] => Bolidoki
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolidoki
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:51+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidoki.png"
+2018-07-04T10:56:51+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidoki.png"
+2018-07-04T10:56:51+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidoki.png"
+2018-07-04T10:56:51+00:00 DEBUG > > Images set
+2018-07-04T10:56:51+00:00 DEBUG > Finished merging post ID 49.
+2018-07-04T10:56:51+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:56:51+00:00 DEBUG > Merging post ID 50.
+2018-07-04T10:56:52+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 50
+    [post_title] => Bolijake
+    [post_author] => 1
+    [post_date] => 2018-01-04 08:15:00
+    [post_name] => bolijake
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:52+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijake.png"
+2018-07-04T10:56:53+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijake.png"
+2018-07-04T10:56:53+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijake.png"
+2018-07-04T10:56:53+00:00 DEBUG > > Images set
+2018-07-04T10:56:53+00:00 DEBUG > Finished merging post ID 50.
+2018-07-04T10:56:53+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:56:53+00:00 DEBUG > Merging post ID 51.
+2018-07-04T10:56:54+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 51
+    [post_title] => Boligallina Pintadita
+    [post_author] => 1
+    [post_date] => 2018-02-04 08:15:00
+    [post_name] => boligallina-pintadita
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:56:54+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boli-gallina-pintadita.png"
+2018-07-04T10:56:55+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boli-gallina-pintadita.png"
+2018-07-04T10:56:55+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boli-gallina-pintadita.png"
+2018-07-04T10:56:56+00:00 DEBUG > > Images set
+2018-07-04T10:56:56+00:00 DEBUG > Finished merging post ID 51.
+2018-07-04T10:56:56+00:00 DEBUG Finished processing products.
+2018-07-04T10:56:59+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:56:59+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:56:59+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:56:59+00:00 DEBUG ---
+2018-07-04T10:56:59+00:00 DEBUG Processing products.
+2018-07-04T10:56:59+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:56:59+00:00 DEBUG > Merging post ID 52.
+2018-07-04T10:57:02+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 52
+    [post_title] => Bolishopkins verde
+    [post_author] => 1
+    [post_date] => 2018-03-04 08:15:00
+    [post_name] => bolishopkins-verde
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:03+00:00 DEBUG > > Image exists - skipping Bolishopkings-verde.png
+2018-07-04T10:57:03+00:00 DEBUG > > Images set
+2018-07-04T10:57:03+00:00 DEBUG > Finished merging post ID 52.
+2018-07-04T10:57:03+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:57:03+00:00 DEBUG > Merging post ID 53.
+2018-07-04T10:57:07+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 53
+    [post_title] => Bolishopkins rosa
+    [post_author] => 1
+    [post_date] => 2018-04-04 08:15:00
+    [post_name] => bolishopkins-rosa
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:08+00:00 DEBUG > > Image exists - skipping Bolishopkings.png
+2018-07-04T10:57:08+00:00 DEBUG > > Images set
+2018-07-04T10:57:08+00:00 DEBUG > Finished merging post ID 53.
+2018-07-04T10:57:08+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:57:08+00:00 DEBUG > Merging post ID 54.
+2018-07-04T10:57:10+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 54
+    [post_title] => Bolichilindrina
+    [post_author] => 1
+    [post_date] => 2018-05-04 08:15:00
+    [post_name] => bolichilindrina
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:10+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichilindrina.png"
+2018-07-04T10:57:11+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichilindrina.png"
+2018-07-04T10:57:11+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichilindrina.png"
+2018-07-04T10:57:11+00:00 DEBUG > > Images set
+2018-07-04T10:57:11+00:00 DEBUG > Finished merging post ID 54.
+2018-07-04T10:57:11+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:57:11+00:00 DEBUG > Merging post ID 55.
+2018-07-04T10:57:12+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 55
+    [post_title] => Bolicleo
+    [post_author] => 1
+    [post_date] => 2018-06-04 08:15:00
+    [post_name] => bolicleo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:12+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolocleo.png"
+2018-07-04T10:57:13+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolocleo.png"
+2018-07-04T10:57:13+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolocleo.png"
+2018-07-04T10:57:13+00:00 DEBUG > > Images set
+2018-07-04T10:57:13+00:00 DEBUG > Finished merging post ID 55.
+2018-07-04T10:57:13+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:57:13+00:00 DEBUG > Merging post ID 56.
+2018-07-04T10:57:15+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 56
+    [post_title] => Bolichavo del ocho
+    [post_author] => 1
+    [post_date] => 2018-07-04 08:15:00
+    [post_name] => bolichavo-del-ocho
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:15+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichavo-del8.png"
+2018-07-04T10:57:16+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichavo-del8.png"
+2018-07-04T10:57:16+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichavo-del8.png"
+2018-07-04T10:57:16+00:00 DEBUG > > Images set
+2018-07-04T10:57:16+00:00 DEBUG > Finished merging post ID 56.
+2018-07-04T10:57:16+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:57:16+00:00 DEBUG > Merging post ID 57.
+2018-07-04T10:57:17+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 57
+    [post_title] => Bolibailarina
+    [post_author] => 1
+    [post_date] => 2018-08-04 08:15:00
+    [post_name] => bolibailarina
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:18+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibailarina.png"
+2018-07-04T10:57:21+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibailarina.png"
+2018-07-04T10:57:21+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibailarina.png"
+2018-07-04T10:57:21+00:00 DEBUG > > Images set
+2018-07-04T10:57:21+00:00 DEBUG > Finished merging post ID 57.
+2018-07-04T10:57:21+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:57:21+00:00 DEBUG > Merging post ID 58.
+2018-07-04T10:57:22+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 58
+    [post_title] => Bolidra Juguetes
+    [post_author] => 1
+    [post_date] => 2018-09-04 08:15:00
+    [post_name] => bolidra-juguetes
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:22+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidra-juguetes.png"
+2018-07-04T10:57:23+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidra-juguetes.png"
+2018-07-04T10:57:23+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidra-juguetes.png"
+2018-07-04T10:57:23+00:00 DEBUG > > Images set
+2018-07-04T10:57:23+00:00 DEBUG > Finished merging post ID 58.
+2018-07-04T10:57:23+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:57:23+00:00 DEBUG > Merging post ID 59.
+2018-07-04T10:57:24+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 59
+    [post_title] => Bolilambie
+    [post_author] => 1
+    [post_date] => 2018-10-04 08:15:00
+    [post_name] => bolilambie
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:24+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilambie.png"
+2018-07-04T10:57:25+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilambie.png"
+2018-07-04T10:57:25+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilambie.png"
+2018-07-04T10:57:25+00:00 DEBUG > > Images set
+2018-07-04T10:57:25+00:00 DEBUG > Finished merging post ID 59.
+2018-07-04T10:57:25+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:57:25+00:00 DEBUG > Merging post ID 60.
+2018-07-04T10:57:26+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 60
+    [post_title] => Bolilady Bug
+    [post_author] => 1
+    [post_date] => 2018-11-04 08:15:00
+    [post_name] => bolilady-bug
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:26+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilady-bug.png"
+2018-07-04T10:57:27+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilady-bug.png"
+2018-07-04T10:57:27+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolilady-bug.png"
+2018-07-04T10:57:27+00:00 DEBUG > > Images set
+2018-07-04T10:57:27+00:00 DEBUG > Finished merging post ID 60.
+2018-07-04T10:57:27+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:57:27+00:00 DEBUG > Merging post ID 61.
+2018-07-04T10:57:28+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 61
+    [post_title] => Bolishine
+    [post_author] => 1
+    [post_date] => 2018-12-04 08:15:00
+    [post_name] => bolishine
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:28+00:00 DEBUG > > Image exists - skipping Bolishine.png
+2018-07-04T10:57:29+00:00 DEBUG > > Images set
+2018-07-04T10:57:29+00:00 DEBUG > Finished merging post ID 61.
+2018-07-04T10:57:29+00:00 DEBUG Finished processing products.
+2018-07-04T10:57:31+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:57:31+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:57:31+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:57:31+00:00 DEBUG ---
+2018-07-04T10:57:31+00:00 DEBUG Processing products.
+2018-07-04T10:57:31+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:57:31+00:00 DEBUG > Merging post ID 62.
+2018-07-04T10:57:33+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 62
+    [post_title] => Bolishimmer
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolishimmer
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:34+00:00 DEBUG > > Image exists - skipping Bolishimmer.png
+2018-07-04T10:57:34+00:00 DEBUG > > Images set
+2018-07-04T10:57:34+00:00 DEBUG > Finished merging post ID 62.
+2018-07-04T10:57:34+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:57:34+00:00 DEBUG > Merging post ID 63.
+2018-07-04T10:57:35+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 63
+    [post_title] => Bolipeppa Hada
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipeppa-hada
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:35+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/1970/01/Bolipeppa-hada.png"
+2018-07-04T10:57:36+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/1970/01/Bolipeppa-hada.png"
+2018-07-04T10:57:36+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/1970/01/Bolipeppa-hada.png"
+2018-07-04T10:57:37+00:00 DEBUG > > Images set
+2018-07-04T10:57:37+00:00 DEBUG > Finished merging post ID 63.
+2018-07-04T10:57:37+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:57:37+00:00 DEBUG > Merging post ID 64.
+2018-07-04T10:57:38+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 64
+    [post_title] => Boligeorge Pig
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boligeorge-pig
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:38+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boligeorge-pig.png"
+2018-07-04T10:57:39+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boligeorge-pig.png"
+2018-07-04T10:57:39+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boligeorge-pig.png"
+2018-07-04T10:57:39+00:00 DEBUG > > Images set
+2018-07-04T10:57:40+00:00 DEBUG > Finished merging post ID 64.
+2018-07-04T10:57:40+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:57:40+00:00 DEBUG > Merging post ID 65.
+2018-07-04T10:57:40+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 65
+    [post_title] => Bolipeppa Pig
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipeppa-pig
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:40+00:00 DEBUG > > Image exists - skipping Bolipeppa-pig.png
+2018-07-04T10:57:40+00:00 DEBUG > > Images set
+2018-07-04T10:57:41+00:00 DEBUG > Finished merging post ID 65.
+2018-07-04T10:57:41+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:57:41+00:00 DEBUG > Merging post ID 67.
+2018-07-04T10:57:41+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 67
+    [post_title] => Bolirainbow Dash
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolirainbow-dash
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:41+00:00 DEBUG > > Image exists - skipping Bolirainbow-dash.png
+2018-07-04T10:57:41+00:00 DEBUG > > Images set
+2018-07-04T10:57:41+00:00 DEBUG > Finished merging post ID 67.
+2018-07-04T10:57:41+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:57:41+00:00 DEBUG > Merging post ID 68.
+2018-07-04T10:57:42+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 68
+    [post_title] => Bolichamoy
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolichamoy
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:42+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichamoy.png"
+2018-07-04T10:57:45+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichamoy.png"
+2018-07-04T10:57:45+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichamoy.png"
+2018-07-04T10:57:45+00:00 DEBUG > > Images set
+2018-07-04T10:57:45+00:00 DEBUG > Finished merging post ID 68.
+2018-07-04T10:57:45+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:57:45+00:00 DEBUG > Merging post ID 69.
+2018-07-04T10:57:46+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 69
+    [post_title] => Bolimerito morado
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimerito-morado
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:46+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito3.png"
+2018-07-04T10:57:47+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito3.png"
+2018-07-04T10:57:47+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito3.png"
+2018-07-04T10:57:47+00:00 DEBUG > > Images set
+2018-07-04T10:57:47+00:00 DEBUG > Finished merging post ID 69.
+2018-07-04T10:57:47+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:57:47+00:00 DEBUG > Merging post ID 70.
+2018-07-04T10:57:48+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 70
+    [post_title] => Bolimerito rosa
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimerito-rosa
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:48+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito2.png"
+2018-07-04T10:57:48+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito2.png"
+2018-07-04T10:57:48+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimerito2.png"
+2018-07-04T10:57:49+00:00 DEBUG > > Images set
+2018-07-04T10:57:49+00:00 DEBUG > Finished merging post ID 70.
+2018-07-04T10:57:49+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:57:49+00:00 DEBUG > Merging post ID 71.
+2018-07-04T10:57:49+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 71
+    [post_title] => Boliazul
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliazul
+    [post_status] => pending
+    [comment_status] => open
+)
+
+2018-07-04T10:57:49+00:00 DEBUG > Finished merging post ID 71.
+2018-07-04T10:57:49+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:57:49+00:00 DEBUG > Merging post ID 72.
+2018-07-04T10:57:49+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 72
+    [post_title] => Bolichimuelo
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolichimuelo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:49+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichimuelo.png"
+2018-07-04T10:57:50+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichimuelo.png"
+2018-07-04T10:57:50+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolichimuelo.png"
+2018-07-04T10:57:50+00:00 DEBUG > > Images set
+2018-07-04T10:57:50+00:00 DEBUG > Finished merging post ID 72.
+2018-07-04T10:57:50+00:00 DEBUG Finished processing products.
+2018-07-04T10:57:52+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:57:52+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:57:52+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:57:52+00:00 DEBUG ---
+2018-07-04T10:57:52+00:00 DEBUG Processing products.
+2018-07-04T10:57:52+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:57:52+00:00 DEBUG > Merging post ID 73.
+2018-07-04T10:57:53+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 73
+    [post_title] => Bolichase
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolichase
+    [post_status] => pending
+    [comment_status] => open
+)
+
+2018-07-04T10:57:54+00:00 DEBUG > Finished merging post ID 73.
+2018-07-04T10:57:54+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:57:54+00:00 DEBUG > Merging post ID 74.
+2018-07-04T10:57:55+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 74
+    [post_title] => Bolisky
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolisky
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:55+00:00 DEBUG > > Image exists - skipping Bolisky.png
+2018-07-04T10:57:55+00:00 DEBUG > > Images set
+2018-07-04T10:57:56+00:00 DEBUG > Finished merging post ID 74.
+2018-07-04T10:57:56+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:57:56+00:00 DEBUG > Merging post ID 75.
+2018-07-04T10:57:57+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 75
+    [post_title] => Boliryder
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliryder
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:57+00:00 DEBUG > > Image exists - skipping Boliryder.png
+2018-07-04T10:57:57+00:00 DEBUG > > Images set
+2018-07-04T10:57:58+00:00 DEBUG > Finished merging post ID 75.
+2018-07-04T10:57:58+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:57:58+00:00 DEBUG > Merging post ID 76.
+2018-07-04T10:57:59+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 76
+    [post_title] => Bolimarshall
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimarshall
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:57:59+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimarshall.png"
+2018-07-04T10:58:03+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimarshall.png"
+2018-07-04T10:58:03+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimarshall.png"
+2018-07-04T10:58:03+00:00 DEBUG > > Images set
+2018-07-04T10:58:04+00:00 DEBUG > Finished merging post ID 76.
+2018-07-04T10:58:04+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:58:04+00:00 DEBUG > Merging post ID 77.
+2018-07-04T10:58:04+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 77
+    [post_title] => Bolicat Boy
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicat-boy
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:04+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicatboy.png"
+2018-07-04T10:58:07+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicatboy.png"
+2018-07-04T10:58:07+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicatboy.png"
+2018-07-04T10:58:07+00:00 DEBUG > > Images set
+2018-07-04T10:58:07+00:00 DEBUG > Finished merging post ID 77.
+2018-07-04T10:58:07+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:58:07+00:00 DEBUG > Merging post ID 78.
+2018-07-04T10:58:07+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 78
+    [post_title] => Boliuluette
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliuluette
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:07+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliulette.png"
+2018-07-04T10:58:08+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliulette.png"
+2018-07-04T10:58:08+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliulette.png"
+2018-07-04T10:58:08+00:00 DEBUG > > Images set
+2018-07-04T10:58:08+00:00 DEBUG > Finished merging post ID 78.
+2018-07-04T10:58:08+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:58:08+00:00 DEBUG > Merging post ID 79.
+2018-07-04T10:58:09+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 79
+    [post_title] => Boligeko
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boligeko
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:09+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligeko.png"
+2018-07-04T10:58:10+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligeko.png"
+2018-07-04T10:58:10+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligeko.png"
+2018-07-04T10:58:10+00:00 DEBUG > > Images set
+2018-07-04T10:58:10+00:00 DEBUG > Finished merging post ID 79.
+2018-07-04T10:58:10+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:58:10+00:00 DEBUG > Merging post ID 80.
+2018-07-04T10:58:10+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 80
+    [post_title] => Boliprincipito
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliprincipito
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:10+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliprincipito.png"
+2018-07-04T10:58:11+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliprincipito.png"
+2018-07-04T10:58:11+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliprincipito.png"
+2018-07-04T10:58:11+00:00 DEBUG > > Images set
+2018-07-04T10:58:11+00:00 DEBUG > Finished merging post ID 80.
+2018-07-04T10:58:11+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:58:11+00:00 DEBUG > Merging post ID 81.
+2018-07-04T10:58:12+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 81
+    [post_title] => Boligoku
+    [post_author] => 1
+    [post_date] => 2018-01-05 08:15:00
+    [post_name] => boligoku
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:12+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligoku.png"
+2018-07-04T10:58:14+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligoku.png"
+2018-07-04T10:58:14+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligoku.png"
+2018-07-04T10:58:14+00:00 DEBUG > > Images set
+2018-07-04T10:58:14+00:00 DEBUG > Finished merging post ID 81.
+2018-07-04T10:58:14+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:58:14+00:00 DEBUG > Merging post ID 82.
+2018-07-04T10:58:15+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 82
+    [post_title] => Bolipokebola
+    [post_author] => 1
+    [post_date] => 2018-02-05 08:15:00
+    [post_name] => bolipokebola
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:16+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipokebola.png"
+2018-07-04T10:58:20+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipokebola.png"
+2018-07-04T10:58:20+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipokebola.png"
+2018-07-04T10:58:20+00:00 DEBUG > > Images set
+2018-07-04T10:58:20+00:00 DEBUG > Finished merging post ID 82.
+2018-07-04T10:58:20+00:00 DEBUG Finished processing products.
+2018-07-04T10:58:22+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:58:22+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:58:22+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:58:22+00:00 DEBUG ---
+2018-07-04T10:58:22+00:00 DEBUG Processing products.
+2018-07-04T10:58:22+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:58:22+00:00 DEBUG > Merging post ID 83.
+2018-07-04T10:58:24+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 83
+    [post_title] => Bolicharizard
+    [post_author] => 1
+    [post_date] => 2018-03-05 08:15:00
+    [post_name] => bolicharizard
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:24+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharizard.png"
+2018-07-04T10:58:28+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharizard.png"
+2018-07-04T10:58:28+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharizard.png"
+2018-07-04T10:58:28+00:00 DEBUG > > Images set
+2018-07-04T10:58:28+00:00 DEBUG > Finished merging post ID 83.
+2018-07-04T10:58:28+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:58:28+00:00 DEBUG > Merging post ID 84.
+2018-07-04T10:58:30+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 84
+    [post_title] => Bolicharmander
+    [post_author] => 1
+    [post_date] => 2018-04-05 08:15:00
+    [post_name] => bolicharmander
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:31+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharmander.png"
+2018-07-04T10:58:32+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharmander.png"
+2018-07-04T10:58:32+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicharmander.png"
+2018-07-04T10:58:33+00:00 DEBUG > > Images set
+2018-07-04T10:58:33+00:00 DEBUG > Finished merging post ID 84.
+2018-07-04T10:58:33+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:58:33+00:00 DEBUG > Merging post ID 85.
+2018-07-04T10:58:33+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 85
+    [post_title] => Bolipikachu
+    [post_author] => 1
+    [post_date] => 2018-05-05 08:15:00
+    [post_name] => bolipikachu
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:33+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipikachu.png"
+2018-07-04T10:58:34+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipikachu.png"
+2018-07-04T10:58:34+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipikachu.png"
+2018-07-04T10:58:35+00:00 DEBUG > > Images set
+2018-07-04T10:58:35+00:00 DEBUG > Finished merging post ID 85.
+2018-07-04T10:58:35+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:58:35+00:00 DEBUG > Merging post ID 86.
+2018-07-04T10:58:36+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 86
+    [post_title] => Bolimoana
+    [post_author] => 1
+    [post_date] => 2018-06-05 08:15:00
+    [post_name] => bolimoana
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:36+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimoana.png"
+2018-07-04T10:58:39+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimoana.png"
+2018-07-04T10:58:39+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimoana.png"
+2018-07-04T10:58:39+00:00 DEBUG > > Images set
+2018-07-04T10:58:40+00:00 DEBUG > Finished merging post ID 86.
+2018-07-04T10:58:40+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:58:40+00:00 DEBUG > Merging post ID 87.
+2018-07-04T10:58:41+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 87
+    [post_title] => Bolicoco
+    [post_author] => 1
+    [post_date] => 2018-07-05 08:15:00
+    [post_name] => bolicoco
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:42+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicoco.png"
+2018-07-04T10:58:44+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicoco.png"
+2018-07-04T10:58:44+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolicoco.png"
+2018-07-04T10:58:44+00:00 DEBUG > > Images set
+2018-07-04T10:58:44+00:00 DEBUG > Finished merging post ID 87.
+2018-07-04T10:58:44+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:58:44+00:00 DEBUG > Merging post ID 88.
+2018-07-04T10:58:45+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 88
+    [post_title] => Bolirafael
+    [post_author] => 1
+    [post_date] => 2018-08-05 08:15:00
+    [post_name] => bolirafael
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:45+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolirafael.png"
+2018-07-04T10:58:46+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolirafael.png"
+2018-07-04T10:58:46+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolirafael.png"
+2018-07-04T10:58:47+00:00 DEBUG > > Images set
+2018-07-04T10:58:47+00:00 DEBUG > Finished merging post ID 88.
+2018-07-04T10:58:47+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:58:47+00:00 DEBUG > Merging post ID 89.
+2018-07-04T10:58:48+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 89
+    [post_title] => Bolionardo
+    [post_author] => 1
+    [post_date] => 2018-09-05 08:15:00
+    [post_name] => bolionardo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:48+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolileonardo.png"
+2018-07-04T10:58:49+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolileonardo.png"
+2018-07-04T10:58:49+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolileonardo.png"
+2018-07-04T10:58:49+00:00 DEBUG > > Images set
+2018-07-04T10:58:49+00:00 DEBUG > Finished merging post ID 89.
+2018-07-04T10:58:49+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:58:49+00:00 DEBUG > Merging post ID 90.
+2018-07-04T10:58:51+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 90
+    [post_title] => Bolimiguel Ángel
+    [post_author] => 1
+    [post_date] => 2018-10-05 08:15:00
+    [post_name] => bolimiguel-angel
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:51+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimiguelangel.png"
+2018-07-04T10:58:52+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimiguelangel.png"
+2018-07-04T10:58:52+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimiguelangel.png"
+2018-07-04T10:58:53+00:00 DEBUG > > Images set
+2018-07-04T10:58:53+00:00 DEBUG > Finished merging post ID 90.
+2018-07-04T10:58:53+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:58:53+00:00 DEBUG > Merging post ID 91.
+2018-07-04T10:58:55+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 91
+    [post_title] => Bolidonatello
+    [post_author] => 1
+    [post_date] => 2018-11-05 08:15:00
+    [post_name] => bolidonatello
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:56+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidonatello.png"
+2018-07-04T10:58:57+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidonatello.png"
+2018-07-04T10:58:57+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidonatello.png"
+2018-07-04T10:58:57+00:00 DEBUG > > Images set
+2018-07-04T10:58:57+00:00 DEBUG > Finished merging post ID 91.
+2018-07-04T10:58:57+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:58:57+00:00 DEBUG > Merging post ID 92.
+2018-07-04T10:58:58+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 92
+    [post_title] => Boliharry Potter
+    [post_author] => 1
+    [post_date] => 2018-12-05 08:15:00
+    [post_name] => boliharry-potter
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:58:58+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliharrypotter.png"
+2018-07-04T10:58:59+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliharrypotter.png"
+2018-07-04T10:58:59+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliharrypotter.png"
+2018-07-04T10:58:59+00:00 DEBUG > > Images set
+2018-07-04T10:58:59+00:00 DEBUG > Finished merging post ID 92.
+2018-07-04T10:58:59+00:00 DEBUG Finished processing products.
+2018-07-04T10:59:02+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:59:02+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:59:02+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:59:02+00:00 DEBUG ---
+2018-07-04T10:59:02+00:00 DEBUG Processing products.
+2018-07-04T10:59:02+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:59:02+00:00 DEBUG > Merging post ID 93.
+2018-07-04T10:59:06+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 93
+    [post_title] => Boliminion
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliminion
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:07+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliminion.png"
+2018-07-04T10:59:09+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliminion.png"
+2018-07-04T10:59:09+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliminion.png"
+2018-07-04T10:59:09+00:00 DEBUG > > Images set
+2018-07-04T10:59:09+00:00 DEBUG > Finished merging post ID 93.
+2018-07-04T10:59:09+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:59:09+00:00 DEBUG > Merging post ID 94.
+2018-07-04T10:59:10+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 94
+    [post_title] => Boliagnes
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliagnes
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:11+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliagnes.png"
+2018-07-04T10:59:12+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliagnes.png"
+2018-07-04T10:59:12+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliagnes.png"
+2018-07-04T10:59:12+00:00 DEBUG > > Images set
+2018-07-04T10:59:12+00:00 DEBUG > Finished merging post ID 94.
+2018-07-04T10:59:12+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:59:12+00:00 DEBUG > Merging post ID 95.
+2018-07-04T10:59:14+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 95
+    [post_title] => Boliramón Feliz
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliramon-feliz
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:15+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramón-feliz.png"
+2018-07-04T10:59:16+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramón-feliz.png"
+2018-07-04T10:59:16+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramón-feliz.png"
+2018-07-04T10:59:16+00:00 DEBUG > > Images set
+2018-07-04T10:59:17+00:00 DEBUG > Finished merging post ID 95.
+2018-07-04T10:59:17+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T10:59:17+00:00 DEBUG > Merging post ID 96.
+2018-07-04T10:59:18+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 96
+    [post_title] => Bolipoppy
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipoppy
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:18+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipoppy.png"
+2018-07-04T10:59:21+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipoppy.png"
+2018-07-04T10:59:21+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolipoppy.png"
+2018-07-04T10:59:21+00:00 DEBUG > > Images set
+2018-07-04T10:59:21+00:00 DEBUG > Finished merging post ID 96.
+2018-07-04T10:59:21+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T10:59:21+00:00 DEBUG > Merging post ID 97.
+2018-07-04T10:59:22+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 97
+    [post_title] => Boliramón Gruñón
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliramon-grunon
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:22+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramongrunon.png"
+2018-07-04T10:59:24+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramongrunon.png"
+2018-07-04T10:59:24+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliramongrunon.png"
+2018-07-04T10:59:25+00:00 DEBUG > > Images set
+2018-07-04T10:59:25+00:00 DEBUG > Finished merging post ID 97.
+2018-07-04T10:59:25+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T10:59:25+00:00 DEBUG > Merging post ID 98.
+2018-07-04T10:59:26+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 98
+    [post_title] => Bolisullivan
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolisullivan
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:26+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolisullivan.png"
+2018-07-04T10:59:29+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolisullivan.png"
+2018-07-04T10:59:29+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolisullivan.png"
+2018-07-04T10:59:31+00:00 DEBUG > > Images set
+2018-07-04T10:59:32+00:00 DEBUG > Finished merging post ID 98.
+2018-07-04T10:59:32+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T10:59:32+00:00 DEBUG > Merging post ID 99.
+2018-07-04T10:59:35+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 99
+    [post_title] => Boliboo
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliboo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:36+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliboo.png"
+2018-07-04T10:59:38+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliboo.png"
+2018-07-04T10:59:38+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliboo.png"
+2018-07-04T10:59:38+00:00 DEBUG > > Images set
+2018-07-04T10:59:38+00:00 DEBUG > Finished merging post ID 99.
+2018-07-04T10:59:38+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T10:59:38+00:00 DEBUG > Merging post ID 100.
+2018-07-04T10:59:39+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 100
+    [post_title] => Bolimike
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimike
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:40+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimike.png"
+2018-07-04T10:59:41+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimike.png"
+2018-07-04T10:59:41+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimike.png"
+2018-07-04T10:59:41+00:00 DEBUG > > Images set
+2018-07-04T10:59:41+00:00 DEBUG > Finished merging post ID 100.
+2018-07-04T10:59:41+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T10:59:41+00:00 DEBUG > Merging post ID 101.
+2018-07-04T10:59:43+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 101
+    [post_title] => Bolimia
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimia
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:44+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimia.png"
+2018-07-04T10:59:45+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimia.png"
+2018-07-04T10:59:45+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimia.png"
+2018-07-04T10:59:45+00:00 DEBUG > > Images set
+2018-07-04T10:59:45+00:00 DEBUG > Finished merging post ID 101.
+2018-07-04T10:59:45+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T10:59:45+00:00 DEBUG > Merging post ID 102.
+2018-07-04T10:59:46+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 102
+    [post_title] => Bolimabel
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimabel
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:46+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimabel.png"
+2018-07-04T10:59:48+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimabel.png"
+2018-07-04T10:59:48+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimabel.png"
+2018-07-04T10:59:48+00:00 DEBUG > > Images set
+2018-07-04T10:59:48+00:00 DEBUG > Finished merging post ID 102.
+2018-07-04T10:59:48+00:00 DEBUG Finished processing products.
+2018-07-04T10:59:50+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T10:59:50+00:00 DEBUG Parsing products CSV.
+2018-07-04T10:59:50+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T10:59:50+00:00 DEBUG ---
+2018-07-04T10:59:50+00:00 DEBUG Processing products.
+2018-07-04T10:59:50+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T10:59:50+00:00 DEBUG > Merging post ID 103.
+2018-07-04T10:59:52+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 103
+    [post_title] => Bolistitch
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolistitch
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:53+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolistich.png"
+2018-07-04T10:59:55+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolistich.png"
+2018-07-04T10:59:55+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolistich.png"
+2018-07-04T10:59:55+00:00 DEBUG > > Images set
+2018-07-04T10:59:55+00:00 DEBUG > Finished merging post ID 103.
+2018-07-04T10:59:55+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T10:59:55+00:00 DEBUG > Merging post ID 104.
+2018-07-04T10:59:56+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 104
+    [post_title] => Boli Mr Increíble
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boli-mr-increible
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:57+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boli-incelible.png"
+2018-07-04T10:59:58+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boli-incelible.png"
+2018-07-04T10:59:58+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boli-incelible.png"
+2018-07-04T10:59:58+00:00 DEBUG > > Images set
+2018-07-04T10:59:58+00:00 DEBUG > Finished merging post ID 104.
+2018-07-04T10:59:58+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T10:59:58+00:00 DEBUG > Merging post ID 105.
+2018-07-04T10:59:59+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 105
+    [post_title] => Boliclone
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliclone
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T10:59:59+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliclone.png"
+2018-07-04T11:00:00+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliclone.png"
+2018-07-04T11:00:00+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliclone.png"
+2018-07-04T11:00:00+00:00 DEBUG > > Images set
+2018-07-04T11:00:01+00:00 DEBUG > Finished merging post ID 105.
+2018-07-04T11:00:01+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:00:01+00:00 DEBUG > Merging post ID 106.
+2018-07-04T11:00:02+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 106
+    [post_title] => Bolidarth Vader
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolidarth-vader
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:03+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidarthvader.png"
+2018-07-04T11:00:04+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidarthvader.png"
+2018-07-04T11:00:04+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolidarthvader.png"
+2018-07-04T11:00:04+00:00 DEBUG > > Images set
+2018-07-04T11:00:04+00:00 DEBUG > Finished merging post ID 106.
+2018-07-04T11:00:04+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:00:04+00:00 DEBUG > Merging post ID 107.
+2018-07-04T11:00:05+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 107
+    [post_title] => Boligatitosaurio
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boligatitosaurio
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:05+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligatitosaurio.png"
+2018-07-04T11:00:08+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligatitosaurio.png"
+2018-07-04T11:00:08+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boligatitosaurio.png"
+2018-07-04T11:00:08+00:00 DEBUG > > Images set
+2018-07-04T11:00:08+00:00 DEBUG > Finished merging post ID 107.
+2018-07-04T11:00:08+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:00:08+00:00 DEBUG > Merging post ID 108.
+2018-07-04T11:00:08+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 108
+    [post_title] => Bolimarciano
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimarciano
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:08+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimarciano.png"
+2018-07-04T11:00:10+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimarciano.png"
+2018-07-04T11:00:10+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolimarciano.png"
+2018-07-04T11:00:11+00:00 DEBUG > > Images set
+2018-07-04T11:00:11+00:00 DEBUG > Finished merging post ID 108.
+2018-07-04T11:00:11+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:00:11+00:00 DEBUG > Merging post ID 109.
+2018-07-04T11:00:12+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 109
+    [post_title] => Bolilotso
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolilotso
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:12+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolilotso.png"
+2018-07-04T11:00:15+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolilotso.png"
+2018-07-04T11:00:15+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolilotso.png"
+2018-07-04T11:00:15+00:00 DEBUG > > Images set
+2018-07-04T11:00:15+00:00 DEBUG > Finished merging post ID 109.
+2018-07-04T11:00:15+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:00:15+00:00 DEBUG > Merging post ID 110.
+2018-07-04T11:00:16+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 110
+    [post_title] => Boliwoody
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliwoody
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:16+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwoody.png"
+2018-07-04T11:00:17+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwoody.png"
+2018-07-04T11:00:17+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwoody.png"
+2018-07-04T11:00:17+00:00 DEBUG > > Images set
+2018-07-04T11:00:17+00:00 DEBUG > Finished merging post ID 110.
+2018-07-04T11:00:17+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:00:17+00:00 DEBUG > Merging post ID 111.
+2018-07-04T11:00:17+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 111
+    [post_title] => Bolijessy
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijessy
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:17+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolijessy.png"
+2018-07-04T11:00:18+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolijessy.png"
+2018-07-04T11:00:18+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolijessy.png"
+2018-07-04T11:00:18+00:00 DEBUG > > Images set
+2018-07-04T11:00:18+00:00 DEBUG > Finished merging post ID 111.
+2018-07-04T11:00:18+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:00:18+00:00 DEBUG > Merging post ID 112.
+2018-07-04T11:00:19+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 112
+    [post_title] => Bolibuzz
+    [post_author] => 1
+    [post_date] => 2018-01-06 08:15:00
+    [post_name] => bolibuzz
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:19+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibuzz.png"
+2018-07-04T11:00:20+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibuzz.png"
+2018-07-04T11:00:20+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibuzz.png"
+2018-07-04T11:00:20+00:00 DEBUG > > Images set
+2018-07-04T11:00:20+00:00 DEBUG > Finished merging post ID 112.
+2018-07-04T11:00:20+00:00 DEBUG Finished processing products.
+2018-07-04T11:00:22+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:00:22+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:00:22+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:00:22+00:00 DEBUG ---
+2018-07-04T11:00:22+00:00 DEBUG Processing products.
+2018-07-04T11:00:22+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:00:22+00:00 DEBUG > Merging post ID 113.
+2018-07-04T11:00:24+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 113
+    [post_title] => Bolileón
+    [post_author] => 1
+    [post_date] => 2018-02-06 08:15:00
+    [post_name] => bolileon
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:24+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolileón.png"
+2018-07-04T11:00:26+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolileón.png"
+2018-07-04T11:00:26+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolileón.png"
+2018-07-04T11:00:26+00:00 DEBUG > > Images set
+2018-07-04T11:00:26+00:00 DEBUG > Finished merging post ID 113.
+2018-07-04T11:00:26+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T11:00:26+00:00 DEBUG > Merging post ID 114.
+2018-07-04T11:00:27+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 114
+    [post_title] => Bolipanda
+    [post_author] => 1
+    [post_date] => 2018-03-06 08:15:00
+    [post_name] => bolipanda
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:27+00:00 DEBUG > > Image exists - skipping Bolipanda.png
+2018-07-04T11:00:27+00:00 DEBUG > > Images set
+2018-07-04T11:00:27+00:00 DEBUG > Finished merging post ID 114.
+2018-07-04T11:00:27+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T11:00:27+00:00 DEBUG > Merging post ID 115.
+2018-07-04T11:00:27+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 115
+    [post_title] => Bolipollo
+    [post_author] => 1
+    [post_date] => 2018-04-06 08:15:00
+    [post_name] => bolipollo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:27+00:00 DEBUG > > Image exists - skipping Bolipollo.png
+2018-07-04T11:00:28+00:00 DEBUG > > Images set
+2018-07-04T11:00:28+00:00 DEBUG > Finished merging post ID 115.
+2018-07-04T11:00:28+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:00:28+00:00 DEBUG > Merging post ID 116.
+2018-07-04T11:00:28+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 116
+    [post_title] => Boliconejo
+    [post_author] => 1
+    [post_date] => 2018-05-06 08:15:00
+    [post_name] => boliconejo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:28+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliconejo.png"
+2018-07-04T11:00:29+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliconejo.png"
+2018-07-04T11:00:29+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliconejo.png"
+2018-07-04T11:00:29+00:00 DEBUG > > Images set
+2018-07-04T11:00:29+00:00 DEBUG > Finished merging post ID 116.
+2018-07-04T11:00:29+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:00:29+00:00 DEBUG > Merging post ID 117.
+2018-07-04T11:00:30+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 117
+    [post_title] => Bolielefante
+    [post_author] => 1
+    [post_date] => 2018-06-06 08:15:00
+    [post_name] => bolielefante
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:30+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielefante.png"
+2018-07-04T11:00:31+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielefante.png"
+2018-07-04T11:00:31+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolielefante.png"
+2018-07-04T11:00:31+00:00 DEBUG > > Images set
+2018-07-04T11:00:31+00:00 DEBUG > Finished merging post ID 117.
+2018-07-04T11:00:31+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:00:31+00:00 DEBUG > Merging post ID 118.
+2018-07-04T11:00:31+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 118
+    [post_title] => Boligolden Freddy
+    [post_author] => 1
+    [post_date] => 2018-07-06 08:15:00
+    [post_name] => boligolden-freddy
+    [post_status] => pending
+    [comment_status] => open
+)
+
+2018-07-04T11:00:31+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:41+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:41+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:41+00:00 DEBUG > > Images set
+2018-07-04T11:00:41+00:00 DEBUG > Finished merging post ID 118.
+2018-07-04T11:00:41+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:00:41+00:00 DEBUG > Merging post ID 119.
+2018-07-04T11:00:42+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 119
+    [post_title] => Bolizombie
+    [post_author] => 1
+    [post_date] => 2018-08-06 08:15:00
+    [post_name] => bolizombie
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:42+00:00 DEBUG > > Image exists - skipping Bolizombie.png
+2018-07-04T11:00:42+00:00 DEBUG > > Images set
+2018-07-04T11:00:42+00:00 DEBUG > Finished merging post ID 119.
+2018-07-04T11:00:42+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:00:42+00:00 DEBUG > Merging post ID 120.
+2018-07-04T11:00:42+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 120
+    [post_title] => Bolifreddy
+    [post_author] => 1
+    [post_date] => 2018-09-06 08:15:00
+    [post_name] => bolifreddy
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:42+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:43+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:43+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifreddy.png"
+2018-07-04T11:00:43+00:00 DEBUG > > Images set
+2018-07-04T11:00:43+00:00 DEBUG > Finished merging post ID 120.
+2018-07-04T11:00:43+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:00:43+00:00 DEBUG > Merging post ID 121.
+2018-07-04T11:00:44+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 121
+    [post_title] => Bolioso Maloso
+    [post_author] => 1
+    [post_date] => 2018-10-06 08:15:00
+    [post_name] => bolioso-maloso
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:44+00:00 DEBUG > > Image exists - skipping Bolioso-maloso.png
+2018-07-04T11:00:44+00:00 DEBUG > > Images set
+2018-07-04T11:00:44+00:00 DEBUG > Finished merging post ID 121.
+2018-07-04T11:00:44+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:00:44+00:00 DEBUG > Merging post ID 122.
+2018-07-04T11:00:44+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 122
+    [post_title] => Bolisonic Boom
+    [post_author] => 1
+    [post_date] => 2018-11-06 08:15:00
+    [post_name] => bolisonic-boom
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:44+00:00 DEBUG > > Image exists - skipping Bolisonic.png
+2018-07-04T11:00:45+00:00 DEBUG > > Images set
+2018-07-04T11:00:45+00:00 DEBUG > Finished merging post ID 122.
+2018-07-04T11:00:45+00:00 DEBUG Finished processing products.
+2018-07-04T11:00:47+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:00:47+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:00:47+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:00:47+00:00 DEBUG ---
+2018-07-04T11:00:47+00:00 DEBUG Processing products.
+2018-07-04T11:00:47+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:00:47+00:00 DEBUG > Merging post ID 123.
+2018-07-04T11:00:48+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 123
+    [post_title] => Bolimario Bros
+    [post_author] => 1
+    [post_date] => 2018-12-06 08:15:00
+    [post_name] => bolimario-bros
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:48+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimario-bros.png"
+2018-07-04T11:00:49+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimario-bros.png"
+2018-07-04T11:00:49+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimario-bros.png"
+2018-07-04T11:00:50+00:00 DEBUG > > Images set
+2018-07-04T11:00:50+00:00 DEBUG > Finished merging post ID 123.
+2018-07-04T11:00:50+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T11:00:50+00:00 DEBUG > Merging post ID 124.
+2018-07-04T11:00:51+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 124
+    [post_title] => Boliluigi Bros
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliluigi-bros
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:51+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliluigui-bros.png"
+2018-07-04T11:00:55+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliluigui-bros.png"
+2018-07-04T11:00:55+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliluigui-bros.png"
+2018-07-04T11:00:55+00:00 DEBUG > > Images set
+2018-07-04T11:00:55+00:00 DEBUG > Finished merging post ID 124.
+2018-07-04T11:00:55+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T11:00:55+00:00 DEBUG > Merging post ID 125.
+2018-07-04T11:00:55+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 125
+    [post_title] => Bolimexicana
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimexicana
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:00:55+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimexicana.png"
+2018-07-04T11:01:05+00:00 DEBUG > > Error importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimexicana.png"
+2018-07-04T11:01:05+00:00 DEBUG > > Error getting remote image
+2018-07-04T11:01:05+00:00 DEBUG > > Images set
+2018-07-04T11:01:06+00:00 DEBUG > Finished merging post ID 125.
+2018-07-04T11:01:06+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:01:06+00:00 DEBUG > Merging post ID 126.
+2018-07-04T11:01:06+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 126
+    [post_title] => Bolimariachi guitarra
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimariachi-guitarra
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:06+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimariachi.png"
+2018-07-04T11:01:07+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimariachi.png"
+2018-07-04T11:01:07+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimariachi.png"
+2018-07-04T11:01:07+00:00 DEBUG > > Images set
+2018-07-04T11:01:07+00:00 DEBUG > Finished merging post ID 126.
+2018-07-04T11:01:07+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:01:07+00:00 DEBUG > Merging post ID 127.
+2018-07-04T11:01:08+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 127
+    [post_title] => Bolimariachi
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimariachi
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:08+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaricahi2.png"
+2018-07-04T11:01:09+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaricahi2.png"
+2018-07-04T11:01:09+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaricahi2.png"
+2018-07-04T11:01:09+00:00 DEBUG > > Images set
+2018-07-04T11:01:09+00:00 DEBUG > Finished merging post ID 127.
+2018-07-04T11:01:09+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:01:09+00:00 DEBUG > Merging post ID 128.
+2018-07-04T11:01:09+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 128
+    [post_title] => Bolifrida
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolifrida
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:09+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifrida.png"
+2018-07-04T11:01:11+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifrida.png"
+2018-07-04T11:01:11+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolifrida.png"
+2018-07-04T11:01:11+00:00 DEBUG > > Images set
+2018-07-04T11:01:11+00:00 DEBUG > Finished merging post ID 128.
+2018-07-04T11:01:11+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:01:11+00:00 DEBUG > Merging post ID 129.
+2018-07-04T11:01:11+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 129
+    [post_title] => Bolimaría
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimaria
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:11+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaría.png"
+2018-07-04T11:01:12+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaría.png"
+2018-07-04T11:01:12+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimaría.png"
+2018-07-04T11:01:13+00:00 DEBUG > > Images set
+2018-07-04T11:01:13+00:00 DEBUG > Finished merging post ID 129.
+2018-07-04T11:01:13+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:01:13+00:00 DEBUG > Merging post ID 130.
+2018-07-04T11:01:13+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 130
+    [post_title] => Bolidiablo
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolidiablo
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:13+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidiablo.png"
+2018-07-04T11:01:16+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidiablo.png"
+2018-07-04T11:01:16+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolidiablo.png"
+2018-07-04T11:01:16+00:00 DEBUG > > Images set
+2018-07-04T11:01:16+00:00 DEBUG > Finished merging post ID 130.
+2018-07-04T11:01:16+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:01:16+00:00 DEBUG > Merging post ID 131.
+2018-07-04T11:01:17+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 131
+    [post_title] => Bolibrujita
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolibrujita
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:17+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibrujita.png"
+2018-07-04T11:01:19+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibrujita.png"
+2018-07-04T11:01:19+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolibrujita.png"
+2018-07-04T11:01:19+00:00 DEBUG > > Images set
+2018-07-04T11:01:19+00:00 DEBUG > Finished merging post ID 131.
+2018-07-04T11:01:19+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:01:19+00:00 DEBUG > Merging post ID 132.
+2018-07-04T11:01:20+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 132
+    [post_title] => Bolijack Skeleton
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijack-skeleton
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:20+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack2.png"
+2018-07-04T11:01:22+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack2.png"
+2018-07-04T11:01:22+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack2.png"
+2018-07-04T11:01:23+00:00 DEBUG > > Images set
+2018-07-04T11:01:23+00:00 DEBUG > Finished merging post ID 132.
+2018-07-04T11:01:23+00:00 DEBUG Finished processing products.
+2018-07-04T11:01:25+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:01:25+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:01:25+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:01:25+00:00 DEBUG ---
+2018-07-04T11:01:25+00:00 DEBUG Processing products.
+2018-07-04T11:01:25+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:01:25+00:00 DEBUG > Merging post ID 133.
+2018-07-04T11:01:26+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 133
+    [post_title] => Bolijack Skeleton sonrisa
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijack-skeleton-sonrisa
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:27+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack.png"
+2018-07-04T11:01:29+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack.png"
+2018-07-04T11:01:29+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijack.png"
+2018-07-04T11:01:30+00:00 DEBUG > > Images set
+2018-07-04T11:01:30+00:00 DEBUG > Finished merging post ID 133.
+2018-07-04T11:01:30+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T11:01:30+00:00 DEBUG > Merging post ID 134.
+2018-07-04T11:01:30+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 134
+    [post_title] => Bolicalavera bigote
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicalavera-bigote
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:30+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera2.png"
+2018-07-04T11:01:31+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera2.png"
+2018-07-04T11:01:31+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera2.png"
+2018-07-04T11:01:32+00:00 DEBUG > > Images set
+2018-07-04T11:01:32+00:00 DEBUG > Finished merging post ID 134.
+2018-07-04T11:01:32+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T11:01:32+00:00 DEBUG > Merging post ID 135.
+2018-07-04T11:01:32+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 135
+    [post_title] => Bolicalavera
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolicalavera
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:32+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera.png"
+2018-07-04T11:01:37+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera.png"
+2018-07-04T11:01:37+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolicalavera.png"
+2018-07-04T11:01:37+00:00 DEBUG > > Images set
+2018-07-04T11:01:37+00:00 DEBUG > Finished merging post ID 135.
+2018-07-04T11:01:37+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:01:37+00:00 DEBUG > Merging post ID 136.
+2018-07-04T11:01:38+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 136
+    [post_title] => Bolivampiro
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolivampiro
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:38+00:00 DEBUG > > Image exists - skipping Bolivampiro.png
+2018-07-04T11:01:38+00:00 DEBUG > > Images set
+2018-07-04T11:01:38+00:00 DEBUG > Finished merging post ID 136.
+2018-07-04T11:01:38+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:01:38+00:00 DEBUG > Merging post ID 149.
+2018-07-04T11:01:38+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 149
+    [post_title] => Boliplayer Chivas
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliplayer-chivas
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:38+00:00 DEBUG > > Image exists - skipping Boliplayr-chivas.png
+2018-07-04T11:01:38+00:00 DEBUG > > Images set
+2018-07-04T11:01:38+00:00 DEBUG > Finished merging post ID 149.
+2018-07-04T11:01:38+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:01:38+00:00 DEBUG > Merging post ID 150.
+2018-07-04T11:01:39+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 150
+    [post_title] => Bolipayaso
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipayaso
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:39+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-07-04T11:01:40+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-07-04T11:01:40+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/bolipayaso.png"
+2018-07-04T11:01:40+00:00 DEBUG > > Images set
+2018-07-04T11:01:40+00:00 DEBUG > Finished merging post ID 150.
+2018-07-04T11:01:40+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:01:40+00:00 DEBUG > Merging post ID 151.
+2018-07-04T11:01:41+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 151
+    [post_title] => Bolipirata
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipirata
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:41+00:00 DEBUG > > Image exists - skipping Bolipirata.png
+2018-07-04T11:01:41+00:00 DEBUG > > Images set
+2018-07-04T11:01:42+00:00 DEBUG > Finished merging post ID 151.
+2018-07-04T11:01:42+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:01:42+00:00 DEBUG > Merging post ID 280.
+2018-07-04T11:01:43+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 280
+    [post_title] => Boliflash
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliflash
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:45+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliflash.png"
+2018-07-04T11:01:46+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliflash.png"
+2018-07-04T11:01:46+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliflash.png"
+2018-07-04T11:01:47+00:00 DEBUG > > Images set
+2018-07-04T11:01:47+00:00 DEBUG > Finished merging post ID 280.
+2018-07-04T11:01:47+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:01:47+00:00 DEBUG > Merging post ID 281.
+2018-07-04T11:01:48+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 281
+    [post_title] => Bolibatman
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolibatman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:51+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibatman.png"
+2018-07-04T11:01:54+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibatman.png"
+2018-07-04T11:01:54+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Bolibatman.png"
+2018-07-04T11:01:54+00:00 DEBUG > > Images set
+2018-07-04T11:01:54+00:00 DEBUG > Finished merging post ID 281.
+2018-07-04T11:01:54+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:01:54+00:00 DEBUG > Merging post ID 282.
+2018-07-04T11:01:55+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 282
+    [post_title] => Boliana
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliana
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:01:56+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliana.png"
+2018-07-04T11:01:59+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliana.png"
+2018-07-04T11:01:59+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliana.png"
+2018-07-04T11:01:59+00:00 DEBUG > > Images set
+2018-07-04T11:01:59+00:00 DEBUG > Finished merging post ID 282.
+2018-07-04T11:01:59+00:00 DEBUG Finished processing products.
+2018-07-04T11:02:02+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:02:02+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:02:02+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:02:02+00:00 DEBUG ---
+2018-07-04T11:02:02+00:00 DEBUG Processing products.
+2018-07-04T11:02:02+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:02:02+00:00 DEBUG > Merging post ID 283.
+2018-07-04T11:02:04+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 283
+    [post_title] => Boliariel
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliariel
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:05+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel2.png"
+2018-07-04T11:02:07+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel2.png"
+2018-07-04T11:02:07+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel2.png"
+2018-07-04T11:02:08+00:00 DEBUG > > Images set
+2018-07-04T11:02:08+00:00 DEBUG > Finished merging post ID 283.
+2018-07-04T11:02:08+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T11:02:08+00:00 DEBUG > Merging post ID 284.
+2018-07-04T11:02:09+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 284
+    [post_title] => Boliariel Sirena
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliariel-sirena
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:10+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel.png"
+2018-07-04T11:02:11+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel.png"
+2018-07-04T11:02:11+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliariel.png"
+2018-07-04T11:02:11+00:00 DEBUG > > Images set
+2018-07-04T11:02:12+00:00 DEBUG > Finished merging post ID 284.
+2018-07-04T11:02:12+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T11:02:12+00:00 DEBUG > Merging post ID 285.
+2018-07-04T11:02:12+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 285
+    [post_title] => Boliaurora
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliaurora
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:13+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-07-04T11:02:15+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-07-04T11:02:15+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliaurora.png"
+2018-07-04T11:02:15+00:00 DEBUG > > Images set
+2018-07-04T11:02:15+00:00 DEBUG > Finished merging post ID 285.
+2018-07-04T11:02:15+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:02:15+00:00 DEBUG > Merging post ID 286.
+2018-07-04T11:02:16+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 286
+    [post_title] => Boliwonder Woman
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliwonder-woman
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:17+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwonderwoman.png"
+2018-07-04T11:02:18+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwonderwoman.png"
+2018-07-04T11:02:18+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/06/Boliwonderwoman.png"
+2018-07-04T11:02:18+00:00 DEBUG > > Images set
+2018-07-04T11:02:18+00:00 DEBUG > Finished merging post ID 286.
+2018-07-04T11:02:18+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:02:18+00:00 DEBUG > Merging post ID 287.
+2018-07-04T11:02:19+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 287
+    [post_title] => Bolijengibre
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijengibre
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:20+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre2.png"
+2018-07-04T11:02:20+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre2.png"
+2018-07-04T11:02:20+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre2.png"
+2018-07-04T11:02:21+00:00 DEBUG > > Images set
+2018-07-04T11:02:21+00:00 DEBUG > Finished merging post ID 287.
+2018-07-04T11:02:21+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:02:21+00:00 DEBUG > Merging post ID 288.
+2018-07-04T11:02:21+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 288
+    [post_title] => Bolijengibre gorro
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolijengibre-gorro
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:22+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre.png"
+2018-07-04T11:02:24+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre.png"
+2018-07-04T11:02:24+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolijengibre.png"
+2018-07-04T11:02:24+00:00 DEBUG > > Images set
+2018-07-04T11:02:24+00:00 DEBUG > Finished merging post ID 288.
+2018-07-04T11:02:24+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:02:24+00:00 DEBUG > Merging post ID 289.
+2018-07-04T11:02:25+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 289
+    [post_title] => Bolisanta Claus
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolisanta-claus
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:26+00:00 DEBUG > > Image exists - skipping Bolisanta-claus.png
+2018-07-04T11:02:26+00:00 DEBUG > > Images set
+2018-07-04T11:02:26+00:00 DEBUG > Finished merging post ID 289.
+2018-07-04T11:02:26+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:02:26+00:00 DEBUG > Merging post ID 290.
+2018-07-04T11:02:27+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 290
+    [post_title] => Bolipingüino
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipinguino
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:28+00:00 DEBUG > > Image exists - skipping Bolipingüino.png
+2018-07-04T11:02:28+00:00 DEBUG > > Images set
+2018-07-04T11:02:28+00:00 DEBUG > Finished merging post ID 290.
+2018-07-04T11:02:28+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:02:28+00:00 DEBUG > Merging post ID 291.
+2018-07-04T11:02:28+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 291
+    [post_title] => Bolireno
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolireno
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:29+00:00 DEBUG > > Image exists - skipping Bolireno.png
+2018-07-04T11:02:29+00:00 DEBUG > > Images set
+2018-07-04T11:02:29+00:00 DEBUG > Finished merging post ID 291.
+2018-07-04T11:02:29+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:02:29+00:00 DEBUG > Merging post ID 292.
+2018-07-04T11:02:30+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 292
+    [post_title] => Bolioso Polar
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolioso-polar
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:31+00:00 DEBUG > > Image exists - skipping Bolioso-polar.png
+2018-07-04T11:02:31+00:00 DEBUG > > Images set
+2018-07-04T11:02:31+00:00 DEBUG > Finished merging post ID 292.
+2018-07-04T11:02:31+00:00 DEBUG Finished processing products.
+2018-07-04T11:02:33+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:02:33+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:02:33+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:02:33+00:00 DEBUG ---
+2018-07-04T11:02:33+00:00 DEBUG Processing products.
+2018-07-04T11:02:33+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:02:33+00:00 DEBUG > Merging post ID 293.
+2018-07-04T11:02:35+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 293
+    [post_title] => Bolimickey Navidad
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimickey-navidad
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:37+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-navidad.png"
+2018-07-04T11:02:39+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-navidad.png"
+2018-07-04T11:02:39+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-navidad.png"
+2018-07-04T11:02:40+00:00 DEBUG > > Images set
+2018-07-04T11:02:40+00:00 DEBUG > Finished merging post ID 293.
+2018-07-04T11:02:40+00:00 DEBUG > Row 2 - preparing for merge.
+2018-07-04T11:02:40+00:00 DEBUG > Merging post ID 294.
+2018-07-04T11:02:42+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 294
+    [post_title] => Boliangelita
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliangelita
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:45+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangleito-rosa.png"
+2018-07-04T11:02:46+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangleito-rosa.png"
+2018-07-04T11:02:46+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangleito-rosa.png"
+2018-07-04T11:02:47+00:00 DEBUG > > Images set
+2018-07-04T11:02:47+00:00 DEBUG > Finished merging post ID 294.
+2018-07-04T11:02:47+00:00 DEBUG > Row 3 - preparing for merge.
+2018-07-04T11:02:47+00:00 DEBUG > Merging post ID 297.
+2018-07-04T11:02:49+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 297
+    [post_title] => Boliangelito azul
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliangelito-azul
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:51+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito.png"
+2018-07-04T11:02:52+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito.png"
+2018-07-04T11:02:52+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito.png"
+2018-07-04T11:02:52+00:00 DEBUG > > Images set
+2018-07-04T11:02:52+00:00 DEBUG > Finished merging post ID 297.
+2018-07-04T11:02:52+00:00 DEBUG > Row 4 - preparing for merge.
+2018-07-04T11:02:52+00:00 DEBUG > Merging post ID 298.
+2018-07-04T11:02:53+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 298
+    [post_title] => Bolidino
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolidino
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:54+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/dinosaurio-piñata.png"
+2018-07-04T11:02:56+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/dinosaurio-piñata.png"
+2018-07-04T11:02:56+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/dinosaurio-piñata.png"
+2018-07-04T11:02:57+00:00 DEBUG > > Images set
+2018-07-04T11:02:57+00:00 DEBUG > Finished merging post ID 298.
+2018-07-04T11:02:57+00:00 DEBUG > Row 5 - preparing for merge.
+2018-07-04T11:02:57+00:00 DEBUG > Merging post ID 299.
+2018-07-04T11:02:58+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 299
+    [post_title] => Boliplayer América
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliplayer-america
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:02:59+00:00 DEBUG > > Image exists - skipping Boliplayera-america.png
+2018-07-04T11:02:59+00:00 DEBUG > > Images set
+2018-07-04T11:03:00+00:00 DEBUG > Finished merging post ID 299.
+2018-07-04T11:03:00+00:00 DEBUG > Row 6 - preparing for merge.
+2018-07-04T11:03:00+00:00 DEBUG > Merging post ID 300.
+2018-07-04T11:03:00+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 300
+    [post_title] => Boliangelito
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => boliangelito
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:01+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito-blanco.png"
+2018-07-04T11:03:03+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito-blanco.png"
+2018-07-04T11:03:03+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Boliangelito-blanco.png"
+2018-07-04T11:03:03+00:00 DEBUG > > Images set
+2018-07-04T11:03:03+00:00 DEBUG > Finished merging post ID 300.
+2018-07-04T11:03:03+00:00 DEBUG > Row 7 - preparing for merge.
+2018-07-04T11:03:03+00:00 DEBUG > Merging post ID 301.
+2018-07-04T11:03:04+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 301
+    [post_title] => Bolieverest
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolieverest
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:06+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolieverest.png"
+2018-07-04T11:03:09+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolieverest.png"
+2018-07-04T11:03:09+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolieverest.png"
+2018-07-04T11:03:09+00:00 DEBUG > > Images set
+2018-07-04T11:03:09+00:00 DEBUG > Finished merging post ID 301.
+2018-07-04T11:03:09+00:00 DEBUG > Row 8 - preparing for merge.
+2018-07-04T11:03:09+00:00 DEBUG > Merging post ID 302.
+2018-07-04T11:03:10+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 302
+    [post_title] => Bolikitty
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolikitty
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:11+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolikitty.png"
+2018-07-04T11:03:12+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolikitty.png"
+2018-07-04T11:03:12+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolikitty.png"
+2018-07-04T11:03:12+00:00 DEBUG > > Images set
+2018-07-04T11:03:12+00:00 DEBUG > Finished merging post ID 302.
+2018-07-04T11:03:12+00:00 DEBUG > Row 9 - preparing for merge.
+2018-07-04T11:03:12+00:00 DEBUG > Merging post ID 304.
+2018-07-04T11:03:13+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 304
+    [post_title] => Bolipooh
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolipooh
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:14+00:00 DEBUG > > Image exists - skipping Bolipooh.png
+2018-07-04T11:03:14+00:00 DEBUG > > Images set
+2018-07-04T11:03:14+00:00 DEBUG > Finished merging post ID 304.
+2018-07-04T11:03:14+00:00 DEBUG > Row 10 - preparing for merge.
+2018-07-04T11:03:14+00:00 DEBUG > Merging post ID 305.
+2018-07-04T11:03:15+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 305
+    [post_title] => Bolimickey Mouse
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolimickey-mouse
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:16+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-mouse.png"
+2018-07-04T11:03:16+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-mouse.png"
+2018-07-04T11:03:16+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolimickey-mouse.png"
+2018-07-04T11:03:17+00:00 DEBUG > > Images set
+2018-07-04T11:03:17+00:00 DEBUG > Finished merging post ID 305.
+2018-07-04T11:03:17+00:00 DEBUG Finished processing products.
+2018-07-04T11:03:19+00:00 DEBUG ---[ New Import ] PHP Memory: 128 MB, WP Memory: 40 MB
+2018-07-04T11:03:19+00:00 DEBUG Parsing products CSV.
+2018-07-04T11:03:19+00:00 DEBUG Finished parsing products CSV.
+2018-07-04T11:03:19+00:00 DEBUG ---
+2018-07-04T11:03:19+00:00 DEBUG Processing products.
+2018-07-04T11:03:19+00:00 DEBUG > Row 1 - preparing for merge.
+2018-07-04T11:03:19+00:00 DEBUG > Merging post ID 307.
+2018-07-04T11:03:21+00:00 DEBUG > Merged post data: Array
+(
+    [ID] => 307
+    [post_title] => Bolisparkle
+    [post_author] => 1
+    [post_date] => 1970-01-01 00:00:00
+    [post_name] => bolisparkle
+    [post_status] => publish
+    [comment_status] => open
+)
+
+2018-07-04T11:03:24+00:00 DEBUG > > Importing image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolisparkle.png"
+2018-07-04T11:03:25+00:00 DEBUG > > Inserted image attachment "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolisparkle.png"
+2018-07-04T11:03:25+00:00 DEBUG > > Imported image "http://queonda.com.mx/sites/mundo-bolita/wp-content/uploads/2018/07/Bolisparkle.png"
+2018-07-04T11:03:25+00:00 DEBUG > > Images set
+2018-07-04T11:03:25+00:00 DEBUG > Finished merging post ID 307.
+2018-07-04T11:03:25+00:00 DEBUG Finished processing products.
