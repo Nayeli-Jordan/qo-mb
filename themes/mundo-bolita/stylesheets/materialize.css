@@ -5430,13 +5430,17 @@ header a:hover {
 a {
   text-decoration: none;
 }
-
 /* line 5, ../sass/components/_typography.scss */
+a.color-primary-hover:hover {
+  color: #de0d88;
+}
+
+/* line 7, ../sass/components/_typography.scss */
 .item-scroll {
   cursor: pointer;
 }
 
-/* line 7, ../sass/components/_typography.scss */
+/* line 9, ../sass/components/_typography.scss */
 html {
   line-height: 1.5;
   font-family: 'PT Sans', sans-serif;
@@ -5445,240 +5449,240 @@ html {
   color: rgba(0, 0, 0, 0.87);
 }
 @media only screen and (min-width: 0) {
-  /* line 7, ../sass/components/_typography.scss */
+  /* line 9, ../sass/components/_typography.scss */
   html {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 992px) {
-  /* line 7, ../sass/components/_typography.scss */
+  /* line 9, ../sass/components/_typography.scss */
   html {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 7, ../sass/components/_typography.scss */
+  /* line 9, ../sass/components/_typography.scss */
   html {
     font-size: 16px;
   }
 }
 
-/* line 27, ../sass/components/_typography.scss */
+/* line 29, ../sass/components/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.3;
 }
 
-/* line 32, ../sass/components/_typography.scss */
+/* line 34, ../sass/components/_typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-/* line 33, ../sass/components/_typography.scss */
+/* line 35, ../sass/components/_typography.scss */
 h1 {
   font-size: 42px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 34, ../sass/components/_typography.scss */
+/* line 36, ../sass/components/_typography.scss */
 h2 {
   font-size: 40px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 35, ../sass/components/_typography.scss */
+/* line 37, ../sass/components/_typography.scss */
 h3 {
   font-size: 30px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 36, ../sass/components/_typography.scss */
+/* line 38, ../sass/components/_typography.scss */
 h4 {
   font-size: 31px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 37, ../sass/components/_typography.scss */
+/* line 39, ../sass/components/_typography.scss */
 h5 {
   font-size: 28px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 38, ../sass/components/_typography.scss */
+/* line 40, ../sass/components/_typography.scss */
 h6 {
   font-size: 22px;
   line-height: 110%;
   margin: 0 0 20px;
 }
 
-/* line 41, ../sass/components/_typography.scss */
+/* line 43, ../sass/components/_typography.scss */
 em {
   font-style: italic;
 }
 
-/* line 42, ../sass/components/_typography.scss */
+/* line 44, ../sass/components/_typography.scss */
 strong {
   font-weight: 500;
 }
 
-/* line 43, ../sass/components/_typography.scss */
+/* line 45, ../sass/components/_typography.scss */
 small {
   font-size: 75%;
 }
 
-/* line 44, ../sass/components/_typography.scss */
+/* line 46, ../sass/components/_typography.scss */
 .light {
   font-weight: 300;
 }
 
-/* line 45, ../sass/components/_typography.scss */
+/* line 47, ../sass/components/_typography.scss */
 .thin {
   font-weight: 200;
 }
 
-/* line 47, ../sass/components/_typography.scss */
+/* line 49, ../sass/components/_typography.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
 @media only screen and (min-width: 360px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.2rem;
   }
 }
 @media only screen and (min-width: 390px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.224rem;
   }
 }
 @media only screen and (min-width: 420px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.248rem;
   }
 }
 @media only screen and (min-width: 450px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.272rem;
   }
 }
 @media only screen and (min-width: 480px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.296rem;
   }
 }
 @media only screen and (min-width: 510px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.32rem;
   }
 }
 @media only screen and (min-width: 540px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.344rem;
   }
 }
 @media only screen and (min-width: 570px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.368rem;
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.392rem;
   }
 }
 @media only screen and (min-width: 630px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.416rem;
   }
 }
 @media only screen and (min-width: 660px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.44rem;
   }
 }
 @media only screen and (min-width: 690px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.464rem;
   }
 }
 @media only screen and (min-width: 720px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.488rem;
   }
 }
 @media only screen and (min-width: 750px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.512rem;
   }
 }
 @media only screen and (min-width: 780px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.536rem;
   }
 }
 @media only screen and (min-width: 810px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.56rem;
   }
 }
 @media only screen and (min-width: 840px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.584rem;
   }
 }
 @media only screen and (min-width: 870px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.608rem;
   }
 }
 @media only screen and (min-width: 900px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.632rem;
   }
 }
 @media only screen and (min-width: 930px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.656rem;
   }
 }
 @media only screen and (min-width: 960px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.68rem;
   }
 }
 @media only screen and (max-width: 360px) {
-  /* line 50, ../sass/components/_typography.scss */
+  /* line 52, ../sass/components/_typography.scss */
   .flow-text {
     font-size: 1.2rem;
   }
 }
 
-/* line 66, ../sass/components/_typography.scss */
+/* line 68, ../sass/components/_typography.scss */
 .title-product {
   font-size: 12px;
   color: #de0d88;

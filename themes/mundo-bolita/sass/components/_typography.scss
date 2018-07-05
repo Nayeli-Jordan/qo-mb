@@ -1,6 +1,8 @@
 
 a {
   text-decoration: none;
+  //&.undeline-hover:hover { text-decoration: underline; }
+  &.color-primary-hover:hover { color: $primary-color; }
 }
 .item-scroll { cursor: pointer; }
 

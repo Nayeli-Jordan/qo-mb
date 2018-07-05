@@ -49,8 +49,7 @@
 									<p class="color-light">40x73cm</p>
 								</div>										
 							</div>
-				
-							
+							<small><a class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a></small>			
 						</div>					
 					</div>
 					<div class="bg-footer bg-color-foter hide"></div>

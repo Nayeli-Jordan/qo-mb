@@ -19,14 +19,29 @@
 		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon/favicon-16x16.png" sizes="16x16" />
 
 		<!-- Facebook, Twitter metas -->
-		<meta property="og:title" content="<?php bloginfo('name'); ?>" />
+		
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="<?php echo site_url(); ?>" />
-		<meta property="og:image" content="<?php echo THEMEPATH; ?>images/share.png">
-		<meta property="og:description" content="<?php bloginfo('description'); ?>" />
-		<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
-		<meta name="twitter:image" content="<?php echo THEMEPATH; ?>images/share.png" />
-		<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+
+		<?php if (is_product()): ?>
+			<meta property="og:title" content="<?php the_title(); ?>" />
+			<meta property="og:url" content="<?php the_permalink(); ?>" />
+			<meta property="og:image" content="<?php the_post_thumbnail_url('large'); ?>">
+			<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+
+			<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
+			<meta name="twitter:image" content="<?php the_post_thumbnail_url('large'); ?>" />
+			<meta name="twitter:title" content="<?php the_title(); ?>" />		
+		<?php else: ?>
+			<meta property="og:title" content="<?php bloginfo('name'); ?>" />
+			<meta property="og:url" content="<?php echo site_url(); ?>" />
+			<meta property="og:image" content="<?php echo THEMEPATH; ?>images/share.png">
+			<meta property="og:description" content="<?php bloginfo('description'); ?>" />
+
+			<meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
+			<meta name="twitter:image" content="<?php echo THEMEPATH; ?>images/share.png" />
+			<meta name="twitter:title" content="<?php bloginfo('name'); ?>" />			
+		<?php endif ?>
+
 		<meta property="og:image:width" content="210" />
 		<meta property="og:image:height" content="110" />
 		<meta property="fb:app_id" content="" />
