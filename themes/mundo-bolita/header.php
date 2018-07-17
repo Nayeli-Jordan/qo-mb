@@ -7,7 +7,7 @@
 		<!-- Sets initial viewport load and disables zooming -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- SEO -->
-		<meta name="keywords" content="">
+		<meta name="keywords" content="Mundo bolita, piñatas creativas, piñatas para fiestas, piñatas temáticas">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
 		<!-- Meta robots -->
@@ -44,12 +44,12 @@
 
 		<meta property="og:image:width" content="210" />
 		<meta property="og:image:height" content="110" />
-		<meta property="fb:app_id" content="" />
+		<meta property="fb:app_id" content="915324798639301" />
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@" />
 
 		<!-- Google+ -->
-		<link rel="publisher" href="https://plus.google.com/+biscochito">
+		<link rel="publisher" href="https://plus.google.com/+mundo-bolita">
 
 		<!-- Compatibility -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -77,6 +77,30 @@
 		<!-- Noscript -->
 		<noscript>Tu navegador no soporta JavaScript!</noscript>
 		<?php wp_head(); ?>
+
+		<!-- Facebook Pixel Code -->
+		<script>
+		  !function(f,b,e,v,n,t,s)
+		  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		  n.queue=[];t=b.createElement(e);t.async=!0;
+		  t.src=v;s=b.getElementsByTagName(e)[0];
+		  s.parentNode.insertBefore(t,s)}(window, document,'script',
+		  'https://connect.facebook.net/en_US/fbevents.js');
+		  fbq('init', '363408134185229');
+		  fbq('track', 'PageView');
+
+		  fbq('track', 'Search');
+		  fbq('track', 'ViewContent');
+		  fbq('track', 'Lead');
+
+		</script>
+		<noscript><img height="1" width="1" style="display:none"
+		  src="https://www.facebook.com/tr?id=363408134185229&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+
 	</head>
 	<?php flush(); ?>
 	<body>

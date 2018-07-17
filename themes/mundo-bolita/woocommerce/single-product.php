@@ -24,28 +24,35 @@ get_header( 'shop' ); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-				<section class="container">
-					<div class="row">
-						<div class="col s12 m6 offset-m3 col-product-single text-center relative">
-							<div class="limit-block-product">
-								<div class="bg-light-opacity"></div>
-								<?php if ($days <= 20){ ?>
-									<p class="bg-image bg-contain bg-new" style="background-image: url(<?php echo THEMEPATH; ?>images/nuevo.png);"><p>
-								<?php } ?>
-								<div class="bg-image bg-contain bg-product  [ wow tada ]" data-wow-duration="2s"  style="background-image: url(<?php the_post_thumbnail_url('large'); ?>);"></div>
-								<h4 class="title-product"><?php the_title(); ?></h4>
-							</div>
+			<section class="container">
+				<div class="row">
+					<div class="col s12 m6 offset-m3 col-product-single text-center relative">
+						<div class="limit-block-product">
+							<div class="bg-light-opacity"></div>
+							<?php 
+								#DATE
+								$now = time(); // or your date as well
+								$your_date = strtotime($post->post_date);
+								$datediff = $now - $your_date;
+								$days = floor($datediff/(60*60*24));
+							?>
+							<?php if ($days <= 20){ ?>
+								<p class="bg-image bg-contain bg-new" style="background-image: url(<?php echo THEMEPATH; ?>images/nuevo.png);"><p>
+							<?php } ?>
+							<div class="bg-image bg-contain bg-product  [ wow tada ]" data-wow-duration="2s"  style="background-image: url(<?php the_post_thumbnail_url('large'); ?>);"></div>
+							<h4 class="title-product"><?php the_title(); ?></h4>
+						</div>
 
-						</div>			
-					</div>
-				</section>				
+					</div>			
+				</div>
+			</section>				
 
 		<?php endwhile; // end of the loop. ?>
 
 		<!-- Related products -->
 		<section class="container section-products-related ">
 			<h3 class="color-primary text-center uppercase relative z-index-1">Piñatas Relacionadas</h3>
-			<article class="flex">
+			<article class="">
 				<?php 
 					//Obtener id del producto actual
 					global $product;
