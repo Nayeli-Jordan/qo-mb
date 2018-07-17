@@ -36,7 +36,7 @@ var $=jQuery.noConflict();
 		});
 
 		$("#link-mail").click(function() {
-			$(this).attr('href', 'mailto:mundo.bolita@altoempleo.com.mx');
+			$(this).attr('href', 'mailto:ventas@mundobolita.com');
 		});
 
 		$(".bg-icon-buscador").click(function() {
