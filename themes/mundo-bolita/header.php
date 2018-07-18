@@ -64,7 +64,7 @@
 
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection" />
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection,print" />
 
 
 		<!-- Canonical URL -->
@@ -116,44 +116,53 @@
 						<div class="row">
 							<div class="col s12 m3">
 								<div class="nav-left">
-									<a target="_blank" href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
+									<a title="Facebook Mundo Bolita" target="_blank" href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
+										<span class="hide">Link a Facebook</span>
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/facebook1.png);"></div>								
 									</a>
-									<a target="_blank" href="https://www.instagram.com/mundobolitaizcalli/">
+									<a title="Instagram Mundo Bolita" target="_blank" href="https://www.instagram.com/mundobolitaizcalli/">
+										<span class="hide">Link a instagram</span>
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/instagram1.png);"></div>								
 									</a>
-									<a href="tel:+5558689360">
+									<a title="Teléfono Mundo Bolita" href="tel:+5558689360">
+										<span class="hide">Link de teléfono</span>
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/telefono1.png);"></div>								
 									</a>	
-									<a href="" id="link-mail">
+									<a title="Correo Mundo Bolita" href="" id="link-mail">
+										<span class="hide">Link de correo</span>
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/correo1.png);"></div>							
 									</a>
 								</div>
 								<div class="nav-right">
-									<a href="<?php echo SITEURL ?>" class="hide-on-med-and-up">
+									<a title="Inicio Mundo Bolita" href="<?php echo SITEURL ?>" class="hide-on-med-and-up">
+										<span class="hide">Link a Inicio</span>
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home1.png);"></div>
 									</a>
-									<!--<a href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
+									<!--<a title="" href="#" data-target="slide-out" class="sidenav-trigger hide-on-med-and-up">
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/otros1.png);"></div>
 									</a>-->
-									<a id="caracteristicas" class="item-scroll hide-on-med-and-up">
+									<a title="Carácteristicas del producto" id="caracteristicas" class="item-scroll hide-on-med-and-up">
+										<span class="hide">Carácteristicas de las piñatas</span>
 										<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/pinata1.png);"></div>
 									</a>									
 								</div>
 							</div>
 							<div class="col s12 m6 text-center">
-								<a href="<?php echo SITEURL ?>">	
+								<a title="Inicio Mundo Bolita" href="<?php echo SITEURL ?>">	
+									<span class="hide">Link a inicio</span>
 									<div class="bg-image bg-contain bg-logo [ wow tada ]" style="background-image: url(<?php echo THEMEPATH; ?>images/identidad/logo.png);"></div>
 								</a>									
 							</div>
 							<div class="col s4 m3 text-right hide-on-small-only">
-								<a href="<?php echo SITEURL ?>">
+								<a title="Inicio Mundo Bolita" href="<?php echo SITEURL ?>">
+									<span class="hide">Link a inicio</span>
 									<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/home1.png);"></div>
 								</a>
 								<!--<a href="#" data-target="slide-out" class="sidenav-trigger">
 									<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/otros1.png);"></div>
 								</a>-->
-								<a id="caracteristicas" class="item-scroll">
+								<a title="Carácteristicas del producto" id="caracteristicas" class="item-scroll">
+									<span class="hide">Carácteristicas de las piñatas</span>
 									<div class="bg-image bg-contain bg-icon margin-left-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/pinata1.png);"></div>
 								</a>							
 							</div>					
@@ -207,7 +216,7 @@
 										//$type 			= $menu_item->type;		taxonomy, page...
 										//$type_label		= $menu_item->type_label;		página, categoría...
 
-										$menu_list .='<a href="' . $url . ' " itemprop="actionOption" class="' . $class .'">' . $title . '</a>';
+										$menu_list .='<a href="' . $url . ' " itemprop="actionOption" class="' . $class .'"><span class="hide">Categoría de piñatas </span>' . $title . '</a>';
 									}
 								}
 								echo $menu_list;

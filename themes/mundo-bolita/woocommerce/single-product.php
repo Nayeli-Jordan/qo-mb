@@ -40,7 +40,7 @@ get_header( 'shop' ); ?>
 								<p class="bg-image bg-contain bg-new" style="background-image: url(<?php echo THEMEPATH; ?>images/nuevo.png);"><p>
 							<?php } ?>
 							<div class="bg-image bg-contain bg-product  [ wow tada ]" data-wow-duration="2s"  style="background-image: url(<?php the_post_thumbnail_url('large'); ?>);"></div>
-							<h4 class="title-product"><?php the_title(); ?></h4>
+							<h4 class="title-product"><span class="hide">Piñata </span><?php the_title(); ?></h4>
 						</div>
 
 					</div>			
