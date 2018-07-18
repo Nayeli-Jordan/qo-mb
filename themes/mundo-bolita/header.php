@@ -63,16 +63,15 @@
 		<link href="https://fonts.googleapis.com/css?family=PT+Sans:700i" rel="stylesheet">
 
 		<!--Styles-->
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.css">
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection" />
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection" />
 
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href="<?php echo site_url(); ?>" />
 
 		<!-- Sitemap Google Verify -->
-		<!--  https://www.google.com/webmasters/verification/home?hl=en&authuser=0 -->
-		<meta name="google-site-verification" content="" />
+		<meta name="google-site-verification" content="0qnM0EtNZCkc23KATkqf-pYcnopQpaJ6RVAZwPt23Xo" />
 
 		<!-- Noscript -->
 		<noscript>Tu navegador no soporta JavaScript!</noscript>
