@@ -19,6 +19,8 @@ defined( 'ABSPATH' ) || exit;
 
 get_header( 'shop' );
 
+global $post;
+
 ?>
 	<!-- En esta página se muestran los productos de cada categoría -->
 	<?php 
