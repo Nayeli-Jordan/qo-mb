@@ -64,8 +64,7 @@
 
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection,print" />
-
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection,print" />
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href="<?php echo site_url(); ?>" />
