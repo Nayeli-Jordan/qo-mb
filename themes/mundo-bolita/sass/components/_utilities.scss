@@ -206,6 +206,7 @@
 .left-50p         { left: 50%; }
 
 .top-0            { top: 0; }
+.top--15           { top: -15px; }
 .top-100          { top: 100px; }
 .top--60          { top: -60px; }
 .top-4p          { top: 4%; }
@@ -242,6 +243,7 @@
 .overflow-hide { overflow: hidden;}
 
 .z-index-1 { z-index: 1; }
+.z-index-999 { z-index: 999; }
 .z-index--1 { z-index: -1; }
 
 .rotate-45 { transform: rotate(45deg); }

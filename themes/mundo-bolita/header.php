@@ -108,7 +108,7 @@
 				<h1 class="hide"><?php bloginfo('name'); ?></h1>
 				<div class="bg-image bg-contain [ absolute left-15p bottom-30 ] width-20p padding-bottom-20p  rotate-90  [ wow flash ]" data-wow-delay="0.1s"  data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right-10p bottom--50 ] width-20p padding-bottom-20p  rotate-180 [ wow flash ]" data-wow-delay="0.3s"   data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-				<div class="bg-image bg-contain relative top-0 z-index-1 width-100p padding-bottom-52p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
+				<div class="bg-image bg-contain relative top--15 z-index-1 width-100p padding-bottom-52p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
 				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-60p  [ wow bounceInDown ]"  data-wow-delay="0.5s" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
 				<div class="bg-image bg-contain absolute bottom--10p right--20 width-30p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
 				<div class="absolute width-100p top-20p menu-content z-index-1">
@@ -178,7 +178,7 @@
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
 					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
 					<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-					<section class="container text-center relative z-index-1 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
+					<section class="container text-center relative z-index-999 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
 						
 						<h2 class="uppercase color-primary">Catálogo</h2>
 						<div class="row relative">
