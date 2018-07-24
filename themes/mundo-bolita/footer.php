@@ -49,7 +49,7 @@
 									<p class="color-light">40x73cm</p>
 								</div>										
 							</div>
-							<small><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a></small>			
+							<small class="color-light"><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a> | <a class="color-light text-center inline-block margin-top color-primary-hover" title="Teléfono Mundo Bolita" href="tel:+5558689360">58689360</a></small>			
 						</div>					
 					</div>
 					<div class="bg-footer bg-color-foter hide"></div>

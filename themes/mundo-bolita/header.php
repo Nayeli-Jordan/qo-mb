@@ -15,8 +15,8 @@
 		<meta name="googlebot" content="index, follow" />
 
 		<!-- Favicon -->
-		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon/favicon-32x32.png" sizes="32x32" />
-		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon-mb/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon-mb/favicon-16x16.png" sizes="16x16" />
 
 		<!-- Facebook, Twitter metas -->
 		
@@ -64,7 +64,7 @@
 
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection,print" />
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection,print" />
 
 
 		<!-- Canonical URL -->
@@ -108,26 +108,22 @@
 				<h1 class="hide"><?php bloginfo('name'); ?></h1>
 				<div class="bg-image bg-contain [ absolute left-15p bottom-30 ] width-20p padding-bottom-20p  rotate-90  [ wow flash ]" data-wow-delay="0.1s"  data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right-10p bottom--50 ] width-20p padding-bottom-20p  rotate-180 [ wow flash ]" data-wow-delay="0.3s"   data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-				<div class="bg-image bg-contain relative top-0 z-index-1 width-100p padding-bottom-49p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
-				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-54p  [ wow bounceInDown ]"  data-wow-delay="0.5s" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
+				<div class="bg-image bg-contain relative top-0 z-index-1 width-100p padding-bottom-52p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
+				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-60p  [ wow bounceInDown ]"  data-wow-delay="0.5s" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
 				<div class="bg-image bg-contain absolute bottom--10p right--20 width-30p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
 				<div class="absolute width-100p top-20p menu-content z-index-1">
 					<div class="container">
 						<div class="row">
 							<div class="col s12 m3">
 								<div class="nav-left">
-									<a title="Facebook Mundo Bolita" target="_blank" href="https://www.facebook.com/pg/MundoBolitaIzcalli/shop/?ref=page_internal">
+									<a title="Facebook Mundo Bolita" target="_blank" href="https://www.facebook.com/MundoBolitaIzcalli/?ref=page_internal">
 										<span class="hide">Link a Facebook</span>
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/facebook1.png);"></div>								
 									</a>
 									<a title="Instagram Mundo Bolita" target="_blank" href="https://www.instagram.com/mundobolitaizcalli/">
 										<span class="hide">Link a instagram</span>
 										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/instagram1.png);"></div>								
-									</a>
-									<a title="Teléfono Mundo Bolita" href="tel:+5558689360">
-										<span class="hide">Link de teléfono</span>
-										<div class="bg-image bg-contain bg-icon margin-right-xsmall" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/telefono1.png);"></div>								
-									</a>	
+									</a>									
 									<a title="Correo Mundo Bolita" href="" id="link-mail">
 										<span class="hide">Link de correo</span>
 										<div class="bg-image bg-contain bg-icon" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/correo1.png);"></div>							

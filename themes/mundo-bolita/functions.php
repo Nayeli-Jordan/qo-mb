@@ -11,8 +11,8 @@ define( 'SITEURL', get_site_url() . '/' );
 /*------------------------------------*\
 	#SNIPPETS
 \*------------------------------------*/
-require_once( 'inc/pages.php' );
-require_once( 'inc/post-types.php' );
+/*require_once( 'inc/pages.php' );
+require_once( 'inc/post-types.php' );*/
 require_once( 'inc/taxonomies.php' );
 
 /*------------------------------------*\
@@ -41,16 +41,6 @@ add_action( 'wp_enqueue_scripts', function(){
 * Configuraciones WP
 */
 
-// Agregar css y js al administrador
-function load_custom_files_wp_admin() {
-        wp_register_style( 'mb_wp_admin_css', THEMEPATH . '/admin/admin-style.css', false, '1.0.0' );
-        wp_enqueue_style( 'mb_wp_admin_css' );
-
-        wp_register_script( 'mb_wp_admin_js', THEMEPATH . 'admin/admin-script.js', false, '1.0.0' );
-        wp_enqueue_script( 'mb_wp_admin_js' );        
-}
-add_action( 'admin_enqueue_scripts', 'load_custom_files_wp_admin' );
-
 //Habilitar thumbnail en post
 add_theme_support( 'post-thumbnails' ); 
 
@@ -60,12 +50,11 @@ function add_top_menu(){
 	register_nav_menu('top_menu',__('Top menu'));
 }
 
-//Delimitar número palabras excerpt
-function custom_excerpt_length( $length ) {
-	return 15;
+//Favicon en admin_print_scripts
+add_action('admin_head', 'show_favicon');
+function show_favicon() {
+echo '<link href="' . THEMEPATH . '/favicon-mb/favicon-32x32.png" rel="icon" type="image/x-icon">';
 }
-add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
-
 
 /**
 * Optimización
