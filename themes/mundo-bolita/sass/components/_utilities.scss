@@ -1,5 +1,6 @@
 //colors
 .color-primary { color: $primary-color; }
+.color-primary-light-hover:hover { color: $primary-color-light; }
 .color-secondary { color: $secondary-color; }
 .color-light { color: $light-color; }
 
@@ -103,6 +104,7 @@
 
 .margin-auto          { margin: auto; }
 
+.margin-top--5         { margin-top: -5px; }
 .margin-top-small         { margin-top: 10px; }
 .margin-top           { margin-top: 15px; }
 .margin-top-large         { margin-top: 20px; }
@@ -181,6 +183,7 @@
 //size
 .width-100p     { width: 100%; }
 .width-60p      { width: 60%; }
+.width-50p      { width: 50%; }
 .width-30p      { width: 30%; }
 .width-25p      { width: 25%; }
 .width-20p      { width: 20%; }
@@ -194,8 +197,11 @@
 .right-0          { right: 0; }
 .right-20         { right: 20px; }
 .right-60         { right: 60px; }
+.right--70         { right: -70px; }
 .right-10p        { right: 10%; }
 .right--10p       { right: -10%; }
+.right--15p       { right: -15%; }
+.right--12p       { right: -12%; }
 .right--20        { right: -20px; }
 
 .left-0           { left: 0; }
@@ -223,6 +229,7 @@
 .bottom-0         { bottom: 0; }
 .bottom-30        { bottom: 30px; }
 .bottom--50       { bottom: -50px; }
+.bottom--5p       { bottom: -5%; }
 .bottom--10p      { bottom: -10%; }
 .bottom--15p      { bottom: -15%; }
 .bottom-15p       { bottom: 15%; }

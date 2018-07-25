@@ -4,6 +4,8 @@
 							<div class="col s12 m5 margin-bottom-25p-s">
 								<div class="bg-image bg-contain width-100p padding-bottom-40p  [ wow fadeInLeft ]"  data-wow-delay="0.2s" style="background-image: url(<?php echo THEMEPATH; ?>images/textos/direccion.png);"></div>
 								<p class="color-primary uppercase no-margin-top-bottom margin-left-15p  [ wow fadeInBottom ]"  data-wow-delay="0.5s"><span class="color-light">EN: </span>Andador Londres #10 Col. Centro Urbano Cuautitlán Izcalli C.P 54740</p>
+								<a class="color-primary text-center inline-block margin-top  margin-left-15p color-primary-light-hover fz-18" title="Teléfono Mundo Bolita" href="tel:+5558689360">
+									<div class="bg-image bg-contain bg-icon margin-right-xsmall inline-block alight-middle margin-top--5" style="background-image: url(<?php echo THEMEPATH; ?>images/icons-header/telefono1.png);"></div>58689360</a>
 							</div>
 							<div class="col s12 m7 relative [ wow bounceIn ]"  data-wow-delay="0.1s">
 								<div class="bg-image bg-contain bg-map z-index--1" style="background-image: url(<?php echo THEMEPATH; ?>images/map.png);"></div>
@@ -49,7 +51,7 @@
 									<p class="color-light">40x73cm</p>
 								</div>										
 							</div>
-							<small class="color-light"><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a> | <a class="color-light text-center inline-block margin-top color-primary-hover" title="Teléfono Mundo Bolita" href="tel:+5558689360">58689360</a></small>			
+							<small class="color-light"><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a></small>			
 						</div>					
 					</div>
 					<div class="bg-footer bg-color-foter hide"></div>

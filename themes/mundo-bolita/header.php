@@ -64,7 +64,7 @@
 
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
-		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.min.css" media="screen,projection,print" />
+		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection,print" />
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href="<?php echo site_url(); ?>" />
@@ -109,7 +109,7 @@
 				<div class="bg-image bg-contain [ absolute right-10p bottom--50 ] width-20p padding-bottom-20p  rotate-180 [ wow flash ]" data-wow-delay="0.3s"   data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain relative top--15 z-index-1 width-100p padding-bottom-52p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
 				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-60p  [ wow bounceInDown ]"  data-wow-delay="0.5s" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
-				<div class="bg-image bg-contain absolute bottom--10p right--20 width-30p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
+				<div class="bg-image bg-contain absolute bottom--10p right--12p width-50p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
 				<div class="absolute width-100p top-20p menu-content z-index-1">
 					<div class="container">
 						<div class="row">
