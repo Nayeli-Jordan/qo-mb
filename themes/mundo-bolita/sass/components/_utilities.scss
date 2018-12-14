@@ -410,3 +410,34 @@
     }
   }
 } 
+
+
+
+/* Stock MB */
+.title-box-info-products {
+  padding-bottom: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.14);
+}
+.box-info-products {
+  width: 100%;
+  max-height: calc(100vh - 139px);
+  overflow: auto;
+  .container-info-products {
+    min-width: 800px;
+    table {
+      tr {
+        th {
+          &:nth-child(1) { width: 180px; }
+          &:nth-child(2) { width: 85px; }
+          &:nth-child(3) { width: 85px; }
+          &:nth-child(4) {  }
+          &:nth-child(5) {  }
+          &:nth-child(6) {  }
+        }
+        td {
+
+        }
+      }
+    }
+  }
+}

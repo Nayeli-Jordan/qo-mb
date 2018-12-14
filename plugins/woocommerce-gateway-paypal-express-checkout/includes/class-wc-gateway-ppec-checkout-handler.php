@@ -438,6 +438,9 @@ class WC_Gateway_PPEC_Checkout_Handler {
 		$session->payer_id           = $payer_id;
 		$session->token              = $token;
 
+		// Update customer addresses here from PayPal selection so they can be used to calculate local taxes.
+		$this->update_customer_addresses_from_paypal( $token );
+
 		WC()->session->set( 'paypal', $session );
 
 		try {
@@ -474,6 +477,48 @@ class WC_Gateway_PPEC_Checkout_Handler {
 			wp_safe_redirect( wc_get_page_permalink( 'cart' ) );
 			exit;
 		}
+	}
+
+	/**
+	 * Updates shipping and billing addresses.
+	 *
+	 * Retrieves shipping and billing addresses from PayPal session.
+	 * This should be done prior to generating order confirmation so
+	 * local taxes can be calculated and displayed to customer.
+	 *
+	 * @since 1.6.2.
+	 *
+	 * @param string $token Token
+	 *
+	 * @return void
+	 */
+	private function update_customer_addresses_from_paypal( $token ) {
+		// Get the buyer details from PayPal.
+		try {
+			$checkout_details = $this->get_checkout_details( $token );
+		} catch ( PayPal_API_Exception $e ) {
+			wc_add_notice( $e->getMessage(), 'error' );
+			return;
+		}
+		$shipping_details = $this->get_mapped_shipping_address( $checkout_details );
+		$billing_details  = $this->get_mapped_billing_address( $checkout_details );
+
+		$customer = WC()->customer;
+
+		// Update billing/shipping addresses.
+		$customer->set_billing_address( $billing_details['address_1'] );
+		$customer->set_billing_address_2( $billing_details['address_2'] );
+		$customer->set_billing_city( $billing_details['city'] );
+		$customer->set_billing_postcode( $billing_details['postcode'] );
+		$customer->set_billing_state( $billing_details['state'] );
+		$customer->set_billing_country( $billing_details['country'] );
+
+		$customer->set_shipping_address( $shipping_details['address_1'] );
+		$customer->set_shipping_address_2( $shipping_details['address_2'] );
+		$customer->set_shipping_city( $shipping_details['city'] );
+		$customer->set_shipping_postcode( $shipping_details['postcode'] );
+		$customer->set_shipping_state( $shipping_details['state'] );
+		$customer->set_shipping_country( $shipping_details['country'] );
 	}
 
 	/**
@@ -660,15 +705,15 @@ class WC_Gateway_PPEC_Checkout_Handler {
 	}
 
 	/**
-	 * Handler when buyer is checking out from cart page.
+	 * Handler when buyer is checking out prior to order creation.
 	 *
 	 * @return string Redirect URL.
 	 */
-	public function start_checkout_from_cart() {
+	public function start_checkout_from_cart( $skip_checkout = true ) {
 		$settings     = wc_gateway_ppec()->settings;
 
 		$context_args = array(
-			'start_from' => 'cart',
+			'skip_checkout' => $skip_checkout,
 		);
 
 		$session_data_args = array(
@@ -681,19 +726,19 @@ class WC_Gateway_PPEC_Checkout_Handler {
 	}
 
 	/**
-	 * Handler when buyer is checking out from checkout page.
+	 * Handler when buyer is checking out after order is created (i.e. from checkout page with Smart Payment Buttons disabled).
 	 *
 	 * @param int  $order_id Order ID.
 	 * @param bool $use_ppc  Whether to use PayPal credit.
 	 *
 	 * @return string Redirect URL.
 	 */
-	public function start_checkout_from_checkout( $order_id, $use_ppc ) {
+	public function start_checkout_from_order( $order_id, $use_ppc ) {
 		$settings     = wc_gateway_ppec()->settings;
 
 		$context_args = array(
-			'start_from' => 'checkout',
-			'order_id'   => $order_id,
+			'skip_checkout' => false,
+			'order_id'      => $order_id,
 		);
 
 		$session_data_args = array(
@@ -951,28 +996,25 @@ class WC_Gateway_PPEC_Checkout_Handler {
 	 * @param array $args {
 	 *     Context args to retrieve SetExpressCheckout parameters.
 	 *
-	 *     @type string $start_from Start from 'cart' or 'checkout'.
-	 *     @type int    $order_id   Order ID if $start_from is 'checkout'.
+	 *     @type int    $order_id   Order ID if order has been created.
 	 * }
 	 *
 	 * @return bool Returns true if billing agreement is needed in the purchase
 	 */
 	public function needs_billing_agreement_creation( $args ) {
 		$needs_billing_agreement = false;
-		switch ( $args['start_from'] ) {
-			case 'cart':
-				if ( class_exists( 'WC_Subscriptions_Cart' ) ) {
-					$needs_billing_agreement = WC_Subscriptions_Cart::cart_contains_subscription();
-				}
-				break;
-			case 'checkout':
-				if ( function_exists( 'wcs_order_contains_subscription' ) ) {
-					$needs_billing_agreement = wcs_order_contains_subscription( $args['order_id'] );
-				}
-				if ( function_exists( 'wcs_order_contains_renewal' ) ) {
-					$needs_billing_agreement = ( $needs_billing_agreement || wcs_order_contains_renewal( $args['order_id'] ) );
-				}
-				break;
+
+		if ( empty( $args['order_id'] ) ) {
+			if ( class_exists( 'WC_Subscriptions_Cart' ) ) {
+				$needs_billing_agreement = WC_Subscriptions_Cart::cart_contains_subscription();
+			}
+		} else {
+			if ( function_exists( 'wcs_order_contains_subscription' ) ) {
+				$needs_billing_agreement = wcs_order_contains_subscription( $args['order_id'] );
+			}
+			if ( function_exists( 'wcs_order_contains_renewal' ) ) {
+				$needs_billing_agreement = ( $needs_billing_agreement || wcs_order_contains_renewal( $args['order_id'] ) );
+			}
 		}
 
 		return $needs_billing_agreement;

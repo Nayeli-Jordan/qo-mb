@@ -10914,3 +10914,33 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .aws-search-result .aws_result_image img {
   height: auto !important;
 }
+
+/* Stock MB */
+/* line 417, ../sass/components/_utilities.scss */
+.title-box-info-products {
+  padding-bottom: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.14);
+}
+
+/* line 421, ../sass/components/_utilities.scss */
+.box-info-products {
+  width: 100%;
+  max-height: calc(100vh - 139px);
+  overflow: auto;
+}
+/* line 425, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products {
+  min-width: 800px;
+}
+/* line 430, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table tr th:nth-child(1) {
+  width: 180px;
+}
+/* line 431, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table tr th:nth-child(2) {
+  width: 85px;
+}
+/* line 432, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table tr th:nth-child(3) {
+  width: 85px;
+}

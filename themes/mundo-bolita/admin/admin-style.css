@@ -1,0 +1,24 @@
+.mb-custom-fields, .mb-custom-fields tbody { width: 100%; }
+.mb-custom-fields input[type="text"],
+.mb-custom-fields input[type="date"],
+.mb-custom-fields input[type="number"],
+.mb-custom-fields input[type="email"],
+.mb-custom-fields input[type="time"],
+.mb-custom-fields textarea,
+.mb-custom-fields select {
+	width: 100%;
+	min-height: 40px;
+	padding: 0 5px;
+	margin: 0px;
+	font-weight: 400;
+    line-height: 40px;   
+}
+.mb-custom-fields textarea { line-height: 20px; }
+.mb-custom-fields tr { margin-bottom: 10px; }
+.mb-custom-fields th { text-align: left; }
+.mb-custom-fields label { 
+	display: block;
+	margin-bottom: 3px;
+	font-weight: 500;
+	cursor: auto;
+}

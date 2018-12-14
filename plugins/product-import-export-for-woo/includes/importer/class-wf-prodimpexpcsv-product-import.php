@@ -154,7 +154,7 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 								var data = {
 									action: 	'woocommerce_csv_import_request',
 									file:       '<?php echo addslashes( $file ); ?>',
-									mapping:    '<?php echo json_encode( $_POST['map_from'] ); ?>',
+									mapping: 	'<?php echo json_encode($_POST['map_from'],JSON_HEX_APOS); ?>',
 									eval_field: '<?php echo stripslashes(json_encode(($_POST['eval_field']),JSON_HEX_APOS)) ?>',
 									delimiter:  '<?php echo $this->delimiter; ?>',
 									merge_empty_cells: '<?php echo $this->merge_empty_cells; ?>',
@@ -521,7 +521,6 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 		    }
 		    fclose( $handle );
 		}
-		
 		$mapping_from_db  = get_option( 'wf_prod_csv_imp_exp_mapping');
 		$saved_mapping = null;
 		$saved_evaluation = null;
@@ -959,23 +958,23 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 
 			// Insert product
 			$this->hf_log_data_change( 'csv-import', sprintf( __('> Inserting %s', 'wf_csv_import_export'), esc_html( $processing_product_title ) ), true );
-
-			$postdata = array(
+                        $postdata = array(
 				'import_id'      => $processing_product_id,
-				'post_author'    => isset($post['post_author']) ? absint( $post['post_author'] ) : get_current_user_id(),
-				'post_date'      => isset( $post['post_date'] ) ? date( 'Y-m-d H:i:s', strtotime( $post['post_date'] )) : '',
-				'post_date_gmt'  => isset( $post['post_date_gmt'] ) ? date( 'Y-m-d H:i:s', strtotime( $post['post_date_gmt'] )) : '',
-				'post_content'   => isset($post['post_content'])?$post['post_content']:"",
-				'post_excerpt'   => isset($post['post_excerpt'])?$post['post_excerpt']:'',
+				'post_author'    => !empty($post['post_author']) ? absint($post['post_author']) : get_current_user_id(),
+                                'post_date' => !empty( $post['post_date'] ) ? date("Y-m-d H:i:s", strtotime($post['post_date'])) : '',
+                                'post_date_gmt' => ( !empty($post['post_date_gmt']) && $post['post_date_gmt'] ) ? date('Y-m-d H:i:s', strtotime($post['post_date_gmt'])) : '',
+				'post_content'   => !empty($post['post_content'])?$post['post_content']:'',
+				'post_excerpt'   => !empty($post['post_excerpt'])?$post['post_excerpt']:'',
 				'post_title'     => $processing_product_title,
-				'post_name'      => isset( $post['post_name'] ) ? $post['post_name'] : sanitize_title( $processing_product_title ),
-				'post_status'    => isset( $post['post_status'] ) ? $post['post_status'] : 'publish',
+				'post_name'      => !empty( $post['post_name'] ) ? $post['post_name'] : sanitize_title( $processing_product_title ),
+				'post_status'    => !empty( $post['post_status'] ) ? $post['post_status'] : 'publish',
 				'post_parent'    => $post_parent,
-				'menu_order'     => isset($post['menu_order'])?$post['menu_order']:'',
-				'post_type'      => isset($post['post_type'])?$post['post_type']:"",
-				'post_password'  => isset($post['post_password'])?$post['post_password']:'',
-				'comment_status' => isset($post['comment_status'])?$post['comment_status']:'',
+				'menu_order'     => !empty($post['menu_order'])?$post['menu_order']:'',
+				'post_type'      => !empty($post['post_type'])?$post['post_type']:"",
+				'post_password'  => !empty($post['post_password'])?$post['post_password']:'',
+				'comment_status' => !empty($post['comment_status'])?$post['comment_status']:'',
 			);
+
 			$post_id = wp_insert_post( $postdata, true );
 
 			if ( is_wp_error( $post_id ) ) {
@@ -1070,11 +1069,18 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 					$image_basenames[] = basename( $image );
 
 				// Loop attachments already attached to the product
-				$attachments = get_posts( 'post_parent=' . $post_id . '&post_type=attachment&fields=ids&post_mime_type=image&numberposts=-1' );
-
+				//$attachments = get_posts( 'post_parent=' . $post_id . '&post_type=attachment&fields=ids&post_mime_type=image&numberposts=-1' );
+                                
+                                $processing_product_object = wc_get_product($post_id);
+                                $attachments = $processing_product_object->get_gallery_attachment_ids();
+                                $post_thumbnail_id = get_post_thumbnail_id($post_id);
+                                if(isset($post_thumbnail_id)&& !empty($post_thumbnail_id)){
+                                    $attachments[]=$post_thumbnail_id;
+                                }
+                                
 				foreach ( $attachments as $attachment_key => $attachment ) {
 
-					$attachment_url 		= wp_get_attachment_url( $attachment );
+					$attachment_url 	= wp_get_attachment_url( $attachment );
 					$attachment_basename 	= basename( $attachment_url );
 
 					// Don't import existing images
@@ -1248,6 +1254,17 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 
 		} else*/
 		if ( strstr( $url, site_url() ) ) {
+                    
+                        $image_id = $this->wt_get_image_id_by_url($url);
+                        if($image_id){
+                            $attachment_id = $image_id;
+
+                            $this->hf_log_data_change('csv-import', sprintf(__('> > (Image already in the site)Inserted image attachment "%s"', 'wf_csv_import_export'), $url));
+
+                            $this->attachments[] = $attachment_id;
+
+                            return $attachment_id;
+                        }
 			$abs_url 	= str_replace( trailingslashit( site_url() ), trailingslashit( ABSPATH ), urldecode($url) );
 			$new_name 	= wp_unique_filename( $upload_dir['path'], basename( urldecode($url) ) );
 			$new_url 	= trailingslashit( $upload_dir['path'] ) . $new_name;
@@ -1257,7 +1274,7 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 			}
 		}
 
-		if ( ! strstr( $url, 'http' ) ) {
+		if ( ! strstr( $url, 'http' ) ) {  // if not a url
 
 			// Local file
 			$attachment_file 	= trailingslashit( $upload_dir['basedir'] ) . 'product_images/' . $url;
@@ -1275,6 +1292,15 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 					$post['post_mime_type'] = $info['type'];
 				else
 					return new WP_Error( 'attachment_processing_error', __('Invalid file type', 'wordpress-importer') );
+                                
+                                
+                                $image_id = $this->wt_get_image_id_by_url($attachment_url);
+                                if($image_id){
+                                    $attachment_id = $image_id;
+                                    $this->hf_log_data_change('csv-import', sprintf(__('> > (Image already in the site)Inserted image attachment "%s"', 'wf_csv_import_export'), $url));
+                                    $this->attachments[] = $attachment_id;
+                                    return $attachment_id;
+                                }
 
 				$post['guid'] = $attachment_url;
 
@@ -1318,6 +1344,12 @@ class WF_ProdImpExpCsv_Product_Import extends WP_Importer {
 
 		return $attachment_id;
 	}
+        
+        function wt_get_image_id_by_url($image_url) {
+            global $wpdb;
+            $attachment = $wpdb->get_col($wpdb->prepare("SELECT ID FROM $wpdb->posts WHERE guid='%s';", $image_url));
+            return isset($attachment[0])&& $attachment[0]>0 ? $attachment[0]:'';
+        }
 
 	/**
 	 * Attempt to download a remote file attachment

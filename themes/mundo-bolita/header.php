@@ -102,7 +102,8 @@
 	</head>
 	<?php flush(); ?>
 	<body>
-		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
+		<?php if (!is_page('mb-stock')) : ?>
+			<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		
 				<h1 class="hide"><?php bloginfo('name'); ?></h1>
 				<div class="bg-image bg-contain [ absolute left-15p bottom-30 ] width-20p padding-bottom-20p  rotate-90  [ wow flash ]" data-wow-delay="0.1s"  data-wow-duration="4s" data-wow-iteration="10" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
@@ -166,14 +167,6 @@
 				</div>	
 			</header>
 			<div class="[ main-body ]">
-				<!--<ul id="slide-out" class="sidenav" itemscope>
-					<li itemprop="actionOption"><a href="#" class="sidenav-close text-right color-primary">x</a></li>
-					<li itemprop="actionOption"><a href="">ejemplo</a></li>
-					<li itemprop="actionOption"><a href="">ejemplo</a></li>
-					<li itemprop="actionOption"><a href="">ejemplo</a></li>
-					<li itemprop="actionOption"><a href="">ejemplo</a></li>
-				</ul>-->
-
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">
 					<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
 					<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
@@ -219,3 +212,4 @@
 						</div>						
 					</section>
 					<div class="clearfix"></div>
+		<?php endif; ?>
