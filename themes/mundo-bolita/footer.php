@@ -1,4 +1,4 @@
-		<?php if (!is_page('mb-stock')) : ?>
+					<?php if (!is_page('mb-stock') && !is_singular('orden_compra')): ?>
 						<section class="container relative margin-top-50">
 							<h2 class="color-primary text-center uppercase relative z-index-1">Ubicación</h2>
 							<div class="row relative z-index-1">
@@ -19,8 +19,10 @@
 							<div class="bg-image bg-contain [ absolute top--60p left-50p ] width-20p padding-bottom-20p [ wow flash ]"  data-wow-delay="0.3s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 							<div class="bg-image bg-contain [ absolute bottom-0 ] width-60p padding-bottom-60p [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="1s" data-wow-iteration="3" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 							<div class="bg-image bg-contain width-30p padding-bottom-30p [ absolute bottom-15p right--10p ] rotate-180 [ wow flash ]"  data-wow-delay="0.3s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-						</section>	
-					</div> <!-- end bg dulces -->		
+						</section>
+					<?php endif; ?>
+				</div> <!-- end bg dulces -->
+				<?php if (!is_page('mb-stock')) : ?>		
 					<footer class="relative">
 						<div class="bg-image width-100p padding-bottom-75p [ wow fadeIn ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
 						<div class="bg-image absolute top-4p width-100p padding-bottom-30p  [ wow fadeInUpBig ]"  data-wow-delay="0.3s" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>
@@ -28,7 +30,6 @@
 						<div id="section-caracteristicas" class="indicaciones-producto text-center">
 							<div class="container">
 								<div class="bg-image bg-contain img-caracteristicas [ wow flipInX ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);"></div>
-								<!--<div class="content-shadow-footer shadow-buscador"></div>-->					
 								<br>
 								<div class="content-indicaciones">
 									<div class="box-indicacion [ wow bounceInLeft ]"  data-wow-delay="0.7s">
@@ -57,9 +58,9 @@
 						</div>
 						<div class="bg-footer bg-color-foter hide"></div>
 					</footer>
-				</div> <!-- end main-body -->
-			</div> <!-- end content body -->
-		<?php endif; ?>
+				<?php endif; ?>
+			</div> <!-- end main-body -->
+		</div> <!-- end content body -->
 		<?php wp_footer(); ?>
 	</body>
 </html>

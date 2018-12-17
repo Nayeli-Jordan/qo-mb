@@ -13,10 +13,25 @@ var $=jQuery.noConflict();
   			new WOW().init(); 
 			//$('.sidenav').sidenav();
 			$( ".mb-nav .clearfix" ).append( "</br>" );
+			/* Modal sistema */
+			$('.modal').modal();
+			$('select').formSelect();
+			// Validation form
+			$('form.validation').parsley();
+
+			/* Si se un nuevo apartado */
+			if(window.location.href.indexOf("#apartado_creado") > -1) {
+				$('#apartado_creado').show();
+			}
 		});
  
-		$(window).on('resize', function(){
-			
+		$(window).on('load', function(){
+			/* If is singular orden_compra */
+			if ($('#orden_compra').length > 0) {
+				$('html, body').animate({		
+					scrollTop: $('#orden_compra').offset().top - 50
+				}, 1500);
+			}			
 		});
  
 		$(document).scroll(function() {

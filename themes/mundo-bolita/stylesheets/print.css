@@ -1,3 +1,16 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* line 2, ../sass/print.scss */
+body.singular-orden_compra > .bg-image {
+  background-image: none !important;
+}
+/* line 3, ../sass/print.scss */
+body.singular-orden_compra header, body.singular-orden_compra footer {
+  display: none;
+}
+/* line 7, ../sass/print.scss */
+body.singular-orden_compra .main-body > .bg-image, body.singular-orden_compra .main-body > .bg-image > .bg-image {
+  background-image: none !important;
+}
+/* line 9, ../sass/print.scss */
+body.singular-orden_compra .main-body .page-orden {
+  width: 99%;
+}

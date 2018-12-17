@@ -65,14 +65,14 @@
 .btn {
   text-decoration: none;
   color: $button-raised-color;
-  background-color: $button-raised-background;
+  background-color: $primary-color;
   text-align: center;
   letter-spacing: .5px;
   @extend .z-depth-1;
   transition: background-color .2s ease-out;
   cursor: pointer;
   &:hover {
-    background-color: $button-raised-background-hover;
+    background-color: $primary-color-light;
     @extend .z-depth-1-half;
   }
 }

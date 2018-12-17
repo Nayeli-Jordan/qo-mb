@@ -25,6 +25,7 @@ require_once( 'inc/taxonomies.php' );
 add_action( 'wp_enqueue_scripts', function(){
  
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', array(''), '2.1.1', true );	
+    wp_enqueue_script( 'mb_parsley', JSPATH.'parsley.min.js', array(), '1.0', true );
 	wp_enqueue_script( 'materialize_js', JSPATH.'bin/materialize.min.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'wow_js', JSPATH.'wow.min.js', array(), '', true );
 	wp_enqueue_script( 'mb_functions', JSPATH.'functions.js', array('materialize_js'), '1.0', true );
@@ -140,11 +141,11 @@ function display_orden_compra_atributos( $orden_compra ){
             </th>
             <th>
                 <label for="orden_compra_horario">Horario de*:</label>
-                <input type="time" name="orden_compra_horario" id="orden_compra_horario" value="<?php echo $horario; ?>" required>
+                <input type="text" name="orden_compra_horario" id="orden_compra_horario" value="<?php echo $horario; ?>" placeholder="9 am" required>
             </th>
             <th>
                 <label for="orden_compra_horarioEnd">A*:</label>
-                <input type="time" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" value="<?php echo $horarioEnd; ?>" required>
+                <input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" value="<?php echo $horarioEnd; ?>" placeholder="6 pm" required>
             </th>
         </tr>
         <tr>
@@ -159,7 +160,7 @@ function display_orden_compra_atributos( $orden_compra ){
             </th>
             <th colspan="2">
                 <label for="orden_compra_lugarPers">Si es otro:</label>
-                <input type="text" name="orden_compra_lugarPers" id="orden_compra_lugarPers" value="<?php echo $lugar; ?>">
+                <input type="text" name="orden_compra_lugarPers" id="orden_compra_lugarPers" value="<?php echo $lugarPers; ?>">
             </th>
         </tr>
         <tr>
@@ -193,7 +194,7 @@ function display_orden_compra_atributos( $orden_compra ){
         <tr>
             <th colspan="2">
                 <label for="orden_compra_pago">Cantidad a pagar*:</label>
-                <input type="number" name="orden_compra_pago" id="orden_compra_pago" value="<?php echo $pago; ?>" required>
+                <input type="number" name="orden_compra_pago" id="orden_compra_pago" value="<?php echo $pago; ?>" placeholder="460" required>
             </th>
             <th colspan="2">
                 <label for="orden_compra_community">Community Manager*:</label>
@@ -233,5 +234,15 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         if ( isset( $_POST['orden_compra_community'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_community', $_POST['orden_compra_community'] );
         }
+    }
+}
+
+
+/* Redirección Nuevo apartado */
+add_action ('template_redirect', 'custom_redirect_nuevo_apartado');
+function custom_redirect_nuevo_apartado() {
+    if (  isset($_POST['submitApartado']) ) {
+        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        wp_redirect($actual_link . '#apartado_creado');
     }
 }
