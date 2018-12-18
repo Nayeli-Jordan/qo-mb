@@ -31,7 +31,7 @@
 					<table>
 						<tr>
 							<td><strong>Fecha: </strong><?php echo $fechaPublicada; ?></td>
-							<td><strong>Folio: </strong>FBMB</td>
+							<td><strong>Folio: </strong>FBMB<?php echo post_number_orden(get_the_ID()); ?></td>
 						</tr>
 						<tr>
 							<td><strong>Fecha de entrega: </strong><?php echo $fecha; ?></td>

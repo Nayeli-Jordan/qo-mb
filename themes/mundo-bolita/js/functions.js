@@ -21,7 +21,7 @@ var $=jQuery.noConflict();
 
 			/* Si se un nuevo apartado */
 			if(window.location.href.indexOf("#apartado_creado") > -1) {
-				$('#apartado_creado').show();
+				$('#apartado_creado').modal('open');
 			}
 		});
  

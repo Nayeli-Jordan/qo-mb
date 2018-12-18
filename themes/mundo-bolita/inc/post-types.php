@@ -35,6 +35,38 @@ add_action('init', function(){
 		'supports'           => array( 'title' ),
 		'menu_icon' 		 => 'dashicons-admin-users'
 	);
-	register_post_type( 'orden_compra', $args );	
+	register_post_type( 'orden_compra', $args );
+	
+
+	$labels = array(
+		'name'          => 'Pedido a fabrica',
+		'singular_name' => 'Pedido a fabrica',
+		'add_new'       => 'Nueva Pedido a fabrica',
+		'add_new_item'  => 'Nueva Pedido a fabrica',
+		'edit_item'     => 'Editar Pedido a fabrica',
+		'new_item'      => 'Nueva Pedido a fabrica',
+		'all_items'     => 'Todo',
+		'view_item'     => 'Ver Pedido a fabrica',
+		'search_items'  => 'Buscar Pedido a fabrica',
+		'not_found'     => 'No hay Pedido a fabrica.',
+		'menu_name'     => 'Pedido a fabrica'
+	);
+
+	$args = array(
+		'labels'             => $labels,
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => array( 'slug' => 'pedido_fabrica' ),
+		'capability_type'    => 'post',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 6,
+		'supports'           => array( 'title' ),
+		'menu_icon' 		 => 'dashicons-admin-users'
+	);
+	register_post_type( 'pedido_fabrica', $args );			
 
 });

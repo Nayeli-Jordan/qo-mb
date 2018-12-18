@@ -1,0 +1,16 @@
+2018-12-18T12:03:11+00:00 CRITICAL Uncaught Error: Call to undefined function post_number_qo_cotizaciones() in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\single-orden_compra.php:34
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+
+2018-12-18T12:04:06+00:00 CRITICAL Uncaught Error: Call to undefined function post_number_qo_cotizaciones() in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\single-orden_compra.php:34
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\index.php(17): require('C:\\Users\\Tony\\D...')
+#3 {main}
+  thrown
+

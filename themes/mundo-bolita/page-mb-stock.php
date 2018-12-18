@@ -34,6 +34,8 @@
 								$price 			= $product->get_regular_price();
 								if ($price != '') {
 									$priceFb	= $price + 100;
+									$priceFb	= '$' . $priceFb;
+									$price		= '$' . $price;
 								} else {
 									$price 		= '-';
 									$priceFb	= '-';

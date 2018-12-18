@@ -1,10 +1,11 @@
+<?php $today = date("Y-m-d"); ?>
 <div id="nuevo-apartado" class="modal">
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Registrar nuevo apartado</p>
 		<form id="apartado-form" action=""  method="post" class="validation row" data-parsley-apartado>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
-   				<input type="date" name="orden_compra_fecha" id="orden_compra_fecha" required  data-parsley-required-message="Campo obligatorio">
+   				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" required  data-parsley-required-message="Campo obligatorio">
 			</div>
 			<div class="col s6 m3 input-field">
 				<label for="orden_compra_horario">Horario de*:</label>
@@ -61,6 +62,13 @@
 				<label for="orden_compra_community">Community Manager*:</label>
     			<input type="text" name="orden_compra_community" id="orden_compra_community" required  data-parsley-required-message="Campo obligatorio">
 			</div>
+			<div class="col s12 input-field margin-top">
+				<label for="orden_compra_origen">Origen de la piñata*:</label>
+    			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
+                	<option value="Stock de tienda">Stock de tienda</option>
+                	<option value="Pedido a fabrica">Pedido a fabrica</option>
+                </select>
+			</div>
 			<div class="col s12 text-right">
 				<input type="submit" name="submitApartado" class="btn" value="Enviar" />	
 			</div>
@@ -70,7 +78,7 @@
 
 <?php if(isset($_POST['submitApartado'])){
 	/* Crear post orden_compra */
-	$title 		= 'Apartado de ' . $_POST['orden_compra_cliente'];
+	$title 		= 'Apartado de ' . $_POST['orden_compra_modelo'] . 'FBMB';
 
 	$post = array(
 		'post_title'	=> wp_strip_all_tags($title),
@@ -78,15 +86,16 @@
 		'post_type' 	=> 'orden_compra'
 	);
 
-	$my_post_id = wp_insert_post($post);
+	$apartado_id = wp_insert_post($post);
 
-	update_post_meta($my_post_id,'orden_compra_fecha',$_POST['orden_compra_fecha']);
-	update_post_meta($my_post_id,'orden_compra_horario',$_POST['orden_compra_horario']);
-	update_post_meta($my_post_id,'orden_compra_horarioEnd',$_POST['orden_compra_horarioEnd']);
-	update_post_meta($my_post_id,'orden_compra_lugar',$_POST['orden_compra_lugar']);
-	update_post_meta($my_post_id,'orden_compra_lugarPers',$_POST['orden_compra_lugarPers']);
-	update_post_meta($my_post_id,'orden_compra_modelo',$_POST['orden_compra_modelo']);
-	update_post_meta($my_post_id,'orden_compra_cliente',$_POST['orden_compra_cliente']);
-	update_post_meta($my_post_id,'orden_compra_pago',$_POST['orden_compra_pago']);
-	update_post_meta($my_post_id,'orden_compra_community',$_POST['orden_compra_community']);
+	update_post_meta($apartado_id,'orden_compra_fecha',$_POST['orden_compra_fecha']);
+	update_post_meta($apartado_id,'orden_compra_horario',$_POST['orden_compra_horario']);
+	update_post_meta($apartado_id,'orden_compra_horarioEnd',$_POST['orden_compra_horarioEnd']);
+	update_post_meta($apartado_id,'orden_compra_lugar',$_POST['orden_compra_lugar']);
+	update_post_meta($apartado_id,'orden_compra_lugarPers',$_POST['orden_compra_lugarPers']);
+	update_post_meta($apartado_id,'orden_compra_modelo',$_POST['orden_compra_modelo']);
+	update_post_meta($apartado_id,'orden_compra_cliente',$_POST['orden_compra_cliente']);
+	update_post_meta($apartado_id,'orden_compra_pago',$_POST['orden_compra_pago']);
+	update_post_meta($apartado_id,'orden_compra_community',$_POST['orden_compra_community']);
+	//wp_redirect(site_url('mb-stock/#apartado_creado'));
 } ?>

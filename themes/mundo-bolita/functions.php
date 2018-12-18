@@ -132,10 +132,11 @@ function display_orden_compra_atributos( $orden_compra ){
     $cliente       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_cliente', true ) );
     $pago       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_pago', true ) );
     $community      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_community', true ) );
+    $origen         = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_origen', true ) );
 ?>
     <table class="mb-custom-fields">
         <tr>
-            <th colspan="2">
+            <th colspan="2" style="width: 50%">
                 <label for="orden_compra_fecha">Fecha de entrega*:</label>
                 <input type="date" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required>
             </th>
@@ -201,6 +202,15 @@ function display_orden_compra_atributos( $orden_compra ){
                 <input type="text" name="orden_compra_community" id="orden_compra_community" value="<?php echo $community; ?>" required>
             </th>
         </tr>
+        <tr>
+            <th colspan="4">
+                <label for="orden_compra_origen">Origen de la piñata*:</label>
+                <select name="orden_compra_origen" id="orden_compra_origen" required>
+                    <option value="Stock de tienda">Stock de tienda</option>
+                    <option value="Pedido a fabrica">Pedido a fabrica</option>
+                </select>
+            </th>
+        </tr>
     </table>
 <?php }
 
@@ -234,15 +244,39 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         if ( isset( $_POST['orden_compra_community'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_community', $_POST['orden_compra_community'] );
         }
+        if ( isset( $_POST['orden_compra_origen'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_origen', $_POST['orden_compra_origen'] );
+        }
     }
 }
 
+/* Contabilizar apartados*/
+function post_number_orden($postID){
+    $getOrderedPostsOrden= new WP_Query('post_type=orden_compra&orderby=date&order=ASC&posts_per_page=-1');
+    $count = 1;
+    if($getOrderedPostsOrden->have_posts()) {
+        while ($getOrderedPostsOrden->have_posts()) {
+            $getOrderedPostsOrden->the_post();
+            if ($postID != get_the_ID()){
+                $count++;
+            } else {
+                $postNumberOrden= $count;
+            }
+        }
+    }
+    wp_reset_query();
+    if ($postNumberOrden < 10) {
+        $postNumberOrden = '00' . $postNumberOrden;
+    } elseif ($postNumberOrden < 100) {
+        $postNumberOrden = '0' . $postNumberOrden;
+    }
+    return $postNumberOrden;
+}
 
 /* Redirección Nuevo apartado */
-add_action ('template_redirect', 'custom_redirect_nuevo_apartado');
-function custom_redirect_nuevo_apartado() {
-    if (  isset($_POST['submitApartado']) ) {
-        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        wp_redirect($actual_link . '#apartado_creado');
+/*add_action ('template_redirect', 'custom_redirect_apartado');
+function custom_redirect_apartado() {
+    if ( isset($_POST['submitApartado']) ) {
+        wp_redirect(site_url('mb-stock/#apartado_creado'));
     }
-}
+}*/
