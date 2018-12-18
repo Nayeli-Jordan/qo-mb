@@ -20,6 +20,13 @@
 		setlocale(LC_ALL,"es_ES");
 		$fechaPublicada = strftime("%d de %B del %Y", strtotime($fechaPublicada));
 		$fecha 			= strftime("%d de %B del %Y", strtotime($fecha));
+
+		if ($horarioEnd != '') { 
+			$horario 	= $horario . " a " . $horarioEnd; 
+		}
+		if ($lugarPers != '') { 
+			$lugar 		= $lugar . " - " . $lugarPers; 
+		}
 ?>
 	<section id="orden_compra" class="[ container container-large ] relative z-index-1">
 		<div class="padding-top-bottom-large">
@@ -35,9 +42,9 @@
 						</tr>
 						<tr>
 							<td><strong>Fecha de entrega: </strong><?php echo $fecha; ?></td>
-							<td><strong>Horario: </strong><?php echo $horario; ?><?php if ($horarioEnd != '') { echo " a " . $horarioEnd; } ?></td>
+							<td><strong>Horario: </strong><?php echo $horario; ?></td>
 						</tr>
-						<tr><td colspan="2"><strong>Lugar: </strong><?php echo $lugar; ?><?php if ($lugarPers != '') { echo " - " . $lugarPers; } ?></td></tr>
+						<tr><td colspan="2"><strong>Lugar: </strong><?php echo $lugar; ?></td></tr>
 						<tr><td colspan="2"><strong>Modelo: </strong><?php echo $modelo; ?></td></tr>
 						<tr><td colspan="2"><strong>Cliente: </strong><?php echo $cliente; ?></td></tr>
 						<tr><td colspan="2"><strong>Pago: </strong>$<?php echo $pago; ?> liquida a contraentrega</td></tr>
@@ -49,9 +56,11 @@
 				<div class="bg-image bg-contain [ absolute left-25p bottom--10p ] width-25p padding-bottom-25p  rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 
 				<div class="bg-image bg-contain [ absolute right-40p top-25p ] width-15p padding-bottom-15p  rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
+
 			</div>
 		</div>
 		<div class="clearfix"></div>
+		<div class="text-center"><i id="print-page" class="icon-print btn"> Imprimir</i></div>
 	</section>
 	<div class="clearfix"></div>
 <?php 

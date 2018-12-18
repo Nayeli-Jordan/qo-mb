@@ -59,5 +59,10 @@ var $=jQuery.noConflict();
 			console.log('enter');
 		});
 
+		/* Botón imprimir*/
+		$("#print-page").click(function() {
+			window.print();
+		});
+
 	});
 })(jQuery);

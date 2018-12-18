@@ -57,7 +57,7 @@
 .btn,
 .btn-floating {
   &:focus {
-    background-color: $primary-color-dark;
+    background-color: $pink-color-dark;
   }
 }
 
@@ -65,14 +65,17 @@
 .btn {
   text-decoration: none;
   color: $button-raised-color;
-  background-color: $primary-color;
+  background-color: $pink-color;
   text-align: center;
   letter-spacing: .5px;
+  font-family: $font-stack;
+  font-style: normal;
+  font-weight: 500;
   @extend .z-depth-1;
   transition: background-color .2s ease-out;
   cursor: pointer;
   &:hover {
-    background-color: $primary-color-light;
+    background-color: $pink-color-light;
     @extend .z-depth-1-half;
   }
 }
@@ -318,4 +321,8 @@ button.btn-floating {
 // Block button
 .btn-block {
   display: block;
+}
+
+
+#print-page {
 }

@@ -1,4 +1,4 @@
-					<?php if (!is_page('mb-stock') && !is_singular('orden_compra')): ?>
+					<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega')): ?>
 						<section class="container relative margin-top-50">
 							<h2 class="color-primary text-center uppercase relative z-index-1">Ubicación</h2>
 							<div class="row relative z-index-1">

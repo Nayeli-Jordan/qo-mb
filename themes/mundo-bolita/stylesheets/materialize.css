@@ -6253,25 +6253,28 @@ small {
 /* line 59, ../sass/components/_buttons.scss */
 .btn:focus, .btn-large:focus, .btn-small:focus,
 .btn-floating:focus {
-  background-color: #96095c;
+  background-color: #942064;
 }
 
 /* line 65, ../sass/components/_buttons.scss */
 .btn, .btn-large, .btn-small {
   text-decoration: none;
   color: #fff;
-  background-color: #de0d88;
+  background-color: #d22f8e;
   text-align: center;
   letter-spacing: .5px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 500;
   transition: background-color .2s ease-out;
   cursor: pointer;
 }
-/* line 74, ../sass/components/_buttons.scss */
+/* line 77, ../sass/components/_buttons.scss */
 .btn:hover, .btn-large:hover, .btn-small:hover {
-  background-color: #f11396;
+  background-color: #d53c95;
 }
 
-/* line 81, ../sass/components/_buttons.scss */
+/* line 84, ../sass/components/_buttons.scss */
 .btn-floating {
   display: inline-block;
   color: #fff;
@@ -6288,53 +6291,53 @@ small {
   cursor: pointer;
   vertical-align: middle;
 }
-/* line 82, ../sass/components/_buttons.scss */
+/* line 85, ../sass/components/_buttons.scss */
 .btn-floating:hover {
   background-color: #2ca4d6;
 }
-/* line 86, ../sass/components/_buttons.scss */
+/* line 89, ../sass/components/_buttons.scss */
 .btn-floating:before {
   border-radius: 0;
 }
-/* line 89, ../sass/components/_buttons.scss */
+/* line 92, ../sass/components/_buttons.scss */
 .btn-floating.btn-large {
   width: 56px;
   height: 56px;
   padding: 0;
 }
-/* line 90, ../sass/components/_buttons.scss */
+/* line 93, ../sass/components/_buttons.scss */
 .btn-floating.btn-large.halfway-fab {
   bottom: -28px;
 }
-/* line 96, ../sass/components/_buttons.scss */
+/* line 99, ../sass/components/_buttons.scss */
 .btn-floating.btn-large i {
   line-height: 56px;
 }
-/* line 101, ../sass/components/_buttons.scss */
+/* line 104, ../sass/components/_buttons.scss */
 .btn-floating.btn-small {
   width: 32.4px;
   height: 32.4px;
 }
-/* line 102, ../sass/components/_buttons.scss */
+/* line 105, ../sass/components/_buttons.scss */
 .btn-floating.btn-small.halfway-fab {
   bottom: -16.2px;
 }
-/* line 107, ../sass/components/_buttons.scss */
+/* line 110, ../sass/components/_buttons.scss */
 .btn-floating.btn-small i {
   line-height: 32.4px;
 }
-/* line 112, ../sass/components/_buttons.scss */
+/* line 115, ../sass/components/_buttons.scss */
 .btn-floating.halfway-fab {
   position: absolute;
   right: 24px;
   bottom: -20px;
 }
-/* line 113, ../sass/components/_buttons.scss */
+/* line 116, ../sass/components/_buttons.scss */
 .btn-floating.halfway-fab.left {
   right: auto;
   left: 24px;
 }
-/* line 136, ../sass/components/_buttons.scss */
+/* line 139, ../sass/components/_buttons.scss */
 .btn-floating i {
   width: inherit;
   display: inline-block;
@@ -6344,12 +6347,12 @@ small {
   line-height: 40px;
 }
 
-/* line 147, ../sass/components/_buttons.scss */
+/* line 150, ../sass/components/_buttons.scss */
 button.btn-floating {
   border: none;
 }
 
-/* line 152, ../sass/components/_buttons.scss */
+/* line 155, ../sass/components/_buttons.scss */
 .fixed-action-btn {
   position: fixed;
   right: 23px;
@@ -6358,15 +6361,15 @@ button.btn-floating {
   margin-bottom: 0;
   z-index: 997;
 }
-/* line 154, ../sass/components/_buttons.scss */
+/* line 157, ../sass/components/_buttons.scss */
 .fixed-action-btn.active ul {
   visibility: visible;
 }
-/* line 160, ../sass/components/_buttons.scss */
+/* line 163, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-left, .fixed-action-btn.direction-right {
   padding: 0 0 0 15px;
 }
-/* line 163, ../sass/components/_buttons.scss */
+/* line 166, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-left ul, .fixed-action-btn.direction-right ul {
   text-align: right;
   right: 64px;
@@ -6377,58 +6380,58 @@ button.btn-floating {
   /*width 100% only goes to width of button container */
   width: 500px;
 }
-/* line 172, ../sass/components/_buttons.scss */
+/* line 175, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-left ul li, .fixed-action-btn.direction-right ul li {
   display: inline-block;
   margin: 7.5px 15px 0 0;
 }
-/* line 178, ../sass/components/_buttons.scss */
+/* line 181, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-right {
   padding: 0 15px 0 0;
 }
-/* line 180, ../sass/components/_buttons.scss */
+/* line 183, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-right ul {
   text-align: left;
   direction: rtl;
   left: 64px;
   right: auto;
 }
-/* line 185, ../sass/components/_buttons.scss */
+/* line 188, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-right ul li {
   margin: 7.5px 0 0 15px;
 }
-/* line 190, ../sass/components/_buttons.scss */
+/* line 193, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-bottom {
   padding: 0 0 15px 0;
 }
-/* line 192, ../sass/components/_buttons.scss */
+/* line 195, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-bottom ul {
   top: 64px;
   bottom: auto;
   display: flex;
   flex-direction: column-reverse;
 }
-/* line 197, ../sass/components/_buttons.scss */
+/* line 200, ../sass/components/_buttons.scss */
 .fixed-action-btn.direction-bottom ul li {
   margin: 15px 0 0 0;
 }
-/* line 202, ../sass/components/_buttons.scss */
+/* line 205, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar {
   padding: 0;
   height: 56px;
 }
-/* line 204, ../sass/components/_buttons.scss */
+/* line 207, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar.active > a i {
   opacity: 0;
 }
-/* line 210, ../sass/components/_buttons.scss */
+/* line 213, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar ul {
   display: flex;
   top: 0;
   bottom: 0;
   z-index: 1;
 }
-/* line 215, ../sass/components/_buttons.scss */
+/* line 218, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar ul li {
   flex: 1;
   display: inline-block;
@@ -6436,7 +6439,7 @@ button.btn-floating {
   height: 100%;
   transition: none;
 }
-/* line 221, ../sass/components/_buttons.scss */
+/* line 224, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar ul li a {
   display: block;
   overflow: hidden;
@@ -6449,11 +6452,11 @@ button.btn-floating {
   line-height: 56px;
   z-index: 1;
 }
-/* line 232, ../sass/components/_buttons.scss */
+/* line 235, ../sass/components/_buttons.scss */
 .fixed-action-btn.toolbar ul li a i {
   line-height: inherit;
 }
-/* line 245, ../sass/components/_buttons.scss */
+/* line 248, ../sass/components/_buttons.scss */
 .fixed-action-btn ul {
   left: 0;
   right: 0;
@@ -6463,15 +6466,15 @@ button.btn-floating {
   margin: 0;
   visibility: hidden;
 }
-/* line 253, ../sass/components/_buttons.scss */
+/* line 256, ../sass/components/_buttons.scss */
 .fixed-action-btn ul li {
   margin-bottom: 15px;
 }
-/* line 256, ../sass/components/_buttons.scss */
+/* line 259, ../sass/components/_buttons.scss */
 .fixed-action-btn ul a.btn-floating {
   opacity: 0;
 }
-/* line 260, ../sass/components/_buttons.scss */
+/* line 263, ../sass/components/_buttons.scss */
 .fixed-action-btn .fab-backdrop {
   position: absolute;
   top: 0;
@@ -6484,7 +6487,7 @@ button.btn-floating {
   transform: scale(0);
 }
 
-/* line 274, ../sass/components/_buttons.scss */
+/* line 277, ../sass/components/_buttons.scss */
 .btn-flat {
   box-shadow: none;
   background-color: transparent;
@@ -6492,45 +6495,45 @@ button.btn-floating {
   cursor: pointer;
   transition: background-color .2s;
 }
-/* line 280, ../sass/components/_buttons.scss */
+/* line 283, ../sass/components/_buttons.scss */
 .btn-flat:focus, .btn-flat:hover {
   box-shadow: none;
 }
-/* line 284, ../sass/components/_buttons.scss */
+/* line 287, ../sass/components/_buttons.scss */
 .btn-flat:focus {
   background-color: rgba(0, 0, 0, 0.1);
 }
-/* line 287, ../sass/components/_buttons.scss */
+/* line 290, ../sass/components/_buttons.scss */
 .btn-flat.disabled {
   background-color: transparent !important;
   color: #b3b3b3 !important;
   cursor: default;
 }
 
-/* line 295, ../sass/components/_buttons.scss */
+/* line 298, ../sass/components/_buttons.scss */
 .btn-large {
   height: 54px;
   line-height: 54px;
   font-size: 15px;
   padding: 0 28px;
 }
-/* line 302, ../sass/components/_buttons.scss */
+/* line 305, ../sass/components/_buttons.scss */
 .btn-large i {
   font-size: 1.6rem;
 }
 
-/* line 308, ../sass/components/_buttons.scss */
+/* line 311, ../sass/components/_buttons.scss */
 .btn-small {
   height: 32.4px;
   line-height: 32.4px;
   font-size: 13px;
 }
-/* line 313, ../sass/components/_buttons.scss */
+/* line 316, ../sass/components/_buttons.scss */
 .btn-small i {
   font-size: 1.2rem;
 }
 
-/* line 319, ../sass/components/_buttons.scss */
+/* line 322, ../sass/components/_buttons.scss */
 .btn-block {
   display: block;
 }

@@ -39,6 +39,10 @@ $primary-color: #de0d88 !default;
 $primary-color-light: lighten($primary-color, 5%) !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
+$pink-color: #d22f8e !default;
+$pink-color-light: lighten($pink-color, 3%) !default;
+$pink-color-dark: darken($pink-color, 15%) !default;
+
 $light-color: #fff;
 $secondary-color: #2ca4d6 !default;	//#4fbdeb
 $success-color: color("green", "base") !default;
