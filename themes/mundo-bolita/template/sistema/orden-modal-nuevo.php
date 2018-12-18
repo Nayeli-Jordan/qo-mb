@@ -1,8 +1,8 @@
 <?php $today = date("Y-m-d"); ?>
-<div id="nuevo-apartado" class="modal">
+<div id="nuevo-orden" class="modal">
 	<div class="modal-content">
-		<p class="color-primary no-margin-top text-center">Registrar nuevo apartado</p>
-		<form id="apartado-form" action=""  method="post" class="validation row" data-parsley-apartado>
+		<p class="color-primary no-margin-top text-center">Registrar nueva orden de compra</p>
+		<form id="orden-form" action=""  method="post" class="validation row" data-parsley-orden>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
    				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" required  data-parsley-required-message="Campo obligatorio">
@@ -65,20 +65,58 @@
 			<div class="col s12 input-field margin-top">
 				<label for="orden_compra_origen">Origen de la piñata*:</label>
     			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
-                	<option value="Stock de tienda">Stock de tienda</option>
-                	<option value="Pedido a fabrica">Pedido a fabrica</option>
+                	<option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
+                	<option value="Pedido de fábrica">Pedido de fábrica</option>
                 </select>
 			</div>
 			<div class="col s12 text-right">
-				<input type="submit" name="submitApartado" class="btn" value="Enviar" />	
+				<input type="submit" name="submitOrden" class="btn" value="Enviar" />	
 			</div>
 		</form>
 	</div>
 </div>
 
-<?php if(isset($_POST['submitApartado'])){
+<?php if(isset($_POST['submitOrden'])){
+	/* Enviar mail alertando sobre orden */
+	$to 				= "pruebas@altoempleo.com.mx";
+	$subject 			= "Nuevo Registro de Orden Mundo Bolita";
+
+	$compraFecha 		= $_POST['orden_compra_fecha'];
+	$compraHorario 		= $_POST['orden_compra_horario'];
+	$compraHorarioEnd 	= $_POST['orden_compra_horarioEnd'];
+	$compraLugar 		= $_POST['orden_compra_lugar'];
+	$compraLugarPers 	= $_POST['orden_compra_lugarPers'];
+	$compraModelo 		= $_POST['orden_compra_modelo'];
+	$compraCliente 		= $_POST['orden_compra_cliente'];
+	$compraPago 		= $_POST['orden_compra_pago'];
+	$compraCommunity 	= $_POST['orden_compra_community'];
+
+	if ($compraHorarioEnd != '') { 
+		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 
+	}
+	if ($compraLugarPers != '') { 
+		$compraLugar 		= $compraLugar . " - " . $compraLugarPers; 
+	}
+
+	setlocale(LC_ALL,"es_ES");
+	$compraFechaEsp 	= strftime("%d de %B del %Y", strtotime($compraFecha));
+
+	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
+	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
+	$message 	 		.= '<p style="margin-bottom: 20px;">Se a <span style="color: #de0d88;">registrado</span> una nueva orden de compra para una piñata con la siguiente información: <p/>';
+	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compraModelo . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';
+	$message 			.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
+	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
+	$message 	        .= '</body></html>';
+
+	wp_mail($to, $subject, $message);	
+
 	/* Crear post orden_compra */
-	$title 		= 'Apartado de ' . $_POST['orden_compra_modelo'] . 'FBMB';
+	$title 		= 'Orden de ' . $compraModelo;
 
 	$post = array(
 		'post_title'	=> wp_strip_all_tags($title),
@@ -86,16 +124,16 @@
 		'post_type' 	=> 'orden_compra'
 	);
 
-	$apartado_id = wp_insert_post($post);
+	$orden_id = wp_insert_post($post);
 
-	update_post_meta($apartado_id,'orden_compra_fecha',$_POST['orden_compra_fecha']);
-	update_post_meta($apartado_id,'orden_compra_horario',$_POST['orden_compra_horario']);
-	update_post_meta($apartado_id,'orden_compra_horarioEnd',$_POST['orden_compra_horarioEnd']);
-	update_post_meta($apartado_id,'orden_compra_lugar',$_POST['orden_compra_lugar']);
-	update_post_meta($apartado_id,'orden_compra_lugarPers',$_POST['orden_compra_lugarPers']);
-	update_post_meta($apartado_id,'orden_compra_modelo',$_POST['orden_compra_modelo']);
-	update_post_meta($apartado_id,'orden_compra_cliente',$_POST['orden_compra_cliente']);
-	update_post_meta($apartado_id,'orden_compra_pago',$_POST['orden_compra_pago']);
-	update_post_meta($apartado_id,'orden_compra_community',$_POST['orden_compra_community']);
-	//wp_redirect(site_url('mb-stock/#apartado_creado'));
+	update_post_meta($orden_id,'orden_compra_fecha',$compraFecha);
+	update_post_meta($orden_id,'orden_compra_horario',$compraHorario);
+	update_post_meta($orden_id,'orden_compra_horarioEnd',$compraHorarioEnd);
+	update_post_meta($orden_id,'orden_compra_lugar',$compraLugar);
+	update_post_meta($orden_id,'orden_compra_lugarPers',$compraLugarPers);
+	update_post_meta($orden_id,'orden_compra_modelo',$compraModelo);
+	update_post_meta($orden_id,'orden_compra_cliente',$compraCliente);
+	update_post_meta($orden_id,'orden_compra_pago',$compraPago);
+	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
+	//wp_redirect(site_url('mb-stock/#orden_creado'));
 } ?>

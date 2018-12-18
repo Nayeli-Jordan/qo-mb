@@ -64,3 +64,24 @@
 .icon-print:before { content: '\e809'; } /* '' */
 .icon-money:before { content: '\e80a'; } /* '' */
 .icon-house:before { content: '\e840'; } /* '' */
+
+
+.instruction {
+	position: relative;
+	cursor: pointer;
+	color: $primary-color;
+	span {
+		display: none;
+		position: absolute;
+		width: 100px;
+		color: #000;
+		font-size: 12px;
+		text-align: center;
+		background-color: #fff;
+		padding: 0 10px;
+		box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+	}
+	&:hover {
+		span { display: inline-block; }
+	}
+}

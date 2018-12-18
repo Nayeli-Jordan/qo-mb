@@ -3,6 +3,7 @@ a {
   text-decoration: none;
   //&.undeline-hover:hover { text-decoration: underline; }
   &.color-primary-hover:hover { color: $primary-color; }
+  &.underline-hover:hover { text-decoration: underline; }
 }
 .item-scroll { cursor: pointer; }
 

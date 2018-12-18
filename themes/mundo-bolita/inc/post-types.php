@@ -39,17 +39,17 @@ add_action('init', function(){
 	
 
 	$labels = array(
-		'name'          => 'Pedido a fabrica',
-		'singular_name' => 'Pedido a fabrica',
-		'add_new'       => 'Nueva Pedido a fabrica',
-		'add_new_item'  => 'Nueva Pedido a fabrica',
-		'edit_item'     => 'Editar Pedido a fabrica',
-		'new_item'      => 'Nueva Pedido a fabrica',
+		'name'          => 'Pedido a fábrica',
+		'singular_name' => 'Pedido a fábrica',
+		'add_new'       => 'Nueva Pedido a fábrica',
+		'add_new_item'  => 'Nueva Pedido a fábrica',
+		'edit_item'     => 'Editar Pedido a fábrica',
+		'new_item'      => 'Nueva Pedido a fábrica',
 		'all_items'     => 'Todo',
-		'view_item'     => 'Ver Pedido a fabrica',
-		'search_items'  => 'Buscar Pedido a fabrica',
-		'not_found'     => 'No hay Pedido a fabrica.',
-		'menu_name'     => 'Pedido a fabrica'
+		'view_item'     => 'Ver Pedido a fábrica',
+		'search_items'  => 'Buscar Pedido a fábrica',
+		'not_found'     => 'No hay Pedido a fábrica.',
+		'menu_name'     => 'Pedido a fábrica'
 	);
 
 	$args = array(

@@ -1,9 +1,9 @@
 <?php get_header(); ?>
-<section id="page-mb-stock" class="padding-bottom-xlarge container container-large">
+<section id="page-mb-stock" class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>			
 		<div class="text-right margin-bottom-small">
-			<a href="#nuevo-apartado" class="btn margin-left-xsmall modal-trigger">Nuevo apartado</a>
-			<a href="#nuevo-fabrica" class="btn margin-left-xsmall modal-trigger">Nuevo fabrica</a>
+			<a href="#nuevo-orden" class="btn margin-left-xsmall modal-trigger">Nuevo orden</a>
+			<a href="#nuevo-fabrica" class="btn margin-left-xsmall modal-trigger">Nuevo pedido a fábrica</a>
 		</div>
 		<div class="box-info-products">
 			<div class="container-info-products">
@@ -12,9 +12,11 @@
 						<th><strong>Piñata</strong></th>
 						<th><strong>Precio Tienda</strong></th>
 						<th><strong>Precio Facebook</strong></th>
-						<th><strong>Stock</strong></th>
-						<th><strong>Apartadas</strong></th>
-						<th><strong>Fabrica</strong></th>
+						<th><strong>Ordenes de compra</strong></th>
+						<th><strong>Apartadas de Tienda</strong></th>
+						<th><strong>Pedidos Fábrica</strong></th>
+						<th><strong>Stock Tienda</strong></th>						
+						<th><strong>Disponibles</strong></th>
 					</tr>
 					<?php
 				        $args = array(
@@ -25,12 +27,13 @@
 				        if ( $loop->have_posts() ) {
 				        	global $product;						        	
 				            while ( $loop->have_posts() ) : $loop->the_post();	
-								$apartados = 0; /* Inicia apartados en 0 por cada producto */
+								$ordenCompra = 0; /* Inicia ordenes en 0 por cada producto */
 
 								/* Obtener info del producto y guardarla en variables */
 				            	$post_id        = get_the_ID();
 								$product 		= wc_get_product( $post_id );
 								$productName 	= get_the_title( $post_id );
+
 								$price 			= $product->get_regular_price();
 								if ($price != '') {
 									$priceFb	= $price + 100;
@@ -40,20 +43,29 @@
 									$price 		= '-';
 									$priceFb	= '-';
 								}
+
 								$stock			= $product->get_stock_quantity();
 
+								/* Obtener número de ordenes por el nombre del producto */
+								include (TEMPLATEPATH . '/template/sistema/orden-modal.php'); 
 
-								/* Obtener número de apartados por el nombre del producto */
-								include (TEMPLATEPATH . '/template/sistema/apartado-modal.php'); ?>
+								$disponibles = '-'; /* Reiniciar a cero */
+								if ($stock != '-' && $ordenCompra != '-') {
+									$disponibles = $stock - $ordenCompraNumber;
+									if ($disponibles < 0) {
+										$disponibles = $disponibles . '<i class="color-red absolute instruction icon-cancel"><span>No hay stock suficiente</span></i>';
+									}
+								} ?>
 								
 								<tr>
 									<td><?php echo $productName ?></td>
 									<td><?php echo $price; ?></td>
 									<td><?php echo $priceFb; ?></td>
+									<td><?php echo $ordenCompra; ?></td>
+									<td></td>
+									<td></td>
 									<td><?php echo $stock ?></td>
-									<td><?php echo $apartados; ?></td>
-									<td></td>
-									<td></td>
+									<td><?php echo $disponibles; ?></td>
 								</tr>
 				            <?php endwhile;
 				        } 
@@ -63,10 +75,10 @@
 			</div>		
 		</div>
 		<?php 
-			/* Modal apartado */
-			include (TEMPLATEPATH . '/template/sistema/apartado-modal-nuevo.php');
-			/* Modal apartado nuevo creado */
-			include (TEMPLATEPATH . '/template/sistema/apartado-modal-creado.php'); ?>
+			/* Modal orden */
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-nuevo.php');
+			/* Modal orden nuevo creado */
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-creado.php'); ?>
 		
 	<?php endwhile; endif; ?>
 </section>

@@ -156,6 +156,7 @@ function display_orden_compra_atributos( $orden_compra ){
     $cliente       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_cliente', true ) );
     $pago       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_pago', true ) );
     $community      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_community', true ) );
+    $estatus        = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatus', true ) );
     $origen         = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_origen', true ) );
 ?>
     <table class="mb-custom-fields">
@@ -230,8 +231,19 @@ function display_orden_compra_atributos( $orden_compra ){
             <th colspan="4">
                 <label for="orden_compra_origen">Origen de la piñata*:</label>
                 <select name="orden_compra_origen" id="orden_compra_origen" required>
-                    <option value="Stock de tienda">Stock de tienda</option>
-                    <option value="Pedido a fabrica">Pedido a fabrica</option>
+                    <option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
+                    <option value="Pedido de fábrica">Pedido de fábrica</option>
+                </select>
+            </th>
+            <th colspan="4">
+                <label for="orden_compra_estatus">Estatus orden*:</label>
+                <select name="orden_compra_estatus" id="orden_compra_estatus" required>
+                    <option value="estatus_">En fábrica</option>
+                    <option value="estatus_">En tienda</option>
+                    <option value="estatus_">En camino a punto de entrega</option>
+                    <option value="estatus_">En punto de entrega</option>
+                    <option value="estatus_">Pagada, efectivo en camino</option>
+                    <option value="estatus_">Venta cerrada</option>
                 </select>
             </th>
         </tr>
@@ -268,13 +280,16 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         if ( isset( $_POST['orden_compra_community'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_community', $_POST['orden_compra_community'] );
         }
+        if ( isset( $_POST['orden_compra_estatus'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_estatus', $_POST['orden_compra_estatus'] );
+        }
         if ( isset( $_POST['orden_compra_origen'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_origen', $_POST['orden_compra_origen'] );
         }
     }
 }
 
-/* Contabilizar apartados*/
+/* Contabilizar ordenes*/
 function post_number_orden($postID){
     $getOrderedPostsOrden= new WP_Query('post_type=orden_compra&orderby=date&order=ASC&posts_per_page=-1');
     $count = 1;
@@ -297,10 +312,10 @@ function post_number_orden($postID){
     return $postNumberOrden;
 }
 
-/* Redirección Nuevo apartado */
-/*add_action ('template_redirect', 'custom_redirect_apartado');
-function custom_redirect_apartado() {
-    if ( isset($_POST['submitApartado']) ) {
-        wp_redirect(site_url('mb-stock/#apartado_creado'));
+/* Redirección Nueva orden */
+/*add_action ('template_redirect', 'custom_redirect_orden');
+function custom_redirect_orden() {
+    if ( isset($_POST['submitOrden']) ) {
+        wp_redirect(site_url('mb-stock/#orden_creada'));
     }
 }*/

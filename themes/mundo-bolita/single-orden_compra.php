@@ -24,8 +24,8 @@
 		if ($horarioEnd != '') { 
 			$horario 	= $horario . " a " . $horarioEnd; 
 		}
-		if ($lugarPers != '') { 
-			$lugar 		= $lugar . " - " . $lugarPers; 
+		if ($lugar === 'Otro') { 
+			$lugar 		= get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
 		}
 ?>
 	<section id="orden_compra" class="[ container container-large ] relative z-index-1">
@@ -35,13 +35,15 @@
 					<img src="<?php echo THEMEPATH; ?>images/identidad/mb.png">
 				</div>
 				<div class="body-orden">
-					<table>
+					<table class="margin-bottom">
 						<tr>
-							<td><strong>Fecha: </strong><?php echo $fechaPublicada; ?></td>
+							<td class="width-70p"><strong>Fecha: </strong><?php echo $fechaPublicada; ?></td>
 							<td><strong>Folio: </strong>FBMB<?php echo post_number_orden(get_the_ID()); ?></td>
 						</tr>
+					</table>
+					<table>
 						<tr>
-							<td><strong>Fecha de entrega: </strong><?php echo $fecha; ?></td>
+							<td class="width-70p"><strong>Fecha de entrega: </strong><?php echo $fecha; ?></td>
 							<td><strong>Horario: </strong><?php echo $horario; ?></td>
 						</tr>
 						<tr><td colspan="2"><strong>Lugar: </strong><?php echo $lugar; ?></td></tr>
@@ -60,7 +62,10 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<div class="text-center"><i id="print-page" class="icon-print btn"> Imprimir</i></div>
+		<div class="text-center">
+			<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-right-small">Ver stock</a>
+			<i id="print-page" class="icon-print btn"> Imprimir</i>
+		</div>
 	</section>
 	<div class="clearfix"></div>
 <?php 

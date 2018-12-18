@@ -19,9 +19,9 @@ var $=jQuery.noConflict();
 			// Validation form
 			$('form.validation').parsley();
 
-			/* Si se un nuevo apartado */
-			if(window.location.href.indexOf("#apartado_creado") > -1) {
-				$('#apartado_creado').modal('open');
+			/* Si es una nueva orden */
+			if(window.location.href.indexOf("#orden_creada") > -1) {
+				$('#orden_creada').modal('open');
 			}
 		});
  
