@@ -4,7 +4,7 @@
     $subject 		 	 = "Alertas de entrega de piñata";
 
 	$messageHeader 	 	 = '<html style="font-family: Arial, sans-serif;"><body>';
-	$messageHeader 		.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo.png" alt="Logo Mundo Bolita"></a></div>';
+	$messageHeader 		.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
 	$messageHeader 		.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
 
 	$messageFooter		 = '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
@@ -54,13 +54,11 @@
 
 					    if ($today < $fechaAlerta) {
 					    	$body		.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $modelo . '</p>';
-					    	$body		.= '<p><strong style="color: #de0d88;">Fecha de entrega: </strong>' . $fecha . '</p>';
-					    	$body		.= '<p><strong style="color: #de0d88;">Lugar: </strong>' . $lugar . '</p>';
-					    	$body		.= '<p><strong style="color: #de0d88;">Horario: </strong>' . $horario . '</p>';
+					    	$body		.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $fecha . ' - ' . $horario . ' | ' . $lugar . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $cliente . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pago . ' liquida a contraentrega</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $community . '</p>';
-					    	$body		.= '<p><a href="' . $permalink . '" color: #de0d88;>Ver Orden de pago<a/a></p></div>';
+					    	$body		.= '<p><a href="' . $permalink . '" style="color: #de0d88;">Ver Orden de pago<a/a></p></div>';
 					    }
 
 				    	$apartados ++;
@@ -72,7 +70,7 @@
 			    	$message = $messageHeader . $body . $messageFooter;
 					echo $message;
 
-				    //wp_mail($to, $subject, $message);
+				    wp_mail($to, $subject, $message);
 				endif ?>
 			</div>
 
