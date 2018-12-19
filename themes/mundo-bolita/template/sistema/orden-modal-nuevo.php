@@ -77,9 +77,6 @@
 </div>
 
 <?php if(isset($_POST['submitOrden'])){
-	/* Enviar mail alertando sobre orden */
-	$to 				= "pruebas@altoempleo.com.mx";
-	$subject 			= "Nuevo Registro de Orden Mundo Bolita";
 
 	$compraFecha 		= $_POST['orden_compra_fecha'];
 	$compraHorario 		= $_POST['orden_compra_horario'];
@@ -91,10 +88,37 @@
 	$compraPago 		= $_POST['orden_compra_pago'];
 	$compraCommunity 	= $_POST['orden_compra_community'];
 
+	/* Crear post orden_compra */
+	$title 		= 'Orden de compra para ' . $compraModelo;
+
+	$post = array(
+		'post_title'	=> wp_strip_all_tags($title),
+		'post_status'	=> 'publish',
+		'post_type' 	=> 'orden_compra'
+	);
+
+	$orden_id = wp_insert_post($post);
+
+	update_post_meta($orden_id,'orden_compra_fecha',$compraFecha);
+	update_post_meta($orden_id,'orden_compra_horario',$compraHorario);
+	update_post_meta($orden_id,'orden_compra_horarioEnd',$compraHorarioEnd);
+	update_post_meta($orden_id,'orden_compra_lugar',$compraLugar);
+	update_post_meta($orden_id,'orden_compra_modelo',$compraModelo);
+	update_post_meta($orden_id,'orden_compra_cliente',$compraCliente);
+	update_post_meta($orden_id,'orden_compra_pago',$compraPago);
+	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
+	if ($compraLugar === 'Otro') { 
+		update_post_meta($orden_id,'orden_compra_lugarPers',$compraLugarPers);
+	}
+
+	/* Enviar mail alertando sobre orden */
+	$to 				= "pruebas@altoempleo.com.mx";
+	$subject 			= "Nuevo Registro de Orden Mundo Bolita";
+
 	if ($compraHorarioEnd != '') { 
 		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 
 	}
-	if ($compraLugarPers != '') { 
+	if ($compraLugar === 'Otro') { 
 		$compraLugar 		= $compraLugar . " - " . $compraLugarPers; 
 	}
 
@@ -113,27 +137,6 @@
 	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
-	wp_mail($to, $subject, $message);	
-
-	/* Crear post orden_compra */
-	$title 		= 'Orden de ' . $compraModelo;
-
-	$post = array(
-		'post_title'	=> wp_strip_all_tags($title),
-		'post_status'	=> 'publish',
-		'post_type' 	=> 'orden_compra'
-	);
-
-	$orden_id = wp_insert_post($post);
-
-	update_post_meta($orden_id,'orden_compra_fecha',$compraFecha);
-	update_post_meta($orden_id,'orden_compra_horario',$compraHorario);
-	update_post_meta($orden_id,'orden_compra_horarioEnd',$compraHorarioEnd);
-	update_post_meta($orden_id,'orden_compra_lugar',$compraLugar);
-	update_post_meta($orden_id,'orden_compra_lugarPers',$compraLugarPers);
-	update_post_meta($orden_id,'orden_compra_modelo',$compraModelo);
-	update_post_meta($orden_id,'orden_compra_cliente',$compraCliente);
-	update_post_meta($orden_id,'orden_compra_pago',$compraPago);
-	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
+	wp_mail($to, $subject, $message);
 	//wp_redirect(site_url('mb-stock/#orden_creado'));
 } ?>

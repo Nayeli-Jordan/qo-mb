@@ -26,8 +26,13 @@
 				        $loop = new WP_Query( $args );
 				        if ( $loop->have_posts() ) {
 				        	global $product;						        	
-				            while ( $loop->have_posts() ) : $loop->the_post();	
-								$ordenCompra = 0; /* Inicia ordenes en 0 por cada producto */
+				            while ( $loop->have_posts() ) : $loop->the_post();
+				            	/* Inicia ordenes en 0 por cada producto */
+								$ordenCompra 			= 0; 
+								$ordenCompraApartada 	= 0;
+								$ordenCompraFabrica 	= 0;
+
+								$disponibles 			= 0;
 
 								/* Obtener info del producto y guardarla en variables */
 				            	$post_id        = get_the_ID();
@@ -35,26 +40,39 @@
 								$productName 	= get_the_title( $post_id );
 
 								$price 			= $product->get_regular_price();
+								$stock			= $product->get_stock_quantity();
+
+								/* Obtener número de ordenes por el nombre del producto */
+								include (TEMPLATEPATH . '/template/sistema/orden-modal.php');
+
+								/* Obtener disponibilidad */
+								$disponibles = $stock - $ordenCompraApartada;
+								
+								/* Cambiar formato vacios y 0 */
+								if ($ordenCompra === 0) 		{ 
+									$ordenCompra = '<span class="color-disabled">-</span>';
+								}
+								if ($ordenCompraApartada === 0) { 
+									$ordenCompraApartada = '<span class="color-disabled">-</span>';
+								}
+								if ($ordenCompraFabrica === 0) 	{ 
+									$ordenCompraFabrica = '<span class="color-disabled">-</span>';
+								}
+
+								/* Cambiar formato valores */
 								if ($price != '') {
 									$priceFb	= $price + 100;
 									$priceFb	= '$' . $priceFb;
 									$price		= '$' . $price;
 								} else {
-									$price 		= '-';
-									$priceFb	= '-';
+									$price 		= '<span class="color-disabled">-</span>';
+									$priceFb	= '<span class="color-disabled">-</span>';
 								}
-
-								$stock			= $product->get_stock_quantity();
-
-								/* Obtener número de ordenes por el nombre del producto */
-								include (TEMPLATEPATH . '/template/sistema/orden-modal.php'); 
-
-								$disponibles = '-'; /* Reiniciar a cero */
-								if ($stock != '-' && $ordenCompra != '-') {
-									$disponibles = $stock - $ordenCompraNumber;
-									if ($disponibles < 0) {
-										$disponibles = $disponibles . '<i class="color-red absolute instruction icon-cancel"><span>No hay stock suficiente</span></i>';
-									}
+								if ($ordenCompra != 0) {
+									$ordenCompra 	= '<a href="#product_' . $post_id .'" class="modal-trigger block underline-hover">' . $ordenCompra . '</a>';
+								}
+								if ($disponibles < 0) {
+									$disponibles = $disponibles . '<i class="color-red absolute instruction icon-cancel"><span>No hay stock suficiente</span></i>';
 								} ?>
 								
 								<tr>
@@ -62,8 +80,8 @@
 									<td><?php echo $price; ?></td>
 									<td><?php echo $priceFb; ?></td>
 									<td><?php echo $ordenCompra; ?></td>
-									<td></td>
-									<td></td>
+									<td><?php echo $ordenCompraApartada; ?></td>
+									<td><?php echo $ordenCompraFabrica; ?></td>
 									<td><?php echo $stock ?></td>
 									<td><?php echo $disponibles; ?></td>
 								</tr>

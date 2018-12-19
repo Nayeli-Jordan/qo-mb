@@ -1,7 +1,9 @@
 <?php 
 $argsOrden = array(
     'post_type' => 'orden_compra',
-    'posts_per_page' => -1,
+    'posts_per_page' => -1,    
+	'orderby' 			=> 'date',
+	'order' 			=> 'ASC',
 	'meta_query'	=> array(
 		array(
 			'key'		=> 'orden_compra_modelo',
@@ -30,23 +32,28 @@ if ( $loopOrden->have_posts() ) {
 			$lugar 		= get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
 		}
 
+    	$ordenCompra ++;
+    	if ($origen === 'Apartada de stock de tienda') {
+    		$ordenCompraApartada ++;
+    		$origen = 'Tienda';
+    	} else {
+    		$ordenCompraFabrica ++;
+    		$origen = 'Fabrica';
+    	}		
+
 	    $infoOrden  .= '<div class="row margin-bottom-xsmall">';
 		    $infoOrden  .= '<div class="col s12 m1 uppercase"><i class="instruction icon-money"><span>En fabrica</span></i></div>';
 		    $infoOrden  .= '<div class="col s12 m3">' . $cliente . '</div>';
-		    $infoOrden  .= '<div class="col s12 m4">' . $fecha . ' | ' . $lugar . '</div>';
-		    $infoOrden  .= '<div class="col s12 m3">$' . $pago . '.00</div>';
+		    $infoOrden  .= '<div class="col s12 m3">' . $fecha . ' | ' . $lugar . '</div>';
+		    $infoOrden  .= '<div class="col s12 m2">$' . $pago . '.00</div>';
+		    $infoOrden  .= '<div class="col s12 m2">' . $origen . '</div>';
 		    $infoOrden  .= '<div class="col s12 m1"><a href="' . $permalink . '" target="_blank"><i class="icon-eye"></i></a></div>';
 	    $infoOrden  .= '</div>';
 
-    	$ordenCompra ++;
     endwhile;
 } 
 wp_reset_postdata();
-if ($ordenCompra === 0 ) { 
-	$ordenCompra = '-'; 
-} else {
-	$ordenCompraNumber 	= $ordenCompra;
-	$ordenCompra 			= '<a href="#product_' . $post_id .'" class="modal-trigger block underline-hover">' . $ordenCompra . '</a>';  ?>
+if ($ordenCompra != 0 ) {  ?>
 
 	<div id="product_<?php echo $post_id; ?>" class="modal modal-sistema">
 		<div class="modal-content">
@@ -62,8 +69,9 @@ if ($ordenCompra === 0 ) {
 					<i class="instruction status-archive hide"><span>Venta cerrada</span></i>
 				</div>
 				<div class="col s12 m3 uppercase">Cliente</div>
-				<div class="col s12 m4 uppercase">Entrega</div>
-				<div class="col s12 m3 uppercase">A pagar</div>
+				<div class="col s12 m3 uppercase">Entrega</div>
+				<div class="col s12 m2 uppercase">A pagar</div>
+				<div class="col s12 m2 uppercase">Origen</div>
 			</div>
 			<?php echo $infoOrden; ?>
 		</div>

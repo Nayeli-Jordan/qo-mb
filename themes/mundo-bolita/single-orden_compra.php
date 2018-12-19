@@ -10,7 +10,6 @@
 		$horario       	= get_post_meta( $post_id, 'orden_compra_horario', true );
 		$horarioEnd    	= get_post_meta( $post_id, 'orden_compra_horarioEnd', true );
 		$lugar       	= get_post_meta( $post_id, 'orden_compra_lugar', true );
-		$lugarPers    	= get_post_meta( $post_id, 'orden_compra_lugarPers', true );
 		$modelo       	= get_post_meta( $post_id, 'orden_compra_modelo', true );
 		$cliente       	= get_post_meta( $post_id, 'orden_compra_cliente', true );
 		$pago       	= get_post_meta( $post_id, 'orden_compra_pago', true );
