@@ -106,6 +106,7 @@
 	<body class="<?php if (is_singular('orden_compra')): echo 'singular-orden_compra'; endif;?>">
 		<?php /* Se inicia una vez que comienza body para evitar errores en wp_redirect*/
 		if (is_page('mb-stock')):
+			/*echo "<div class='block-modal hide'></div>";*/
 			/* Modal crear nueva orden de compra (form) */
 			include (TEMPLATEPATH . '/template/sistema/orden-modal-nuevo.php');
 			/* Modal alerta orden de compra creada (éxito form)*/

@@ -2,8 +2,8 @@
 <section id="page-mb-stock" class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>			
 		<div class="text-right margin-bottom-small">
-			<a href="#nuevo-orden" class="btn margin-left-xsmall modal-trigger">Nuevo orden</a>
-			<a href="#nuevo-fabrica" class="btn margin-left-xsmall modal-trigger">Nuevo pedido a fábrica</a>
+			<a href="#nuevo-orden" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nuevo orden</a>
+			<a href="#nuevo-fabrica" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nuevo pedido a fábrica</a>
 		</div>
 		<div class="box-info-products">
 			<div class="container-info-products">

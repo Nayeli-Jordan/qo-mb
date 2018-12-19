@@ -3148,6 +3148,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         if (this.options.preventScrolling) {
           document.body.style.overflow = 'hidden';
           $('html').css('overflow', 'hidden');
+          $('.block-modal').removeClass('hide');
         }
 
         this.el.classList.add('open');
@@ -3195,6 +3196,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         if (Modal._modalsOpen === 0) {
           document.body.style.overflow = '';
           $('html').css('overflow', '');
+          $('.block-modal').addClass('hide');
         }
 
         if (this.options.dismissible) {

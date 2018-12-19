@@ -319,7 +319,6 @@ function post_number_orden($postID){
 add_action ('template_redirect', 'redirect_ordenCompra');
 function redirect_ordenCompra() {
     if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrden'] ) ) {
-        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-        wp_redirect($actual_link . '#orden_creada');
+        wp_redirect('mb-stock/#orden_creada');
     }
 }

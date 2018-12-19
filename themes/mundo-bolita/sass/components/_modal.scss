@@ -96,3 +96,11 @@
   border-radius: 0;
   will-change: bottom, opacity;
 }
+
+.block-modal {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1003;
+}

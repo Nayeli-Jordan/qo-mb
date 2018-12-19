@@ -1,5 +1,6 @@
 <?php $today = date("Y-m-d"); ?>
 <div id="nuevo-orden" class="modal">
+	<i class="icon-cancel modal-close"></i>
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Registrar nueva orden de compra</p>
 		<form id="orden-form" name="orden-form" action=""  method="post" class="validation row" data-parsley-orden>

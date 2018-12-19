@@ -1,5 +1,5 @@
 <?php $today = date("Y-m-d"); ?>
-<div id="modificar-estatus" class="modal">
+<div id="modificar-estatus" class="modal modal-small">
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Modificar estatus de Orden de compra</p>
 		<form id="estatus-form" action=""  method="post" class="validation row" data-parsley-estatus>
