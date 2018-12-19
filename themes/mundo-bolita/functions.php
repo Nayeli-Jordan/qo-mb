@@ -237,7 +237,7 @@ function display_orden_compra_atributos( $orden_compra ){
                 </select>
             </th>
             <th colspan="2">
-                <label for="orden_compra_estatus">Estatus orden*:</label>
+                <label for="orden_compra_estatus">Estatus orden de compra*:</label>
                 <select name="orden_compra_estatus" id="orden_compra_estatus" required>
                     <option value="" <?php selected($estatus, ''); ?>></option>
                     <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
@@ -320,5 +320,14 @@ add_action ('template_redirect', 'redirect_ordenCompra');
 function redirect_ordenCompra() {
     if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrden'] ) ) {
         wp_redirect('mb-stock/#orden_creada');
+    }
+}
+
+/* Redirección Orden Actualizada */
+add_action ('template_redirect', 'redirect_ordenCompraActualizada');
+function redirect_ordenCompraActualizada() {
+    if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrdenActualizada'] ) ) {
+        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        wp_redirect($actual_link . '#orden_actualizada');
     }
 }

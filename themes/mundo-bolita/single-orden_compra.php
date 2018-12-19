@@ -1,7 +1,6 @@
 <?php 
 	get_header();
 	global $post;
-
 	
 	while ( have_posts() ) : the_post();
 		$custom_fields  = get_post_custom();
@@ -14,6 +13,8 @@
 		$cliente       	= get_post_meta( $post_id, 'orden_compra_cliente', true );
 		$pago       	= get_post_meta( $post_id, 'orden_compra_pago', true );
 		$community      = get_post_meta( $post_id, 'orden_compra_community', true );
+		$origen      	= get_post_meta( $post_id, 'orden_compra_origen', true );
+		$estatus      	= get_post_meta( $post_id, 'orden_compra_estatus', true );
 		$fechaPublicada = get_the_date("Y-m-d");
 
 		setlocale(LC_ALL,"es_ES");
@@ -26,6 +27,8 @@
 		if ($lugar === 'Otro') { 
 			$lugar 		= get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
 		}
+
+
 ?>
 	<section id="orden_compra" class="[ container container-large ] relative z-index-1">
 		<div class="padding-top-bottom-large">
@@ -50,7 +53,17 @@
 						<tr><td colspan="2"><strong>Cliente: </strong><?php echo $cliente; ?></td></tr>
 						<tr><td colspan="2"><strong>Pago: </strong>$<?php echo $pago; ?> liquida a contraentrega</td></tr>
 						<tr><td colspan="2"><strong>Community Manager: </strong><?php echo $community; ?></td></tr>
-					</table>					
+					</table>
+					<div id="estatus-orden-single" class="infoOrden <?php echo $estatus; ?>">
+						<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
+						<i class="instruction icon-house enTienda"><span>En tienda</span></i>
+						<i class="instruction icon-truck enCamino"><span>En camino a punto de entrega</span></i>
+						<i class="instruction icon-clock enPuntoEntrega"><span>En punto de entrega</span></i>
+						<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
+						<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
+						<i class="instruction icon-trash ventaCancelada"><span>Venta cancelada</span></i>
+					</div>
+					<div id="origen-orden-single"><?php echo $origen; ?></div>				
 				</div>
 				<div class="bg-image bg-contain [ absolute left--5p top-30 ] width-30p padding-bottom-30p rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right--30 bottom--30 ] width-40p padding-bottom-40p" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
@@ -61,8 +74,9 @@
 			</div>
 		</div>
 		<div class="clearfix"></div>
-		<div class="text-center">
+		<div class="action-btn-single text-center">
 			<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-right-small">Ver stock</a>
+			<a href="#actualizado-orden" class="btn margin-right-small modal-trigger">Editar orden</a>
 			<i id="print-page" class="icon-print btn"> Imprimir</i>
 		</div>
 	</section>

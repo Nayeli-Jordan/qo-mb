@@ -23,15 +23,10 @@ var $=jQuery.noConflict();
 			if(window.location.href.indexOf("#orden_creada") > -1) {
 				$('#orden_creada').modal('open');
 			}
-		});
- 
-		$(window).on('load', function(){
-			/* If is singular orden_compra */
-			if ($('#orden_compra').length > 0) {
-				$('html, body').animate({		
-					scrollTop: $('#orden_compra').offset().top - 50
-				}, 1500);
-			}			
+			/* Si es una orden actualizada */
+			if(window.location.href.indexOf("#orden_actualizada") > -1) {
+				$('#orden_actualizada').modal('open');
+			}
 		});
  
 		$(document).scroll(function() {
@@ -63,5 +58,12 @@ var $=jQuery.noConflict();
 		$("#print-page").click(function() {
 			window.print();
 		});
+
+		/* Evitar cruce de modals */
+		/*$(".open-modal-status").click(function() {
+			var openEstatus = $('#modificar-estatus').modal('open');
+			openEstatus.delay(50000).fadeOut(10000).delay("fast").fadeIn(10000);
+			//$('#modificar-estatus').modal('open');
+		});*/
 	});
 })(jQuery);

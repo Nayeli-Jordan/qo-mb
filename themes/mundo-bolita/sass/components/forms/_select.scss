@@ -176,3 +176,6 @@ select:disabled {
     padding-left: 1rem;
   }
 }
+
+
+.actual-select ul li:first-child span { color: $primary-color; }

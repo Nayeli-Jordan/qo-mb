@@ -110,9 +110,14 @@
 			/* Modal crear nueva orden de compra (form) */
 			include (TEMPLATEPATH . '/template/sistema/orden-modal-nuevo.php');
 			/* Modal alerta orden de compra creada (éxito form)*/
-			include (TEMPLATEPATH . '/template/sistema/orden-modal-creado.php'); 
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-alert_creado.php'); 
 			/* Modal modificar estatus orden de compra */
-			include (TEMPLATEPATH . '/template/sistema/orden-modal-estatus.php'); 
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-estatus.php');
+		elseif (is_singular('orden_compra')):			
+			/* Modal actualizar orden de compra (form) */
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-actualizado.php');
+			/* Modal alerta orden de compra actualizada (éxito form)*/
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-alert_actualizada.php'); 
 		endif; ?>		
 		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		

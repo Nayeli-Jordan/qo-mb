@@ -5153,6 +5153,12 @@ table span.badge {
 }
 
 /* line 266, ../sass/components/_grid.scss */
+#orden_compra {
+  position: relative;
+  z-index: 1000;
+}
+
+/* line 270, ../sass/components/_grid.scss */
 .page-orden {
   position: relative;
   width: 820px;
@@ -5162,40 +5168,49 @@ table span.badge {
   box-shadow: 3px -1px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-/* line 276, ../sass/components/_grid.scss */
+/* line 280, ../sass/components/_grid.scss */
 .page-orden .header-orden {
   padding: 30px 20px;
   text-align: center;
   background-image: linear-gradient(to right, #f4c3b5, #f7d8b1, #f6e4b0, #eee5b8, #e2e2c2);
 }
-/* line 280, ../sass/components/_grid.scss */
+/* line 284, ../sass/components/_grid.scss */
 .page-orden .header-orden img {
   filter: drop-shadow(2px 1px 3px #944373);
   -webkit-filter: drop-shadow(2px 1px 3px #944373);
 }
-/* line 285, ../sass/components/_grid.scss */
+/* line 289, ../sass/components/_grid.scss */
 .page-orden .body-orden {
   padding: 30px;
   font-family: "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 289, ../sass/components/_grid.scss */
+/* line 293, ../sass/components/_grid.scss */
 .page-orden .body-orden table {
   position: relative;
   z-index: 1;
 }
-/* line 292, ../sass/components/_grid.scss */
+/* line 296, ../sass/components/_grid.scss */
 .page-orden .body-orden table tr {
   border-color: transparent;
 }
-/* line 295, ../sass/components/_grid.scss */
+/* line 299, ../sass/components/_grid.scss */
 .page-orden .body-orden table tr td strong {
   color: #de0d88;
   font-weight: 700;
 }
-/* line 302, ../sass/components/_grid.scss */
+/* line 306, ../sass/components/_grid.scss */
 .page-orden .body-orden .bg-image {
   opacity: 0.8;
+}
+
+/* line 310, ../sass/components/_grid.scss */
+#origen-orden-single {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #de0d88;
+  font-size: 10px;
 }
 
 /* line 1, ../sass/components/_navbar.scss */
@@ -5765,6 +5780,13 @@ small {
   max-width: 90%;
   margin: 20px auto 30px;
   padding: 0 10px;
+}
+
+/* line 83, ../sass/components/_typography.scss */
+.line-text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* line 2, ../sass/components/_transitions.scss */
@@ -8247,6 +8269,11 @@ select:disabled {
 /* line 175, ../sass/components/forms/_select.scss */
 .select-dropdown li.optgroup ~ li.optgroup-option {
   padding-left: 1rem;
+}
+
+/* line 181, ../sass/components/forms/_select.scss */
+.actual-select ul li:first-child span {
+  color: #de0d88;
 }
 
 /* File Input
@@ -11295,7 +11322,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 /* line 69, ../sass/components/_icons.scss */
 .instruction {
   position: relative;
-  cursor: pointer;
+  cursor: help;
   color: #de0d88;
 }
 /* line 73, ../sass/components/_icons.scss */
@@ -11346,4 +11373,22 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 /* line 97, ../sass/components/_icons.scss */
 .infoOrden.estatus_ventaCancelada .ventaCancelada {
   display: block;
+}
+
+/* line 100, ../sass/components/_icons.scss */
+#estatus-orden-single {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 1;
+}
+/* line 112, ../sass/components/_icons.scss */
+#estatus-orden-single .instruction span {
+  margin-left: 7px;
 }

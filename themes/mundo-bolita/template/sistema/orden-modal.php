@@ -43,7 +43,7 @@ if ( $loopOrden->have_posts() ) {
     	}		
 
 	    $infoOrden  .= '<div class="row margin-bottom-xsmall infoOrden ' . $estatus . '">';
-		    $infoOrden  .= '<div class="col s12 m1 uppercase"><a href="#modificar-estatus" class="modal-trigger">
+		    $infoOrden  .= '<div class="col s12 m1 uppercase">
 		    		<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
 					<i class="instruction icon-house enTienda"><span>En tienda</span></i>
 					<i class="instruction icon-truck enCamino"><span>En camino a punto de entrega</span></i>
@@ -51,9 +51,9 @@ if ( $loopOrden->have_posts() ) {
 					<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
 					<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
 					<i class="instruction icon-trash ventaCancelada"><span>Venta cancelada</span></i>
-					</a></div>';
-		    $infoOrden  .= '<div class="col s12 m3">' . $cliente . '</div>';
-		    $infoOrden  .= '<div class="col s12 m3">' . $fecha . ' | ' . $lugar . '</div>';
+					</div>';
+		    $infoOrden  .= '<div class="col s12 m2"><span class="line-text-overflow inline-block">' . $cliente . '</span></div>';
+		    $infoOrden  .= '<div class="col s12 m4">' . $fecha . ' | ' . $lugar . '</div>';
 		    $infoOrden  .= '<div class="col s12 m2">$' . $pago . '.00</div>';
 		    $infoOrden  .= '<div class="col s12 m2">' . $origen . '</div>';
 		    $infoOrden  .= '<div class="col s12 m1"><a href="' . $permalink . '" target="_blank"><i class="icon-eye"></i></a></div>';
@@ -64,7 +64,7 @@ if ( $loopOrden->have_posts() ) {
 wp_reset_postdata();
 if ($ordenCompra != 0 ) {  ?>
 
-	<div id="product_<?php echo $post_id; ?>" class="modal modal-sistema">
+	<div id="product_<?php echo $post_id; ?>" class="modal modal-detalles-orden">
 		<div class="modal-content">
 			<i class="icon-cancel modal-close"></i>
 			<p class="color-primary no-margin-top text-center">Ordenes de <?php echo $productName; ?></p>
@@ -77,8 +77,8 @@ if ($ordenCompra != 0 ) {  ?>
 					<i class="instruction status-money hide"><span>Pagada, efectivo en camino</span></i>
 					<i class="instruction status-archive hide"><span>Venta cerrada</span></i>
 				</div>
-				<div class="col s12 m3 uppercase">Cliente</div>
-				<div class="col s12 m3 uppercase">Entrega</div>
+				<div class="col s12 m2 uppercase">Cliente</div>
+				<div class="col s12 m4 uppercase">Entrega</div>
 				<div class="col s12 m2 uppercase">A pagar</div>
 				<div class="col s12 m2 uppercase">Origen</div>
 			</div>

@@ -6,6 +6,9 @@ body.singular-orden_compra {
   .main-body {
     & > .bg-image,
     & > .bg-image > .bg-image { background-image: none!important; }
-    .page-orden { width: 99%; }   
+    .page-orden { width: 99%; } 
+    #estatus-orden-single,
+    #origen-orden-single,
+    .action-btn-single { display: none; }  
   }  
 }
