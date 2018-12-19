@@ -64,5 +64,13 @@ var $=jQuery.noConflict();
 			window.print();
 		});
 
+		/* Overflow modal */
+		/*$(".modal-trigger").click(function() {
+			$('html').css('overflow', 'hidden');
+		});
+		$(".modal-overlay").click(function() {
+			$('html').css('overflow', '');
+		});*/
+
 	});
 })(jQuery);

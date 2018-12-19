@@ -91,13 +91,7 @@
 				    ?>
 				</table>
 			</div>		
-		</div>
-		<?php 
-			/* Modal orden */
-			include (TEMPLATEPATH . '/template/sistema/orden-modal-nuevo.php');
-			/* Modal orden nuevo creado */
-			include (TEMPLATEPATH . '/template/sistema/orden-modal-creado.php'); ?>
-		
+		</div>		
 	<?php endwhile; endif; ?>
 </section>
 <?php get_footer(); ?>

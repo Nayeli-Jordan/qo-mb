@@ -85,3 +85,14 @@
 		span { display: inline-block; }
 	}
 }
+
+.infoOrden {
+	.instruction { display: none; }
+	&.estatus_enFabrica .enFabrica { display: block; }
+	&.estatus_enTienda .enTienda { display: block; }
+	&.estatus_enCamino .enCamino { display: block; }
+	&.estatus_enPuntoEntrega .enPuntoEntrega { display: block; }
+	&.estatus_efectivo .efectivo { display: block; }
+	&.estatus_ventaCerrada .ventaCerrada { display: block; }
+	&.estatus_ventaCancelada .ventaCancelada { display: block; }
+}

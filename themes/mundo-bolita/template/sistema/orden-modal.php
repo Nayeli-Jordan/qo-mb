@@ -23,6 +23,7 @@ if ( $loopOrden->have_posts() ) {
 		$pago       	= get_post_meta( $post_id, 'orden_compra_pago', true );
 		$estatus       	= get_post_meta( $post_id, 'orden_compra_estatus', true );
 		$origen       	= get_post_meta( $post_id, 'orden_compra_origen', true );
+		$estatus       	= get_post_meta( $post_id, 'orden_compra_estatus', true );
 	    $fecha       	= get_post_meta( $post_id, 'orden_compra_fecha', true );
 	    $fecha 			= date('d/m/Y', strtotime($fecha));
 
@@ -41,8 +42,16 @@ if ( $loopOrden->have_posts() ) {
     		$origen = 'Fabrica';
     	}		
 
-	    $infoOrden  .= '<div class="row margin-bottom-xsmall">';
-		    $infoOrden  .= '<div class="col s12 m1 uppercase"><i class="instruction icon-money"><span>En fabrica</span></i></div>';
+	    $infoOrden  .= '<div class="row margin-bottom-xsmall infoOrden ' . $estatus . '">';
+		    $infoOrden  .= '<div class="col s12 m1 uppercase"><a href="#modificar-estatus" class="modal-trigger">
+		    		<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
+					<i class="instruction icon-house enTienda"><span>En tienda</span></i>
+					<i class="instruction icon-truck enCamino"><span>En camino a punto de entrega</span></i>
+					<i class="instruction icon-clock enPuntoEntrega"><span>En punto de entrega</span></i>
+					<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
+					<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
+					<i class="instruction icon-trash ventaCancelada"><span>Venta cancelada</span></i>
+					</a></div>';
 		    $infoOrden  .= '<div class="col s12 m3">' . $cliente . '</div>';
 		    $infoOrden  .= '<div class="col s12 m3">' . $fecha . ' | ' . $lugar . '</div>';
 		    $infoOrden  .= '<div class="col s12 m2">$' . $pago . '.00</div>';

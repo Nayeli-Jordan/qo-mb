@@ -37,8 +37,8 @@
       font-size: 16px;
       color: $dropdown-color;
       display: block;
-      line-height: 22px;
-      padding: (($dropdown-item-height - 22) / 2) 16px;
+      line-height: 35px;
+      padding: 0 16px;
     }
 
     & > span > label {
@@ -60,8 +60,6 @@
     clear: both;
     color: $off-black;
     cursor: pointer;
-    min-height: $dropdown-item-height;
-    line-height: 1.5rem;
     width: 100%;
     text-align: left;
   }

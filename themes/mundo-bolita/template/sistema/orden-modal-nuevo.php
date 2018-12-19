@@ -2,7 +2,7 @@
 <div id="nuevo-orden" class="modal">
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Registrar nueva orden de compra</p>
-		<form id="orden-form" action=""  method="post" class="validation row" data-parsley-orden>
+		<form id="orden-form" name="orden-form" action=""  method="post" class="validation row" data-parsley-orden>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
    				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" required  data-parsley-required-message="Campo obligatorio">
@@ -65,18 +65,21 @@
 			<div class="col s12 input-field margin-top">
 				<label for="orden_compra_origen">Origen de la piñata*:</label>
     			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
+    				<option value=""></option>
                 	<option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
                 	<option value="Pedido de fábrica">Pedido de fábrica</option>
                 </select>
 			</div>
 			<div class="col s12 text-right">
-				<input type="submit" name="submitOrden" class="btn" value="Enviar" />	
+				<input type="submit" id="mb_submitOrden" name="mb_submitOrden" class="btn" value="Enviar" />
+				<input type="hidden" name="send_submitOrden" value="post" />
+				<?php wp_nonce_field( 'orden-form' ); ?>	
 			</div>
 		</form>
 	</div>
 </div>
 
-<?php if(isset($_POST['submitOrden'])){
+<?php if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrden'] )):
 
 	$compraFecha 		= $_POST['orden_compra_fecha'];
 	$compraHorario 		= $_POST['orden_compra_horario'];
@@ -87,6 +90,7 @@
 	$compraCliente 		= $_POST['orden_compra_cliente'];
 	$compraPago 		= $_POST['orden_compra_pago'];
 	$compraCommunity 	= $_POST['orden_compra_community'];
+	$compraOrigen 	 	= $_POST['orden_compra_origen'];
 
 	/* Crear post orden_compra */
 	$title 		= 'Orden de compra para ' . $compraModelo;
@@ -107,8 +111,14 @@
 	update_post_meta($orden_id,'orden_compra_cliente',$compraCliente);
 	update_post_meta($orden_id,'orden_compra_pago',$compraPago);
 	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
+	update_post_meta($orden_id,'orden_compra_origen',$compraOrigen);
 	if ($compraLugar === 'Otro') { 
 		update_post_meta($orden_id,'orden_compra_lugarPers',$compraLugarPers);
+	}
+	if ($compraOrigen === 'Apartada de stock de tienda') { 
+		update_post_meta($orden_id,'orden_compra_estatus','estatus_enTienda');
+	} else {
+		update_post_meta($orden_id,'orden_compra_estatus','estatus_enFabrica');
 	}
 
 	/* Enviar mail alertando sobre orden */
@@ -132,11 +142,11 @@
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';
+	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';	
+	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Origen: </strong>' . $compraOrigen . '</p></div>';
 	$message 			.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
 	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
 	wp_mail($to, $subject, $message);
-	//wp_redirect(site_url('mb-stock/#orden_creado'));
-} ?>
+endif; ?>

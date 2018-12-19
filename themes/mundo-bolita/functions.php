@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', function(){
  
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.2.1.min.js', array(''), '2.1.1', true );	
     wp_enqueue_script( 'mb_parsley', JSPATH.'parsley.min.js', array(), '1.0', true );
-	wp_enqueue_script( 'materialize_js', JSPATH.'bin/materialize.min.js', array('jquery'), '1.0', true );
+	wp_enqueue_script( 'materialize_js', JSPATH.'bin/materialize.js', array('jquery'), '1.0', true );
 	wp_enqueue_script( 'wow_js', JSPATH.'wow.min.js', array(), '', true );
 	wp_enqueue_script( 'mb_functions', JSPATH.'functions.js', array('materialize_js'), '1.0', true );
  
@@ -228,22 +228,25 @@ function display_orden_compra_atributos( $orden_compra ){
             </th>
         </tr>
         <tr>
-            <th colspan="4">
+            <th colspan="2">
                 <label for="orden_compra_origen">Origen de la piñata*:</label>
                 <select name="orden_compra_origen" id="orden_compra_origen" required>
-                    <option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
-                    <option value="Pedido de fábrica">Pedido de fábrica</option>
+                    <option value="" <?php selected($origen, ''); ?>></option>
+                    <option value="Apartada de stock de tienda" <?php selected($origen, 'Apartada de stock de tienda'); ?>>Apartada de stock de tienda</option>
+                    <option value="Pedido de fábrica" <?php selected($origen, 'Pedido de fábrica'); ?>>Pedido de fábrica</option>
                 </select>
             </th>
-            <th colspan="4">
+            <th colspan="2">
                 <label for="orden_compra_estatus">Estatus orden*:</label>
                 <select name="orden_compra_estatus" id="orden_compra_estatus" required>
-                    <option value="estatus_">En fábrica</option>
-                    <option value="estatus_">En tienda</option>
-                    <option value="estatus_">En camino a punto de entrega</option>
-                    <option value="estatus_">En punto de entrega</option>
-                    <option value="estatus_">Pagada, efectivo en camino</option>
-                    <option value="estatus_">Venta cerrada</option>
+                    <option value="" <?php selected($estatus, ''); ?>></option>
+                    <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
+                    <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
+                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino a punto de entrega</option>
+                    <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
+                    <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Pagada, efectivo en camino</option>
+                    <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
+                    <option value="estatus_ventaCancelada" <?php selected($estatus, 'estatus_ventaCancelada'); ?>>Venta cancelada</option>
                 </select>
             </th>
         </tr>
@@ -313,9 +316,10 @@ function post_number_orden($postID){
 }
 
 /* Redirección Nueva orden */
-/*add_action ('template_redirect', 'custom_redirect_orden');
-function custom_redirect_orden() {
-    if ( isset($_POST['submitOrden']) ) {
-        wp_redirect(site_url('mb-stock/#orden_creada'));
+add_action ('template_redirect', 'redirect_ordenCompra');
+function redirect_ordenCompra() {
+    if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrden'] ) ) {
+        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        wp_redirect($actual_link . '#orden_creada');
     }
-}*/
+}
