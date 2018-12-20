@@ -323,6 +323,10 @@ button.btn-floating {
   display: block;
 }
 
-
-#print-page {
+@media (min-width: 901px){
+  #btn-ordenCompra.btn-fixed {
+    position: fixed;
+    top: 30px;
+    right: calc(10% - 22px);
+  }
 }

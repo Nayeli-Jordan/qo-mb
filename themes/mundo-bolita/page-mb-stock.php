@@ -2,8 +2,7 @@
 <section id="page-mb-stock" class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>			
 		<div class="text-right margin-bottom-small">
-			<a href="#nuevo-orden" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nuevo orden</a>
-			<a href="#nuevo-fabrica" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nuevo pedido a fábrica</a>
+			<a id="btn-ordenCompra" href="#nuevo-orden" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nueva orden de compra</a>
 		</div>
 		<div class="box-info-products">
 			<div class="container-info-products">
@@ -15,8 +14,8 @@
 						<th><strong>Ordenes de compra</strong></th>
 						<th><strong>Apartadas de Tienda</strong></th>
 						<th><strong>Pedidos Fábrica</strong></th>
-						<th><strong>Stock Tienda</strong></th>						
-						<th><strong>Disponibles</strong></th>
+						<th><strong>Stock de Tienda</strong></th>						
+						<th><strong>Disponibles en Tienda</strong></th>
 					</tr>
 					<?php
 				        $args = array(

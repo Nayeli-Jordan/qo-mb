@@ -1,5 +1,5 @@
 <?php $today = date("Y-m-d"); ?>
-<div id="nuevo-orden" class="modal">
+<div id="nuevo-orden" class="modal modal-medium modal-large">
 	<i class="icon-cancel modal-close"></i>
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Registrar nueva orden de compra</p>
@@ -72,7 +72,7 @@
                 </select>
 			</div>
 			<div class="col s12 text-right">
-				<input type="submit" id="mb_submitOrden" name="mb_submitOrden" class="btn" value="Enviar" />
+				<input type="submit" id="mb_submitOrden" name="mb_submitOrden" class="btn" value="Guardar" />
 				<input type="hidden" name="send_submitOrden" value="post" />
 				<?php wp_nonce_field( 'orden-form' ); ?>	
 			</div>
@@ -94,7 +94,7 @@
 	$compraOrigen 	 	= $_POST['orden_compra_origen'];
 
 	/* Crear post orden_compra */
-	$title 		= 'Orden de compra para ' . $compraModelo;
+	$title 		= 'Orden de compra - ' . $compraModelo;
 
 	$post = array(
 		'post_title'	=> wp_strip_all_tags($title),

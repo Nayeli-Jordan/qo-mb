@@ -300,7 +300,8 @@ textarea.materialize-textarea {
 // Default textarea
 textarea {
   width: 100%;
-  height: $input-height;
+  height:80px;
+  resize: none;
   background-color: transparent;
 
   &.materialize-textarea {

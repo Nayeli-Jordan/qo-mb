@@ -15,7 +15,9 @@
   border-radius: 2px;
   will-change: top, opacity;
 
+  &.modal-medium { max-width: 650px; }
   &.modal-small { max-width: 420px; }
+  &.modal-large { min-height: 80%; }
   @media #{$small-and-down} {
     width: 100%;
     top: 0px!important;

@@ -63,7 +63,12 @@
 						<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
 						<i class="instruction icon-trash ventaCancelada"><span>Venta cancelada</span></i>
 					</div>
-					<div id="origen-orden-single"><?php echo $origen; ?></div>				
+					<div id="origen-orden-single">
+						<?php echo $origen; 
+						if ($origen === 'Pedido de fábrica') {
+							echo " <a href='#pedido-fabrica' class='modal-trigger'><i class='icon-calendar'></i></a>";
+						}?>
+					</div>				
 				</div>
 				<div class="bg-image bg-contain [ absolute left--5p top-30 ] width-30p padding-bottom-30p rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right--30 bottom--30 ] width-40p padding-bottom-40p" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>

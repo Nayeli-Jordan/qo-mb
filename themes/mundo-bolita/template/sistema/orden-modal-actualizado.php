@@ -31,7 +31,7 @@
 		$labelEstatus = 'Venta cancelada';
 	endif; ?>
 
-<div id="actualizado-orden" class="modal">
+<div id="actualizado-orden" class="modal modal-medium modal-large">
 	<i class="icon-cancel modal-close"></i>
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Actualizar orden de compra</p>
@@ -95,7 +95,7 @@
                 </select>
 			</div>
 			<div class="col s12 text-right">
-				<input type="submit" id="mb_submitOrdenActualizada" name="mb_submitOrdenActualizada" class="btn" value="Enviar" />
+				<input type="submit" id="mb_submitOrdenActualizada" name="mb_submitOrdenActualizada" class="btn" value="Actualizar" />
 				<input type="hidden" name="send_submitOrdenActualizada" value="post" />
 				<?php wp_nonce_field( 'orden_actualizada-form' ); ?>	
 			</div>
@@ -133,6 +133,14 @@
 	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
 	update_post_meta($orden_id,'orden_compra_origen',$compraOrigen);
 	update_post_meta($orden_id,'orden_compra_estatus',$compraEstatus);
+
+	/*if ( $compraEstatus === 'Pagada, efectivo en camino' || $compraEstatus === 'Venta cerrada' ) {
+		
+	}*/
+
+	//$product_id = wp_update_post($post);
+	//update_post_meta($product_id, '_stock', 0);
+	/*update_post_meta(92, '_stock', 10);*/
 
 	/* Enviar mail alertando sobre orden */
 /*	$to 				= "pruebas@altoempleo.com.mx";

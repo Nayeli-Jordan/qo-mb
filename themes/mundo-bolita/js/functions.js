@@ -27,11 +27,26 @@ var $=jQuery.noConflict();
 			if(window.location.href.indexOf("#orden_actualizada") > -1) {
 				$('#orden_actualizada').modal('open');
 			}
+			/* Si se guardo información del pedido a fábrica */
+			if(window.location.href.indexOf("#orden_pedidoFabrica") > -1) {
+				$('#orden_pedidoFabrica').modal('open');
+			}
 		});
  
-		$(document).scroll(function() {
-
-		});
+		
+		/* Btn fixed orden compra */
+		if ($('#btn-ordenCompra').length > 0) {
+			var btnOrden 	= $('#btn-ordenCompra').offset();
+			$(document).scroll(function() {
+				var topWindow 	= $(window).scrollTop();
+				if(topWindow >= btnOrden.top){
+				    $('#btn-ordenCompra').addClass('btn-fixed');
+				} else {
+				    $('#btn-ordenCompra').removeClass('btn-fixed');
+				}
+			});
+		}
+		
 
 		//Scroll menú
 		$(" a.item-scroll").click(function() {

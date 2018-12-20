@@ -117,7 +117,11 @@
 			/* Modal actualizar orden de compra (form) */
 			include (TEMPLATEPATH . '/template/sistema/orden-modal-actualizado.php');
 			/* Modal alerta orden de compra actualizada (éxito form)*/
-			include (TEMPLATEPATH . '/template/sistema/orden-modal-alert_actualizada.php'); 
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-alert_actualizada.php');			
+			/* Modal info pedido fábrica (form) */
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-pedido-fabrica.php');
+			/* Modal alerta de pedido a fabrica actualizado */
+			include (TEMPLATEPATH . '/template/sistema/orden-modal-alert_pedidoFabrica.php');
 		endif; ?>		
 		<div class="bg-image relative" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo.png)">
 			<header class="js-header relative">		

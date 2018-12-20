@@ -5209,8 +5209,10 @@ table span.badge {
   position: absolute;
   top: 10px;
   right: 10px;
+  padding: 0 10px;
   color: #de0d88;
   font-size: 10px;
+  background-color: #fff;
 }
 
 /* line 1, ../sass/components/_navbar.scss */
@@ -6569,6 +6571,14 @@ button.btn-floating {
   display: block;
 }
 
+@media (min-width: 901px) {
+  /* line 327, ../sass/components/_buttons.scss */
+  #btn-ordenCompra.btn-fixed {
+    position: fixed;
+    top: 30px;
+    right: calc(10% - 22px);
+  }
+}
 /* line 1, ../sass/components/_dropdown.scss */
 .dropdown-content {
   background-color: #fff;
@@ -6783,8 +6793,16 @@ button.btn-floating {
   will-change: top, opacity;
 }
 /* line 18, ../sass/components/_modal.scss */
+.modal.modal-medium {
+  max-width: 650px;
+}
+/* line 19, ../sass/components/_modal.scss */
 .modal.modal-small {
   max-width: 420px;
+}
+/* line 20, ../sass/components/_modal.scss */
+.modal.modal-large {
+  min-height: 80%;
 }
 @media only screen and (max-width: 600px) {
   /* line 1, ../sass/components/_modal.scss */
@@ -6795,15 +6813,15 @@ button.btn-floating {
     max-height: 100vh;
   }
 }
-/* line 26, ../sass/components/_modal.scss */
+/* line 28, ../sass/components/_modal.scss */
 .modal h1, .modal h2, .modal h3, .modal h4 {
   margin-top: 0;
 }
-/* line 30, ../sass/components/_modal.scss */
+/* line 32, ../sass/components/_modal.scss */
 .modal .modal-content {
   padding: 40px 25px;
 }
-/* line 33, ../sass/components/_modal.scss */
+/* line 35, ../sass/components/_modal.scss */
 .modal .modal-close {
   position: absolute;
   right: 15px;
@@ -6811,7 +6829,7 @@ button.btn-floating {
   color: #de0d88;
   cursor: pointer;
 }
-/* line 41, ../sass/components/_modal.scss */
+/* line 43, ../sass/components/_modal.scss */
 .modal .modal-footer {
   border-radius: 0 0 2px 2px;
   background-color: #fafafa;
@@ -6820,12 +6838,12 @@ button.btn-floating {
   width: 100%;
   text-align: right;
 }
-/* line 49, ../sass/components/_modal.scss */
+/* line 51, ../sass/components/_modal.scss */
 .modal .modal-footer .btn, .modal .modal-footer .btn-large, .modal .modal-footer .btn-small, .modal .modal-footer .btn-flat {
   margin: 6px 0;
 }
 
-/* line 54, ../sass/components/_modal.scss */
+/* line 56, ../sass/components/_modal.scss */
 .modal-overlay {
   position: fixed;
   z-index: 999;
@@ -6840,12 +6858,12 @@ button.btn-floating {
   will-change: opacity;
 }
 
-/* line 70, ../sass/components/_modal.scss */
+/* line 72, ../sass/components/_modal.scss */
 .modal.modal-fixed-footer {
   padding: 0;
   height: 70%;
 }
-/* line 74, ../sass/components/_modal.scss */
+/* line 76, ../sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-content {
   position: absolute;
   height: calc(100% - 56px);
@@ -6853,14 +6871,14 @@ button.btn-floating {
   width: 100%;
   overflow-y: auto;
 }
-/* line 82, ../sass/components/_modal.scss */
+/* line 84, ../sass/components/_modal.scss */
 .modal.modal-fixed-footer .modal-footer {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   bottom: 0;
 }
 
-/* line 90, ../sass/components/_modal.scss */
+/* line 92, ../sass/components/_modal.scss */
 .modal.bottom-sheet {
   top: auto;
   bottom: -100%;
@@ -6871,7 +6889,7 @@ button.btn-floating {
   will-change: bottom, opacity;
 }
 
-/* line 100, ../sass/components/_modal.scss */
+/* line 102, ../sass/components/_modal.scss */
 .block-modal {
   position: fixed;
   top: 0px;
@@ -7651,10 +7669,11 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
 /* line 301, ../sass/components/forms/_input-fields.scss */
 textarea {
   width: 100%;
-  height: 2rem;
+  height: 80px;
+  resize: none;
   background-color: transparent;
 }
-/* line 306, ../sass/components/forms/_input-fields.scss */
+/* line 307, ../sass/components/forms/_input-fields.scss */
 textarea.materialize-textarea {
   line-height: normal;
   overflow-y: hidden;
@@ -7666,7 +7685,7 @@ textarea.materialize-textarea {
   box-sizing: border-box;
 }
 
-/* line 317, ../sass/components/forms/_input-fields.scss */
+/* line 318, ../sass/components/forms/_input-fields.scss */
 .hiddendiv {
   visibility: hidden;
   white-space: pre-wrap;
@@ -7681,11 +7700,11 @@ textarea.materialize-textarea {
 }
 
 /* Autocomplete */
-/* line 334, ../sass/components/forms/_input-fields.scss */
+/* line 335, ../sass/components/forms/_input-fields.scss */
 .autocomplete-content li .highlight {
   color: #444;
 }
-/* line 336, ../sass/components/forms/_input-fields.scss */
+/* line 337, ../sass/components/forms/_input-fields.scss */
 .autocomplete-content li img {
   height: 40px;
   width: 40px;
@@ -7693,7 +7712,7 @@ textarea.materialize-textarea {
 }
 
 /* Character Counter */
-/* line 345, ../sass/components/forms/_input-fields.scss */
+/* line 346, ../sass/components/forms/_input-fields.scss */
 .character-counter {
   min-height: 18px;
 }

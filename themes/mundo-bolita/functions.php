@@ -158,6 +158,11 @@ function display_orden_compra_atributos( $orden_compra ){
     $community      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_community', true ) );
     $estatus        = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatus', true ) );
     $origen         = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_origen', true ) );
+
+    $fechaSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fechaSolicitud', true ) );
+    $entregaSolicitud   = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_entregaSolicitud', true ) );
+    $persSolicitud      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_persSolicitud', true ) );
+    $notasSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_notasSolicitud', true ) );
 ?>
     <table class="mb-custom-fields">
         <tr>
@@ -251,6 +256,31 @@ function display_orden_compra_atributos( $orden_compra ){
             </th>
         </tr>
     </table>
+    <table class="mb-custom-fields margin-top">
+        <tr><td colspan="4"><strong>SI ES PEDIDO A FÁBRICA</strong></td></tr>
+        <tr>
+            <td colspan="2">
+                <label for="orden_compra_fechaSolicitud">Fecha en la que se solicitó*:</label>
+                <input type="date" name="orden_compra_fechaSolicitud" id="orden_compra_fechaSolicitud"  value="<?php echo $fechaSolicitud; ?>">
+            </td>
+            <td colspan="2">
+                <label for="orden_compra_entregaSolicitud">Fecha de entrega acordada*:</label>
+                <input type="date" min="<?php echo $today; ?>" name="orden_compra_entregaSolicitud" id="orden_compra_entregaSolicitud" value="<?php echo $entregaSolicitud; ?>">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="orden_compra_persSolicitud">¿Quién solicito?:</label>
+                <input type="text" name="orden_compra_persSolicitud" id="orden_compra_persSolicitud" value="<?php echo $persSolicitud; ?>">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <label for="orden_compra_notasSolicitud">Notas pedido:</label>
+                <textarea name="orden_compra_notasSolicitud" id="orden_compra_notasSolicitud" rows="3"><?php echo $notasSolicitud; ?></textarea>
+            </td>
+        </tr>
+    </table>
 <?php }
 
 add_action( 'save_post', 'orden_compra_save_metas', 10, 2 );
@@ -288,6 +318,18 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         }
         if ( isset( $_POST['orden_compra_origen'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_origen', $_POST['orden_compra_origen'] );
+        }
+        if ( isset( $_POST['orden_compra_fechaSolicitud'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_fechaSolicitud', $_POST['orden_compra_fechaSolicitud'] );
+        }
+        if ( isset( $_POST['orden_compra_entregaSolicitud'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_entregaSolicitud', $_POST['orden_compra_entregaSolicitud'] );
+        }
+        if ( isset( $_POST['orden_compra_persSolicitud'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_persSolicitud', $_POST['orden_compra_persSolicitud'] );
+        }
+        if ( isset( $_POST['orden_compra_notasSolicitud'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_notasSolicitud', $_POST['orden_compra_notasSolicitud'] );
         }
     }
 }
@@ -329,5 +371,95 @@ function redirect_ordenCompraActualizada() {
     if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrdenActualizada'] ) ) {
         $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
         wp_redirect($actual_link . '#orden_actualizada');
+    }
+}
+
+/* Redirección Orden Actualizada */
+add_action ('template_redirect', 'redirect_ordenPedidoFabrica');
+function redirect_ordenPedidoFabrica() {
+    if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitPedido'] ) ) {
+        $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+        wp_redirect($actual_link . '#orden_pedidoFabrica');
+    }
+}
+
+/*
+** Columnas Orden compra
+*/
+add_filter( 'manage_orden_compra_posts_columns', 'set_custom_edit_orden_compra_columns' );
+function set_custom_edit_orden_compra_columns($columns) {
+    $columns['ae_entrega'] = __( 'Entrega', 'aempleo' );
+    $columns['ae_estatus'] = __( 'Estatus', 'aempleo' );
+    $columns['ae_pedido'] = __( 'Pedido a fábrica', 'aempleo' );
+    $columns['ae_cliente'] = __( 'Cliente', 'aempleo' );
+
+    return $columns;
+}
+
+add_action( 'manage_orden_compra_posts_custom_column' , 'custom_orden_compra_column', 10, 2 );
+function custom_orden_compra_column( $column, $post_id ) {
+    switch ( $column ) {
+        case 'ae_entrega' :
+            $fecha  = get_post_meta( $post_id, 'orden_compra_fecha', true );
+            $lugar      = get_post_meta( $post_id, 'orden_compra_lugar', true );
+            if ($fecha != "") {
+                $fecha          = date('d/m/Y', strtotime($fecha));
+            }
+            if ($lugar === 'Otro') { 
+                $lugar      = get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
+            }
+            if( $fecha != "" || $lugar != "")
+                echo $fecha . '<br>' . $lugar;
+            else
+                echo "-";
+            break;
+        case 'ae_estatus' :
+            $origen  = get_post_meta( $post_id, 'orden_compra_origen', true );
+            $estatus  = get_post_meta( $post_id, 'orden_compra_estatus', true );
+            if ($origen === 'Apartada de stock de tienda') {
+                $origen = 'Tienda';
+            } else {
+                $origen = 'Fabrica';
+            } 
+            if ($estatus === 'estatus_enFabrica'):
+                $labelEstatus = 'En fábrica';
+            elseif ($estatus === 'estatus_enTienda'):
+                $labelEstatus = 'En tienda';
+            elseif ($estatus === 'estatus_enCamino'):
+                $labelEstatus = 'En camino a punto de entrega';
+            elseif ($estatus === 'estatus_enPuntoEntrega'):
+                $labelEstatus = 'En punto de entrega';
+            elseif ($estatus === 'estatus_efectivo'):
+                $labelEstatus = 'Pagada, efectivo en camino';
+            elseif ($estatus === 'estatus_ventaCerrada'):
+                $labelEstatus = 'Venta cerrada';
+            elseif ($estatus === 'estatus_ventaCancelada'):
+                $labelEstatus = 'Venta cancelada';
+            endif;
+            if( $origen != "" || $estatus != "" )
+                echo $origen . '<br>' . $labelEstatus;
+            else
+                echo "-";
+            break;
+        case 'ae_pedido' :
+            $fechaSolicitud    = get_post_meta( $post_id, 'orden_compra_fechaSolicitud', true );
+            $entregaSolicitud  = get_post_meta( $post_id, 'orden_compra_entregaSolicitud', true );
+            if ($fechaSolicitud != "" && $entregaSolicitud != "") {
+                $fechaSolicitud    = date('d/m/Y', strtotime($fechaSolicitud));
+                $entregaSolicitud  = date('d/m/Y', strtotime($entregaSolicitud));
+            }
+            if( $fechaSolicitud != "" && $entregaSolicitud != "" )
+                echo 'Solicitud: ' . $fechaSolicitud . '<br>Entrega: ' . $entregaSolicitud;
+            else
+                echo "-";
+            break;
+        case 'ae_cliente' :
+            $cliente    = get_post_meta( $post_id, 'orden_compra_cliente', true );
+            $pago       = get_post_meta( $post_id, 'orden_compra_pago', true );
+            if( $cliente != "" || $pago != "" )
+                echo $cliente . '<br>$' . $pago;
+            else
+                echo "-";
+            break;
     }
 }
