@@ -2,3 +2,25 @@
 
 2018-12-20T11:16:16+00:00 CRITICAL Maximum execution time of 30 seconds exceeded
 
+2018-12-20T14:01:14+00:00 CRITICAL Uncaught Error: Call to a member function get_stock_quantity() on boolean in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\template\sistema\orden-modal-actualizado.php:39
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\header.php(118): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(688): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(647): load_template('C:\\Users\\Tony\\D...', true)
+#3 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\general-template.php(41): locate_template(Array, true)
+#4 C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\single-orden_compra.php(2): get_header()
+#5 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include('C:\\Users\\Tony\\D...')
+#6 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#7 C:\Users\Tony
+
+2018-12-20T14:01:18+00:00 CRITICAL Uncaught Error: Call to a member function get_stock_quantity() on boolean in C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\template\sistema\orden-modal-actualizado.php:39
+Stack trace:
+#0 C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\header.php(118): include()
+#1 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(688): require_once('C:\\Users\\Tony\\D...')
+#2 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template.php(647): load_template('C:\\Users\\Tony\\D...', true)
+#3 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\general-template.php(41): locate_template(Array, true)
+#4 C:\Users\Tony\Documents\sites\mundo-bolita\wp-content\themes\mundo-bolita\single-orden_compra.php(2): get_header()
+#5 C:\Users\Tony\Documents\sites\mundo-bolita\wp-includes\template-loader.php(74): include('C:\\Users\\Tony\\D...')
+#6 C:\Users\Tony\Documents\sites\mundo-bolita\wp-blog-header.php(19): require_once('C:\\Users\\Tony\\D...')
+#7 C:\Users\Tony
+

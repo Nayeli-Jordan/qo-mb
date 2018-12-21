@@ -51,13 +51,13 @@
 						}
 						$permalink 		= get_permalink();
 
-					    if ($today < $fechaAlerta) {
+					    if ($today === $fechaAlerta) {
 					    	$body		.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $modelo . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $fecha . ' - ' . $horario . ' | ' . $lugar . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $cliente . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pago . ' liquida a contraentrega</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $community . '</p>';
-					    	$body		.= '<p><a href="' . $permalink . '" style="color: #de0d88;">Ver Orden de pago<a/a></p></div>';
+					    	$body		.= '<p><a href="' . $permalink . '" style="color: #de0d88;">Ver Orden de pago</a></p></div>';
 					    }
 
 				    	$ordenCompra ++;

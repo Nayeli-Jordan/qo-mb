@@ -11205,7 +11205,11 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table tr td:not(:first-child) {
   text-align: center;
 }
-/* line 469, ../sass/components/_utilities.scss */
+/* line 468, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table tr td:nth-child(7) {
+  color: #6e6e6e;
+}
+/* line 470, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table tr th:nth-child(1),
 .box-info-products .container-info-products table tr th:nth-child(3),
 .box-info-products .container-info-products table tr th:nth-child(6),
@@ -11214,7 +11218,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table tr td:nth-child(6) {
   border-right: 1px solid #cdcdcd;
 }
-/* line 479, ../sass/components/_utilities.scss */
+/* line 480, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table .instruction span {
   right: 25px;
 }

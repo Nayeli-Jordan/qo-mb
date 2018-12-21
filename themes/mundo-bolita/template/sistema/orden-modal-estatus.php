@@ -9,7 +9,7 @@
     			<select name="orden_compra_estatus" id="orden_compra_estatus" required  data-parsley-required-message="Campo obligatorio">
                     <option value="estatus_enFabrica">En fábrica</option>
                     <option value="estatus_enTienda">En tienda</option>
-                    <option value="estatus_enCamino">En camino a punto de entrega</option>
+                    <option value="estatus_enCamino">En camino</option>
                     <option value="estatus_enPuntoEntrega">En punto de entrega</option>
                     <option value="estatus_efectivo">Pagada, efectivo en camino</option>
                     <option value="estatus_ventaCerrada">Venta cerrada</option>

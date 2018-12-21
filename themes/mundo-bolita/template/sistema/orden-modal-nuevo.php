@@ -5,6 +5,68 @@
 		<p class="color-primary no-margin-top text-center">Registrar nueva orden de compra</p>
 		<form id="orden-form" name="orden-form" action=""  method="post" class="validation row" data-parsley-orden>
 			<div class="col s12 m6 input-field">
+				<label for="orden_compra_origen">Origen de la piñata*:</label>
+    			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
+    				<option value=""></option>
+                	<option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
+                	<option value="Pedido de fábrica">Pedido de fábrica</option>
+                </select>
+			</div>
+			<div class="col s12 m6 input-field">
+				<label for="orden_compra_modelo">Modelo*:</label>
+				<div class="content_orden_compra_modeloTienda">
+	                <select name="orden_compra_modeloTienda" id="orden_compra_modeloTienda">
+	                	<option value=""></option>
+	           			<?php
+					        $args = array(
+					            'post_type' => 'product',
+					            'posts_per_page' => -1,
+								'meta_query'	=> array(
+									array(
+										'key' => '_stock',
+							            'value' => 1,
+							            'compare' => '>=',
+									)
+								)
+					        );
+					        $loop = new WP_Query( $args );
+					        $i = 1;
+					        if ( $loop->have_posts() ) {
+					            while ( $loop->have_posts() ) : $loop->the_post();	
+
+					            	$post_id        = get_the_ID();
+	                           		$productName 	= get_the_title( $post_id );?>
+									<option value="<?php echo $productName; ?>"><?php echo $productName; ?></option>
+					            <?php $i ++; endwhile;
+					        } 
+					        wp_reset_postdata();
+					    ?>
+	                </select>					
+				</div>
+				<div class="content_orden_compra_modeloFabrica hide">
+	                <select name="orden_compra_modeloFabrica" id="orden_compra_modeloFabrica" class="hide">
+	                	<option value=""></option>
+	           			<?php
+					        $args = array(
+					            'post_type' => 'product',
+					            'posts_per_page' => -1,
+					        );
+					        $loop = new WP_Query( $args );
+					        $i = 1;
+					        if ( $loop->have_posts() ) {
+					            while ( $loop->have_posts() ) : $loop->the_post();	
+
+					            	$post_id        = get_the_ID();
+	                           		$productName 	= get_the_title( $post_id );?>
+									<option value="<?php echo $productName; ?>"><?php echo $productName; ?></option>
+					            <?php $i ++; endwhile;
+					        } 
+					        wp_reset_postdata();
+					    ?>
+	                </select>					
+				</div>
+			</div>
+			<div class="col s12 m6 input-field">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
    				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" required  data-parsley-required-message="Campo obligatorio">
 			</div>
@@ -13,8 +75,8 @@
     			<input type="text" name="orden_compra_horario" id="orden_compra_horario" placeholder="9 am" required  data-parsley-required-message="Campo obligatorio">
 			</div>
 			<div class="col s6 m3 input-field">
-				<label for="orden_compra_horarioEnd">A*:</label>
-    			<input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" placeholder="6 pm" required  data-parsley-required-message="Campo obligatorio">
+				<label for="orden_compra_horarioEnd">A:</label>
+    			<input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" placeholder="6 pm">
 			</div>
 			<div class="col s12 m6 input-field clearfix">
 				<label for="orden_compra_lugar">Lugar de entrega*:</label>
@@ -30,46 +92,16 @@
     			<input type="text" name="orden_compra_lugarPers" id="orden_compra_lugarPers" placeholder="Lugar">
 			</div>
 			<div class="col s12 m6 input-field clearfix">
-				<label for="orden_compra_modelo">Modelo*:</label>
-                <select name="orden_compra_modelo" id="orden_compra_modelo" required  data-parsley-required-message="Campo obligatorio">
-                	<option value=""></option>
-           			<?php
-				        $args = array(
-				            'post_type' => 'product',
-				            'posts_per_page' => -1
-				            );
-				        $loop = new WP_Query( $args );
-				        $i = 1;
-				        if ( $loop->have_posts() ) {
-				            while ( $loop->have_posts() ) : $loop->the_post();	            	 
-				            	$post_id        = get_the_ID();
-                           		$productName 	= get_the_title( $post_id );?>
-								<option value="<?php echo $productName; ?>"><?php echo $productName; ?></option>
-				            <?php $i ++; endwhile;
-				        } 
-				        wp_reset_postdata();
-				    ?>
-                </select>
-			</div>
-			<div class="col s12 m6 input-field">
 				<label for="orden_compra_cliente">Cliente*:</label>
    				<input type="text" name="orden_compra_cliente" id="orden_compra_cliente" required  data-parsley-required-message="Campo obligatorio">
 			</div>
-			<div class="col s12 m6 input-field clearfix">
+			<div class="col s12 m6 input-field">
 				<label for="orden_compra_pago">Cantidad a pagar*:</label>
     			<input type="number" name="orden_compra_pago" id="orden_compra_pago" placeholder="460" required  data-parsley-required-message="Campo obligatorio">
 			</div>
-			<div class="col s12 m6 input-field">
+			<div class="col s12 input-field clearfix">
 				<label for="orden_compra_community">Community Manager*:</label>
     			<input type="text" name="orden_compra_community" id="orden_compra_community" required  data-parsley-required-message="Campo obligatorio">
-			</div>
-			<div class="col s12 input-field margin-top">
-				<label for="orden_compra_origen">Origen de la piñata*:</label>
-    			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
-    				<option value=""></option>
-                	<option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
-                	<option value="Pedido de fábrica">Pedido de fábrica</option>
-                </select>
 			</div>
 			<div class="col s12 text-right">
 				<input type="submit" id="mb_submitOrden" name="mb_submitOrden" class="btn" value="Guardar" />
@@ -87,11 +119,16 @@
 	$compraHorarioEnd 	= $_POST['orden_compra_horarioEnd'];
 	$compraLugar 		= $_POST['orden_compra_lugar'];
 	$compraLugarPers 	= $_POST['orden_compra_lugarPers'];
-	$compraModelo 		= $_POST['orden_compra_modelo'];
 	$compraCliente 		= $_POST['orden_compra_cliente'];
 	$compraPago 		= $_POST['orden_compra_pago'];
 	$compraCommunity 	= $_POST['orden_compra_community'];
 	$compraOrigen 	 	= $_POST['orden_compra_origen'];
+	if ($compraOrigen === 'Apartada de stock de tienda') { 
+		$compraModelo 		= $_POST['orden_compra_modeloTienda'];
+	} else {
+		$compraModelo 		= $_POST['orden_compra_modeloFabrica'];
+	}
+
 
 	/* Crear post orden_compra */
 	$title 		= 'Orden de compra - ' . $compraModelo;
@@ -124,7 +161,7 @@
 
 	/* Enviar mail alertando sobre orden */
 	$to 				= "pruebas@altoempleo.com.mx";
-	$subject 			= "Nuevo Registro de Orden Mundo Bolita";
+	$subject 			= "Nueva Orden de compra Mundo Bolita";
 
 	if ($compraHorarioEnd != '') { 
 		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 

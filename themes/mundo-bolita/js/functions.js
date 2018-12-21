@@ -74,11 +74,18 @@ var $=jQuery.noConflict();
 			window.print();
 		});
 
-		/* Evitar cruce de modals */
-		/*$(".open-modal-status").click(function() {
-			var openEstatus = $('#modificar-estatus').modal('open');
-			openEstatus.delay(50000).fadeOut(10000).delay("fast").fadeIn(10000);
-			//$('#modificar-estatus').modal('open');
-		});*/
+		if ($('#orden_compra_origen').length > 0) {
+			$('#orden_compra_origen').on('change', function() {
+				if ($('#orden_compra_origen option:selected').val() == 'Apartada de stock de tienda' ){
+					console.log('Tienda');
+					$('.content_orden_compra_modeloTienda').removeClass('hide');
+					$('.content_orden_compra_modeloFabrica').addClass('hide');
+				} else if ($('#orden_compra_origen option:selected').val() == 'Pedido de fábrica' ) {
+					console.log('Fábrica');
+					$('.content_orden_compra_modeloTienda').addClass('hide');
+					$('.content_orden_compra_modeloFabrica').removeClass('hide');
+				}	
+			});
+		}
 	});
 })(jQuery);

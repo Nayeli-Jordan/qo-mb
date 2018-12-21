@@ -4,11 +4,23 @@ $argsOrden = array(
     'posts_per_page' => -1,    
 	'orderby' 			=> 'date',
 	'order' 			=> 'ASC',
-	'meta_query'	=> array(
+	'meta_query'	=> array( 		/* No mostrar ordenes Cerradas o Canceladas */
+		'relation'		=> 'AND',
 		array(
 			'key'		=> 'orden_compra_modelo',
 			'value'		=> $productName,
 			'compare'	=> '='
+		),
+		array(
+			'key'		=> 'orden_compra_estatus',
+			'value'		=> 'estatus_ventaCerrada',
+			'compare'	=> '!='
+		)
+		,
+		array(
+			'key'		=> 'orden_compra_estatus',
+			'value'		=> 'estatus_ventaCancelada',
+			'compare'	=> '!='
 		)
 	)
 );
@@ -46,7 +58,7 @@ if ( $loopOrden->have_posts() ) {
 		    $infoOrden  .= '<div class="col s12 m1 uppercase">
 		    		<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
 					<i class="instruction icon-house enTienda"><span>En tienda</span></i>
-					<i class="instruction icon-truck enCamino"><span>En camino a punto de entrega</span></i>
+					<i class="instruction icon-truck enCamino"><span>En camino</span></i>
 					<i class="instruction icon-clock enPuntoEntrega"><span>En punto de entrega</span></i>
 					<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
 					<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
@@ -72,7 +84,7 @@ if ($ordenCompra != 0 ) {  ?>
 				<div class="col s12 m1 uppercase">
 					<i class="instruction status-money"><span>En fábrica</span></i>
 					<i class="instruction status-house hide"><span>En tienda</span></i>
-					<i class="instruction status-truck hide"><span>En camino a punto de entrega</span></i>
+					<i class="instruction status-truck hide"><span>En camino</span></i>
 					<i class="instruction status-money hide"><span>En punto de entrega</span></i>
 					<i class="instruction status-money hide"><span>Pagada, efectivo en camino</span></i>
 					<i class="instruction status-archive hide"><span>Venta cerrada</span></i>

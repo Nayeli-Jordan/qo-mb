@@ -175,8 +175,8 @@ function display_orden_compra_atributos( $orden_compra ){
                 <input type="text" name="orden_compra_horario" id="orden_compra_horario" value="<?php echo $horario; ?>" placeholder="9 am" required>
             </th>
             <th>
-                <label for="orden_compra_horarioEnd">A*:</label>
-                <input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" value="<?php echo $horarioEnd; ?>" placeholder="6 pm" required>
+                <label for="orden_compra_horarioEnd">A:</label>
+                <input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" value="<?php echo $horarioEnd; ?>" placeholder="6 pm">
             </th>
         </tr>
         <tr>
@@ -247,7 +247,7 @@ function display_orden_compra_atributos( $orden_compra ){
                     <option value="" <?php selected($estatus, ''); ?>></option>
                     <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
                     <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
-                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino a punto de entrega</option>
+                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino</option>
                     <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
                     <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Pagada, efectivo en camino</option>
                     <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
@@ -426,13 +426,13 @@ function custom_orden_compra_column( $column, $post_id ) {
             elseif ($estatus === 'estatus_enTienda'):
                 $labelEstatus = 'En tienda';
             elseif ($estatus === 'estatus_enCamino'):
-                $labelEstatus = 'En camino a punto de entrega';
+                $labelEstatus = 'En camino';
             elseif ($estatus === 'estatus_enPuntoEntrega'):
                 $labelEstatus = 'En punto de entrega';
             elseif ($estatus === 'estatus_efectivo'):
                 $labelEstatus = 'Pagada, efectivo en camino';
             elseif ($estatus === 'estatus_ventaCerrada'):
-                $labelEstatus = 'Venta cerrada';
+                $labelEstatus = '<span style="color: #aaaaaa;">Venta cerrada</span>';
             elseif ($estatus === 'estatus_ventaCancelada'):
                 $labelEstatus = 'Venta cancelada';
             endif;

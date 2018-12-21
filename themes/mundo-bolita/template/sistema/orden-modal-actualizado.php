@@ -20,7 +20,7 @@
 	elseif ($estatus === 'estatus_enTienda'):
 		$labelEstatus = 'En tienda';
 	elseif ($estatus === 'estatus_enCamino'):
-		$labelEstatus = 'En camino a punto de entrega';
+		$labelEstatus = 'En camino';
 	elseif ($estatus === 'estatus_enPuntoEntrega'):
 		$labelEstatus = 'En punto de entrega';
 	elseif ($estatus === 'estatus_efectivo'):
@@ -29,7 +29,16 @@
 		$labelEstatus = 'Venta cerrada';
 	elseif ($estatus === 'estatus_ventaCancelada'):
 		$labelEstatus = 'Venta cancelada';
-	endif; ?>
+	endif; 
+
+	/* Obtener ID por nombre */
+	$productId = get_page_by_title( $modelo, OBJECT, 'product' );
+	$productId = $productId->ID;
+	/* Obtener stock */
+	$product 	= wc_get_product( $productId );
+	$stock	 	= $product->get_stock_quantity();
+	$newStock	= $stock - 1;
+?>
 
 <div id="actualizado-orden" class="modal modal-medium modal-large">
 	<i class="icon-cancel modal-close"></i>
@@ -45,8 +54,8 @@
     			<input type="text" name="orden_compra_horario" id="orden_compra_horario" placeholder="9 am" value="<?php echo $horario; ?>" required  data-parsley-required-message="Campo obligatorio">
 			</div>
 			<div class="col s6 m3 input-field">
-				<label for="orden_compra_horarioEnd">A*:</label>
-    			<input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" placeholder="6 pm" value="<?php echo $horarioEnd; ?>" required  data-parsley-required-message="Campo obligatorio">
+				<label for="orden_compra_horarioEnd">A:</label>
+    			<input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" placeholder="6 pm" value="<?php echo $horarioEnd; ?>">
 			</div>
 			<div class="col s12 m6 input-field clearfix actual-select">
 				<label for="orden_compra_lugar">Lugar de entrega*:</label>
@@ -87,7 +96,7 @@
     				<option value="<?php echo $estatus; ?>" select="selected"><?php echo $labelEstatus; ?></option>
                     <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
                     <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
-                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino a punto de entrega</option>
+                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino</option>
                     <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
                     <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Pagada, efectivo en camino</option>
                     <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
@@ -100,6 +109,8 @@
 				<?php wp_nonce_field( 'orden_actualizada-form' ); ?>	
 			</div>
 		</form>
+		<p class="text-center color-primary">¡Estatus - Importante!</p>
+		<p><span class="color-primary">Venta cerrada: </span>Se restará definitivamente la piñata del stock de tienda.<br><span class="color-primary">Venta cancelada: </span>Se eliminará la orden de compra y la piñata volverá a registrarse como disponible.</p>
 	</div>
 </div>
 
@@ -134,13 +145,9 @@
 	update_post_meta($orden_id,'orden_compra_origen',$compraOrigen);
 	update_post_meta($orden_id,'orden_compra_estatus',$compraEstatus);
 
-	/*if ( $compraEstatus === 'Pagada, efectivo en camino' || $compraEstatus === 'Venta cerrada' ) {
-		
-	}*/
-
-	//$product_id = wp_update_post($post);
-	//update_post_meta($product_id, '_stock', 0);
-	/*update_post_meta(92, '_stock', 10);*/
+	if ( $compraEstatus === 'estatus_ventaCerrada' ) {
+		update_post_meta($productId, '_stock', $newStock);
+	}
 
 	/* Enviar mail alertando sobre orden */
 /*	$to 				= "pruebas@altoempleo.com.mx";

@@ -57,7 +57,7 @@
 					<div id="estatus-orden-single" class="infoOrden <?php echo $estatus; ?>">
 						<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
 						<i class="instruction icon-house enTienda"><span>En tienda</span></i>
-						<i class="instruction icon-truck enCamino"><span>En camino a punto de entrega</span></i>
+						<i class="instruction icon-truck enCamino"><span>En camino</span></i>
 						<i class="instruction icon-clock enPuntoEntrega"><span>En punto de entrega</span></i>
 						<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
 						<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
