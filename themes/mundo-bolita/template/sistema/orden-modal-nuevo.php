@@ -161,7 +161,7 @@
 
 	/* Enviar mail alertando sobre orden */
 	$to 				= "pruebas@altoempleo.com.mx";
-	$subject 			= "Nueva Orden de compra Mundo Bolita";
+	$subject 			= "Orden de compra " . $compraModelo;
 
 	if ($compraHorarioEnd != '') { 
 		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 
@@ -175,15 +175,14 @@
 
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$message 	 		.= '<p style="margin-bottom: 20px;">Se a <span style="color: #de0d88;">registrado</span> una nueva orden de compra para una piñata con la siguiente información: <p/>';
+	$message 	 		.= '<p style="margin-bottom: 20px;"><span style="color: #36a2cf;">Nueva orden de compra</span> para una piñata con la siguiente información: <p/>';
 	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compraModelo . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';	
-	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Origen: </strong>' . $compraOrigen . '</p></div>';
-	$message 			.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
-	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
+	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #36a2cf;">Origen: </strong>' . $compraOrigen . '</p></div>';
+	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el stock de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
 	wp_mail($to, $subject, $message);

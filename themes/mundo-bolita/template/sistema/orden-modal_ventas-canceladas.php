@@ -64,7 +64,7 @@ if ($ordenCompraCancelada != 0 ) {  ?>
 			<p class="color-primary no-margin-top text-center">Ordenes Canceladas de <?php echo $productName; ?></p>
 			<div class="row no-margin-bottom hide-on-small-only">
 				<div class="col s12 m3 uppercase">Cliente</div>
-				<div class="col s12 m4 uppercase">Entrega</div>
+				<div class="col s12 m4 uppercase">Entregaría</div>
 				<div class="col s12 m2 uppercase">Pagaría</div>
 				<div class="col s12 m2 uppercase">Origen</div>
 			</div>
