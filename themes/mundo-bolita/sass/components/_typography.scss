@@ -50,7 +50,7 @@ small { font-size: 75%; }
 
 .uppercase { text-transform: uppercase; }
 
-
+.fz-14 { font-size: 14px!important; }
 .flow-text{
   $i: 0;
   @while $i <= $intervals {

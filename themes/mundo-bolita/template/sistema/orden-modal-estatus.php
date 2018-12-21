@@ -11,7 +11,8 @@
                     <option value="estatus_enTienda">En tienda</option>
                     <option value="estatus_enCamino">En camino</option>
                     <option value="estatus_enPuntoEntrega">En punto de entrega</option>
-                    <option value="estatus_efectivo">Pagada, efectivo en camino</option>
+                    <option value="estatus_entregada">Entregada y pagada</option>
+                    <option value="estatus_efectivo">Efectivo en camino</option>
                     <option value="estatus_ventaCerrada">Venta cerrada</option>
                     <option value="estatus_ventaCancelada">Venta cancelada</option>
                 </select>

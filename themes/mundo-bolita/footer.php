@@ -21,42 +21,44 @@
 							<div class="bg-image bg-contain width-30p padding-bottom-30p [ absolute bottom-15p right--10p ] rotate-180 [ wow flash ]"  data-wow-delay="0.3s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 						</section>
 					<?php endif; ?>
-				</div> <!-- end bg dulces -->		
-				<footer class="relative">
-					<div class="bg-image width-100p padding-bottom-75p [ wow fadeIn ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
-					<div class="bg-image absolute top-4p width-100p padding-bottom-30p  [ wow fadeInUpBig ]"  data-wow-delay="0.3s" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>
-					<div class="bg-image absolute bottom-0 bottom-40p-s width-100p padding-bottom-60p z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo-pasto.png);"></div>
-					<div id="section-caracteristicas" class="indicaciones-producto text-center">
-						<div class="container">
-							<div class="bg-image bg-contain img-caracteristicas [ wow flipInX ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);"></div>
-							<br>
-							<div class="content-indicaciones">
-								<div class="box-indicacion [ wow bounceInLeft ]"  data-wow-delay="0.7s">
-									<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/fuego.png)"></div>
-									<p class="color-light">No exponer al fuego</p>
+				</div> <!-- end bg dulces -->
+				<?php if (!is_page('mb-stock')) : ?>
+					<footer class="relative">
+						<div class="bg-image width-100p padding-bottom-75p [ wow fadeIn ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
+						<div class="bg-image absolute top-4p width-100p padding-bottom-30p  [ wow fadeInUpBig ]"  data-wow-delay="0.3s" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>
+						<div class="bg-image absolute bottom-0 bottom-40p-s width-100p padding-bottom-60p z-index-1" style="background-image: url(<?php echo THEMEPATH; ?>images/fondo-pasto.png);"></div>
+						<div id="section-caracteristicas" class="indicaciones-producto text-center">
+							<div class="container">
+								<div class="bg-image bg-contain img-caracteristicas [ wow flipInX ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/caracteristicas.png);"></div>
+								<br>
+								<div class="content-indicaciones">
+									<div class="box-indicacion [ wow bounceInLeft ]"  data-wow-delay="0.7s">
+										<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/fuego.png)"></div>
+										<p class="color-light">No exponer al fuego</p>
+									</div>
+									<div class="box-indicacion [ wow bounceInLeft ]"  data-wow-delay="0.4s">
+										<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/agua.png)"></div>	
+										<p class="color-light">No exponer al agua</p>						
+									</div>
+									<div class="box-indicacion [ wow bounce ]"  data-wow-delay="0.1s">
+										<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/sol.png)"></div>	
+										<p class="color-light">No exponer al sol</p>						
+									</div>
+									<div class="box-indicacion [ wow bounceInRight ]"  data-wow-delay="0.4s">
+										<div class="bg-image bg-contain img-indicaciones margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/dulces.png)"></div>
+										<p class="color-light">6 kg. capacidad</p>
+									</div>
+									<div class="box-indicacion [ wow bounceInRight ]"  data-wow-delay="0.7s">
+										<div class="bg-image bg-contain img-indicaciones margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/medidas.png)"></div>
+										<p class="color-light">40x73cm</p>
+									</div>										
 								</div>
-								<div class="box-indicacion [ wow bounceInLeft ]"  data-wow-delay="0.4s">
-									<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/agua.png)"></div>	
-									<p class="color-light">No exponer al agua</p>						
-								</div>
-								<div class="box-indicacion [ wow bounce ]"  data-wow-delay="0.1s">
-									<div class="bg-image bg-contain img-indicaciones img-large margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/sol.png)"></div>	
-									<p class="color-light">No exponer al sol</p>						
-								</div>
-								<div class="box-indicacion [ wow bounceInRight ]"  data-wow-delay="0.4s">
-									<div class="bg-image bg-contain img-indicaciones margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/dulces.png)"></div>
-									<p class="color-light">6 kg. capacidad</p>
-								</div>
-								<div class="box-indicacion [ wow bounceInRight ]"  data-wow-delay="0.7s">
-									<div class="bg-image bg-contain img-indicaciones margin-right-small margin-left-small" style="background-image: url(<?php echo THEMEPATH; ?>images/indicaciones/medidas.png)"></div>
-									<p class="color-light">40x73cm</p>
-								</div>										
-							</div>
-							<small class="color-light"><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a></small>			
-						</div>					
-					</div>
-					<div class="bg-footer bg-color-foter hide"></div>
-				</footer>
+								<small class="color-light"><a title="Aviso de privacidad" class="color-light text-center inline-block margin-top color-primary-hover" href="<?php echo site_url(); ?>/aviso-de-privacidad">Aviso de privacidad</a></small>			
+							</div>					
+						</div>
+						<div class="bg-footer bg-color-foter hide"></div>
+					</footer>
+				<?php endif; ?>
 			</div> <!-- end main-body -->
 		</div> <!-- end content body -->
 		<?php wp_footer(); ?>

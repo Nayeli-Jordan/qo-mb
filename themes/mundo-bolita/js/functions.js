@@ -35,15 +35,25 @@ var $=jQuery.noConflict();
  
 		
 		/* Btn fixed orden compra */
-		if ($('#btn-ordenCompra').length > 0) {
+		/* Head table fixed orden compra */
+		if ($('.head-orden-fixed').length > 0) {
+			var widthPage 	= $('.box-info-products').outerWidth();
+			$('.head-orden-fixed').css('width', widthPage);
+
+			var headOrden 	= $('.head-orden').offset();
 			var btnOrden 	= $('#btn-ordenCompra').offset();
 			$(document).scroll(function() {
 				var topWindow 	= $(window).scrollTop();
+				if(topWindow >= headOrden.top){
+				    $('.head-orden-fixed').removeClass('hide');
+				} else {
+				    $('.head-orden-fixed').addClass('hide');
+				}
 				if(topWindow >= btnOrden.top){
 				    $('#btn-ordenCompra').addClass('btn-fixed');
 				} else {
 				    $('#btn-ordenCompra').removeClass('btn-fixed');
-				}
+				}				
 			});
 		}
 		

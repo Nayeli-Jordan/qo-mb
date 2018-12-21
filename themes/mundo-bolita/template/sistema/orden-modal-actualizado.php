@@ -23,8 +23,10 @@
 		$labelEstatus = 'En camino';
 	elseif ($estatus === 'estatus_enPuntoEntrega'):
 		$labelEstatus = 'En punto de entrega';
+	elseif ($estatus === 'estatus_entregada'):
+		$labelEstatus = 'Entregada y pagada';
 	elseif ($estatus === 'estatus_efectivo'):
-		$labelEstatus = 'Pagada, efectivo en camino';
+		$labelEstatus = 'Efectivo en camino';
 	elseif ($estatus === 'estatus_ventaCerrada'):
 		$labelEstatus = 'Venta cerrada';
 	elseif ($estatus === 'estatus_ventaCancelada'):
@@ -98,7 +100,8 @@
                     <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
                     <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino</option>
                     <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
-                    <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Pagada, efectivo en camino</option>
+                    <option value="estatus_entregada" <?php selected($estatus, 'estatus_entregada'); ?>>Entregada y pagada</option>
+                    <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Efectivo en camino</option>
                     <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
                     <option value="estatus_ventaCancelada" <?php selected($estatus, 'estatus_ventaCancelada'); ?>>Venta cancelada</option>
                 </select>

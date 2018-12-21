@@ -55,18 +55,19 @@
 						<tr><td colspan="2"><strong>Community Manager: </strong><?php echo $community; ?></td></tr>
 					</table>
 					<div id="estatus-orden-single" class="infoOrden <?php echo $estatus; ?>">
-						<i class="instruction icon-calendar enFabrica"><span>En fábrica</span></i>
+						<i class="instruction icon-work enFabrica"><span>En fábrica</span></i>
 						<i class="instruction icon-house enTienda"><span>En tienda</span></i>
 						<i class="instruction icon-truck enCamino"><span>En camino</span></i>
-						<i class="instruction icon-clock enPuntoEntrega"><span>En punto de entrega</span></i>
-						<i class="instruction icon-money efectivo"><span>Pagada, efectivo en camino</span></i>
+						<i class="instruction icon-location enPuntoEntrega"><span>En punto de entrega</span></i>
+						<i class="instruction icon-happy entregada"><span>Entregada y pagada</span></i>
+						<i class="instruction icon-money efectivo"><span>Efectivo en camino</span></i>
 						<i class="instruction icon-archive ventaCerrada"><span>Venta cerrada</span></i>
 						<i class="instruction icon-trash ventaCancelada"><span>Venta cancelada</span></i>
 					</div>
 					<div id="origen-orden-single">
 						<?php echo $origen; 
 						if ($origen === 'Pedido de fábrica') {
-							echo " <a href='#pedido-fabrica' class='modal-trigger'><i class='icon-calendar'></i></a>";
+							echo " <a href='#pedido-fabrica' class='modal-trigger'><i class='icon-pencil'></i></a>";
 						}?>
 					</div>				
 				</div>
@@ -80,8 +81,10 @@
 		</div>
 		<div class="clearfix"></div>
 		<div class="action-btn-single text-center">
-			<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-right-small">Ver stock</a>
-			<a href="#actualizado-orden" class="btn margin-right-small modal-trigger">Editar orden</a>
+			<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-right-small"><i class='icon-eye fz-14'></i> Ver stock</a>
+			<?php if ( $estatus != 'estatus_ventaCerrada' && $estatus != 'estatus_ventaCancelada') : ?>
+				<a href="#actualizado-orden" class="btn margin-right-small modal-trigger"><i class='icon-pencil fz-14'></i> Editar orden</a>
+			<?php endif; ?>			
 			<i id="print-page" class="icon-print btn"> Imprimir</i>
 		</div>
 	</section>
