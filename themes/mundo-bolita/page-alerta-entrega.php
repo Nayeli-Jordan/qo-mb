@@ -5,7 +5,7 @@
 
 	$messageHeader 	 	 = '<html style="font-family: Arial, sans-serif;"><body>';
 	$messageHeader 		.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$messageHeader 		.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que <span style="color: #36a2cf;">el día de mañana</span> está programada la entrega de: <p/>';
+	$messageHeader 		.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que <span style="color: #008fcc;">el día de mañana</span> está programada la entrega de: </p>';
 
 	$messageFooter		 = '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
 	$messageFooter		.= '</body></html>';
@@ -57,7 +57,7 @@
 					    	$body		.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $cliente . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pago . ' liquida a contraentrega</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $community . '</p>';
-					    	$body		.= '<p><a href="' . $permalink . '" style="color: #36a2cf;">Ver Orden de pago</a></p></div>';
+					    	$body		.= '<p><a href="' . $permalink . '" style="color: #008fcc;">Ver Orden de pago</a></p></div>';
 					    }
 
 				    	$ordenCompra ++;

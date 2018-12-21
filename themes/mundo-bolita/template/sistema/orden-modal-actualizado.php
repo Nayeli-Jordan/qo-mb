@@ -119,6 +119,7 @@
 
 <?php if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrdenActualizada'] )):
 
+	$compraModelo 		= $modelo;
 	$compraFecha 		= $_POST['orden_compra_fecha'];
 	$compraHorario 		= $_POST['orden_compra_horario'];
 	$compraHorarioEnd 	= $_POST['orden_compra_horarioEnd'];
@@ -152,9 +153,27 @@
 		update_post_meta($productId, '_stock', $newStock);
 	}
 
-	/* Enviar mail alertando sobre orden */
-/*	$to 				= "pruebas@altoempleo.com.mx";
-	$subject 			= "Nuevo Registro de Orden Mundo Bolita";
+	/* Enviar mail alertando sobre el estatus de la orden */
+
+	/* Origen de fábrica - En tienda*/
+	if ($compraOrigen === 'Pedido de fábrica' && $compraEstatus === 'estatus_enTienda') {
+		$to 	= "pruebas@altoempleo.com.mx";
+		$labelEstatus = 'En tienda';
+	} elseif ($compraEstatus === 'estatus_entregada') { /* Estatus piñata entregada */
+		$to 	= "pruebas@altoempleo.com.mx";
+		$labelEstatus = 'Entregada y pagada';
+	} elseif ($compraEstatus === 'estatus_efectivo') { /* Estatus efectivo en camino */
+		$to 	= "pruebas@altoempleo.com.mx";
+		$labelEstatus = 'Efectivo en camino';
+	} elseif ($compraEstatus === 'estatus_ventaCerrada') { /* Estatus venta cerrada */
+		$to 	= "pruebas@altoempleo.com.mx";
+		$labelEstatus = 'Venta cerrada';
+	} elseif ($compraEstatus === 'estatus_ventaCancelada') { /* Estatus venta cancelada */
+		$to 	= "pruebas@altoempleo.com.mx";
+		$labelEstatus = 'Venta cancelada';
+	}
+
+	$subject 			= "Actualización Orden de Compra - " . $labelEstatus;
 
 	if ($compraHorarioEnd != '') { 
 		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 
@@ -162,22 +181,27 @@
 	if ($compraLugar === 'Otro') { 
 		$compraLugar 		= $compraLugar . " - " . $compraLugarPers; 
 	}
+	if ($labelEstatus === 'Venta cancelada') {
+		$labelEstatus = '<span style="color: red;">Venta cancelada</span>';
+	}
 
 	setlocale(LC_ALL,"es_ES");
 	$compraFechaEsp 	= strftime("%d de %B del %Y", strtotime($compraFecha));
 
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$message 	 		.= '<p style="margin-bottom: 20px;">Se a <span style="color: #de0d88;">registrado</span> una nueva orden de compra para una piñata con la siguiente información: <p/>';
+	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #008fcc;">actualizado</span> la información de la siguiente orden de compra: </p>';
 	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compraModelo . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';	
-	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Origen: </strong>' . $compraOrigen . '</p></div>';
-	$message 			.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
-	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
+	$message 			.= '<p style="margin-top: 20px;"><strong style="color: #008fcc;">Origen: </strong>' . $compraOrigen . '</p>';
+	$message 			.= '<p><strong style="color: #008fcc;">Estatus: ' . $labelEstatus . '</strong></p></div>';
+	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de stock de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
-	wp_mail($to, $subject, $message);*/
+	if (($compraOrigen === 'Pedido de fábrica' && $compraEstatus === 'estatus_enTienda') || $compraEstatus === 'estatus_entregada' || $compraEstatus === 'estatus_efectivo' || $compraEstatus === 'estatus_ventaCerrada' || $compraEstatus === 'estatus_ventaCancelada') {
+		wp_mail($to, $subject, $message);
+	}
 endif; ?>

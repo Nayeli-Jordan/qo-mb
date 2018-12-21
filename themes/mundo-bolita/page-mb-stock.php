@@ -131,7 +131,7 @@
 								} ?>
 								
 								<tr>
-									<td><?php echo $productName . ' ' . $post_id; ?></td>
+									<td><?php echo $productName; ?></td>
 									<td><?php echo $price; ?></td>
 									<td><?php echo $priceFb; ?></td>
 									<td><?php echo $ordenCompra; ?></td>

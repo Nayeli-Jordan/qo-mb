@@ -6,6 +6,7 @@
 	$fechaSolicitud     = get_post_meta( $post_id, 'orden_compra_fechaSolicitud', true );
 	$entregaSolicitud   = get_post_meta( $post_id, 'orden_compra_entregaSolicitud', true );
 	$persSolicitud   	= get_post_meta( $post_id, 'orden_compra_persSolicitud', true );
+	$estatusSolicitud   = get_post_meta( $post_id, 'orden_compra_estatusSolicitud', true );
 	$notasSolicitud   	= get_post_meta( $post_id, 'orden_compra_notasSolicitud', true );
 
 	setlocale(LC_ALL,"es_ES");
@@ -27,6 +28,9 @@
 			if ($persSolicitud != ''): 
 				echo '<p class="col s12 m4"><span class="color-primary">¿Quién solicito?: </span><br>' . $persSolicitud . '</p>';
 			endif;
+			if ($estatusSolicitud != ''): 
+				echo '<p class="col s12 m4"><span class="color-primary">Estatus: </span><br>' . $estatusSolicitud . '</p>';
+			endif;
 			if ($notasSolicitud != ''): 
 				echo '<p class="col s12"><span class="color-primary">Notas: </span><br>' . $notasSolicitud . '</p>';
 			endif; ?>			
@@ -40,9 +44,17 @@
 				<label for="orden_compra_entregaSolicitud">Fecha de entrega acordada*:</label>
    				<input type="date" min="<?php echo $today; ?>" name="orden_compra_entregaSolicitud" id="orden_compra_entregaSolicitud" <?php if ($entregaSolicitud != '') { echo 'value="' . $entregaSolicitud . '"'; } ?> required  data-parsley-required-message="Campo obligatorio">
 			</div>
-			<div class="col s12 input-field">
+			<div class="col s12 m6 input-field">
 				<label for="orden_compra_persSolicitud">¿Quién solicito?:</label>
     			<input type="text" name="orden_compra_persSolicitud" id="orden_compra_persSolicitud" <?php if ($persSolicitud != '') { echo 'value="' . $persSolicitud . '"'; } ?> required  data-parsley-required-message="Campo obligatorio">
+			</div>
+			<div class="col s12 m6 input-field">
+				<label for="orden_compra_estatusSolicitud">Estatus*:</label>
+				<select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud" required  data-parsley-required-message="Campo obligatorio">
+    				<option value=""></option>
+                	<option value="estatus_entregada">Ya se entregóa</option>
+                	<option value="estatus_enEspera">Esperando entrega</option>
+                </select>
 			</div>
 			<div class="col s12 input-field">
 				<label for="orden_compra_notasSolicitud">Notas pedido:</label>
@@ -62,6 +74,7 @@
 	$pedidoFechaSolicitud		= $_POST['orden_compra_fechaSolicitud'];
 	$pedidoPersSolicitud 		= $_POST['orden_compra_persSolicitud'];
 	$pedidoEntregaSolicitud 	= $_POST['orden_compra_entregaSolicitud'];
+	$pedidoEstatusSolicitud 	= $_POST['orden_compra_estatusSolicitud'];
 	$pedidoNotasSolicitud 		= $_POST['orden_compra_notasSolicitud'];
 
 	/* Actualizar post orden con datos de pedido a fábrica */
@@ -75,6 +88,7 @@
 	update_post_meta($orden_id,'orden_compra_fechaSolicitud',$pedidoFechaSolicitud);
 	update_post_meta($orden_id,'orden_compra_persSolicitud',$pedidoPersSolicitud);
 	update_post_meta($orden_id,'orden_compra_entregaSolicitud',$pedidoEntregaSolicitud);
+	update_post_meta($orden_id,'orden_compra_estatusSolicitud',$pedidoEstatusSolicitud);
 	update_post_meta($orden_id,'orden_orden_compra_notasSolicitud',$pedidoNotasSolicitud);
 
 	/*setlocale(LC_ALL,"es_ES");
@@ -82,7 +96,7 @@
 /*
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$message 	 		.= '<p style="margin-bottom: 20px;">Se a <span style="color: #de0d88;">registrado</span> una nueva pedido de pedido para una piñata con la siguiente información: <p/>';
+	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #de0d88;">registrado</span> una nueva pedido de pedido para una piñata con la siguiente información: </p>';
 	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $pedidoModelo . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $pedidoFechaEsp . ' - ' . $pedidoHorario . ' | ' . $pedidoLugar . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $pedidoCliente . '</p>';

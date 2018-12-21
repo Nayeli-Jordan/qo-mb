@@ -162,6 +162,7 @@ function display_orden_compra_atributos( $orden_compra ){
     $fechaSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fechaSolicitud', true ) );
     $entregaSolicitud   = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_entregaSolicitud', true ) );
     $persSolicitud      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_persSolicitud', true ) );
+    $estatusSolicitud      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusSolicitud', true ) );
     $notasSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_notasSolicitud', true ) );
 ?>
     <table class="mb-custom-fields">
@@ -274,6 +275,14 @@ function display_orden_compra_atributos( $orden_compra ){
                 <label for="orden_compra_persSolicitud">¿Quién solicito?:</label>
                 <input type="text" name="orden_compra_persSolicitud" id="orden_compra_persSolicitud" value="<?php echo $persSolicitud; ?>">
             </td>
+            <td>
+                <label for="orden_compra_estatusSolicitud">Estatus orden de compra*:</label>
+                <select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud" required>
+                    <option value="" <?php selected($estatus, ''); ?>></option>
+                    <option value="estatus_entregada" <?php selected($estatus, 'estatus_entregada'); ?>>Ya se entregó</option>
+                    <option value="estatus_enEspera" <?php selected($estatus, 'estatus_enEspera'); ?>>Esperando entrega</option>
+                </select>
+            </td>
         </tr>
         <tr>
             <td colspan="4">
@@ -328,6 +337,9 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         }
         if ( isset( $_POST['orden_compra_persSolicitud'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_persSolicitud', $_POST['orden_compra_persSolicitud'] );
+        }
+        if ( isset( $_POST['orden_compra_estatusSolicitud'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_estatusSolicitud', $_POST['orden_compra_estatusSolicitud'] );
         }
         if ( isset( $_POST['orden_compra_notasSolicitud'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_notasSolicitud', $_POST['orden_compra_notasSolicitud'] );
