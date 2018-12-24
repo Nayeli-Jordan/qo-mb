@@ -51,7 +51,7 @@ if ( $loopOrden->have_posts() ) {
     		$origen = 'Tienda';
     	} else {
     		$ordenCompraFabrica ++;
-    		$origen = 'Fabrica';
+    		$origen = 'Fábrica';
     	}
 
     	$today = date("Y-m-d");

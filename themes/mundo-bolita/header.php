@@ -189,7 +189,7 @@
 				<?php if (!is_page('mb-stock')): ?>	
 					<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<?php endif; ?>
-				<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega')): ?>
+				<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega') && !is_page('alerta-pedido')): ?>
 					<section class="container text-center relative z-index-999 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
 						
 						<h2 class="uppercase color-primary">Catálogo</h2>

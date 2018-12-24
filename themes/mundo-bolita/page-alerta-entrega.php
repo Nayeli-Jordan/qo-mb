@@ -23,7 +23,7 @@
 				$loopOrden = new WP_Query( $argsOrden );
 				if ( $loopOrden->have_posts() ) {
 					$today 		= date("Y-m-d");
-					$ordenCompra 	= 0;
+					$ordenCompraEntrega 	= 0;
 					$body		= '';
 				    while ( $loopOrden->have_posts() ) : $loopOrden->the_post(); 
 				    	$custom_fields  = get_post_custom();
@@ -58,11 +58,11 @@
 					    	$body		.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pago . ' liquida a contraentrega</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $community . '</p>';
 					    	$body		.= '<p><a href="' . $permalink . '" style="color: #008fcc;">Ver Orden de pago</a></p></div>';
-					    }
 
-				    	$ordenCompra ++;
+				    		$ordenCompraEntrega ++;
+					    }
 				    endwhile;
-					if ($ordenCompra != 0):
+					if ($ordenCompraEntrega != 0):
 						$to = 'pruebas@altoempleo.com.mx';
 				    	$message = $messageHeader . $body . $messageFooter;
 						echo $message;

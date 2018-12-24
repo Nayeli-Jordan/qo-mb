@@ -49,7 +49,7 @@
 		<form id="orden_actualizada-form" name="orden_actualizada-form" action=""  method="post" class="validation row" data-parsley-orden_actualizada>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
-   				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required  data-parsley-required-message="Campo obligatorio">
+   				<input type="date" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required  data-parsley-required-message="Campo obligatorio">
 			</div>
 			<div class="col s6 m3 input-field">
 				<label for="orden_compra_horario">Horario de*:</label>

@@ -43,7 +43,7 @@ if ( $loopOrdenCerrada->have_posts() ) {
     	if ($origen === 'Apartada de stock de tienda') {
     		$origen = 'Tienda';
     	} else {
-    		$origen = 'Fabrica';
+    		$origen = 'Fábrica';
     	}
 
 	    $infoOrdenCerrada  .= '<div class="row margin-bottom-xsmall infoOrden ' . $estatus . '">';

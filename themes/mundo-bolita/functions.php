@@ -271,16 +271,16 @@ function display_orden_compra_atributos( $orden_compra ){
             </td>
         </tr>
         <tr>
-            <td colspan="4">
+            <td colspan="2">
                 <label for="orden_compra_persSolicitud">¿Quién solicito?:</label>
                 <input type="text" name="orden_compra_persSolicitud" id="orden_compra_persSolicitud" value="<?php echo $persSolicitud; ?>">
             </td>
-            <td>
+            <td colspan="2">
                 <label for="orden_compra_estatusSolicitud">Estatus orden de compra*:</label>
                 <select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud" required>
-                    <option value="" <?php selected($estatus, ''); ?>></option>
-                    <option value="estatus_entregada" <?php selected($estatus, 'estatus_entregada'); ?>>Ya se entregó</option>
-                    <option value="estatus_enEspera" <?php selected($estatus, 'estatus_enEspera'); ?>>Esperando entrega</option>
+                    <option value="" <?php selected($estatusSolicitud, ''); ?>></option>
+                    <option value="estatus_entregada" <?php selected($estatusSolicitud, 'estatus_entregada'); ?>>Ya se entregó</option>
+                    <option value="estatus_enEspera" <?php selected($estatusSolicitud, 'estatus_enEspera'); ?>>Esperando entrega</option>
                 </select>
             </td>
         </tr>
@@ -432,7 +432,7 @@ function custom_orden_compra_column( $column, $post_id ) {
             if ($origen === 'Apartada de stock de tienda') {
                 $origen = 'Tienda';
             } else {
-                $origen = 'Fabrica';
+                $origen = 'Fábrica';
             } 
             if ($estatus === 'estatus_enFabrica'):
                 $labelEstatus = 'En fábrica';

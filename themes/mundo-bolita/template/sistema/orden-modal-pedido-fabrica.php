@@ -3,6 +3,7 @@
 
 	$custom_fields  	= get_post_custom();
 	$post_id        	= get_the_ID();
+	$modelo     		= get_post_meta( $post_id, 'orden_compra_modelo', true );
 	$fechaSolicitud     = get_post_meta( $post_id, 'orden_compra_fechaSolicitud', true );
 	$entregaSolicitud   = get_post_meta( $post_id, 'orden_compra_entregaSolicitud', true );
 	$persSolicitud   	= get_post_meta( $post_id, 'orden_compra_persSolicitud', true );
@@ -19,17 +20,22 @@
 			<?php 
 			if ($fechaSolicitud != ''): 
 				$fechaSolicitudEsp	 = strftime("%d de %B del %Y", strtotime($fechaSolicitud));
-				echo '<p class="col s12 m4"><span class="color-primary">Fecha de solicitud: </span><br>' . $fechaSolicitudEsp . '</p>';
+				echo '<p class="col s12 m6"><span class="color-primary">Fecha de solicitud: </span><br>' . $fechaSolicitudEsp . '</p>';
 			endif;
 			if ($entregaSolicitud != ''): 
 				$entregaSolicitudEsp = strftime("%d de %B del %Y", strtotime($entregaSolicitud));
-				echo '<p class="col s12 m4"><span class="color-primary">Fecha de entrega: </span><br>' . $entregaSolicitudEsp . '</p>';
+				echo '<p class="col s12 m6"><span class="color-primary">Fecha de entrega: </span><br>' . $entregaSolicitudEsp . '</p>';
 			endif;
 			if ($persSolicitud != ''): 
-				echo '<p class="col s12 m4"><span class="color-primary">¿Quién solicito?: </span><br>' . $persSolicitud . '</p>';
+				echo '<p class="col s12 m6"><span class="color-primary">¿Quién solicito?: </span><br>' . $persSolicitud . '</p>';
 			endif;
 			if ($estatusSolicitud != ''): 
-				echo '<p class="col s12 m4"><span class="color-primary">Estatus: </span><br>' . $estatusSolicitud . '</p>';
+				if ($estatusSolicitud === 'estatus_entregada') {
+					$labelEstatusSolicitud = 'Ya se entregó';
+				} elseif ($estatusSolicitud === 'estatus_enEspera') {
+					$labelEstatusSolicitud = 'Esperando entrega';
+				}
+				echo '<p class="col s12 m6"><span class="color-primary">Estatus: </span><br>' . $labelEstatusSolicitud . '</p>';
 			endif;
 			if ($notasSolicitud != ''): 
 				echo '<p class="col s12"><span class="color-primary">Notas: </span><br>' . $notasSolicitud . '</p>';
@@ -42,7 +48,7 @@
 			</div>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_entregaSolicitud">Fecha de entrega acordada*:</label>
-   				<input type="date" min="<?php echo $today; ?>" name="orden_compra_entregaSolicitud" id="orden_compra_entregaSolicitud" <?php if ($entregaSolicitud != '') { echo 'value="' . $entregaSolicitud . '"'; } ?> required  data-parsley-required-message="Campo obligatorio">
+   				<input type="date" name="orden_compra_entregaSolicitud" id="orden_compra_entregaSolicitud" <?php if ($entregaSolicitud != '') { echo 'value="' . $entregaSolicitud . '"'; } ?> required  data-parsley-required-message="Campo obligatorio">
 			</div>
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_persSolicitud">¿Quién solicito?:</label>
@@ -51,9 +57,13 @@
 			<div class="col s12 m6 input-field">
 				<label for="orden_compra_estatusSolicitud">Estatus*:</label>
 				<select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud" required  data-parsley-required-message="Campo obligatorio">
-    				<option value=""></option>
-                	<option value="estatus_entregada">Ya se entregóa</option>
-                	<option value="estatus_enEspera">Esperando entrega</option>
+					<?php if ($estatusSolicitud != '') : ?>
+    					<option value="<?php echo $estatusSolicitud; ?>" select="selected"><?php echo $labelEstatusSolicitud; ?></option>
+    				<?php else: ?>
+    					<option value=""></option>
+    				<?php endif; ?>
+    				<option value="estatus_enEspera">Esperando entrega</option>
+                	<option value="estatus_entregada">Ya se entregó</option>
                 </select>
 			</div>
 			<div class="col s12 input-field">
@@ -71,6 +81,7 @@
 
 <?php if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitPedido'] )):
 
+	$pedidoModelo     			= get_post_meta( $post_id, 'orden_compra_modelo', true );
 	$pedidoFechaSolicitud		= $_POST['orden_compra_fechaSolicitud'];
 	$pedidoPersSolicitud 		= $_POST['orden_compra_persSolicitud'];
 	$pedidoEntregaSolicitud 	= $_POST['orden_compra_entregaSolicitud'];
@@ -91,21 +102,24 @@
 	update_post_meta($orden_id,'orden_compra_estatusSolicitud',$pedidoEstatusSolicitud);
 	update_post_meta($orden_id,'orden_orden_compra_notasSolicitud',$pedidoNotasSolicitud);
 
-	/*setlocale(LC_ALL,"es_ES");
-	$pedidoFechaEsp 	= strftime("%d de %B del %Y", strtotime($pedidoFecha));*/
-/*
+	setlocale(LC_ALL,"es_ES");
+	$pedidoFechaSolicitudEsp 	= strftime("%d de %B del %Y", strtotime($pedidoFechaSolicitud));
+	$pedidoEntregaSolicitudEsp 	= strftime("%d de %B del %Y", strtotime($pedidoEntregaSolicitud));
+
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #de0d88;">registrado</span> una nueva pedido de pedido para una piñata con la siguiente información: </p>';
+	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #de0d88;">registrado</span> un pedido a fábrica para una piñata con la siguiente información: </p>';
 	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $pedidoModelo . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $pedidoFechaEsp . ' - ' . $pedidoHorario . ' | ' . $pedidoLugar . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $pedidoCliente . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pedidoPago . ' liquida a contraentrega</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $pedidoCommunity . '</p></div>';	
-	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Origen: </strong>' . $pedidoOrigen . '</p></div>';
-	$message 			.= '<p style="margin-bottom: 20px;">Esta es una alerta para recordarte que el día de mañana está programada la entrega de: <p/>';
-	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de entregas de Mundo Bolita. </small></p></div>';
+	$message 			.= '<p><strong style="color: #de0d88;">Fecha en la que se solicitó: </strong>' . $pedidoFechaSolicitudEsp . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Fecha de entrega acordada: </strong>' . $pedidoEntregaSolicitudEsp . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">¿Quién solicito?: </strong>' . $pedidoPersSolicitud . '</p></div>';	
+	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Notas pedido: </strong>' . $pedidoNotasSolicitud . '</p></div>';
+	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de pedidos de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
-	wp_mail($to, $subject, $message);*/
+	if ($pedidoEstatusSolicitud === 'estatus_enEspera') {
+		$to 				= "pruebas@altoempleo.com.mx";
+		$subject 			= "Pedido a fábrica de " . $pedidoModelo;
+		wp_mail($to, $subject, $message);
+	}
 endif; ?>
