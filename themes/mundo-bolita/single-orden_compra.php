@@ -74,7 +74,7 @@
 				<div class="bg-image bg-contain [ absolute left--5p top-30 ] width-30p padding-bottom-30p rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right--30 bottom--30 ] width-40p padding-bottom-40p" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute left-25p bottom--10p ] width-25p padding-bottom-25p  rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-
+				<div class="bg-image bg-contain [ absolute right-10p top--20p ] width-20p padding-bottom-25p rotate-245" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 				<div class="bg-image bg-contain [ absolute right-40p top-25p ] width-15p padding-bottom-15p  rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 
 			</div>

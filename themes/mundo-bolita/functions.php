@@ -135,6 +135,27 @@ add_filter( 'wp_mail_content_type','transforme_content_type' );
 
 
 /**
+* Perfiles - Permisos
+*/
+//Hide item admin menu for certain user profile
+function mb_remove_menu_items() {
+    remove_menu_page('edit.php'); // Posts
+    remove_menu_page('edit-comments.php'); // Comments
+
+    /* If is user tienda */
+    $current_user = wp_get_current_user();
+    if ( 2 == $current_user->ID ) :
+        remove_menu_page('plugins.php'); // Plugins
+        remove_menu_page('edit.php?post_type=page'); // Pages
+        remove_menu_page('themes.php'); // Appearance
+        remove_menu_page('tools.php'); // Tools
+        remove_menu_page( 'options-general.php' );        //Ajustes
+        remove_menu_page( 'users.php' );        //Usuarios
+    endif;
+}
+add_action( 'admin_menu', 'mb_remove_menu_items' );
+
+/**
 * CUSTOM FUNCTIONS
 */
 

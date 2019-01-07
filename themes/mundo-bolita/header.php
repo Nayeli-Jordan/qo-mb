@@ -10,9 +10,14 @@
 		<meta name="keywords" content="Mundo bolita, piñatas creativas, piñatas para fiestas, piñatas temáticas">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<!-- Meta robots -->
-		<meta name="robots" content="index, follow" />
-		<meta name="googlebot" content="index, follow" />
+		<?php /* Meta robots noindex, nofollow si es sección sólo de administrador */
+			if ( is_page( 'mb-stock' ) || is_singular( 'orden_compra' ) ): ?>
+			<meta name="robots" content="noindex, nofollow" />
+			<meta name="googlebot" content="noindex, nofollow" />
+		<?php else:  ?>
+			<meta name="robots" content="index, follow" />
+			<meta name="googlebot" content="index, follow" />
+		<?php endif ?>
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon-mb/favicon-32x32.png" sizes="32x32" />
@@ -103,7 +108,7 @@
 	</head>
 	<?php flush(); ?>
 
-	<body class="<?php if (is_singular('orden_compra')): echo 'singular-orden_compra'; endif;?>">
+	<body class="<?php if (is_singular('orden_compra')): echo 'singular-orden_compra'; elseif (is_page('mb-stock')): echo 'page-mb-stock'; endif;?>">
 		<?php /* Se inicia una vez que comienza body para evitar errores en wp_redirect*/
 		if (is_page('mb-stock')):
 			/*echo "<div class='block-modal hide'></div>";*/
