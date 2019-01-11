@@ -81,14 +81,14 @@ remove_action( 'admin_print_styles', 'print_emoji_styles' );
 **/
 
 //Código Analitics
-function add_google_analytics() {
+/*function add_google_analytics() {
     echo '<script src="https://www.google-analytics.com/ga.js" type="text/javascript"></script>';
     echo '<script type="text/javascript">';
     echo 'var pageTracker = _gat._getTracker("UA-122571030-1");';
     echo 'pageTracker._trackPageview();';
     echo '</script>';
 }
-add_action('wp_footer', 'add_google_analytics');
+add_action('wp_footer', 'add_google_analytics');*/
 
 /* Aplaza el análisis de JavaScript para una carga más rápida */
 if(!is_admin()) {

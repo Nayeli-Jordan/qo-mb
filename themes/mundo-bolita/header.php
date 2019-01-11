@@ -10,14 +10,8 @@
 		<meta name="keywords" content="Mundo bolita, piñatas creativas, piñatas para fiestas, piñatas temáticas">
 		<meta name="description" content="<?php bloginfo('description'); ?>">
 
-		<?php /* Meta robots noindex, nofollow si es sección sólo de administrador */
-			if ( is_page( 'mb-stock' ) || is_singular( 'orden_compra' ) ): ?>
-			<meta name="robots" content="noindex, nofollow" />
-			<meta name="googlebot" content="noindex, nofollow" />
-		<?php else:  ?>
-			<meta name="robots" content="index, follow" />
-			<meta name="googlebot" content="index, follow" />
-		<?php endif ?>
+		<meta name="robots" content="index, follow" />
+		<meta name="googlebot" content="index, follow" />
 
 		<!-- Favicon -->
 		<link rel="icon" type="image/png" href="<?php echo THEMEPATH; ?>favicon-mb/favicon-32x32.png" sizes="32x32" />
@@ -81,6 +75,16 @@
 		<!-- Noscript -->
 		<noscript>Tu navegador no soporta JavaScript!</noscript>
 		<?php wp_head(); ?>
+
+		<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122571030-1"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-122571030-1');
+		</script>
 
 		<!-- Facebook Pixel Code -->
 		<script>
