@@ -168,114 +168,153 @@ function orden_compra_custom_metabox(){
 }
 
 function display_orden_compra_atributos( $orden_compra ){
-    $fecha       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fecha', true ) );
-    $horario       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_horario', true ) );
-    $horarioEnd    	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_horarioEnd', true ) );
-    $lugar       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_lugar', true ) );
-    $lugarPers    	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_lugarPers', true ) );
-    $modelo       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_modelo', true ) );
-    $cliente       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_cliente', true ) );
-    $pago       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_pago', true ) );
-    $community      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_community', true ) );
-    $estatus        = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatus', true ) );
     $origen         = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_origen', true ) );
+    $modelo         = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_modelo', true ) );
+    $cliente        = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_cliente', true ) );
+    $pago           = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_pago', true ) );
+    $metodoPago     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_metodoPago', true ) );
+    $notaPago       = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_notaPago', true ) );
+    $fecha       	= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fecha', true ) );
+    $lugar          = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_lugar', true ) );
+    $entrega        = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_entrega', true ) );
+    $responsable    = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_responsable', true ) );
+    $fechaVenta    = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fechaVenta', true ) );
+    $observaciones  = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_observaciones', true ) );
 
-    $fechaSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fechaSolicitud', true ) );
-    $entregaSolicitud   = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_entregaSolicitud', true ) );
-    $persSolicitud      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_persSolicitud', true ) );
-    $estatusSolicitud      = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusSolicitud', true ) );
-    $notasSolicitud     = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_notasSolicitud', true ) );
+    $estatusPago    = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusPago', true ) );
+    $estatusEntrega = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusEntrega', true ) );
+    $estatusVenta   = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusVenta', true ) );
+
+    $fechaSolicitud = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_fechaSolicitud', true ) );
+    $entregaSolicitud= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_entregaSolicitud', true ) );
+    $persSolicitud  = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_persSolicitud', true ) );
+    $estatusSolicitud= esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_estatusSolicitud', true ) );
+    $notasSolicitud = esc_html( get_post_meta( $orden_compra->ID, 'orden_compra_notasSolicitud', true ) );
 ?>
     <table class="mb-custom-fields">
         <tr>
-            <th colspan="2" style="width: 50%">
-                <label for="orden_compra_fecha">Fecha de entrega*:</label>
-                <input type="date" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required>
-            </th>
-            <th>
-                <label for="orden_compra_horario">Horario de*:</label>
-                <input type="text" name="orden_compra_horario" id="orden_compra_horario" value="<?php echo $horario; ?>" placeholder="9 am" required>
-            </th>
-            <th>
-                <label for="orden_compra_horarioEnd">A:</label>
-                <input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" value="<?php echo $horarioEnd; ?>" placeholder="6 pm">
-            </th>
-        </tr>
-        <tr>
-        	<th colspan="2">
-                <label for="orden_compra_lugar">Lugar de entrega*:</label>
-                <select name="orden_compra_lugar" id="orden_compra_lugar" required>
-                    <option value="" <?php selected($lugar, ''); ?>></option>
-                    <option value="Cuautitlán Izcalli" <?php selected($lugar, 'Cuautitlán Izcalli'); ?>>Cuautitlán Izcalli</option>
-                    <option value="Col. del Valle" <?php selected($lugar, 'Col. del Valle'); ?>>Col. de. Valle</option>
-                    <option value="Otro" <?php selected($lugar, 'Otro'); ?>>Otro</option>
+            <th style="width: 33.33%;">
+                <label for="orden_compra_origen">Origen de la piñata*:</label>
+                <select name="orden_compra_origen" id="orden_compra_origen" required>
+                    <option value="" <?php selected($origen, ''); ?>></option>
+                    <option value="Stock de tienda" <?php selected($origen, 'Stock de tienda'); ?>>Stock de tienda</option>
+                    <option value="Pedido de fábrica" <?php selected($origen, 'Pedido de fábrica'); ?>>Pedido de fábrica</option>
                 </select>
             </th>
-            <th colspan="2">
-                <label for="orden_compra_lugarPers">Si es otro:</label>
-                <input type="text" name="orden_compra_lugarPers" id="orden_compra_lugarPers" value="<?php echo $lugarPers; ?>">
-            </th>
-        </tr>
-        <tr>
-            <th colspan="2">
+            <th style="width: 33.33%;">
                 <label for="orden_compra_modelo">Modelo*:</label>
                 <select name="orden_compra_modelo" id="orden_compra_modelo" required>
                     <option value="" <?php selected($modelo, ''); ?>></option>
-           			<?php
-				        $args = array(
-				            'post_type' => 'product',
-				            'posts_per_page' => -1
-				            );
-				        $loop = new WP_Query( $args );
-				        $i = 1;
-				        if ( $loop->have_posts() ) {
-				            while ( $loop->have_posts() ) : $loop->the_post();	            	 
-				            	$post_id        = get_the_ID();
-                           		$productName 	= get_the_title( $post_id );?>
-								<option value="<?php echo $productName; ?>" <?php selected($modelo, $productName); ?>><?php echo $productName; ?></option>
-				            <?php $i ++; endwhile;
-				        } 
-				        wp_reset_postdata();
-				    ?>
+                    <?php
+                        $args = array(
+                            'post_type' => 'product',
+                            'posts_per_page' => -1
+                            );
+                        $loop = new WP_Query( $args );
+                        $i = 1;
+                        if ( $loop->have_posts() ) {
+                            while ( $loop->have_posts() ) : $loop->the_post();                   
+                                $post_id        = get_the_ID();
+                                $productName    = get_the_title( $post_id );?>
+                                <option value="<?php echo $productName; ?>" <?php selected($modelo, $productName); ?>><?php echo $productName; ?></option>
+                            <?php $i ++; endwhile;
+                        } 
+                        wp_reset_postdata();
+                    ?>
                 </select>
             </th>
-            <th colspan="2">
+            <th style="width: 33.33%;">
                 <label for="orden_compra_cliente">Cliente*:</label>
                 <input type="text" name="orden_compra_cliente" id="orden_compra_cliente" value="<?php echo $cliente; ?>" required>
             </th>
         </tr>
         <tr>
-            <th colspan="2">
-                <label for="orden_compra_pago">Cantidad a pagar*:</label>
-                <input type="number" name="orden_compra_pago" id="orden_compra_pago" value="<?php echo $pago; ?>" placeholder="460" required>
+            <th>
+                <label for="orden_compra_responsable">Responsable*:</label>
+                <input type="text" name="orden_compra_responsable" id="orden_compra_responsable" value="<?php echo $responsable; ?>" required>
             </th>
-            <th colspan="2">
-                <label for="orden_compra_community">Community Manager*:</label>
-                <input type="text" name="orden_compra_community" id="orden_compra_community" value="<?php echo $community; ?>" required>
+            <th>
+                <label for="orden_compra_fechaVenta">Fecha de venta*:</label>
+                <input type="date" name="orden_compra_fechaVenta" id="orden_compra_fechaVenta" value="<?php echo $fechaVenta; ?>" required>
+            </th>
+            <th>
+                <label for="orden_compra_estatusVenta">Estatus Venta*:</label>
+                <select name="orden_compra_estatusVenta" id="orden_compra_estatusVenta" required  data-parsley-required-message="Campo obligatorio">
+                    <option value="" <?php selected($estatusVenta, ''); ?>></option>
+                    <option value="estatus_abierta" <?php selected($estatusVenta, 'estatus_abierta'); ?>>Venta abierta</option>
+                    <option value="estatus_cerrada" <?php selected($estatusVenta, 'estatus_cerrada'); ?>>Venta cerrada</option>
+                    <option value="estatus_cancelada" <?php selected($estatusVenta, 'estatus_cancelada'); ?>>Venta cancelada</option>
+                </select>
             </th>
         </tr>
         <tr>
-            <th colspan="2">
-                <label for="orden_compra_origen">Origen de la piñata*:</label>
-                <select name="orden_compra_origen" id="orden_compra_origen" required>
-                    <option value="" <?php selected($origen, ''); ?>></option>
-                    <option value="Apartada de stock de tienda" <?php selected($origen, 'Apartada de stock de tienda'); ?>>Apartada de stock de tienda</option>
-                    <option value="Pedido de fábrica" <?php selected($origen, 'Pedido de fábrica'); ?>>Pedido de fábrica</option>
+            <th colspan="3">
+                <label for="orden_compra_observaciones">Observaciones:</label>
+                <input type="text" name="orden_compra_observaciones" id="orden_compra_observaciones" value="<?php echo $observaciones; ?>">
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <label for="orden_compra_pago">Cantidad a pagar*:</label>
+                <input type="number" name="orden_compra_pago" id="orden_compra_pago" value="<?php echo $pago; ?>" placeholder="460" required>
+            </th>
+            <th>
+                <label for="orden_compra_metodoPago">Método de pago*:</label>
+                <select name="orden_compra_metodoPago" id="orden_compra_metodoPago" required>
+                    <option value="" <?php selected($metodoPago, ''); ?>></option>
+                    <option value="Efectivo" <?php selected($metodoPago, 'Efectivo'); ?>>Efectivo</option>
+                    <option value="Tarjeta" <?php selected($metodoPago, 'Tarjeta'); ?>>Tarjeta</option>
+                    <option value="Prestamo" <?php selected($metodoPago, 'Prestamo'); ?>>Préstamo</option>
+                    <option value="Otro" <?php selected($metodoPago, 'Otro'); ?>>Otro</option>
                 </select>
             </th>
-            <th colspan="2">
-                <label for="orden_compra_estatus">Estatus orden de compra*:</label>
-                <select name="orden_compra_estatus" id="orden_compra_estatus" required>
-                    <option value="" <?php selected($estatus, ''); ?>></option>
-                    <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
-                    <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
-                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino</option>
-                    <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
-                    <option value="estatus_entregada" <?php selected($estatus, 'estatus_entregada'); ?>>Entregada y pagada</option>
-                    <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Efectivo en camino</option>
-                    <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
-                    <option value="estatus_ventaCancelada" <?php selected($estatus, 'estatus_ventaCancelada'); ?>>Venta cancelada</option>
+            <th>
+                <label for="orden_compra_estatusPago">Estatus Pago*:</label>
+                <select name="orden_compra_estatusPago" id="orden_compra_estatusPago" required>
+                    <option value="" <?php selected($estatusPago, ''); ?>></option>
+                    <option value="estatus_noPagada" <?php selected($estatusPago, 'estatus_noPagada'); ?>>No pagada</option>
+                    <option value="estatus_enCamino" <?php selected($estatusPago, 'estatus_enCamino'); ?>>Efectivo en camino</option>
+                    <option value="estatus_enTienda" <?php selected($estatusPago, 'estatus_enTienda'); ?>>Dinero en tienda</option>
+                    <option value="estatus_enCuenta" <?php selected($estatusPago, 'estatus_enCuenta'); ?>>Dinero en cuenta</option>
+                    <option value="estatus_conSuperior" <?php selected($estatusPago, 'estatus_conSupervisor'); ?>>Dinero con supervisor</option>
                 </select>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <label for="orden_compra_notaPago">Nota de pago:</label>
+                <input type="text" name="orden_compra_notaPago" id="orden_compra_notaPago" value="<?php echo $notaPago; ?>">
+            </th>            
+        </tr>
+        <tr>
+            <th>
+                <label for="orden_compra_fecha">Fecha de entrega:</label>
+                <input type="date" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>">
+            </th>
+        	<th>
+                <label for="orden_compra_lugar">Lugar de entrega*:</label>
+                <select name="orden_compra_lugar" id="orden_compra_lugar" required>
+                    <option value="" <?php selected($lugar, ''); ?>></option>
+                    <option value="Sucursal Izcalli" <?php selected($lugar, 'Sucursal Izcalli'); ?>>Sucursal Izcalli</option>
+                    <option value="Col. del Valle" <?php selected($lugar, 'Col. del Valle'); ?>>Col. de. Valle</option>
+                    <option value="Otro" <?php selected($lugar, 'Otro'); ?>>Otro</option>
+                </select>
+            </th>
+            <th>
+                <label for="orden_compra_estatusEntrega">Estatus Entrega*:</label>
+                <select name="orden_compra_estatusEntrega" id="orden_compra_estatusEntrega" required>
+                    <option value="" <?php selected($estatusEntrega, ''); ?>></option>
+                    <option value="estatus_enProduccion" <?php selected($estatusEntrega, 'estatus_enProduccion'); ?>>En producción, fábrica</option>
+                    <option value="estatus_enTienda" <?php selected($estatusEntrega, 'estatus_enTienda'); ?>>En tienda</option>
+                    <option value="estatus_enPuntoEntrega" <?php selected($estatusEntrega, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
+                    <option value="estatus_entregada" <?php selected($estatusEntrega, 'estatus_entregada'); ?>>Entregada</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <label for="orden_compra_entrega">Detalles entrega:</label>
+                <input type="text" name="orden_compra_entrega" id="orden_compra_entrega" value="<?php echo $entrega; ?>">
             </th>
         </tr>
     </table>
@@ -298,7 +337,7 @@ function display_orden_compra_atributos( $orden_compra ){
             </td>
             <td colspan="2">
                 <label for="orden_compra_estatusSolicitud">Estatus orden de compra*:</label>
-                <select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud" required>
+                <select name="orden_compra_estatusSolicitud" id="orden_compra_estatusSolicitud">
                     <option value="" <?php selected($estatusSolicitud, ''); ?>></option>
                     <option value="estatus_entregada" <?php selected($estatusSolicitud, 'estatus_entregada'); ?>>Ya se entregó</option>
                     <option value="estatus_enEspera" <?php selected($estatusSolicitud, 'estatus_enEspera'); ?>>Esperando entrega</option>
@@ -316,21 +355,9 @@ function display_orden_compra_atributos( $orden_compra ){
 
 add_action( 'save_post', 'orden_compra_save_metas', 10, 2 );
 function orden_compra_save_metas( $idorden_compra, $orden_compra ){
-    if ( $orden_compra->post_type == 'orden_compra' ){
-        if ( isset( $_POST['orden_compra_fecha'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_fecha', $_POST['orden_compra_fecha'] );
-        }
-        if ( isset( $_POST['orden_compra_horario'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_horario', $_POST['orden_compra_horario'] );
-        }
-        if ( isset( $_POST['orden_compra_horarioEnd'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_horarioEnd', $_POST['orden_compra_horarioEnd'] );
-        }
-        if ( isset( $_POST['orden_compra_lugar'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_lugar', $_POST['orden_compra_lugar'] );
-        }
-        if ( isset( $_POST['orden_compra_lugarPers'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_lugarPers', $_POST['orden_compra_lugarPers'] );
+    if ( $orden_compra->post_type == 'orden_compra' ){        
+        if ( isset( $_POST['orden_compra_origen'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_origen', $_POST['orden_compra_origen'] );
         }
         if ( isset( $_POST['orden_compra_modelo'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_modelo', $_POST['orden_compra_modelo'] );
@@ -341,14 +368,38 @@ function orden_compra_save_metas( $idorden_compra, $orden_compra ){
         if ( isset( $_POST['orden_compra_pago'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_pago', $_POST['orden_compra_pago'] );
         }
-        if ( isset( $_POST['orden_compra_community'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_community', $_POST['orden_compra_community'] );
+        if ( isset( $_POST['orden_compra_metodoPago'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_metodoPago', $_POST['orden_compra_metodoPago'] );
         }
-        if ( isset( $_POST['orden_compra_estatus'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_estatus', $_POST['orden_compra_estatus'] );
+        if ( isset( $_POST['orden_compra_notaPago'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_notaPago', $_POST['orden_compra_notaPago'] );
         }
-        if ( isset( $_POST['orden_compra_origen'] ) ){
-            update_post_meta( $idorden_compra, 'orden_compra_origen', $_POST['orden_compra_origen'] );
+        if ( isset( $_POST['orden_compra_fecha'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_fecha', $_POST['orden_compra_fecha'] );
+        }
+        if ( isset( $_POST['orden_compra_lugar'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_lugar', $_POST['orden_compra_lugar'] );
+        }
+        if ( isset( $_POST['orden_compra_entrega'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_entrega', $_POST['orden_compra_entrega'] );
+        }
+        if ( isset( $_POST['orden_compra_responsable'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_responsable', $_POST['orden_compra_responsable'] );
+        }
+        if ( isset( $_POST['orden_compra_fechaVenta'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_fechaVenta', $_POST['orden_compra_fechaVenta'] );
+        }
+        if ( isset( $_POST['orden_compra_observaciones'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_observaciones', $_POST['orden_compra_observaciones'] );
+        }
+        if ( isset( $_POST['orden_compra_estatusPago'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_estatusPago', $_POST['orden_compra_estatusPago'] );
+        }
+        if ( isset( $_POST['orden_compra_estatusEntrega'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_estatusEntrega', $_POST['orden_compra_estatusEntrega'] );
+        }
+        if ( isset( $_POST['orden_compra_estatusVenta'] ) ){
+            update_post_meta( $idorden_compra, 'orden_compra_estatusVenta', $_POST['orden_compra_estatusVenta'] );
         }
         if ( isset( $_POST['orden_compra_fechaSolicitud'] ) ){
             update_post_meta( $idorden_compra, 'orden_compra_fechaSolicitud', $_POST['orden_compra_fechaSolicitud'] );
@@ -395,7 +446,7 @@ function post_number_orden($postID){
 add_action ('template_redirect', 'redirect_ordenCompra');
 function redirect_ordenCompra() {
     if ( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrden'] ) ) {
-        wp_redirect('mb-stock/#orden_creada');
+        /*wp_redirect('mb-stock/#orden_creada');*/
     }
 }
 
@@ -422,10 +473,10 @@ function redirect_ordenPedidoFabrica() {
 */
 add_filter( 'manage_orden_compra_posts_columns', 'set_custom_edit_orden_compra_columns' );
 function set_custom_edit_orden_compra_columns($columns) {
+    $columns['ae_detalles'] = __( 'Detalles', 'aempleo' );
+    $columns['ae_venta'] = __( 'Venta', 'aempleo' );
+    $columns['ae_pago'] = __( 'Pago', 'aempleo' );
     $columns['ae_entrega'] = __( 'Entrega', 'aempleo' );
-    $columns['ae_estatus'] = __( 'Estatus', 'aempleo' );
-    $columns['ae_pedido'] = __( 'Pedido a fábrica', 'aempleo' );
-    $columns['ae_cliente'] = __( 'Cliente', 'aempleo' );
 
     return $columns;
 }
@@ -433,67 +484,48 @@ function set_custom_edit_orden_compra_columns($columns) {
 add_action( 'manage_orden_compra_posts_custom_column' , 'custom_orden_compra_column', 10, 2 );
 function custom_orden_compra_column( $column, $post_id ) {
     switch ( $column ) {
+        case 'ae_detalles' :
+            $modelo    = get_post_meta( $post_id, 'orden_compra_modelo', true );
+            $origen    = get_post_meta( $post_id, 'orden_compra_origen', true );
+            $cliente   = get_post_meta( $post_id, 'orden_compra_cliente', true );
+            if( $modelo != "" || $origen != "" || $cliente != "" || $observaciones != "")
+                echo '<strong>' . $modelo . '</strong><br>' . $origen . '<br>Cliente: ' . $cliente;
+            else
+                echo "-";
+            break;
+        case 'ae_venta' :
+            $responsable   = get_post_meta( $post_id, 'orden_compra_responsable', true );
+            $fechaVenta    = get_post_meta( $post_id, 'orden_compra_fechaVenta', true );
+            $estatusVenta  = get_post_meta( $post_id, 'orden_compra_estatusVenta', true );
+            $observaciones = get_post_meta( $post_id, 'orden_compra_observaciones', true );
+            if ($fechaVenta != "") {
+                $fechaVenta  = date('d/m/Y', strtotime($fechaVenta));
+            }
+            if( $responsable != "" || $fechaVenta != "" || $estatusVenta != "" || $observaciones != "")
+                echo 'Resp.' . $responsable . '<br>' . $fechaVenta . '<br>' . $estatusVenta . '<br>' . $observaciones;
+            else
+                echo "-";
+            break;
         case 'ae_entrega' :
-            $fecha  = get_post_meta( $post_id, 'orden_compra_fecha', true );
-            $lugar      = get_post_meta( $post_id, 'orden_compra_lugar', true );
+            $fecha          = get_post_meta( $post_id, 'orden_compra_fecha', true );
+            $lugar          = get_post_meta( $post_id, 'orden_compra_lugar', true );
+            $estatusEntrega = get_post_meta( $post_id, 'orden_compra_estatusEntrega', true );
+            $entrega        = get_post_meta( $post_id, 'orden_compra_entrega', true );
             if ($fecha != "") {
                 $fecha          = date('d/m/Y', strtotime($fecha));
             }
-            if ($lugar === 'Otro') { 
-                $lugar      = get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
-            }
-            if( $fecha != "" || $lugar != "")
-                echo $fecha . '<br>' . $lugar;
+            if( $fecha != "" || $lugar != "" || $estatusEntrega != "" || $entrega != "")
+                echo $fecha . '<br>' . $lugar . '<br>' . $estatusEntrega . '<br>' . $entrega;
             else
                 echo "-";
             break;
-        case 'ae_estatus' :
-            $origen  = get_post_meta( $post_id, 'orden_compra_origen', true );
-            $estatus  = get_post_meta( $post_id, 'orden_compra_estatus', true );
-            if ($origen === 'Apartada de stock de tienda') {
-                $origen = 'Tienda';
-            } else {
-                $origen = 'Fábrica';
-            } 
-            if ($estatus === 'estatus_enFabrica'):
-                $labelEstatus = 'En fábrica';
-            elseif ($estatus === 'estatus_enTienda'):
-                $labelEstatus = 'En tienda';
-            elseif ($estatus === 'estatus_enCamino'):
-                $labelEstatus = 'En camino';
-            elseif ($estatus === 'estatus_enPuntoEntrega'):
-                $labelEstatus = 'En punto de entrega';
-            elseif ($estatus === 'estatus_entregada'):
-                $labelEstatus = 'Entregada y pagada';
-            elseif ($estatus === 'estatus_efectivo'):
-                $labelEstatus = 'Efectivo en camino';
-            elseif ($estatus === 'estatus_ventaCerrada'):
-                $labelEstatus = '<span style="color: #aaaaaa;">Venta cerrada</span>';
-            elseif ($estatus === 'estatus_ventaCancelada'):
-                $labelEstatus = 'Venta cancelada';
-            endif;
-            if( $origen != "" || $estatus != "" )
-                echo $origen . '<br>' . $labelEstatus;
-            else
-                echo "-";
-            break;
-        case 'ae_pedido' :
-            $fechaSolicitud    = get_post_meta( $post_id, 'orden_compra_fechaSolicitud', true );
-            $entregaSolicitud  = get_post_meta( $post_id, 'orden_compra_entregaSolicitud', true );
-            if ($fechaSolicitud != "" && $entregaSolicitud != "") {
-                $fechaSolicitud    = date('d/m/Y', strtotime($fechaSolicitud));
-                $entregaSolicitud  = date('d/m/Y', strtotime($entregaSolicitud));
-            }
-            if( $fechaSolicitud != "" && $entregaSolicitud != "" )
-                echo 'Solicitud: ' . $fechaSolicitud . '<br>Entrega: ' . $entregaSolicitud;
-            else
-                echo "-";
-            break;
-        case 'ae_cliente' :
-            $cliente    = get_post_meta( $post_id, 'orden_compra_cliente', true );
-            $pago       = get_post_meta( $post_id, 'orden_compra_pago', true );
-            if( $cliente != "" || $pago != "" )
-                echo $cliente . '<br>$' . $pago;
+        case 'ae_pago' :
+            $pago          = get_post_meta( $post_id, 'orden_compra_pago', true );
+            $metodoPago    = get_post_meta( $post_id, 'orden_compra_metodoPago', true );
+            $estatusPago   = get_post_meta( $post_id, 'orden_compra_estatusPago', true );
+            $notaPago      = get_post_meta( $post_id, 'orden_compra_notaPago', true );
+            if( $pago != "" || $metodoPago != "" || $estatusPago != "" || $notaPago != "")
+                echo '$' . $pago . '<br>' . $metodoPago . '<br>' . $estatusPago . '<br>' . $notaPago;
             else
                 echo "-";
             break;

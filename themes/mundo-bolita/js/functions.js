@@ -40,7 +40,7 @@ var $=jQuery.noConflict();
 			var widthPage 	= $('.box-info-products').outerWidth();
 			$('.head-orden-fixed').css('width', widthPage);
 
-			var headOrden 	= $('.head-orden').offset();
+			var headOrden 	= $('.head-orden-principal').offset();
 			var btnOrden 	= $('#btn-ordenCompra').offset();
 			$(document).scroll(function() {
 				var topWindow 	= $(window).scrollTop();
@@ -86,7 +86,7 @@ var $=jQuery.noConflict();
 
 		if ($('#orden_compra_origen').length > 0) {
 			$('#orden_compra_origen').on('change', function() {
-				if ($('#orden_compra_origen option:selected').val() == 'Apartada de stock de tienda' ){
+				if ($('#orden_compra_origen option:selected').val() == 'Stock de tienda' ){
 					console.log('Tienda');
 					$('.content_orden_compra_modeloTienda').removeClass('hide');
 					$('.content_orden_compra_modeloFabrica').addClass('hide');

@@ -30,22 +30,18 @@
 						$post_id        = get_the_ID();
 						$fecha       	= get_post_meta( $post_id, 'orden_compra_fecha', true );
 						$horario       	= get_post_meta( $post_id, 'orden_compra_horario', true );
-						$horarioEnd    	= get_post_meta( $post_id, 'orden_compra_horarioEnd', true );
 						$lugar       	= get_post_meta( $post_id, 'orden_compra_lugar', true );
 						$lugarPers    	= get_post_meta( $post_id, 'orden_compra_lugarPers', true );
 						$modelo       	= get_post_meta( $post_id, 'orden_compra_modelo', true );
 						$cliente       	= get_post_meta( $post_id, 'orden_compra_cliente', true );
 						$pago       	= get_post_meta( $post_id, 'orden_compra_pago', true );
-						$community      = get_post_meta( $post_id, 'orden_compra_community', true );
+						$contactInicial      = get_post_meta( $post_id, 'orden_compra_contactInicial', true );
 
 					    $fechaAlerta   	= date('Y-m-d', strtotime($fecha . '-1 day')); /* Activer alerta */
 					    
 					    setlocale(LC_ALL,"es_ES");
 						$fecha 			= strftime("%d de %B del %Y", strtotime($fecha));
 
-						if ($horarioEnd != '') { 
-							$horario 	= $horario . " a " . $horarioEnd; 
-						}
 						if ($lugar === 'Otro') { 
 							$lugar 		= get_post_meta( $post_id, 'orden_compra_lugarPers', true ); 
 						}
@@ -56,7 +52,8 @@
 					    	$body		.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $fecha . ' - ' . $horario . ' | ' . $lugar . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $cliente . '</p>';
 					    	$body		.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $pago . ' liquida a contraentrega</p>';
-					    	$body		.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $community . '</p>';
+					    	$body		.= '<p><strong style="color: #de0d88;">Contacto Inicial: </strong>' . $contactInicial . '</p>';
+					    	$body		.= '<p><strong style="color: #de0d88;">Contacto Venta: </strong>' . $contactVenta . '</p>';
 					    	$body		.= '<p><a href="' . $permalink . '" style="color: #008fcc;">Ver Orden de pago</a></p></div>';
 
 				    		$ordenCompraEntrega ++;

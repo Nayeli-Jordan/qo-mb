@@ -10,14 +10,17 @@ body.page-mb-stock {
     .page-orden { width: 99%; } 
     #estatus-orden-single,
     #origen-orden-single,
-    .action-btn-single { display: none; }  
+    .action-btn-single,
+    .hide_to_print { display: none; }  
   }  
 }
 
 body.page-mb-stock {
   width: 100%!important;
   max-width: calc(100vw - 20px);
-  #btn-ordenCompra { display: none; }
+  #page-mb-stock { width: 100%!important; }
+  #btn-ordenCompra,
+  .head-orden-fixed { display: none; }
   .box-info-products { width: 100%; }
    /* .container-info-products table { 
     width: calc(100% - 70px);

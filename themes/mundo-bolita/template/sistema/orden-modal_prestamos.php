@@ -12,31 +12,26 @@ $argsOrdenCerrada = array(
 			'compare'	=> '='
 		),
 		array(
-			'key'		=> 'orden_compra_estatusVenta',
-			'value'		=> 'estatus_cerrada',
-			'compare'	=> '='
-		),
-		array(
 			'key'		=> 'orden_compra_metodoPago',
 			'value'		=> 'Prestamo',
-			'compare'	=> '!='
+			'compare'	=> '='
 		)
 	)
 );
-$loopOrdenCerrada = new WP_Query( $argsOrdenCerrada );
-if ( $loopOrdenCerrada->have_posts() ) {
+$loopOrdenPrestamo = new WP_Query( $argsOrdenCerrada );
+if ( $loopOrdenPrestamo->have_posts() ) {
 	$infoOrden	= '';
-    while ( $loopOrdenCerrada->have_posts() ) : $loopOrdenCerrada->the_post(); 
+    while ( $loopOrdenPrestamo->have_posts() ) : $loopOrdenPrestamo->the_post(); 
 
-    	$ordenCompraCerrada ++;
+    	$ordenPrestamo ++;
     	include (TEMPLATEPATH . '/template/sistema/infoOrden.php'); 
 
     endwhile;
 } 
 wp_reset_postdata();
-if ($ordenCompraCerrada != 0 ) {  ?>
+if ($ordenPrestamo != 0 ) {  ?>
 
-	<div id="product_<?php echo $product_slug; ?>_cerradas" class="modal modal-detalles-orden">
+	<div id="product_<?php echo $product_slug; ?>_prestamos" class="modal modal-detalles-orden">
 		<div class="modal-content">
 			<i class="icon-cancel modal-close"></i>
 			<p class="color-primary no-margin-top text-center">Ordenes Cerradas de <?php echo $productName; ?></p>

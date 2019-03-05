@@ -64,7 +64,7 @@
 		<!--Styles-->
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>css/animated.min.css">
 		<link type="text/css" rel="stylesheet" href="<?php echo THEMEPATH; ?>stylesheets/materialize.css" media="screen,projection,print" />
-		<link href="<?php echo THEMEPATH; ?>/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<link href="<?php echo THEMEPATH; ?>stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 
 		<!-- Canonical URL -->
 		<link rel="canonical" href="<?php echo site_url(); ?>" />
@@ -139,7 +139,9 @@
 				<?php endif; ?>
 				<div class="bg-image bg-contain relative top--15 z-index-1 width-100p padding-bottom-52p [ wow fadeIn ]" data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-large.png);"></div>
 				<div class="bg-image bg-contain absolute top-0 width-100p padding-bottom-60p  [ wow bounceInDown ]"  data-wow-delay="0.5s" style="background-image: url(<?php echo THEMEPATH; ?>images/nubes-azules.png);"></div>
-				<div class="bg-image bg-contain absolute bottom--10p right--12p width-50p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
+				<?php if (!is_page('mb-stock')): ?>
+					<div class="bg-image bg-contain absolute bottom--10p right--12p width-50p padding-bottom-30p z-index-1  [ wow fadeInRight ]" data-wow-delay="0.9s" style="background-image: url(<?php echo THEMEPATH; ?>images/nube-blanca-small.png);"></div>
+				<?php endif; ?>
 				<div class="absolute width-100p top-20p menu-content z-index-1">
 					<div class="container">
 						<div class="row">
@@ -193,52 +195,56 @@
 				</div>	
 			</header>
 			<div class="[ main-body ]">
-			<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">				
-				<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>
-				<?php if (!is_page('mb-stock')): ?>	
-					<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
-				<?php endif; ?>
-				<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega') && !is_page('alerta-pedido')): ?>
-					<section class="container text-center relative z-index-999 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
-						
-						<h2 class="uppercase color-primary">Catálogo</h2>
-						<div class="row relative">
-							<div class="col s12 m8 offset-m2 relative">
-								<?php echo do_shortcode( '[aws_search_form]' ); ?>
-								<div class="shadow-buscador"></div>
-								<div class="content-icon-buscador">
-									<div class="bg-image bg-contain bg-icon-buscador" style="background-image: url(<?php echo THEMEPATH; ?>images/lupa.png);"></div>
-								</div>							
-							</div>
-						</div>					
-						<div class="mb-nav" itemscope>
-							<?php
-								$menu_name = 'top_menu';
+			<?php if (is_page('mb-stock')): ?>
+				<div>
+			<?php else: ?>
+				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">	
+			<?php endif; ?>
+					<?php if (!is_page('mb-stock')): ?>			
+						<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>				
+						<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
+					<?php endif; ?>
+					<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega') && !is_page('alerta-pedido')): ?>
+						<section class="container text-center relative z-index-999 margin-bottom-50 [ wow fadeInDown ]" data-wow-duration="1s">
+							
+							<h2 class="uppercase color-primary">Catálogo</h2>
+							<div class="row relative">
+								<div class="col s12 m8 offset-m2 relative">
+									<?php echo do_shortcode( '[aws_search_form]' ); ?>
+									<div class="shadow-buscador"></div>
+									<div class="content-icon-buscador">
+										<div class="bg-image bg-contain bg-icon-buscador" style="background-image: url(<?php echo THEMEPATH; ?>images/lupa.png);"></div>
+									</div>							
+								</div>
+							</div>					
+							<div class="mb-nav" itemscope>
+								<?php
+									$menu_name = 'top_menu';
 
-								if (( $locations = get_nav_menu_locations()) && isset( $locations[ $menu_name ])) {
-									$menu = wp_get_nav_menu_object( $locations[ $menu_name ]);
-									$menu_items = wp_get_nav_menu_items( $menu->term_id );
-									$menu_list = '';
-									foreach ( (array) $menu_items as $key => $menu_item) {
+									if (( $locations = get_nav_menu_locations()) && isset( $locations[ $menu_name ])) {
+										$menu = wp_get_nav_menu_object( $locations[ $menu_name ]);
+										$menu_items = wp_get_nav_menu_items( $menu->term_id );
+										$menu_list = '';
+										foreach ( (array) $menu_items as $key => $menu_item) {
 
-										$url 				= $menu_item->url;
-										$title 				= $menu_item->title;
-										$class 				= esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $menu_item->classes ), $menu_item) ) );
+											$url 				= $menu_item->url;
+											$title 				= $menu_item->title;
+											$class 				= esc_attr( implode( ' ', apply_filters( 'nav_menu_css_class', array_filter( $menu_item->classes ), $menu_item) ) );
 
-										//$menu_item_parent	= $menu_item->menu_item_parent;		id del padre
-										//$id 				= $menu_item->ID;
-										//$attr_title 		= $menu_item->attr_title;
-										//$description		= $menu_item->description;
-										//$xfn 				= $menu_item->xfn;
-										//$type 			= $menu_item->type;		taxonomy, page...
-										//$type_label		= $menu_item->type_label;		página, categoría...
+											//$menu_item_parent	= $menu_item->menu_item_parent;		id del padre
+											//$id 				= $menu_item->ID;
+											//$attr_title 		= $menu_item->attr_title;
+											//$description		= $menu_item->description;
+											//$xfn 				= $menu_item->xfn;
+											//$type 			= $menu_item->type;		taxonomy, page...
+											//$type_label		= $menu_item->type_label;		página, categoría...
 
-										$menu_list .='<a href="' . $url . ' " itemprop="actionOption" class="' . $class .'"><span class="hide">Categoría de piñatas </span>' . $title . '</a>';
+											$menu_list .='<a href="' . $url . ' " itemprop="actionOption" class="' . $class .'"><span class="hide">Categoría de piñatas </span>' . $title . '</a>';
+										}
 									}
-								}
-								echo $menu_list;
-							?>						
-						</div>						
-					</section>
-				<?php endif; ?>
-				<div class="clearfix"></div>
+									echo $menu_list;
+								?>						
+							</div>						
+						</section>
+					<?php endif; ?>
+					<div class="clearfix"></div>

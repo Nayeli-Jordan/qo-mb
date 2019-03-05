@@ -3,35 +3,21 @@
 
 	$custom_fields  = get_post_custom();
 	$post_id        = get_the_ID();
-	$fecha       	= get_post_meta( $post_id, 'orden_compra_fecha', true );
-	$horario       	= get_post_meta( $post_id, 'orden_compra_horario', true );
-	$horarioEnd    	= get_post_meta( $post_id, 'orden_compra_horarioEnd', true );
-	$lugar       	= get_post_meta( $post_id, 'orden_compra_lugar', true );
-	$lugarPers     	= get_post_meta( $post_id, 'orden_compra_lugarPers', true );
-	$modelo       	= get_post_meta( $post_id, 'orden_compra_modelo', true );
-	$cliente       	= get_post_meta( $post_id, 'orden_compra_cliente', true );
-	$pago       	= get_post_meta( $post_id, 'orden_compra_pago', true );
-	$community      = get_post_meta( $post_id, 'orden_compra_community', true );
-	$origen      	= get_post_meta( $post_id, 'orden_compra_origen', true );
-	$estatus      	= get_post_meta( $post_id, 'orden_compra_estatus', true );
-
-	if ($estatus === 'estatus_enFabrica'):
-		$labelEstatus = 'En fábrica';
-	elseif ($estatus === 'estatus_enTienda'):
-		$labelEstatus = 'En tienda';
-	elseif ($estatus === 'estatus_enCamino'):
-		$labelEstatus = 'En camino';
-	elseif ($estatus === 'estatus_enPuntoEntrega'):
-		$labelEstatus = 'En punto de entrega';
-	elseif ($estatus === 'estatus_entregada'):
-		$labelEstatus = 'Entregada y pagada';
-	elseif ($estatus === 'estatus_efectivo'):
-		$labelEstatus = 'Efectivo en camino';
-	elseif ($estatus === 'estatus_ventaCerrada'):
-		$labelEstatus = 'Venta cerrada';
-	elseif ($estatus === 'estatus_ventaCancelada'):
-		$labelEstatus = 'Venta cancelada';
-	endif; 
+	$origen 		= get_post_meta( $post_id, 'orden_compra_origen', true );
+	$modelo 		= get_post_meta( $post_id, 'orden_compra_modelo', true );
+	$cliente 		= get_post_meta( $post_id, 'orden_compra_cliente', true );
+	$pago 			= get_post_meta( $post_id, 'orden_compra_pago', true );
+	$metodoPago 	= get_post_meta( $post_id, 'orden_compra_metodoPago', true );
+	$estatusPago 	= get_post_meta( $post_id, 'orden_compra_estatusPago', true );
+	$notaPago 		= get_post_meta( $post_id, 'orden_compra_notaPago', true );
+	$fecha 			= get_post_meta( $post_id, 'orden_compra_fecha', true );
+	$lugar 			= get_post_meta( $post_id, 'orden_compra_lugar', true );
+	$estatusEntrega = get_post_meta( $post_id, 'orden_compra_estatusEntrega', true );
+	$entrega 		= get_post_meta( $post_id, 'orden_compra_entrega', true );
+	$responsable 	= get_post_meta( $post_id, 'orden_compra_responsable', true );
+	$fechaVenta 	= get_post_meta( $post_id, 'orden_compra_fechaVenta', true );
+	$estatusVenta 	= get_post_meta( $post_id, 'orden_compra_estatusVenta', true );
+	$observaciones 	= get_post_meta( $post_id, 'orden_compra_observaciones', true );
 
 	/* Obtener ID por nombre */
 	$productId = get_page_by_title( $modelo, OBJECT, 'product' );
@@ -40,71 +26,127 @@
 	$product 	= wc_get_product( $productId );
 	$stock	 	= $product->get_stock_quantity();
 	$newStock	= $stock - 1;
+
+	if ($estatusVenta === 'estatus_abierta') { 
+		$estatusVenta = 'Venta abierta';
+	} elseif ($estatusVenta === 'estatus_cerrada') { 
+		$estatusVenta = 'Venta cerrada';
+	} elseif ($estatusVenta === 'estatus_cancelada') {
+		$estatusVenta = 'Venta cancelada';
+	}
+
+	if ($estatusPago === 'estatus_noPagada') { 
+		$estatusPago = 'No Pagada';
+	} elseif ($estatusPago === 'estatus_enCamino') { 
+		$estatusPago = 'En Camino';
+	} elseif ($estatusPago === 'estatus_enTienda') { 
+		$estatusPago = 'En Tienda';
+	} elseif ($estatusPago === 'estatus_enCuenta') { 
+		$estatusPago = 'En Cuenta';
+	} elseif ($estatusPago === 'estatus_conSuperior') { 
+		$estatusPago = 'Con Superior';
+	}
+
+	if ($estatusEntrega === 'estatus_enProduccion') { 
+		$estatusEntrega = 'En Producción';
+	} elseif ($estatusEntrega === 'estatus_enTienda') { 
+		$estatusEntrega = 'En Tienda';
+	} elseif ($estatusEntrega === 'estatus_enPuntoEntrega') { 
+		$estatusEntrega = 'En Punto de Entrega';
+	} elseif ($estatusEntrega === 'estatus_entregada') { 
+		$estatusEntrega = 'Entregada';
+	}
 ?>
 
 <div id="actualizado-orden" class="modal modal-medium modal-large">
 	<i class="icon-cancel modal-close"></i>
 	<div class="modal-content">
 		<p class="color-primary no-margin-top text-center">Actualizar orden de compra</p>
-		<form id="orden_actualizada-form" name="orden_actualizada-form" action=""  method="post" class="validation row" data-parsley-orden_actualizada>
-			<div class="col s12 m6 input-field">
+		<form id="orden_actualizada-form" name="orden_actualizada-form" action=""  method="post" class="validation row" data-parsley-orden_actualizada>		
+			<div class="col s12 input-field margin-bottom">
+				<label for="orden_compra_estatusVenta color-primary">Estatus Venta*:</label>
+    			<select name="orden_compra_estatusVenta" id="orden_compra_estatusVenta" required  data-parsley-required-message="Campo obligatorio">
+    				<option  value="<?php echo $estatusVenta; ?>" select="selected"><?php echo $estatusVenta; ?></option>
+                    <option value="estatus_abierta">Venta abierta</option>
+                    <option value="estatus_cerrada">Venta cerrada</option>
+                    <option value="estatus_cancelada">Venta cancelada</option>
+                </select>
+				<p class="text-center color-primary">¡Estatus - Importante!</p>
+				<p class="margin-bottom-large"><span class="color-primary">Venta cerrada: </span>Se restará definitivamente la piñata del stock de tienda.<br><span class="color-primary">Venta cancelada: </span>Se eliminará la orden de compra y la piñata volverá a registrarse como disponible.</p>
+			</div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_cliente">Cliente*:</label>
+   				<input type="text" name="orden_compra_cliente" id="orden_compra_cliente"placeholder="De tienda / Nombre" value="<?php echo $cliente; ?>" required data-parsley-required-message="Campo obligatorio">
+			</div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_responsable">Responsable venta*:</label>
+    			<input type="text" name="orden_compra_responsable" id="orden_compra_responsable" value="<?php echo $responsable; ?>" required data-parsley-required-message="Campo obligatorio">
+			</div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_fechaVenta">Fecha de venta*:</label>
+    			<input type="date" name="orden_compra_fechaVenta" id="orden_compra_fechaVenta" value="<?php echo $fechaVenta; ?>" required data-parsley-required-message="Campo obligatorio">
+			</div>
+			<div class="col s12 input-field">
+				<label for="orden_compra_observaciones">Observaciones:</label>
+    			<input type="text" name="orden_compra_observaciones" id="orden_compra_observaciones" value="<?php echo $observaciones; ?>">
+			</div>	
+			<div class="col s12 margin-top-xlarge"></div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_pago">Cantidad a pagar*:</label>
+    			<input type="number" min="0" name="orden_compra_pago" id="orden_compra_pago" placeholder="0" value="<?php echo $pago; ?>" required data-parsley-required-message="Campo obligatorio">
+			</div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_metodoPago">Método de pago*:</label>
+    			<select name="orden_compra_metodoPago" id="orden_compra_metodoPago" required  data-parsley-required-message="Campo obligatorio">
+    				<option  value="<?php echo $metodoPago; ?>" select="selected"><?php echo $metodoPago; ?></option>
+    				<option value="Efectivo">Efectivo</option>
+    				<option value="Tarjeta">Tarjeta</option>
+    				<option value="Prestamo">Préstamo</option>
+    				<option value="Otro">Otro</option>
+    			</select>
+			</div>
+			<div class="col s12 m6 l4 input-field">
+				<label for="orden_compra_estatusPago color-primary">Estatus Pago*:</label>
+    			<select name="orden_compra_estatusPago" id="orden_compra_estatusPago" required  data-parsley-required-message="Campo obligatorio">
+    				<option  value="<?php echo $estatusPago; ?>" select="selected"><?php echo $estatusPago; ?></option>
+                    <option value="estatus_noPagada">No pagada</option>
+                    <option value="estatus_enCamino">Efectivo en camino</option>
+                    <option value="estatus_enTienda">Dinero en tienda</option>
+                    <option value="estatus_enCuenta">Dinero en cuenta</option>
+                    <option value="estatus_conSupervisor">Dinero con supervisor</option>
+                </select>
+			</div>
+			<div class="col s12 input-field">
+				<label for="orden_compra_notaPago">Nota de pago:</label>
+    			<input type="text" name="orden_compra_notaPago" id="orden_compra_notaPago" value="<?php echo $notaPago; ?>">
+			</div>
+			<div class="col s12 margin-top-xlarge"></div>
+			<div class="col s12 m6 l4 input-field clearfix">
 				<label for="orden_compra_fecha">Fecha de entrega*:</label>
-   				<input type="date" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required  data-parsley-required-message="Campo obligatorio">
+   				<input type="date" min="<?php echo $today; ?>" name="orden_compra_fecha" id="orden_compra_fecha" value="<?php echo $fecha; ?>" required data-parsley-required-message="Campo obligatorio">
 			</div>
-			<div class="col s6 m3 input-field">
-				<label for="orden_compra_horario">Horario de*:</label>
-    			<input type="text" name="orden_compra_horario" id="orden_compra_horario" placeholder="9 am" value="<?php echo $horario; ?>" required  data-parsley-required-message="Campo obligatorio">
-			</div>
-			<div class="col s6 m3 input-field">
-				<label for="orden_compra_horarioEnd">A:</label>
-    			<input type="text" name="orden_compra_horarioEnd" id="orden_compra_horarioEnd" placeholder="6 pm" value="<?php echo $horarioEnd; ?>">
-			</div>
-			<div class="col s12 m6 input-field clearfix actual-select">
+			<div class="col s12 m6 l4 input-field">
 				<label for="orden_compra_lugar">Lugar de entrega*:</label>
-                <select name="orden_compra_lugar" id="orden_compra_lugar" value="<?php echo $lugar; ?>" required  data-parsley-required-message="Campo obligatorio">                	
-                	<option value="<?php echo $lugar; ?>" select="selected"><?php echo $lugar; ?></option>
-                    <option value="Cuautitlán Izcalli">Cuautitlán Izcalli</option>
+                <select name="orden_compra_lugar" id="orden_compra_lugar" required  data-parsley-required-message="Campo obligatorio">                	
+                	<option  value="<?php echo $lugar; ?>" select="selected"><?php echo $lugar; ?></option>
+                    <option value="Sucursal Izcalli">Sucursal Izcalli</option>
                     <option value="Col. del Valle">Col. de. Valle</option>
                     <option value="Otro">Otro</option>
                 </select>
 			</div>
-			<div class="col s12 m6 input-field">
-				<label for="orden_compra_lugarPers">Si es otro:</label>
-    			<input type="text" name="orden_compra_lugarPers" id="orden_compra_lugarPers" value="<?php echo $lugarPers; ?>" placeholder="Lugar">
+			<div class="col s12 m12 l4 input-field">
+				<label for="orden_compra_estatusEntrega color-primary">Estatus Entrega*:</label>
+    			<select name="orden_compra_estatusEntrega" id="orden_compra_estatusEntrega" required  data-parsley-required-message="Campo obligatorio">
+    				<option  value="<?php echo $estatusEntrega; ?>" select="selected"><?php echo $estatusEntrega; ?></option>
+                    <option value="estatus_enProduccion">En producción, fabrica</option>
+                    <option value="estatus_enTienda">En tienda</option>
+                    <option value="estatus_enPuntoEntrega">En punto de entrega</option>
+                    <option value="estatus_entregada">Entregada</option>
+                </select>
 			</div>
 			<div class="col s12 input-field">
-				<label for="orden_compra_cliente">Cliente*:</label>
-   				<input type="text" name="orden_compra_cliente" id="orden_compra_cliente" value="<?php echo $cliente; ?>" required  data-parsley-required-message="Campo obligatorio">
-			</div>
-			<div class="col s12 m6 input-field clearfix">
-				<label for="orden_compra_pago">Cantidad a pagar*:</label>
-    			<input type="number" name="orden_compra_pago" id="orden_compra_pago" placeholder="460" value="<?php echo $pago; ?>" required  data-parsley-required-message="Campo obligatorio">
-			</div>
-			<div class="col s12 m6 input-field">
-				<label for="orden_compra_community">Community Manager*:</label>
-    			<input type="text" name="orden_compra_community" id="orden_compra_community" value="<?php echo $community; ?>" required  data-parsley-required-message="Campo obligatorio">
-			</div>
-			<div class="col s12 m6 input-field margin-top actual-select">
-				<label for="orden_compra_origen">Origen de la piñata*:</label>
-    			<select name="orden_compra_origen" id="orden_compra_origen" required  data-parsley-required-message="Campo obligatorio">
-    				<option  value="<?php echo $origen; ?>" select="selected"><?php echo $origen; ?></option>
-                	<option value="Apartada de stock de tienda">Apartada de stock de tienda</option>
-                	<option value="Pedido de fábrica">Pedido de fábrica</option>
-                </select>
-			</div>
-			<div class="col s12 m6 input-field margin-top actual-select">
-				<label for="orden_compra_estatus color-primary">Estatus de orden*:</label>
-    			<select name="orden_compra_estatus" id="orden_compra_estatus" required  data-parsley-required-message="Campo obligatorio">
-    				<option value="<?php echo $estatus; ?>" select="selected"><?php echo $labelEstatus; ?></option>
-                    <option value="estatus_enFabrica" <?php selected($estatus, 'estatus_enFabrica'); ?>>En fábrica</option>
-                    <option value="estatus_enTienda" <?php selected($estatus, 'estatus_enTienda'); ?>>En tienda</option>
-                    <option value="estatus_enCamino" <?php selected($estatus, 'estatus_enCamino'); ?>>En camino</option>
-                    <option value="estatus_enPuntoEntrega" <?php selected($estatus, 'estatus_enPuntoEntrega'); ?>>En punto de entrega</option>
-                    <option value="estatus_entregada" <?php selected($estatus, 'estatus_entregada'); ?>>Entregada y pagada</option>
-                    <option value="estatus_efectivo" <?php selected($estatus, 'estatus_efectivo'); ?>>Efectivo en camino</option>
-                    <option value="estatus_ventaCerrada" <?php selected($estatus, 'estatus_ventaCerrada'); ?>>Venta cerrada</option>
-                    <option value="estatus_ventaCancelada" <?php selected($estatus, 'estatus_ventaCancelada'); ?>>Venta cancelada</option>
-                </select>
+				<label for="orden_compra_entrega">Detalles entrega:</label>
+    			<input type="text" name="orden_compra_entrega" id="orden_compra_entrega" placeholder="Lugar, hora, etc." value="<?php echo $entrega; ?>">
 			</div>
 			<div class="col s12 text-right">
 				<input type="submit" id="mb_submitOrdenActualizada" name="mb_submitOrdenActualizada" class="btn" value="Actualizar" />
@@ -112,24 +154,26 @@
 				<?php wp_nonce_field( 'orden_actualizada-form' ); ?>	
 			</div>
 		</form>
-		<p class="text-center color-primary">¡Estatus - Importante!</p>
-		<p><span class="color-primary">Venta cerrada: </span>Se restará definitivamente la piñata del stock de tienda.<br><span class="color-primary">Venta cancelada: </span>Se eliminará la orden de compra y la piñata volverá a registrarse como disponible.</p>
 	</div>
 </div>
 
 <?php if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrdenActualizada'] )):
 
-	$compraModelo 		= $modelo;
-	$compraFecha 		= $_POST['orden_compra_fecha'];
-	$compraHorario 		= $_POST['orden_compra_horario'];
-	$compraHorarioEnd 	= $_POST['orden_compra_horarioEnd'];
-	$compraLugar 		= $_POST['orden_compra_lugar'];
-	$compraLugarPers 	= $_POST['orden_compra_lugarPers'];
-	$compraCliente 		= $_POST['orden_compra_cliente'];
-	$compraPago 		= $_POST['orden_compra_pago'];
-	$compraCommunity 	= $_POST['orden_compra_community'];
-	$compraOrigen 	 	= $_POST['orden_compra_origen'];
-	$compraEstatus 	 	= $_POST['orden_compra_estatus'];
+    $compra_origen         = $_POST['orden_compra_origen'];
+    $compra_modelo         = $_POST['orden_compra_modelo'];
+    $compra_cliente        = $_POST['orden_compra_cliente'];
+    $compra_pago           = $_POST['orden_compra_pago'];
+    $compra_metodoPago     = $_POST['orden_compra_metodoPago'];
+    $compra_estatusPago    = $_POST['orden_compra_estatusPago'];
+    $compra_notaPago       = $_POST['orden_compra_notaPago'];
+    $compra_fecha          = $_POST['orden_compra_fecha'];
+    $compra_lugar          = $_POST['orden_compra_lugar'];
+    $compra_estatusEntrega = $_POST['orden_compra_estatusEntrega'];
+    $compra_entrega        = $_POST['orden_compra_entrega'];
+    $compra_responsable    = $_POST['orden_compra_responsable'];
+    $compra_fechaVenta     = $_POST['orden_compra_fechaVenta'];
+    $compra_estatusVenta   = $_POST['orden_compra_estatusVenta'];
+    $compra_observaciones  = $_POST['orden_compra_observaciones'];
 
 	/* Crear post orden_compra */
 	$post = array(
@@ -138,18 +182,23 @@
 
 	$orden_id = wp_update_post($post);
 
-	update_post_meta($orden_id,'orden_compra_fecha',$compraFecha);
-	update_post_meta($orden_id,'orden_compra_horario',$compraHorario);
-	update_post_meta($orden_id,'orden_compra_horarioEnd',$compraHorarioEnd);
-	update_post_meta($orden_id,'orden_compra_lugar',$compraLugar);
-	update_post_meta($orden_id,'orden_compra_lugarPers',$compraLugarPers);
-	update_post_meta($orden_id,'orden_compra_cliente',$compraCliente);
-	update_post_meta($orden_id,'orden_compra_pago',$compraPago);
-	update_post_meta($orden_id,'orden_compra_community',$compraCommunity);
-	update_post_meta($orden_id,'orden_compra_origen',$compraOrigen);
-	update_post_meta($orden_id,'orden_compra_estatus',$compraEstatus);
+	update_post_meta($orden_id,'orden_compra_origen',$compra_origen);
+	update_post_meta($orden_id,'orden_compra_modelo',$compra_modelo);
+	update_post_meta($orden_id,'orden_compra_cliente',$compra_cliente);
+	update_post_meta($orden_id,'orden_compra_pago',$compra_pago);
+	update_post_meta($orden_id,'orden_compra_metodoPago',$compra_metodoPago);
+	update_post_meta($orden_id,'orden_compra_estatusPago',$compra_estatusPago);
+	update_post_meta($orden_id,'orden_compra_notaPago',$compra_notaPago);
+	update_post_meta($orden_id,'orden_compra_fecha',$compra_fecha);
+	update_post_meta($orden_id,'orden_compra_lugar',$compra_lugar);
+	update_post_meta($orden_id,'orden_compra_estatusEntrega',$compra_estatusEntrega);
+	update_post_meta($orden_id,'orden_compra_entrega',$compra_entrega);
+	update_post_meta($orden_id,'orden_compra_responsable',$compra_responsable);
+	update_post_meta($orden_id,'orden_compra_fechaVenta',$compra_fechaVenta);
+	update_post_meta($orden_id,'orden_compra_estatusVenta',$compra_estatusVenta);
+	update_post_meta($orden_id,'orden_compra_observaciones',$compra_observaciones);
 
-	if ( $compraEstatus === 'estatus_ventaCerrada' ) {
+	if ( $compra_estatusVenta === 'estatus_cerrada' ) {
 		update_post_meta($productId, '_stock', $newStock);
 	}
 
@@ -175,12 +224,6 @@
 
 	$subject 			= "Actualización Orden de Compra - " . $labelEstatus;
 
-	if ($compraHorarioEnd != '') { 
-		$compraHorario 	= $compraHorario . " a " . $compraHorarioEnd; 
-	}
-	if ($compraLugar === 'Otro') { 
-		$compraLugar 		= $compraLugar . " - " . $compraLugarPers; 
-	}
 	if ($labelEstatus === 'Venta cancelada') {
 		$labelEstatus = '<span style="color: red;">Venta cancelada</span>';
 	}
@@ -195,7 +238,8 @@
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Community Manager: </strong>' . $compraCommunity . '</p></div>';	
+	$message 			.= '<p><strong style="color: #de0d88;">Contacto inicial: </strong>' . $contactoInicial . '</p></div>';	
+	$message 			.= '<p><strong style="color: #de0d88;">Contacto venta: </strong>' . $contactoVenta . '</p></div>';	
 	$message 			.= '<p style="margin-top: 20px;"><strong style="color: #008fcc;">Origen: </strong>' . $compraOrigen . '</p>';
 	$message 			.= '<p><strong style="color: #008fcc;">Estatus: ' . $labelEstatus . '</strong></p></div>';
 	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de stock de Mundo Bolita. </small></p></div>';

@@ -24,13 +24,15 @@ body.page-mb-stock .main-body .page-orden {
 body.singular-orden_compra .main-body #estatus-orden-single,
 body.singular-orden_compra .main-body #origen-orden-single,
 body.singular-orden_compra .main-body .action-btn-single,
+body.singular-orden_compra .main-body .hide_to_print,
 body.page-mb-stock .main-body #estatus-orden-single,
 body.page-mb-stock .main-body #origen-orden-single,
-body.page-mb-stock .main-body .action-btn-single {
+body.page-mb-stock .main-body .action-btn-single,
+body.page-mb-stock .main-body .hide_to_print {
   display: none;
 }
 
-/* line 17, ../sass/print.scss */
+/* line 18, ../sass/print.scss */
 body.page-mb-stock {
   width: 100% !important;
   max-width: calc(100vw - 20px);
@@ -38,11 +40,16 @@ body.page-mb-stock {
   width: calc(100% - 70px);
 } */
 }
-/* line 20, ../sass/print.scss */
-body.page-mb-stock #btn-ordenCompra {
+/* line 21, ../sass/print.scss */
+body.page-mb-stock #page-mb-stock {
+  width: 100% !important;
+}
+/* line 22, ../sass/print.scss */
+body.page-mb-stock #btn-ordenCompra,
+body.page-mb-stock .head-orden-fixed {
   display: none;
 }
-/* line 21, ../sass/print.scss */
+/* line 24, ../sass/print.scss */
 body.page-mb-stock .box-info-products {
   width: 100%;
 }

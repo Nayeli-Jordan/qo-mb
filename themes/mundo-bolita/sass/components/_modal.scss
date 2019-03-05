@@ -15,7 +15,7 @@
   border-radius: 2px;
   will-change: top, opacity;
 
-  &.modal-medium { max-width: 650px; }
+  &.modal-medium { max-width: 750px; }
   &.modal-small { max-width: 420px; }
   &.modal-large { min-height: 80%; }
   @media #{$small-and-down} {
@@ -23,6 +23,9 @@
     top: 0px!important;
     height: 100vh;
     max-height: 100vh;
+  }
+  @media #{$medium-and-up}{
+    top: 5%!important;
   }
 
   h1,h2,h3,h4 {
