@@ -71,7 +71,6 @@
                     <option value="estatus_cerrada">Venta cerrada</option>
                     <option value="estatus_cancelada">Venta cancelada</option>
                 </select>
-				<p class="text-center color-primary">¡Estatus - Importante!</p>
 				<p class="margin-bottom-large"><span class="color-primary">Venta cerrada: </span>Se restará definitivamente la piñata del stock de tienda.<br><span class="color-primary">Venta cancelada: </span>Se eliminará la orden de compra y la piñata volverá a registrarse como disponible.</p>
 			</div>
 			<div class="col s12 m6 l4 input-field">
@@ -106,9 +105,9 @@
     			</select>
 			</div>
 			<div class="col s12 m6 l4 input-field">
-				<label for="orden_compra_estatusPago color-primary">Estatus Pago*:</label>
-    			<select name="orden_compra_estatusPago" id="orden_compra_estatusPago" required  data-parsley-required-message="Campo obligatorio">
-    				<option  value="<?php echo $estatusPago; ?>" select="selected"><?php echo $estatusPago; ?></option>
+				<label for="orden_compra_estatusPago color-primary">Estatus Pago*: <?php echo $estatusPago; ?></label>
+    			<select name="orden_compra_estatusPago" id="orden_compra_estatusPago" required data-parsley-required-message="Campo obligatorio">
+    				<option  value=""></option>
                     <option value="estatus_noPagada">No pagada</option>
                     <option value="estatus_enCamino">Efectivo en camino</option>
                     <option value="estatus_enTienda">Dinero en tienda</option>
@@ -135,10 +134,10 @@
                 </select>
 			</div>
 			<div class="col s12 m12 l4 input-field">
-				<label for="orden_compra_estatusEntrega color-primary">Estatus Entrega*:</label>
+				<label for="orden_compra_estatusEntrega color-primary">Estatus Entrega*: <?php echo $estatusEntrega; ?></label>
     			<select name="orden_compra_estatusEntrega" id="orden_compra_estatusEntrega" required  data-parsley-required-message="Campo obligatorio">
-    				<option  value="<?php echo $estatusEntrega; ?>" select="selected"><?php echo $estatusEntrega; ?></option>
-                    <option value="estatus_enProduccion">En producción, fabrica</option>
+    				<option  value=""></option>
+                    <option value="estatus_enProduccion">En producción, fábrica</option>
                     <option value="estatus_enTienda">En tienda</option>
                     <option value="estatus_enPuntoEntrega">En punto de entrega</option>
                     <option value="estatus_entregada">Entregada</option>
@@ -159,8 +158,8 @@
 
 <?php if( 'POST' == $_SERVER['REQUEST_METHOD'] && !empty( $_POST['send_submitOrdenActualizada'] )):
 
-    $compra_origen         = $_POST['orden_compra_origen'];
-    $compra_modelo         = $_POST['orden_compra_modelo'];
+    $compra_modelo         = $modelo;
+    $compra_origen         = $origen;
     $compra_cliente        = $_POST['orden_compra_cliente'];
     $compra_pago           = $_POST['orden_compra_pago'];
     $compra_metodoPago     = $_POST['orden_compra_metodoPago'];
@@ -182,8 +181,6 @@
 
 	$orden_id = wp_update_post($post);
 
-	update_post_meta($orden_id,'orden_compra_origen',$compra_origen);
-	update_post_meta($orden_id,'orden_compra_modelo',$compra_modelo);
 	update_post_meta($orden_id,'orden_compra_cliente',$compra_cliente);
 	update_post_meta($orden_id,'orden_compra_pago',$compra_pago);
 	update_post_meta($orden_id,'orden_compra_metodoPago',$compra_metodoPago);
@@ -204,48 +201,54 @@
 
 	/* Enviar mail alertando sobre el estatus de la orden */
 
-	/* Origen de fábrica - En tienda*/
-	if ($compraOrigen === 'Pedido de fábrica' && $compraEstatus === 'estatus_enTienda') {
-		$to 	= "pruebas@altoempleo.com.mx";
-		$labelEstatus = 'En tienda';
-	} elseif ($compraEstatus === 'estatus_entregada') { /* Estatus piñata entregada */
-		$to 	= "pruebas@altoempleo.com.mx";
-		$labelEstatus = 'Entregada y pagada';
-	} elseif ($compraEstatus === 'estatus_efectivo') { /* Estatus efectivo en camino */
-		$to 	= "pruebas@altoempleo.com.mx";
-		$labelEstatus = 'Efectivo en camino';
-	} elseif ($compraEstatus === 'estatus_ventaCerrada') { /* Estatus venta cerrada */
-		$to 	= "pruebas@altoempleo.com.mx";
-		$labelEstatus = 'Venta cerrada';
-	} elseif ($compraEstatus === 'estatus_ventaCancelada') { /* Estatus venta cancelada */
-		$to 	= "pruebas@altoempleo.com.mx";
-		$labelEstatus = 'Venta cancelada';
+	$to 	= "pruebas@altoempleo.com.mx";
+	$subject 			= "Actualización Orden de Compra - " . $modelo;
+
+	if ($compra_estatusVenta === 'estatus_abierta') { 
+		$compra_estatusVenta = 'Abierta';
+	} elseif ($compra_estatusVenta === 'estatus_cerrada') { 
+		$compra_estatusVenta = 'Cerrada';
+	} elseif ($compra_estatusVenta === 'estatus_cancelada') { /* to do - no necesario cancelar en orden nueva, borrar?*/
+		$compra_estatusVenta = 'Cancelada';
 	}
 
-	$subject 			= "Actualización Orden de Compra - " . $labelEstatus;
+	if ($compra_estatusPago === 'estatus_noPagada') { 
+		$compra_estatusPago = 'No Pagada';
+	} elseif ($compra_estatusPago === 'estatus_enCamino') { 
+		$compra_estatusPago = 'En Camino';
+	} elseif ($compra_estatusPago === 'estatus_enTienda') { 
+		$compra_estatusPago = 'En Tienda';
+	} elseif ($compra_estatusPago === 'estatus_enCuenta') { 
+		$compra_estatusPago = 'En Cuenta';
+	} elseif ($compra_estatusPago === 'estatus_conSuperior') { 
+		$compra_estatusPago = 'Con Superior';
+	}
 
-	if ($labelEstatus === 'Venta cancelada') {
-		$labelEstatus = '<span style="color: red;">Venta cancelada</span>';
+	if ($compra_estatusEntrega === 'estatus_enProduccion') { 
+		$compra_estatusEntrega = 'En Producción';
+	} elseif ($compra_estatusEntrega === 'estatus_enTienda') { 
+		$compra_estatusEntrega = 'En Tienda';
+	} elseif ($compra_estatusEntrega === 'estatus_enPuntoEntrega') { 
+		$compra_estatusEntrega = 'En Punto de Entrega';
+	} elseif ($compra_estatusEntrega === 'estatus_entregada') { 
+		$compra_estatusEntrega = 'Entregada';
 	}
 
 	setlocale(LC_ALL,"es_ES");
-	$compraFechaEsp 	= strftime("%d de %B del %Y", strtotime($compraFecha));
+	$compra_fechaEsp 		= strftime("%d de %B del %Y", strtotime($compra_fecha));
+	$compra_fechaVentaEsp 	= strftime("%d de %B del %Y", strtotime($compra_fechaVenta));
 
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
-	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #008fcc;">actualizado</span> la información de la siguiente orden de compra: </p>';
-	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compraModelo . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compraFechaEsp . ' - ' . $compraHorario . ' | ' . $compraLugar . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Cliente: </strong>' . $compraCliente . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compraPago . ' liquida a contraentrega</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Contacto inicial: </strong>' . $contactoInicial . '</p></div>';	
-	$message 			.= '<p><strong style="color: #de0d88;">Contacto venta: </strong>' . $contactoVenta . '</p></div>';	
-	$message 			.= '<p style="margin-top: 20px;"><strong style="color: #008fcc;">Origen: </strong>' . $compraOrigen . '</p>';
-	$message 			.= '<p><strong style="color: #008fcc;">Estatus: ' . $labelEstatus . '</strong></p></div>';
-	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de stock de Mundo Bolita. </small></p></div>';
+	$message 	 		.= '<p style="margin-bottom: 20px;"><span style="color: #008fcc;">Nueva orden de compra</span> para una piñata con la siguiente información: </p>';
+	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compra_modelo . '</p>';
+	$message 			.= '<p><strong style="color: #008fcc;">Origen: </strong>' . $compra_origen . '</p>';
+	$message 			.= '<p><strong style="color: #008fcc;">Cliente: </strong>' . $compra_cliente . '</p></div>';
+	$message 			.= '<p><strong style="color: #de0d88;">Venta: </strong>' . $compra_responsable . ' | ' . $compra_fechaVentaEsp . ' | ' . $compra_estatusVenta . ' | ' . $compra_observaciones . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compra_pago . ' | ' . $compra_metodoPago . ' | ' . $compra_estatusPago . ' | ' . $compra_notaPago . '</p>';
+	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compra_fechaEsp . ' | ' . $compra_lugar . ' | ' . $compra_estatusEntrega . ' | ' . $compra_entrega . '</p>';
+	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el stock de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
-	if (($compraOrigen === 'Pedido de fábrica' && $compraEstatus === 'estatus_enTienda') || $compraEstatus === 'estatus_entregada' || $compraEstatus === 'estatus_efectivo' || $compraEstatus === 'estatus_ventaCerrada' || $compraEstatus === 'estatus_ventaCancelada') {
-		wp_mail($to, $subject, $message);
-	}
+	wp_mail($to, $subject, $message);
 endif; ?>

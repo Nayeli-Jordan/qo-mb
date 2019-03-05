@@ -109,16 +109,16 @@
 	$message 	 	 	= '<html style="font-family: Arial, sans-serif;"><body>';
 	$message 			.= '<div style="text-align: center; margin-bottom: 20px;"><a style="color: #000; text-align: center; display: block;" href="' . SITEURL . '"><img style="display: inline-block; margin: auto;" src="http://mundobolita.com/wp-content/themes/mundo-bolita/images/identidad/logo-correo.png" alt="Logo Mundo Bolita"></a></div>';
 	$message 	 		.= '<p style="margin-bottom: 20px;">Se ha <span style="color: #de0d88;">registrado</span> un pedido a fábrica para una piñata con la siguiente información: </p>';
-	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $pedidoModelo . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Fecha en la que se solicitó: </strong>' . $pedidoFechaSolicitudEsp . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Fecha de entrega acordada: </strong>' . $pedidoEntregaSolicitudEsp . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">¿Quién solicito?: </strong>' . $pedidoPersSolicitud . '</p></div>';	
-	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #de0d88;">Notas pedido: </strong>' . $pedidoNotasSolicitud . '</p></div>';
+	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $pedidoModelo . '</p></div>';
+	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #008fcc;">Fecha en la que se solicitó: </strong>' . $pedidoFechaSolicitudEsp . '</p>';
+	$message 			.= '<p><strong style="color: #008fcc;">Fecha de entrega acordada: </strong>' . $pedidoEntregaSolicitudEsp . '</p>';
+	$message 			.= '<p><strong style="color: #008fcc;">¿Quién solicito?: </strong>' . $pedidoPersSolicitud . '</p></div>';	
+	$message 			.= '<pstyle="margin-top: 20px;"><strong style="color: #008fcc;">Notas pedido: </strong>' . $pedidoNotasSolicitud . '</p></div>';
 	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el sistema de alertas de pedidos de Mundo Bolita. </small></p></div>';
 	$message 	        .= '</body></html>';
 
 	if ($pedidoEstatusSolicitud === 'estatus_enEspera') {
-		$to 				= "pruebas@altoempleo.com.mx";
+		$to 				= "pruebas@altoempleo.com.mx"; /*to do - a quién le llegará */
 		$subject 			= "Pedido a fábrica de " . $pedidoModelo;
 		wp_mail($to, $subject, $message);
 	}

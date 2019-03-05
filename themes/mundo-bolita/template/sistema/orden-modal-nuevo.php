@@ -142,7 +142,7 @@
 				<label for="orden_compra_estatusEntrega color-primary">Estatus Entrega*:</label>
     			<select name="orden_compra_estatusEntrega" id="orden_compra_estatusEntrega" required  data-parsley-required-message="Campo obligatorio">
     				<option value=""></option>
-                    <option value="estatus_enProduccion">En producción, fabrica</option>
+                    <option value="estatus_enProduccion">En producción, fábrica</option>
                     <option value="estatus_enTienda">En tienda</option>
                     <option value="estatus_enPuntoEntrega">En punto de entrega</option>
                     <option value="estatus_entregada">Entregada</option>
@@ -254,8 +254,8 @@
 	$message 	 		.= '<p style="margin-bottom: 20px;"><span style="color: #008fcc;">Nueva orden de compra</span> para una piñata con la siguiente información: </p>';
 	$message 			.= '<div style="margin-bottom: 30px;"><p><strong style="color: #de0d88;">Modelo: </strong>' . $compra_modelo . '</p>';
 	$message 			.= '<p><strong style="color: #008fcc;">Origen: </strong>' . $compra_origen . '</p>';
-	$message 			.= '<p><strong style="color: #008fcc;">Cliente: </strong>' . $compra_cliente . '</p>';
-	$message 			.= '<p><strong style="color: #de0d88;">Venta: </strong>' . $compra_responsable . ' | ' . $compra_fechaVentaEsp . ' | ' . $compra_estatusVenta . ' | ' . $compra_observaciones . '</p></div>';
+	$message 			.= '<p><strong style="color: #008fcc;">Cliente: </strong>' . $compra_cliente . '</p></div>';
+	$message 			.= '<p><strong style="color: #de0d88;">Venta: </strong>' . $compra_responsable . ' | ' . $compra_fechaVentaEsp . ' | ' . $compra_estatusVenta . ' | ' . $compra_observaciones . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Pago: </strong>$' . $compra_pago . ' | ' . $compra_metodoPago . ' | ' . $compra_estatusPago . ' | ' . $compra_notaPago . '</p>';
 	$message 			.= '<p><strong style="color: #de0d88;">Entrega: </strong>' . $compra_fechaEsp . ' | ' . $compra_lugar . ' | ' . $compra_estatusEntrega . ' | ' . $compra_entrega . '</p>';
 	$message 	        .= '<div style="text-align: center; margin-bottom: 10px;"><p><small>Este email ha sido enviado desde el stock de Mundo Bolita. </small></p></div>';

@@ -29,7 +29,7 @@
 		if ($origen === 'Stock de tienda') {
     		$origen = 'Tienda';
     	} else {
-    		$origen = 'Fabrica';
+    		$origen = 'Fábrica';
     	}
 
     	if ($entrega === '') { $entrega = 'Sin notas'; }
@@ -92,14 +92,10 @@
 						<div id="origen-orden-single">
 							<?php
 							if ($origen === 'Tienda') {
-								echo "<i class='icon-house'></i> ";
+								echo "<i class='icon-house'></i> Origen de Tienda";
 							} else {
-								echo "<i class='icon-work'></i> ";
-							}
-							echo 'Origen de ' . $origen; 
-							if ($origen === 'Fabrica') {
-								echo " <a href='#pedido-fabrica' class='modal-trigger'><i class='icon-pencil'></i></a>";
-							}?>
+								echo " <a href='#pedido-fabrica' class='modal-trigger'><i class='icon-work'></i> Origen de Fábrica <i class='icon-pencil'></i></a>";
+							} ?>
 						</div>				
 					</div>
 					<div class="bg-image bg-contain [ absolute left--5p top-30 ] width-30p padding-bottom-30p rotate-90" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>

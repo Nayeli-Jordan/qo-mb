@@ -25,7 +25,7 @@
 	if ($origen === 'Stock de tienda') {
 		$origen = 'Tienda';
 	} else {
-		$origen = 'Fabrica';
+		$origen = 'Fábrica';
 	}
 
 	$today = date("Y-m-d");
@@ -52,7 +52,7 @@
 			<i class="instruction icon-female"><span>Dinero con supervisor</span></i>
 			</div>';
 	    $infoOrden  .= '<div class="col s12 m5 uppercase ' . $estatusEntrega . '">' . $fechaEsp . ' | ' . $lugar . ' | 
-    		<i class="instruction icon-work"><span>>En producción, fábrica</span></i>
+    		<i class="instruction icon-work"><span>En producción, fábrica</span></i>
 			<i class="instruction icon-house"><span>En tienda</span></i>
 			<i class="instruction icon-location"><span>En punto de entrega</span></i>
 			<i class="instruction icon-happy"><span>Entregada</span></i>

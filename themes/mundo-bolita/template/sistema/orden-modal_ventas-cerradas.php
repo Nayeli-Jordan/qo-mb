@@ -37,17 +37,7 @@ wp_reset_postdata();
 if ($ordenCompraCerrada != 0 ) {  ?>
 
 	<div id="product_<?php echo $product_slug; ?>_cerradas" class="modal modal-detalles-orden">
-		<div class="modal-content">
-			<i class="icon-cancel modal-close"></i>
-			<p class="color-primary no-margin-top text-center">Ordenes Cerradas de <?php echo $productName; ?></p>
-			<div class="row no-margin-bottom hide-on-small-only">
-				<div class="col s12 m3 uppercase">Cliente</div>
-				<div class="col s12 m4 uppercase">Entregado</div>
-				<div class="col s12 m2 uppercase">Pago</div>
-				<div class="col s12 m2 uppercase">Origen</div>
-			</div>
-			<?php echo $infoOrden; ?>
-		</div>
+		<?php include (TEMPLATEPATH . '/template/sistema/infoOrdenHead.php'); ?>
 	</div>
 
 <?php } ?>
