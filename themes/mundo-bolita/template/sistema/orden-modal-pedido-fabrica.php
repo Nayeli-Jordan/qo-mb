@@ -18,6 +18,9 @@
 		<p class="color-primary no-margin-top text-center">Detalles del pedido a fábrica</p>
 		<div class="row text-center">
 			<?php 
+			if ($fechaSolicitud === '' || $entregaSolicitud === '' || $persSolicitud === '' || $estatusSolicitud === '' || $notasSolicitud === ''): 
+				echo '<p class="col s12"><span class="color-primary">Aún no hay información de pedido a fábrica.</span></p>';
+			endif;
 			if ($fechaSolicitud != ''): 
 				$fechaSolicitudEsp	 = strftime("%d de %B del %Y", strtotime($fechaSolicitud));
 				echo '<p class="col s12 m6"><span class="color-primary">Fecha de solicitud: </span><br>' . $fechaSolicitudEsp . '</p>';

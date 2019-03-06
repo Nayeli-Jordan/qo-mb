@@ -80,7 +80,7 @@
 							<tr class="hide_to_print"><td><br><strong>Responsable de venta: </strong><?php echo $responsable; ?></td></tr>
 							<tr class="hide_to_print"><td><strong>Observaciones: </strong><?php echo $observaciones; ?></td></tr>
 						</table>
-						<div id="estatus-orden-single">
+						<div id="estatus-orden-single" class="hide_to_print">
 							<?php if ($estatusVenta === 'estatus_abierta') {
 								echo "<i class='instruction icon-open'><span>Venta Abierta</span></i>";
 							} elseif ($estatusVenta === 'estatus_cerrada') {
@@ -89,7 +89,7 @@
 								echo "<i class='instruction icon-block'><span>Venta Cancelada</span></i>";
 							} ?>
 						</div>
-						<div id="origen-orden-single">
+						<div id="origen-orden-single" class="hide_to_print">
 							<?php
 							if ($origen === 'Tienda') {
 								echo "<i class='icon-house'></i> Origen de Tienda";
@@ -107,7 +107,7 @@
 				</div>
 			</div>
 			<div class="clearfix"></div>
-			<div class="action-btn-single text-center">
+			<div class="hide_to_print text-center">
 				<?php if ( $estatusVenta != 'estatus_cerrada' && $estatusVenta != 'estatus_cancelada') : ?>
 					<a href="#actualizado-orden" class="btn margin-right-small modal-trigger"><i class='icon-pencil fz-14'></i> Editar orden</a>
 				<?php endif; ?>			

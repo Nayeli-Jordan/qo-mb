@@ -201,8 +201,8 @@
 
 	/* Enviar mail alertando sobre el estatus de la orden */
 
-	$to 	= "pruebas@altoempleo.com.mx";
-	$subject 			= "Actualización Orden de Compra - " . $modelo;
+	$to 		= "pruebas@altoempleo.com.mx"; /* to do - email*/
+	$subject	= "Actualización Orden de Compra - " . $modelo;
 
 	if ($compra_estatusVenta === 'estatus_abierta') { 
 		$compra_estatusVenta = 'Abierta';

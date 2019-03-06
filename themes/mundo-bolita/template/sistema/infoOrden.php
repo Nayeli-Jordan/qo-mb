@@ -25,11 +25,11 @@
 	if ($origen === 'Stock de tienda') {
 		$origen = 'Tienda';
 	} else {
-		$origen = 'Fábrica';
+		$origen = 'Fabrica';
 	}
 
 	$today = date("Y-m-d");
-	if ($today >= $fecha ) {
+	if ($today >= $fecha && $estatusEntrega != 'estatus_entregada' && $estatusVenta === 'estatus_abierta') {
 		$fechaEsp = '<span class="color-red">' . $fechaEsp . '</span>';
 	}
 

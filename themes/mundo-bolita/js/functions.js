@@ -40,7 +40,7 @@ var $=jQuery.noConflict();
 			var widthPage 	= $('.box-info-products').outerWidth();
 			$('.head-orden-fixed').css('width', widthPage);
 
-			var headOrden 	= $('.head-orden-principal').offset();
+			var headOrden 	= $('thead').offset();
 			var btnOrden 	= $('#btn-ordenCompra').offset();
 			$(document).scroll(function() {
 				var topWindow 	= $(window).scrollTop();

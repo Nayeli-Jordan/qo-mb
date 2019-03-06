@@ -112,7 +112,7 @@
 	</head>
 	<?php flush(); ?>
 
-	<body id="<?php if (is_page('mb-stock') || is_page('inventario') || is_page('reporte')): echo 'info-print'; endif; ?>" class="<?php if (is_singular('orden_compra')): echo 'singular-orden_compra'; endif;?>">
+	<body id="<?php if (is_page('mb-stock') || is_page('inventario') || is_page('reporte') || is_singular('orden_compra')): echo 'info-print'; endif; ?>" class="<?php if (is_singular('orden_compra')): echo 'singular-orden_compra'; endif;?>">
 		<?php /* Se inicia una vez que comienza body para evitar errores en wp_redirect*/
 		if (is_page('mb-stock')):
 			/*echo "<div class='block-modal hide'></div>";*/
@@ -200,7 +200,7 @@
 			<?php else: ?>
 				<div class="bg-image bg-contain bg-repeat relative" style="background-image: url(<?php echo THEMEPATH; ?>images/dulces-fondo.png)">	
 			<?php endif; ?>
-					<?php if (!is_page('mb-stock') && !is_page('inventario') && !is_page('reporte')): ?>			
+					<?php if (!is_page('mb-stock') && !is_page('inventario') && !is_page('reporte') && !is_singular('orden_compra')): ?>			
 						<div class="bg-image bg-contain bg-repeat bg-absolute top--15p left-5p [ wow fadeIn ]" data-wow-delay="0.5s" data-wow-duration="3s" style="background-image: url(<?php echo THEMEPATH; ?>images/lineas.png);"></div>				
 						<div class="bg-image bg-contain [ absolute top--60 left-50p ] margin-left--15p width-30p padding-bottom-30p rotate-180  [ wow flash ]"  data-wow-delay="0.5s"   data-wow-duration="2s" data-wow-iteration="20" style="background-image: url(<?php echo THEMEPATH; ?>images/boli-central.png);"></div>
 					<?php endif; ?>

@@ -51,11 +51,11 @@ $yesterdayEsp 	= strftime("%d de %B del %Y", strtotime($yesterday)); ?>
 								)
 							);
 							$loopOrden = new WP_Query( $argsOrden );
+							$efectivo	= 0;
+							$tarjeta	= 0;
+							$prestamo	= 0;
+							$otro		= 0;
 							if ( $loopOrden->have_posts() ) {
-								$efectivo	= 0;
-								$tarjeta	= 0;
-								$prestamo	= 0;
-								$otro		= 0;
 							    while ( $loopOrden->have_posts() ) : $loopOrden->the_post();
 						    		$custom_fields  = get_post_custom();
 									$post_id        = get_the_ID();

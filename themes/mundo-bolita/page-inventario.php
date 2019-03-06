@@ -9,7 +9,7 @@ $todayEsp 	= strftime("%d de %B del %Y", strtotime($today));
 			<div class="text-right margin-bottom-small hide_to_print">
 				<i id="print-page" class="icon-print btn margin-bottom-xsmall"> Imprimir Inventario</i>
 				<a href="<?php echo SITEURL; ?>reporte" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Reporte Semanal</a>
-				<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger hide_to_print">Stock completo</a>
+				<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Stock completo</a>
 			</div>
 			<div class="margin-top-xlarge text-center">
 				<p>Mundo Bolita<br>Inventario al <?php echo $todayEsp; ?></p>

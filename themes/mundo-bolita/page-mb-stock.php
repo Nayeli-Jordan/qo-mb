@@ -1,29 +1,37 @@
-<?php get_header(); ?>
-<section id="page-mb-stock" class="container container-large">
+<?php get_header(); 
+$today 		= date("Y-m-d"); 
+setlocale(LC_ALL,"es_ES");
+$todayEsp 	= strftime("%d de %B del %Y", strtotime($today));
+?>
+<section class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); 
 		if ( current_user_can( 'administrator' ) ) { ?>
-			<div class="text-right margin-bottom-small">
+			<div class="text-right margin-bottom-small hide_to_print">
+				<i id="print-page" class="icon-print btn margin-bottom-xsmall"> Imprimir Inventario</i>
 				<a href="<?php echo SITEURL; ?>inventario" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Inventario</a>
 				<a href="<?php echo SITEURL; ?>reporte" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Reporte Semanal</a>
 				<a id="btn-ordenCompra" href="#nuevo-orden" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nueva orden de compra</a>
 			</div>
+			<div class="margin-top-xlarge text-center">
+				<p>Mundo Bolita<br>Inventario Completo al <?php echo $todayEsp; ?></p>
+			</div>
 			<div class="box-info-products">
 				<div class="container-info-products">
-					<div class="head-orden-fixed hide">
+					<div class="head-orden-fixed hide hide_to_print">
 						<table class="table-stock">
 							<tr>
-								<th class="name-pinata" rowspan="2"><strong>Piñata</strong></th>
-								<th colspan="2"><strong>Precio</strong></th>
-								<th colspan="3"><strong>Ordenes de compra</strong></th>
-								<th colspan="3"><strong>Ventas / Salidas</strong></th>
-								<th colspan="2"><strong>Stock de Tienda</strong></th>
+								<th rowspan="2" class="width-20p"><strong>Piñata</strong></th>
+								<th colspan="2" class="width-15p"><strong>Precio</strong></th>
+								<th colspan="3" class="width-25p"><strong>Ordenes de compra abiertas</strong></th>
+								<th colspan="3" class="width-20p"><strong>Ventas / Salidas</strong></th>
+								<th colspan="2" class="width-20p"><strong>Stock de Tienda</strong></th>
 							</tr>
 							<tr class="head-orden">
 								<th><strong>Tienda</strong></th>
 								<th><strong>Facebook</strong></th>
-								<th><strong>Total</strong></th>
-								<th><strong>De Tienda</strong></th>
-								<th><strong>Pedidos Fábrica</strong></th>
+								<th class="width-8p"><strong>Total</strong></th>
+								<th class="width-8p"><strong>De Tienda</strong></th>
+								<th class="width-9p"><strong>Pedidos Fábrica</strong></th>
 								<th><strong>Canceladas</strong></th>
 								<th><strong>Cerradas</strong></th>
 								<th><strong>Cerradas Prestamos</strong></th>
@@ -32,27 +40,29 @@
 							</tr>
 						</table>					
 					</div>
-					<table>
-						<tr class="head-orden-principal">
-							<th rowspan="2"><strong>Piñata</strong></th>
-							<th colspan="2"><strong>Precio</strong></th>
-							<th colspan="3"><strong>Ordenes de compra abiertas</strong></th>
-							<th colspan="3"><strong>Ventas / Salidas</strong></th>
-							<th colspan="2"><strong>Stock de Tienda</strong></th>
-						</tr>
-						<tr class="head-orden">
-							<th><strong>Tienda</strong></th>
-							<th><strong>Facebook</strong></th>
-							<th><strong>Total</strong></th>
-							<th><strong>De Tienda</strong></th>
-							<th><strong>Pedidos Fábrica</strong></th>
-							<th><strong>Canceladas</strong></th>
-							<th><strong>Cerradas</strong></th>
-							<th><strong>Cerradas Prestamos</strong></th>
-							<th><strong>Total</strong></th>					
-							<th><strong>Disponibles</strong></th>
-						</tr>
-
+					<table class="table-stock">
+						<thead>
+							<tr>
+								<th rowspan="2" class="width-20p"><strong>Piñata</strong></th>
+								<th colspan="2" class="width-15p"><strong>Precio</strong></th>
+								<th colspan="3" class="width-25p"><strong>Ordenes de compra abiertas</strong></th>
+								<th colspan="3" class="width-20p"><strong>Ventas / Salidas</strong></th>
+								<th colspan="2" class="width-20p"><strong>Stock de Tienda</strong></th>
+							</tr>
+							<tr>
+								<th><strong>Tienda</strong></th>
+								<th><strong>Facebook</strong></th>
+								<th class="width-8p"><strong>Total</strong></th>
+								<th class="width-8p"><strong>De Tienda</strong></th>
+								<th class="width-9p"><strong>Pedidos Fábrica</strong></th>
+								<th><strong>Canceladas</strong></th>
+								<th><strong>Cerradas</strong></th>
+								<th><strong>Cerradas Prestamos</strong></th>
+								<th><strong>Total</strong></th>					
+								<th><strong>Disponibles</strong></th>
+							</tr>							
+						</thead>
+						<tbody>
 						<?php
 					        $args = array(
 					            'post_type' => 'product',
@@ -178,18 +188,21 @@
 					            <?php endwhile;
 					        } 
 					        wp_reset_postdata();
-					    ?>
-					    <tr class="footer-orden">
-					    	<td colspan="3">Total</td>
-					    	<td><?php echo $totalOrdenes; ?></td>
-					    	<td><?php echo $totalApartadas; ?></td>
-					    	<td><?php echo $totalPedidos; ?></td>
-					    	<td><?php echo $totalCanceladas; ?></td>
-					    	<td><?php echo $totalCerradas; ?></td>
-					    	<td><?php echo $totalPrestamo; ?></td>
-					    	<td><?php echo $totalStock; ?></td>
-					    	<td><?php echo $totalDisponible; ?></td>
-					    </tr>
+					    ?>							
+						</tbody>
+					    <tfoot>
+						    <tr class="footer-orden">
+						    	<td colspan="3">Total</td>
+						    	<td><?php echo $totalOrdenes; ?></td>
+						    	<td><?php echo $totalApartadas; ?></td>
+						    	<td><?php echo $totalPedidos; ?></td>
+						    	<td><?php echo $totalCanceladas; ?></td>
+						    	<td><?php echo $totalCerradas; ?></td>
+						    	<td><?php echo $totalPrestamo; ?></td>
+						    	<td><?php echo $totalStock; ?></td>
+						    	<td><?php echo $totalDisponible; ?></td>
+						    </tr>					    	
+					    </tfoot>
 					</table>
 				</div>		
 			</div>		

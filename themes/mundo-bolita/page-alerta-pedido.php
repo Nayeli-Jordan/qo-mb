@@ -47,7 +47,7 @@
 						$persSolicitud		= get_post_meta( $post_id, 'orden_compra_persSolicitud', true );
 						$notasSolicitud		= get_post_meta( $post_id, 'orden_compra_notasSolicitud', true );
 
-					    $fechaAlerta   	= date('Y-m-d', strtotime($entregaSolicitud . '-1 day')); /* Active alert */
+					    $fechaAlerta   	= date('Y-m-d', strtotime($entregaSolicitud . '-1 day')); /* Active alert 1 day before */
 					    
 					    setlocale(LC_ALL,"es_ES");
 						$fechaSolicitud 	= strftime("%d de %B del %Y", strtotime($fechaSolicitud));
@@ -67,7 +67,7 @@
 					    }
 				    endwhile;
 					if ($ordenPedidoFabrica != 0):
-						$to 		= 'pruebas@altoempleo.com.mx';
+						$to 		= 'pruebas@altoempleo.com.mx'; /*to do - cambiar mail*/
 				    	$message 	= $messageHeader . $body . $messageFooter;
 						echo $message;
 

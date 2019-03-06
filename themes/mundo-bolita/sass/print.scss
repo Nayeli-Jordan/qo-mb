@@ -2,35 +2,9 @@
 #info-print header, 
 #info-print footer { display: none; }
 
-body.singular-orden_compra,
-body.page-mb-stock {
-  & > .bg-image { background-image: none!important; }
-  header, footer {
-    display: none;
-  }  
-  .main-body {
-    & > .bg-image,
-    & > .bg-image > .bg-image { background-image: none!important; }
-    .page-orden { width: 99%; } 
-    #estatus-orden-single,
-    #origen-orden-single,
-    .action-btn-single { display: none; }  
-  }  
-}
-
-body.page-mb-stock {
-  width: 100%!important;
-  max-width: calc(100vw - 20px);
-  #page-mb-stock { width: 100%!important; }
-  #btn-ordenCompra,
-  .head-orden-fixed { display: none; }
-  .box-info-products { width: 100%; }
-   /* .container-info-products table { 
-    width: calc(100% - 70px);
-  } */
-}
-
 #info-print {
+  width: 100%!important;
+  max-width: calc(100vw - 20px);  
   & > .bg-image,
   .main-body > .bg-image { background-image: none!important; } 
 }

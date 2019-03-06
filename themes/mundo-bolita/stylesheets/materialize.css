@@ -5146,19 +5146,12 @@ table span.badge {
 }
 
 /* line 260, ../sass/components/_grid.scss */
-#page-mb-stock {
-  position: relative;
-  z-index: 99;
-  padding-bottom: 70px;
-}
-
-/* line 266, ../sass/components/_grid.scss */
 #orden_compra {
   position: relative;
   z-index: 1000;
 }
 
-/* line 270, ../sass/components/_grid.scss */
+/* line 264, ../sass/components/_grid.scss */
 .page-orden {
   position: relative;
   width: 820px;
@@ -5168,43 +5161,43 @@ table span.badge {
   box-shadow: 3px -1px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
-/* line 280, ../sass/components/_grid.scss */
+/* line 274, ../sass/components/_grid.scss */
 .page-orden .header-orden {
   padding: 30px 20px;
   text-align: center;
   background-image: linear-gradient(to right, #f4c3b5, #f7d8b1, #f6e4b0, #eee5b8, #e2e2c2);
 }
-/* line 284, ../sass/components/_grid.scss */
+/* line 278, ../sass/components/_grid.scss */
 .page-orden .header-orden img {
   filter: drop-shadow(2px 1px 3px #944373);
   -webkit-filter: drop-shadow(2px 1px 3px #944373);
 }
-/* line 289, ../sass/components/_grid.scss */
+/* line 283, ../sass/components/_grid.scss */
 .page-orden .body-orden {
   padding: 30px;
   font-family: "Helvetica Neue", sans-serif;
   font-style: normal;
 }
-/* line 293, ../sass/components/_grid.scss */
+/* line 287, ../sass/components/_grid.scss */
 .page-orden .body-orden table {
   position: relative;
   z-index: 1;
 }
-/* line 296, ../sass/components/_grid.scss */
+/* line 290, ../sass/components/_grid.scss */
 .page-orden .body-orden table tr {
   border-color: transparent;
 }
-/* line 299, ../sass/components/_grid.scss */
+/* line 293, ../sass/components/_grid.scss */
 .page-orden .body-orden table tr td strong {
   color: #de0d88;
   font-weight: 700;
 }
-/* line 306, ../sass/components/_grid.scss */
+/* line 300, ../sass/components/_grid.scss */
 .page-orden .body-orden .bg-image {
   opacity: 0.8;
 }
 
-/* line 310, ../sass/components/_grid.scss */
+/* line 304, ../sass/components/_grid.scss */
 #origen-orden-single {
   position: absolute;
   top: 10px;
@@ -11666,63 +11659,39 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 474, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr th {
-  font-size: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  width: 7.5%;
-}
-/* line 479, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr th.name-pinata {
-  width: 140px;
-}
-/* line 480, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr th:not(:first-child) {
-  text-align: center;
-}
-/* line 483, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr td:first-child {
+/* line 472, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table {
   font-size: 12px;
 }
-/* line 486, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr td:not(:first-child) {
+/* line 474, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table thead tr th {
   text-align: center;
 }
-/* line 487, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr td:nth-child(3), .box-info-products .container-info-products table.table-stock tr td:nth-child(10) {
-  color: #6e6e6e;
-}
-/* line 489, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr.head-orden-principal th:first-child {
-  width: 140px;
-}
-/* line 490, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr.head-orden-principal th:not(:last-child), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(2), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(5), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(8),
-.box-info-products .container-info-products table.table-stock tr td:nth-child(1),
-.box-info-products .container-info-products table.table-stock tr td:nth-child(3),
-.box-info-products .container-info-products table.table-stock tr td:nth-child(6),
-.box-info-products .container-info-products table.table-stock tr td:nth-child(9) {
+/* line 475, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table thead tr th:not(:last-child),
+.box-info-products .container-info-products table tbody tr td:not(:last-child),
+.box-info-products .container-info-products table tfoot tr td:not(:last-child) {
   border-right: 1px solid #cdcdcd;
 }
-/* line 501, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr.footer-orden td:not(:first-child) {
-  border-right: 1px solid #cdcdcd;
+/* line 480, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table thead,
+.box-info-products .container-info-products table tfoot {
+  background-color: #ddd;
 }
-/* line 502, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-stock tr.footer-orden td:nth-child(8) {
-  color: #6e6e6e;
-}
-/* line 505, ../sass/components/_utilities.scss */
+/* line 483, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-stock .instruction span {
   right: 25px;
 }
-/* line 507, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-reporte {
-  font-size: 12px;
+/* line 484, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-stock tbody tr td:nth-child(3), .box-info-products .container-info-products table.table-stock tbody tr td:nth-child(10) {
+  color: #6e6e6e;
 }
-/* line 509, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-reporte thead tr th,
+/* line 485, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-stock tbody tr td:not(:first-child),
+.box-info-products .container-info-products table.table-stock tfoot tr td:not(:first-child) {
+  text-align: center;
+}
+/* line 491, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte tbody tr td:nth-child(3),
 .box-info-products .container-info-products table.table-reporte tbody tr td:nth-child(4),
 .box-info-products .container-info-products table.table-reporte tbody tr td:nth-child(5),
@@ -11734,26 +11703,15 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table.table-reporte tfoot tr td:nth-child(6) {
   text-align: center;
 }
-/* line 521, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-reporte thead tr th:not(:last-child),
-.box-info-products .container-info-products table.table-reporte tbody tr td:not(:last-child),
-.box-info-products .container-info-products table.table-reporte tfoot tr td:not(:last-child) {
-  border-right: 1px solid #cdcdcd;
-}
-/* line 526, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-reporte thead,
-.box-info-products .container-info-products table.table-reporte tfoot {
-  background-color: #ddd;
-}
-/* line 528, ../sass/components/_utilities.scss */
+/* line 502, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte tfoot tr td:nth-child(6) {
   background-color: #eee;
 }
-/* line 530, ../sass/components/_utilities.scss */
+/* line 504, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-inventario {
   font-size: 12px;
 }
-/* line 532, ../sass/components/_utilities.scss */
+/* line 506, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-inventario thead tr th,
 .box-info-products .container-info-products table.table-inventario tbody tr td:nth-child(2),
 .box-info-products .container-info-products table.table-inventario tbody tr td:nth-child(3),
@@ -11762,19 +11720,8 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table.table-inventario tfoot tr td:nth-child(3) {
   text-align: center;
 }
-/* line 540, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-inventario thead tr th:not(:last-child),
-.box-info-products .container-info-products table.table-inventario tbody tr td:not(:last-child),
-.box-info-products .container-info-products table.table-inventario tfoot tr td:not(:last-child) {
-  border-right: 1px solid #cdcdcd;
-}
-/* line 545, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table.table-inventario thead,
-.box-info-products .container-info-products table.table-inventario tfoot {
-  background-color: #ddd;
-}
 
-/* line 551, ../sass/components/_utilities.scss */
+/* line 519, ../sass/components/_utilities.scss */
 .img-pinata {
   width: 25px;
   display: inline-block;
