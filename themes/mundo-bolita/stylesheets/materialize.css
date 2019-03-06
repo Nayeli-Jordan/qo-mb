@@ -11650,7 +11650,7 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 @media only screen and (max-width: 900px) {
   /* line 454, ../sass/components/_utilities.scss */
   .box-info-products {
-    max-height: calc(100vh - 80px);
+    /* max-height: calc(100vh - 80px); */
   }
 }
 /* line 462, ../sass/components/_utilities.scss */
@@ -11667,54 +11667,54 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   background-color: rgba(255, 255, 255, 0.9);
 }
 /* line 474, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr th {
+.box-info-products .container-info-products table.table-stock tr th {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 700;
   width: 7.5%;
 }
 /* line 479, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr th.name-pinata {
+.box-info-products .container-info-products table.table-stock tr th.name-pinata {
   width: 140px;
 }
 /* line 480, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr th:not(:first-child) {
+.box-info-products .container-info-products table.table-stock tr th:not(:first-child) {
   text-align: center;
 }
 /* line 483, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr td:first-child {
+.box-info-products .container-info-products table.table-stock tr td:first-child {
   font-size: 12px;
 }
 /* line 486, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr td:not(:first-child) {
+.box-info-products .container-info-products table.table-stock tr td:not(:first-child) {
   text-align: center;
 }
 /* line 487, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(3), .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(10) {
+.box-info-products .container-info-products table.table-stock tr td:nth-child(3), .box-info-products .container-info-products table.table-stock tr td:nth-child(10) {
   color: #6e6e6e;
 }
 /* line 489, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr.head-orden-principal th:first-child {
+.box-info-products .container-info-products table.table-stock tr.head-orden-principal th:first-child {
   width: 140px;
 }
 /* line 490, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr.head-orden-principal th:not(:last-child), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(2), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(5), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(8),
-.box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(1),
-.box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(3),
-.box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(6),
-.box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(9) {
+.box-info-products .container-info-products table.table-stock tr.head-orden-principal th:not(:last-child), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(2), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(5), .box-info-products .container-info-products table.table-stock tr.head-orden th:nth-child(8),
+.box-info-products .container-info-products table.table-stock tr td:nth-child(1),
+.box-info-products .container-info-products table.table-stock tr td:nth-child(3),
+.box-info-products .container-info-products table.table-stock tr td:nth-child(6),
+.box-info-products .container-info-products table.table-stock tr td:nth-child(9) {
   border-right: 1px solid #cdcdcd;
 }
 /* line 501, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr.footer-orden td:not(:first-child) {
+.box-info-products .container-info-products table.table-stock tr.footer-orden td:not(:first-child) {
   border-right: 1px solid #cdcdcd;
 }
 /* line 502, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) tr.footer-orden td:nth-child(8) {
+.box-info-products .container-info-products table.table-stock tr.footer-orden td:nth-child(8) {
   color: #6e6e6e;
 }
 /* line 505, ../sass/components/_utilities.scss */
-.box-info-products .container-info-products table:not(.table-reporte) .instruction span {
+.box-info-products .container-info-products table.table-stock .instruction span {
   right: 25px;
 }
 /* line 507, ../sass/components/_utilities.scss */
@@ -11749,8 +11749,32 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table.table-reporte tfoot tr td:nth-child(6) {
   background-color: #eee;
 }
+/* line 530, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-inventario {
+  font-size: 12px;
+}
+/* line 532, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-inventario thead tr th,
+.box-info-products .container-info-products table.table-inventario tbody tr td:nth-child(2),
+.box-info-products .container-info-products table.table-inventario tbody tr td:nth-child(3),
+.box-info-products .container-info-products table.table-inventario tbody tr td:nth-child(4),
+.box-info-products .container-info-products table.table-inventario tfoot tr td:nth-child(2),
+.box-info-products .container-info-products table.table-inventario tfoot tr td:nth-child(3) {
+  text-align: center;
+}
+/* line 540, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-inventario thead tr th:not(:last-child),
+.box-info-products .container-info-products table.table-inventario tbody tr td:not(:last-child),
+.box-info-products .container-info-products table.table-inventario tfoot tr td:not(:last-child) {
+  border-right: 1px solid #cdcdcd;
+}
+/* line 545, ../sass/components/_utilities.scss */
+.box-info-products .container-info-products table.table-inventario thead,
+.box-info-products .container-info-products table.table-inventario tfoot {
+  background-color: #ddd;
+}
 
-/* line 533, ../sass/components/_utilities.scss */
+/* line 551, ../sass/components/_utilities.scss */
 .img-pinata {
   width: 25px;
   display: inline-block;

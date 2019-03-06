@@ -3,44 +3,36 @@ $today 		= date("Y-m-d");
 setlocale(LC_ALL,"es_ES");
 $todayEsp 	= strftime("%d de %B del %Y", strtotime($today));
 ?>
-<section id="page-mb-stock" class="container container-large">
+<section class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); 
 		if ( current_user_can( 'administrator' ) ) { ?>
 			<div class="text-right margin-bottom-small hide_to_print">
+				<i id="print-page" class="icon-print btn margin-bottom-xsmall"> Imprimir Inventario</i>
+				<a href="<?php echo SITEURL; ?>reporte" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Reporte Semanal</a>
 				<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger hide_to_print">Stock completo</a>
-				<i id="print-page" class="icon-print btn"> Imprimir Inventario</i>
 			</div>
-			<p><?php echo $todayEsp; ?></p>
+			<div class="margin-top-xlarge text-center">
+				<p>Mundo Bolita<br>Inventario al <?php echo $todayEsp; ?></p>
+			</div>
 			<div class="box-info-products">
 				<div class="container-info-products">
-					<div class="head-orden-fixed hide">
-						<table>
-							<tr>
-								<th class="name-pinata" rowspan="2"><strong>Piñata</strong></th>
-								<th rowspan="2"><strong>Precio</strong></th>
-								<th colspan="2"><strong>Stock de Tienda</strong></th>
+					<table class="table-inventario">
+						<thead>
+							<tr class="head-orden-principal">
+								<th rowspan="2" class="width-30p"><strong>Piñata</strong></th>
+								<th rowspan="2" class="width-30p"><strong>Precio</strong></th>
+								<th colspan="2" class="width-40p"><strong>Stock de Tienda</strong></th>
 							</tr>
 							<tr class="head-orden">
-								<th><strong>Total</strong></th>					
-								<th><strong>Disponibles</strong></th>
-							</tr>
-						</table>					
-					</div>
-					<table>
-						<tr class="head-orden-principal">
-							<th rowspan="2"><strong>Piñata</strong></th>
-								<th rowspan="2"><strong>Precio</strong></th>
-							<th colspan="2"><strong>Stock de Tienda</strong></th>
-						</tr>
-						<tr class="head-orden">
-							<th><strong>Total</strong></th>					
-							<th><strong>Disponibles</strong></th>
-						</tr>
-
+								<th class="width-20p"><strong>Total</strong></th>					
+								<th class="width-20p"><strong>Disponibles</strong></th>
+							</tr>							
+						</thead>
+						<tbody>
 						<?php
 					        $args = array(
 					            'post_type' => 'product',
-					            'posts_per_page' => 3, //-1
+					            'posts_per_page' => -1,
 					            'orderby' => 'title',
 					            'order' => 'ASC'
 					        );
@@ -84,23 +76,28 @@ $todayEsp 	= strftime("%d de %B del %Y", strtotime($today));
 										$disponibles = $disponibles . '<i class="color-red absolute instruction icon-attention"><span>No hay stock suficiente</span></i>';
 									} 
 
-									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID), 'medium' ); ?>
-									<tr>
-										<td><img class="img-pinata" src="<?php echo $image[0]; ?>"><?php echo $productName; ?></td>
-										<td><?php echo $price; ?></td>
-										<td><?php echo $stock ?></td>
-										<td><?php echo $disponibles; ?></td>
-									</tr>
-					            <?php endwhile;
+									$image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID), 'medium' ); 
+
+									if ($stock != 0 || $stock != '') { ?>
+										<tr>
+											<td><img class="img-pinata" src="<?php echo $image[0]; ?>"><?php echo $productName; ?></td>
+											<td><?php echo $price; ?></td>
+											<td><?php echo $stock ?></td>
+											<td><?php echo $disponibles; ?></td>
+										</tr>										
+									<?php }
+					            endwhile;
 					        } 
 					        wp_reset_postdata();
-					    ?>
-					    <tr class="footer-orden">
-					    	<td>Total</td>
-					    	<td>-</td>
-					    	<td><?php echo $totalStock; ?></td>
-					    	<td><?php echo $totalDisponible; ?></td>
-					    </tr>
+					    ?>							
+						</tbody>
+						<tfoot>
+						    <tr class="footer-orden">
+						    	<td colspan="2">Total</td>
+						    	<td><?php echo $totalStock; ?></td>
+						    	<td><?php echo $totalDisponible; ?></td>
+						    </tr>							
+						</tfoot>
 					</table>
 				</div>		
 			</div>		

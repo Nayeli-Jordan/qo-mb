@@ -457,7 +457,7 @@ $i: 1;
   overflow: auto;
   box-shadow: 0px 8px 12px 0 rgba(0,0,0,0.14);
   @media only screen and (max-width: 900px) {
-    max-height: calc(100vh - 80px);
+    /* max-height: calc(100vh - 80px); */
   }
   .container-info-products {
     padding: 0 5px;
@@ -469,7 +469,7 @@ $i: 1;
       box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(255, 255, 255, 0.9);
     }
-    table:not(.table-reporte) {
+    table.table-stock {
       tr {
         th {
           font-size: 10px;
@@ -526,6 +526,24 @@ $i: 1;
       thead,
       tfoot { background-color: #ddd; }
       tfoot tr td:nth-child(6) { background-color: #eee; }
+    }
+    table.table-inventario {
+      font-size: 12px;
+      thead tr th,
+      tbody tr td:nth-child(2),
+      tbody tr td:nth-child(3),
+      tbody tr td:nth-child(4),
+      tfoot tr td:nth-child(2),
+      tfoot tr td:nth-child(3) {
+        text-align: center;
+      }
+      thead tr th:not(:last-child),
+      tbody tr td:not(:last-child),
+      tfoot tr td:not(:last-child) {
+        border-right: 1px solid #cdcdcd;
+      }
+      thead,
+      tfoot { background-color: #ddd; }
     }
   }
 }

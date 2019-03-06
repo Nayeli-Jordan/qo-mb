@@ -10,7 +10,7 @@
 			<div class="box-info-products">
 				<div class="container-info-products">
 					<div class="head-orden-fixed hide">
-						<table>
+						<table class="table-stock">
 							<tr>
 								<th class="name-pinata" rowspan="2"><strong>Piñata</strong></th>
 								<th colspan="2"><strong>Precio</strong></th>
