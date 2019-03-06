@@ -11625,15 +11625,22 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   padding-bottom: 50px;
   z-index: 99;
 }
+@media only screen and (max-width: 600px) {
+  /* line 442, ../sass/components/_utilities.scss */
+  #info-print section .btn, #info-print section .btn-large, #info-print section .btn-small {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 
-/* line 443, ../sass/components/_utilities.scss */
+/* line 449, ../sass/components/_utilities.scss */
 .title-box-info-products {
   margin-bottom: 0px;
   padding-bottom: 15px;
   box-shadow: 0 2px 0px 0 rgba(0, 0, 0, 0.14);
 }
 
-/* line 448, ../sass/components/_utilities.scss */
+/* line 454, ../sass/components/_utilities.scss */
 .box-info-products {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.5);
@@ -11641,17 +11648,17 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.14);
 }
 @media only screen and (max-width: 900px) {
-  /* line 448, ../sass/components/_utilities.scss */
+  /* line 454, ../sass/components/_utilities.scss */
   .box-info-products {
     max-height: calc(100vh - 80px);
   }
 }
-/* line 456, ../sass/components/_utilities.scss */
+/* line 462, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products {
   padding: 0 5px;
   /* width: 700px; */
 }
-/* line 459, ../sass/components/_utilities.scss */
+/* line 465, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products .head-orden-fixed {
   position: fixed;
   top: 0px;
@@ -11659,38 +11666,38 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
 }
-/* line 468, ../sass/components/_utilities.scss */
+/* line 474, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr th {
   font-size: 10px;
   text-transform: uppercase;
   font-weight: 700;
   width: 7.5%;
 }
-/* line 473, ../sass/components/_utilities.scss */
+/* line 479, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr th.name-pinata {
   width: 140px;
 }
-/* line 474, ../sass/components/_utilities.scss */
+/* line 480, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr th:not(:first-child) {
   text-align: center;
 }
-/* line 477, ../sass/components/_utilities.scss */
+/* line 483, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr td:first-child {
   font-size: 12px;
 }
-/* line 480, ../sass/components/_utilities.scss */
+/* line 486, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr td:not(:first-child) {
   text-align: center;
 }
-/* line 481, ../sass/components/_utilities.scss */
+/* line 487, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(3), .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(10) {
   color: #6e6e6e;
 }
-/* line 483, ../sass/components/_utilities.scss */
+/* line 489, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden-principal th:first-child {
   width: 140px;
 }
-/* line 484, ../sass/components/_utilities.scss */
+/* line 490, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden-principal th:not(:last-child), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(2), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(5), .box-info-products .container-info-products table:not(.table-reporte) tr.head-orden th:nth-child(8),
 .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(1),
 .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(3),
@@ -11698,23 +11705,23 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table:not(.table-reporte) tr td:nth-child(9) {
   border-right: 1px solid #cdcdcd;
 }
-/* line 495, ../sass/components/_utilities.scss */
+/* line 501, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr.footer-orden td:not(:first-child) {
   border-right: 1px solid #cdcdcd;
 }
-/* line 496, ../sass/components/_utilities.scss */
+/* line 502, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) tr.footer-orden td:nth-child(8) {
   color: #6e6e6e;
 }
-/* line 499, ../sass/components/_utilities.scss */
+/* line 505, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table:not(.table-reporte) .instruction span {
   right: 25px;
 }
-/* line 501, ../sass/components/_utilities.scss */
+/* line 507, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte {
   font-size: 12px;
 }
-/* line 503, ../sass/components/_utilities.scss */
+/* line 509, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte thead tr th,
 .box-info-products .container-info-products table.table-reporte tbody tr td:nth-child(3),
 .box-info-products .container-info-products table.table-reporte tbody tr td:nth-child(4),
@@ -11727,23 +11734,23 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
 .box-info-products .container-info-products table.table-reporte tfoot tr td:nth-child(6) {
   text-align: center;
 }
-/* line 515, ../sass/components/_utilities.scss */
+/* line 521, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte thead tr th:not(:last-child),
 .box-info-products .container-info-products table.table-reporte tbody tr td:not(:last-child),
 .box-info-products .container-info-products table.table-reporte tfoot tr td:not(:last-child) {
   border-right: 1px solid #cdcdcd;
 }
-/* line 520, ../sass/components/_utilities.scss */
+/* line 526, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte thead,
 .box-info-products .container-info-products table.table-reporte tfoot {
   background-color: #ddd;
 }
-/* line 522, ../sass/components/_utilities.scss */
+/* line 528, ../sass/components/_utilities.scss */
 .box-info-products .container-info-products table.table-reporte tfoot tr td:nth-child(6) {
   background-color: #eee;
 }
 
-/* line 527, ../sass/components/_utilities.scss */
+/* line 533, ../sass/components/_utilities.scss */
 .img-pinata {
   width: 25px;
   display: inline-block;

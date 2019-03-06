@@ -3,20 +3,19 @@ $today 		= date("Y-m-d");
 $oneWeek  	= date('Y-m-d', strtotime($today . '- 7 days'));
 $yesterday  = date('Y-m-d', strtotime($today . '- 1 days'));
 setlocale(LC_ALL,"es_ES");
-$oneWeek 	= strftime("%d de %B del %Y", strtotime($oneWeek));
-$yesterday 	= strftime("%d de %B del %Y", strtotime($yesterday)); ?>
+$oneWeekEsp 	= strftime("%d de %B del %Y", strtotime($oneWeek));
+$yesterdayEsp 	= strftime("%d de %B del %Y", strtotime($yesterday)); ?>
 <section class="container container-large">
 	<?php if (have_posts()) : while (have_posts()) : the_post(); 
 		if ( current_user_can( 'administrator' ) ) { ?>
 			<div class="text-right margin-bottom-small hide_to_print">
-				<i id="print-page" class="icon-print btn hide_to_print"> Imprimir Reporte</i>
+				<i id="print-page" class="icon-print btn hide_to_print margin-bottom-xsmall"> Imprimir Reporte</i>
 				<a href="<?php echo SITEURL; ?>inventario" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Inventario</a>
 				<a href="<?php echo SITEURL; ?>mb-stock" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Stock completo</a>
 			</div>
 			<div class="margin-top-xlarge text-center">
-				<p>Mundo Bolita<br>Reporte semanal: del <?php echo $oneWeek; ?> al <?php echo $yesterday; ?></p>				
+				<p>Mundo Bolita<br>Reporte semanal: del <?php echo $oneWeekEsp; ?> al <?php echo $yesterdayEsp; ?></p>				
 			</div>
-
 			<div class="box-info-products">
 				<div class="container-info-products">
 					<table class="table-reporte">
@@ -42,6 +41,14 @@ $yesterday 	= strftime("%d de %B del %Y", strtotime($yesterday)); ?>
 							    'posts_per_page' 	=> -1,    
 								'orderby' 			=> 'date',
 								'order' 			=> 'ASC',
+								'meta_query'	=> array( /* 1 WEEK */
+									'relation'		=> 'AND',
+									array(
+										'key'		=> 'orden_compra_fechaVenta',
+										'value'		=> $oneWeek,
+										'compare'	=> '>='
+									)
+								)
 							);
 							$loopOrden = new WP_Query( $argsOrden );
 							if ( $loopOrden->have_posts() ) {

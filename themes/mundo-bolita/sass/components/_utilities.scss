@@ -438,6 +438,12 @@ $i: 1;
     position: relative;
     padding-bottom: 50px;
     z-index: 99;
+    @media #{$small-and-down}{
+      .btn { 
+        width: 100%; 
+        margin-left: 0px;
+      }
+    }
   }
 }
 .title-box-info-products {
