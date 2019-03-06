@@ -89,7 +89,7 @@ $yesterdayEsp 	= strftime("%d de %B del %Y", strtotime($yesterday)); ?>
 
 									<tr>
 										<td><?php echo $fechaVentaEsp; ?></td>
-										<td><?php echo $modelo; ?></td>
+										<td><a href="<?php echo $permalink; ?>" class="color-dark"><?php echo $modelo; ?></a></td>
 										<td><?php if ($metodoPago === 'Efectivo'): echo '$' . $pago; 
 											$efectivo = $efectivo + $pago; endif ?></td>
 										<td><?php if ($metodoPago === 'Tarjeta'): echo '$' . $pago;
