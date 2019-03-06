@@ -3,6 +3,8 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); 
 		if ( current_user_can( 'administrator' ) ) { ?>
 			<div class="text-right margin-bottom-small">
+				<a href="<?php echo SITEURL; ?>inventario" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Inventario</a>
+				<a href="<?php echo SITEURL; ?>reporte" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Reporte Semanal</a>
 				<a id="btn-ordenCompra" href="#nuevo-orden" class="btn margin-left-xsmall margin-bottom-xsmall modal-trigger">Nueva orden de compra</a>
 			</div>
 			<div class="box-info-products">
@@ -54,7 +56,7 @@
 						<?php
 					        $args = array(
 					            'post_type' => 'product',
-					            'posts_per_page' => 3, //-1
+					            'posts_per_page' => -1, //-1
 					            'orderby' => 'title',
 					            'order' => 'ASC'
 					        );
@@ -62,13 +64,13 @@
 					        if ( $loop->have_posts() ) {
 					        	global $product;
 					        	/* Obtener totales */
-					        	$totalOrdenes		= 0;					        	
-					        	$totalApartadas		= 0;					        	
-					        	$totalPedidos		= 0;					        	
-					        	$totalCerradas		= 0;					        	
-					        	$totalCanceladas	= 0;					        	
-					        	$totalPrestamo		= 0;					        	
-					        	$totalStock			= 0;					        	
+					        	$totalOrdenes		= 0;
+					        	$totalApartadas		= 0;
+					        	$totalPedidos		= 0;
+					        	$totalCerradas		= 0;
+					        	$totalCanceladas	= 0;
+					        	$totalPrestamo		= 0;
+					        	$totalStock			= 0;
 					        	$totalDisponible	= 0;
 
 					            while ( $loop->have_posts() ) : $loop->the_post();

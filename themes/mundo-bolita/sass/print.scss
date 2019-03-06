@@ -1,3 +1,7 @@
+.hide_to_print,
+#info-print header, 
+#info-print footer { display: none; }
+
 body.singular-orden_compra,
 body.page-mb-stock {
   & > .bg-image { background-image: none!important; }
@@ -10,8 +14,7 @@ body.page-mb-stock {
     .page-orden { width: 99%; } 
     #estatus-orden-single,
     #origen-orden-single,
-    .action-btn-single,
-    .hide_to_print { display: none; }  
+    .action-btn-single { display: none; }  
   }  
 }
 
@@ -25,4 +28,9 @@ body.page-mb-stock {
    /* .container-info-products table { 
     width: calc(100% - 70px);
   } */
+}
+
+#info-print {
+  & > .bg-image,
+  .main-body > .bg-image { background-image: none!important; } 
 }

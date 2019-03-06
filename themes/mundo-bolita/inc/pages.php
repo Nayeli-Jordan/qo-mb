@@ -16,6 +16,28 @@ add_action('init', function(){
 		);
 		wp_insert_post( $page, true );
 	}
+	// Inventario al día
+	if( ! get_page_by_path('inventario') ){
+		$page = array(
+			'post_author' => 1,
+			'post_status' => 'publish',
+			'post_title'  => 'Inventario',
+			'post_name'   => 'inventario',
+			'post_type'   => 'page'
+		);
+		wp_insert_post( $page, true );
+	}
+	// Reporte semanal
+	if( ! get_page_by_path('reporte') ){
+		$page = array(
+			'post_author' => 1,
+			'post_status' => 'publish',
+			'post_title'  => 'Reporte Semanal',
+			'post_name'   => 'reporte',
+			'post_type'   => 'page'
+		);
+		wp_insert_post( $page, true );
+	}
 
 	// Alerta entrega próxima 
 	if( ! get_page_by_path('alerta-entrega') ){

@@ -1,38 +1,43 @@
-/* line 3, ../sass/print.scss */
+/* line 1, ../sass/print.scss */
+.hide_to_print,
+#info-print header,
+#info-print footer {
+  display: none;
+}
+
+/* line 7, ../sass/print.scss */
 body.singular-orden_compra > .bg-image,
 body.page-mb-stock > .bg-image {
   background-image: none !important;
 }
-/* line 4, ../sass/print.scss */
+/* line 8, ../sass/print.scss */
 body.singular-orden_compra header, body.singular-orden_compra footer,
 body.page-mb-stock header,
 body.page-mb-stock footer {
   display: none;
 }
-/* line 8, ../sass/print.scss */
+/* line 12, ../sass/print.scss */
 body.singular-orden_compra .main-body > .bg-image, body.singular-orden_compra .main-body > .bg-image > .bg-image,
 body.page-mb-stock .main-body > .bg-image,
 body.page-mb-stock .main-body > .bg-image > .bg-image {
   background-image: none !important;
 }
-/* line 10, ../sass/print.scss */
+/* line 14, ../sass/print.scss */
 body.singular-orden_compra .main-body .page-orden,
 body.page-mb-stock .main-body .page-orden {
   width: 99%;
 }
-/* line 11, ../sass/print.scss */
+/* line 15, ../sass/print.scss */
 body.singular-orden_compra .main-body #estatus-orden-single,
 body.singular-orden_compra .main-body #origen-orden-single,
 body.singular-orden_compra .main-body .action-btn-single,
-body.singular-orden_compra .main-body .hide_to_print,
 body.page-mb-stock .main-body #estatus-orden-single,
 body.page-mb-stock .main-body #origen-orden-single,
-body.page-mb-stock .main-body .action-btn-single,
-body.page-mb-stock .main-body .hide_to_print {
+body.page-mb-stock .main-body .action-btn-single {
   display: none;
 }
 
-/* line 18, ../sass/print.scss */
+/* line 21, ../sass/print.scss */
 body.page-mb-stock {
   width: 100% !important;
   max-width: calc(100vw - 20px);
@@ -40,16 +45,22 @@ body.page-mb-stock {
   width: calc(100% - 70px);
 } */
 }
-/* line 21, ../sass/print.scss */
+/* line 24, ../sass/print.scss */
 body.page-mb-stock #page-mb-stock {
   width: 100% !important;
 }
-/* line 22, ../sass/print.scss */
+/* line 25, ../sass/print.scss */
 body.page-mb-stock #btn-ordenCompra,
 body.page-mb-stock .head-orden-fixed {
   display: none;
 }
-/* line 24, ../sass/print.scss */
+/* line 27, ../sass/print.scss */
 body.page-mb-stock .box-info-products {
   width: 100%;
+}
+
+/* line 34, ../sass/print.scss */
+#info-print > .bg-image,
+#info-print .main-body > .bg-image {
+  background-image: none !important;
 }

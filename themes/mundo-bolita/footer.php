@@ -1,4 +1,4 @@
-					<?php if (!is_page('mb-stock') && !is_singular('orden_compra') && !is_page('alerta-entrega') && !is_page('alerta-pedido')): ?>
+					<?php if (!is_page('mb-stock') && !is_page('inventario') && !is_page('reporte') && !is_singular('orden_compra') && !is_page('alerta-entrega') && !is_page('alerta-pedido')): ?>
 						<section class="container relative margin-top-50">
 							<h2 class="color-primary text-center uppercase relative z-index-1">Ubicación</h2>
 							<div class="row relative z-index-1">
@@ -22,7 +22,7 @@
 						</section>
 					<?php endif; ?>
 				</div> <!-- end bg dulces -->
-				<?php if (!is_page('mb-stock')) : ?>
+				<?php if (!is_page('mb-stock') && !is_page('inventario') && !is_page('reporte')) : ?>
 					<footer class="relative">
 						<div class="bg-image width-100p padding-bottom-75p [ wow fadeIn ]"  data-wow-delay="0.1s" style="background-image: url(<?php echo THEMEPATH; ?>images/detras-pasto.png);"></div>
 						<div class="bg-image absolute top-4p width-100p padding-bottom-30p  [ wow fadeInUpBig ]"  data-wow-delay="0.3s" style="background-image: url(<?php echo THEMEPATH; ?>images/pinatas.png);"></div>

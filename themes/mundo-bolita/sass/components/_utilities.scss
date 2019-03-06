@@ -126,6 +126,7 @@
 .margin-bottom--15p       { margin-bottom: -15%; }
 .no-margin-bottom       { margin-bottom: 0px; }
 
+
 .margin-top-bottom-small    { margin-top: 10px; margin-bottom: 10px; }
 .margin-top-bottom        { margin-top: 15px; margin-bottom: 15px; }
 .margin-top-xbottom        { margin-top: 50px; margin-bottom: 50px; }
@@ -188,15 +189,13 @@
 .padding-top-bottom-xlarge    { padding-top: 25px!important; padding-bottom: 25px!important; }
 
 //size
-.width-100p     { width: 100%; }
-.width-70p      { width: 70%; }
-.width-60p      { width: 60%; }
-.width-50p      { width: 50%; }
-.width-30p      { width: 30%; }
-.width-40p      { width: 40%; }
-.width-25p      { width: 25%; }
-.width-20p      { width: 20%; }
-.width-15p      { width: 15%; }
+$i: 1;
+@while $i <= $size-percent {
+  .width-#{$i}#{"p"} {
+    width: #{$i}#{"%"};
+  }
+  $i: $i + 1; 
+}
 
 .max-width-100p { max-width: 100%; }
 
@@ -432,9 +431,14 @@
 
 
 /* Stock MB */
-.page-mb-stock {
+#info-print {
   font-family: $font-stack;
-  font-style: normal;  
+  font-style: normal; 
+  section {
+    position: relative;
+    padding-bottom: 50px;
+    z-index: 99;
+  }
 }
 .title-box-info-products {
   margin-bottom: 0px;
@@ -459,7 +463,7 @@
       box-shadow: 0px 8px 12px 0 rgba(0, 0, 0, 0.2);
       background-color: rgba(255, 255, 255, 0.9);
     }
-    table {
+    table:not(.table-reporte) {
       tr {
         th {
           font-size: 10px;
@@ -493,6 +497,29 @@
         }
       }
       .instruction span { right: 25px; }
+    }
+    table.table-reporte {
+      font-size: 12px;
+      thead tr th,
+      tbody tr td:nth-child(3),
+      tbody tr td:nth-child(4),
+      tbody tr td:nth-child(5),
+      tbody tr td:nth-child(6),
+      tfoot tr td:nth-child(2),
+      tfoot tr td:nth-child(3),
+      tfoot tr td:nth-child(4),
+      tfoot tr td:nth-child(5),
+      tfoot tr td:nth-child(6) {
+        text-align: center;
+      }
+      thead tr th:not(:last-child),
+      tbody tr td:not(:last-child),
+      tfoot tr td:not(:last-child) {
+        border-right: 1px solid #cdcdcd;
+      }
+      thead,
+      tfoot { background-color: #ddd; }
+      tfoot tr td:nth-child(6) { background-color: #eee; }
     }
   }
 }
